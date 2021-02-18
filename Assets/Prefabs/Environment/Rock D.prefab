@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 468142}
   - component: {fileID: 3354526}
   - component: {fileID: 2371666}
-  - component: {fileID: 65231885545166194}
   m_Layer: 0
-  m_Name: Rock Type3 04
+  m_Name: Rock D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,16 +77,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &65231885545166194
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199114}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9332845, y: 1.0599095, z: 1.8940489}
-  m_Center: {x: -0.11656797, y: 0.26896644, z: -0.10770619}

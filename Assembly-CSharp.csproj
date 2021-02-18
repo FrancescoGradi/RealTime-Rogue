@@ -56,10 +56,13 @@
      <Compile Include="Assets\OtherAssets\KY_effects\Script\ConGUI.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\Lighting.cs" />
      <Compile Include="Assets\OtherAssets\Mixamo\Magic Pack\Demo\CameraScroll.cs" />
-     <Compile Include="Assets\Scripts\BillBoard.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHealthBar.cs" />
+     <Compile Include="Assets\Scripts\Environment\EnemyGenerator.cs" />
+     <Compile Include="Assets\Scripts\Environment\ObjectsGenerator.cs" />
      <Compile Include="Assets\Scripts\Environment\Portal.cs" />
+     <Compile Include="Assets\Scripts\Environment\RockGenerator.cs" />
+     <Compile Include="Assets\Scripts\Environment\Room.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Items\BastardSword.cs" />
      <Compile Include="Assets\Scripts\Items\BonusPotion.cs" />
@@ -76,10 +79,10 @@
      <Compile Include="Assets\Scripts\Player\FireBall.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\RockGenerator.cs" />
-     <Compile Include="Assets\Scripts\Room.cs" />
+     <Compile Include="Assets\Scripts\UI\BillBoard.cs" />
      <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\ShowFPS.cs" />
+     <Compile Include="Assets\Scripts\Utility\Utility.cs" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

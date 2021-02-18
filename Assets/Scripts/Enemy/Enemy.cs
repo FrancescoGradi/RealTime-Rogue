@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         GetComponent<Collider>().enabled = false;
         this.enabled = false;
 
-        FindObjectOfType<Room>().EnemyDown();
+        FindObjectOfType<EnemyGenerator>().EnemyDown();
 
         Destroy(gameObject, 4f);
     }

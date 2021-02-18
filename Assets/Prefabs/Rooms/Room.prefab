@@ -272,6 +272,19 @@ MonoBehaviour:
   - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
   - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
   - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
+  spawnPoints:
+  - {fileID: 2560862842288809651}
+  - {fileID: 8543909327027608220}
+  - {fileID: 6172596620844557247}
+  - {fileID: 2287234516249694591}
+  - {fileID: 8004417552967813998}
+  - {fileID: 4816278208524398476}
+  - {fileID: 7633052129287520134}
+  - {fileID: 6791848212141325623}
+  - {fileID: 7125833559702992176}
+  - {fileID: 2170945331575084871}
+  - {fileID: 3024923361725263058}
+  max_rocks: 4
 --- !u!1 &1855615035148216355
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +401,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3015066752732884059}
-  - component: {fileID: 3335866442369276874}
   m_Layer: 0
   m_Name: Rock Spawn (9)
   m_TagString: Untagged
@@ -410,23 +422,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3335866442369276874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2170945331575084871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &2287234516249694591
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +431,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3588697853553624989}
-  - component: {fileID: 3151478823847036505}
   m_Layer: 0
   m_Name: Rock Spawn (3)
   m_TagString: Untagged
@@ -458,23 +452,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3151478823847036505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2287234516249694591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &2560862842288809651
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +461,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6256406747682109609}
-  - component: {fileID: 5876773210428398364}
   m_Layer: 0
   m_Name: Rock Spawn
   m_TagString: Respawn
@@ -506,23 +482,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5876773210428398364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2560862842288809651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &2564762556620236487
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,7 +738,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4931691905512904265}
-  - component: {fileID: 4464590809034648601}
   m_Layer: 0
   m_Name: Rock Spawn (10)
   m_TagString: Untagged
@@ -801,23 +759,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4464590809034648601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3024923361725263058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &3127858745394588569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +982,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8204559696855615114}
-  - component: {fileID: 5007052085185182447}
   m_Layer: 0
   m_Name: Rock Spawn (5)
   m_TagString: Untagged
@@ -1063,23 +1003,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5007052085185182447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4816278208524398476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &4942722179838818355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,7 +1671,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5290712623446618737}
-  - component: {fileID: 1260808825244854010}
   m_Layer: 0
   m_Name: Rock Spawn (2)
   m_TagString: Untagged
@@ -1770,23 +1692,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1260808825244854010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172596620844557247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &6177813009309743850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,6 +1701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1702218236392658067}
+  - component: {fileID: 4050360150548820319}
   m_Layer: 0
   m_Name: Objects Template
   m_TagString: Untagged
@@ -1829,6 +1735,43 @@ Transform:
   m_Father: {fileID: 5733514176771392663}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4050360150548820319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6177813009309743850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6374e53f26dcfc9188d6cd3829e1ae37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 2161362798396853350, guid: c276cecf17cf46930aca4e7ae4a0ae2a, type: 3}
+  - {fileID: 7095549145993165415, guid: 91e964e2d493a80b28c1fc3200a991e6, type: 3}
+  - {fileID: 743041622132703717, guid: 721af7e81c8930b979c741d7b47d3f8d, type: 3}
+  - {fileID: 1893007542203255268, guid: 7bf72cf682ed292ddba13c86b9d4c8f9, type: 3}
+  envObjects:
+  - {fileID: 1463083207406666, guid: 3e11d8992c7896044a5461e7cf12c996, type: 3}
+  - {fileID: 1901378438627998, guid: e0ea4cc4b1b95a44981468ff011c1a12, type: 3}
+  - {fileID: 1906656229910602, guid: 8dfd1c3242055c943a88942e00e8c78c, type: 3}
+  - {fileID: 1000013539010130, guid: 7622e996fc1300e4eb8e18a545cd9a51, type: 3}
+  spawnPoints:
+  - {fileID: 3127858745394588569}
+  - {fileID: 7645134767148387433}
+  - {fileID: 6232785378849844965}
+  - {fileID: 5883878760238514329}
+  - {fileID: 7962638058632692513}
+  - {fileID: 6081445617595036919}
+  - {fileID: 5147881131951839880}
+  - {fileID: 5551054652921935224}
+  - {fileID: 1430618803507177486}
+  - {fileID: 7578083941998517314}
+  - {fileID: 987549877578874201}
+  - {fileID: 1038020145608545842}
+  max_items: 4
+  max_objects: 3
 --- !u!1 &6232785378849844965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,25 +2057,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2d9cbe08b5a1f74b839f295780b3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 8954920629681498401, guid: ec4b7c46e523e252eb6a441a321d2d05, type: 3}
   playerLayer:
     serializedVersion: 2
     m_Bits: 2048
-  bastardSword: {fileID: 408477250025863132, guid: c276cecf17cf46930aca4e7ae4a0ae2a,
-    type: 3}
-  goldenShield: {fileID: 7317330999011703573, guid: 721af7e81c8930b979c741d7b47d3f8d,
-    type: 3}
-  healthPotion: {fileID: 1209809354, guid: 7bf72cf682ed292ddba13c86b9d4c8f9, type: 3}
-  bonusPotion: {fileID: 1109672975, guid: 91e964e2d493a80b28c1fc3200a991e6, type: 3}
   portalT: {fileID: 1904352722251772, guid: 4c2122c626d9a1d4c99d4ae898ccc727, type: 3}
   portalB: {fileID: 1904352722251772, guid: ec6d2d6f17d11950ba9546e0e4e57f38, type: 3}
   portalL: {fileID: 1904352722251772, guid: 5379a70d97789948f8b66b0b0a015b91, type: 3}
   portalR: {fileID: 1904352722251772, guid: d19ca8730b3a7600aba161023ff168a1, type: 3}
-  rocks:
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
 --- !u!1 &6720022505753776571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2103,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6449701650731859462}
-  - component: {fileID: 495434553319928104}
   m_Layer: 0
   m_Name: Rock Spawn (7)
   m_TagString: Untagged
@@ -2194,23 +2124,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &495434553319928104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6791848212141325623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &6856003534875909723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,7 +2193,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1223667103649297896}
-  - component: {fileID: 3664960096186955278}
   m_Layer: 0
   m_Name: Rock Spawn (8)
   m_TagString: Untagged
@@ -2302,23 +2214,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3664960096186955278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7125833559702992176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &7168831213105512414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,6 +2486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 570442602045777137}
+  - component: {fileID: 58878855958191430}
   m_Layer: 0
   m_Name: Enemy Template
   m_TagString: Untagged
@@ -2625,6 +2521,35 @@ Transform:
   m_Father: {fileID: 5733514176771392663}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58878855958191430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7337875058161125170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dafb49f342b1b614a6638f8211e2a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 8954920629681498401, guid: ec4b7c46e523e252eb6a441a321d2d05, type: 3}
+  spawnPoints:
+  - {fileID: 8996426538580148219}
+  - {fileID: 6856003534875909723}
+  - {fileID: 299351028450033653}
+  - {fileID: 4995120330531861233}
+  - {fileID: 5149229140583704570}
+  - {fileID: 6442493330520261228}
+  - {fileID: 6720022505753776571}
+  - {fileID: 7699375885451747642}
+  - {fileID: 8507374321860704918}
+  - {fileID: 3789868472602169476}
+  - {fileID: 2123654089122348223}
+  - {fileID: 6887745934004763558}
+  - {fileID: 5883458014946729981}
+  n_enemies: 3
 --- !u!1 &7578083941998517314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2664,7 +2589,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6695195927895159992}
-  - component: {fileID: 3593444561357604497}
   m_Layer: 0
   m_Name: Rock Spawn (6)
   m_TagString: Untagged
@@ -2686,23 +2610,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3593444561357604497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7633052129287520134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &7645134767148387433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,7 +2709,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3742935448058418105}
-  - component: {fileID: 8057631201841864085}
   m_Layer: 0
   m_Name: Rock Spawn (4)
   m_TagString: Untagged
@@ -2824,23 +2730,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8057631201841864085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8004417552967813998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &8317662311131189804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,7 +2846,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412516436357380572}
-  - component: {fileID: 3101228224808719417}
   m_Layer: 0
   m_Name: Rock Spawn (1)
   m_TagString: Untagged
@@ -2979,23 +2867,6 @@ Transform:
   m_Father: {fileID: 2626268338999963649}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3101228224808719417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8543909327027608220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b279971b1475aea78fc9c72a47d6f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 5005374901024365820, guid: e5af35f5b74a5ba7a9bc85c07bfb345b, type: 3}
-  - {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
-  - {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
-  - {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
 --- !u!1 &8996426538580148219
 GameObject:
   m_ObjectHideFlags: 0
