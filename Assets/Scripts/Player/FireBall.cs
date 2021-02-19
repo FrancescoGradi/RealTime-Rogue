@@ -7,9 +7,7 @@ public class FireBall : MonoBehaviour
     public LayerMask enemyLayers;
     public float fireballRadius = 1.5f;
     public float fireballSpeed = 0.15f;
-    private float nextHitTime = 0f;
-    private float hitTime = 0.2f;
-    private List<string> enemyHit = new List<string>();
+    public int damages = 8;
 
     void Start() {
         
@@ -20,19 +18,16 @@ public class FireBall : MonoBehaviour
 
         this.gameObject.transform.Translate(0, 0, fireballSpeed);
 
-        if (Time.time >= nextHitTime) {
-            Collider[] hitEnemies = Physics.OverlapSphere(this.gameObject.transform.position, 1.5f, enemyLayers);
+        
+        Collider[] hitEnemies = Physics.OverlapSphere(this.gameObject.transform.position, 1.5f, enemyLayers);
 
-            if (hitEnemies != null) {
-                foreach(Collider enemy in hitEnemies) {
-                    if (!enemyHit.Contains(enemy.name)) {
-                        Debug.Log("Hit " + enemy.name);
-                        enemy.GetComponent<Enemy>().TakeDamage(5);
-                        enemyHit.Add(enemy.name);
-                    }
-                }
+        if (hitEnemies != null) {
+            foreach(Collider enemy in hitEnemies) {
+                Debug.Log("Hit " + enemy.name);
+                enemy.GetComponent<Enemy>().TakeDamage(damages);
+                Object.Destroy(this.gameObject);
+                break;
             }
-            nextHitTime = Time.time + hitTime;
         }
     }
 }

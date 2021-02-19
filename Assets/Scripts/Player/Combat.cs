@@ -9,6 +9,8 @@ public class Combat : MonoBehaviour
     public LayerMask enemyLayers;
     public Player player;
     public GameObject fireball;
+    public float assistedFireBallAngle = 60;
+    public float assistedRange = 15f;
 
     private float nextAttackTime = 0f;
 
@@ -61,9 +63,19 @@ public class Combat : MonoBehaviour
     }
 
     private void MagicAttack() {
+
+        Collider[] hitEnemies = Physics.OverlapSphere(this.gameObject.transform.position, assistedRange, enemyLayers);
+
+        foreach (Collider enemy in hitEnemies) {
+            if (EnemyInFieldOfView(enemy.gameObject)) {
+                Vector3 targetDir = enemy.gameObject.transform.position - this.gameObject.transform.position;
+                float angle = Vector3.Angle(targetDir, this.gameObject.transform.forward);
+                this.gameObject.transform.Rotate(0, angle, 0);
+            }
+        }
+
         animator.SetTrigger("magic");
         animator.SetBool("attacking", true);
-
 
         StartCoroutine(MagicWaiter(1f));
     }
@@ -89,4 +101,17 @@ public class Combat : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackPoint.position, player.attackRange);
     }
+
+    private bool EnemyInFieldOfView(GameObject enemy) {
+        Vector3 targetDir = enemy.gameObject.transform.position - this.gameObject.transform.position;
+
+        float angle = Vector3.Angle(targetDir, this.gameObject.transform.forward);
+
+        if (angle < assistedFireBallAngle) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
