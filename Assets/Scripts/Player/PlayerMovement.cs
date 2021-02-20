@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             if (actualItem.itemName == "Bastard Sword") {
                 itemsHub.SetBastardSword();
                 BastardSword weapon = item.GetComponent<BastardSword>();
-                player.SetWeapon(item.name, weapon.damage, weapon.attackRange, weapon.attackRate, weapon.material);
+                player.SetWeapon(item.name, weapon.bonusATK, weapon.material);
             } else if (actualItem.itemName == "Golden Shield") {
                 itemsHub.SetGoldShield();
                 GoldenShield shield = item.GetComponent<GoldenShield>();

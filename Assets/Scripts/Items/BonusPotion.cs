@@ -8,6 +8,11 @@ public class BonusPotion : Item
 
     private void Start() {
         itemName = "Bonus Potion";
+
+        bonusATK = 5;
+        bonusHP = 0;
+        bonusMANA = 5;
+        bonusDEF = 5;
     }
 
     private void Update() {

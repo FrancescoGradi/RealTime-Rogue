@@ -6,13 +6,19 @@ public class Player : MonoBehaviour
     public HealthBar playerHealthBar;
     public ItemsHub itemsHub;
 
-    public int maxHealth;
+    public int HP = 50;
+    public int ATK = 3;
+    public int MANA = 3;
+    public int DEF = 3;
+    
     public int currentHealth;
     public float speed = 6.0f;
-    public int damage = 5;
-    public float attackRange = 1f;
+
+    public float attackRange = 1.5f;
     public float attackRate = 2f;
+
     public string weaponName = "Long Sword";
+    public int actualWeaponDamage = 6;
     public MeshRenderer sword;
     public MeshRenderer shield;
 
@@ -20,8 +26,8 @@ public class Player : MonoBehaviour
 
     private void Start() {
 
-        currentHealth = maxHealth - 15;
-        playerHealthBar.SetMaxHealth(maxHealth);
+        currentHealth = HP - 15;
+        playerHealthBar.SetMaxHealth(HP);
         playerHealthBar.SetHealth(currentHealth);
     }
 
@@ -32,11 +38,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void SetWeapon(string weaponName, int damage, float attackRange, float attackRate, Material material) {
+    public void SetWeapon(string weaponName, int bonusATK, Material material) {
         this.weaponName = weaponName;
-        this.damage = damage;
-        this.attackRange = attackRange;
-        this.attackRate = attackRate;
+        this.actualWeaponDamage += bonusATK;
+
         sword.material = material;
     }
 
@@ -52,8 +57,8 @@ public class Player : MonoBehaviour
 
         if (actualPotion == "Health Potion") {
             currentHealth += 10;
-            if (currentHealth > maxHealth) {
-                currentHealth = maxHealth;
+            if (currentHealth > HP) {
+                currentHealth = HP;
             }
             playerHealthBar.SetHealth(currentHealth);
         }

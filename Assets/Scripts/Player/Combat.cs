@@ -9,7 +9,7 @@ public class Combat : MonoBehaviour
     public LayerMask enemyLayers;
     public Player player;
     public GameObject fireball;
-    public float assistedFireBallAngle = 60;
+    public float assistedFireBallAngle = 45;
     public float assistedRange = 15f;
 
     private float nextAttackTime = 0f;
@@ -45,7 +45,7 @@ public class Combat : MonoBehaviour
 
         foreach(Collider enemy in hitEnemies) {
             Debug.Log("Hit " + enemy.name);
-            enemy.GetComponent<Enemy>().TakeDamage(player.damage);
+            enemy.GetComponent<Enemy>().TakeDamage(player.actualWeaponDamage + player.ATK);
         }
     }
     private void GreatAttack() {
@@ -58,7 +58,7 @@ public class Combat : MonoBehaviour
 
         foreach(Collider enemy in hitEnemies) {
             Debug.Log("Hit " + enemy.name);
-            enemy.GetComponent<Enemy>().TakeDamage(player.damage * 2);
+            enemy.GetComponent<Enemy>().TakeDamage((player.actualWeaponDamage + player.ATK) * 2);
         }
     }
 
@@ -69,8 +69,14 @@ public class Combat : MonoBehaviour
         foreach (Collider enemy in hitEnemies) {
             if (EnemyInFieldOfView(enemy.gameObject)) {
                 Vector3 targetDir = enemy.gameObject.transform.position - this.gameObject.transform.position;
-                float angle = Vector3.Angle(targetDir, this.gameObject.transform.forward);
-                this.gameObject.transform.Rotate(0, angle, 0);
+                Vector3 forward = this.gameObject.transform.forward;
+
+                float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
+                Debug.Log("Angle" + angle);
+                if (angle > 4f && angle < -4f) {
+                    this.gameObject.transform.Rotate(0, angle, 0);
+                }
+                break;
             }
         }
 
@@ -103,11 +109,11 @@ public class Combat : MonoBehaviour
     }
 
     private bool EnemyInFieldOfView(GameObject enemy) {
+
         Vector3 targetDir = enemy.gameObject.transform.position - this.gameObject.transform.position;
+        float angle = Vector3.SignedAngle(targetDir, this.gameObject.transform.forward, Vector3.up);
 
-        float angle = Vector3.Angle(targetDir, this.gameObject.transform.forward);
-
-        if (angle < assistedFireBallAngle) {
+        if (angle < assistedFireBallAngle && angle > - assistedFireBallAngle) {
             return true;
         } else {
             return false;

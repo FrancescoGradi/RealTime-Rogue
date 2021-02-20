@@ -6,4 +6,9 @@ public class Item : MonoBehaviour {
     
     public string itemName;
 
+    public int bonusHP;
+    public int bonusATK;
+    public int bonusMANA;
+    public int bonusDEF;
+
 }

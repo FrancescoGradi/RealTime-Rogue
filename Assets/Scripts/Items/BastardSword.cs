@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BastardSword : Item {
-    public int damage = 10;
-    public float attackRate = 1.5f;
-    public float attackRange = 1.2f;
     public Material material;
 
     private void start() {
         itemName = "Bastard Sword";
+
+        bonusATK = 8;
+        bonusHP = 0;
+        bonusMANA = 0;
+        bonusDEF = 0;
     }
 
     private void Update() {

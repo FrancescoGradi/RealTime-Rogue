@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class GoldenShield : Item
 {
-    // Start is called before the first frame update
     public Material material;
 
     private void Start() {
         itemName = "Golden Shield";
+
+        bonusATK = 0;
+        bonusHP = 0;
+        bonusMANA = 0;
+        bonusDEF = 8;
     }
     
     private void Update() {
