@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    
     private void Update() {
 
         if (Input.GetKey(KeyCode.Q) && Time.time >= nextSprintTime) {
@@ -55,10 +56,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void FixedUpdate() {
-        CollectItems();
-    }
-
     private void Movement() {
 
         float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -70,32 +67,54 @@ public class PlayerMovement : MonoBehaviour
         characterController.Move(moveDir.normalized * player.speed * Time.deltaTime);
     }
 
-    private void CollectItems() {
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+        Debug.Log(hit.gameObject.name);
+
+        Item actualItem = hit.gameObject.GetComponent<Item>();
+        if (actualItem != null) {
+            CollectItem(actualItem);
+        }
+    }
+
+    private void CollectItem(Item actualItem) {
         
-        Collider[] items = Physics.OverlapBox(gameObject.transform.position, transform.localScale, Quaternion.identity, itemsLayer);
+        if (actualItem.itemName == "Bastard Sword") {
 
-        foreach (Collider item in items) {
-            
-            Item actualItem = item.GetComponent<Item>();
             itemsHub.CollectedItem(actualItem.itemName);
+            itemsHub.SetBastardSword();
 
-            if (actualItem.itemName == "Bastard Sword") {
-                itemsHub.SetBastardSword();
-                BastardSword weapon = item.GetComponent<BastardSword>();
-                player.SetWeapon(item.name, weapon.bonusATK, weapon.material);
-            } else if (actualItem.itemName == "Golden Shield") {
-                itemsHub.SetGoldShield();
-                GoldenShield shield = item.GetComponent<GoldenShield>();
-                player.SetShield(item.name, shield.material);
-            } else if (actualItem.itemName == "Health Potion") {
-                itemsHub.SetHealthPotion();
-                player.SetActualPotion(actualItem.itemName);
-            } else if (actualItem.itemName == "Bonus Potion") {
-                itemsHub.SetBonusPotion();
-                player.SetActualPotion(actualItem.itemName);
-            }
+            BastardSword weapon = actualItem.GetComponent<BastardSword>();
+            player.SetWeapon(actualItem.name, weapon.bonusATK, weapon.material);
+            
+            Destroy(actualItem.gameObject);
 
-            Destroy(item.gameObject);
+        } else if (actualItem.itemName == "Golden Shield") {
+
+            itemsHub.CollectedItem(actualItem.itemName);
+            itemsHub.SetGoldShield();
+
+            GoldenShield shield = actualItem.GetComponent<GoldenShield>();
+            player.SetShield(actualItem.name, shield.material);
+
+            Destroy(actualItem.gameObject);
+
+        } else if (actualItem.itemName == "Health Potion") {
+
+            itemsHub.CollectedItem(actualItem.itemName);
+            itemsHub.SetHealthPotion();
+
+            player.SetActualPotion(actualItem.itemName);
+
+            Destroy(actualItem.gameObject);
+
+        } else if (actualItem.itemName == "Bonus Potion") {
+            
+            itemsHub.CollectedItem(actualItem.itemName);
+            itemsHub.SetBonusPotion();
+
+            player.SetActualPotion(actualItem.itemName);
+
+            Destroy(actualItem.gameObject);
         }
     }
 
