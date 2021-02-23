@@ -1,0 +1,20 @@
+23/02/2021 21:00:16
+ 
+Exception
+UnityAgentsException: The Communicator was unable to connect. Please make sure the External process is ready to accept communication with Unity.
+MLAgents.Batcher.SendAcademyParameters (MLAgents.CommunicatorObjects.UnityRLInitializationOutput academyParameters) (at Assets/ML-Agents/Scripts/Batcher.cs:83)
+MLAgents.Academy.InitializeEnvironment () (at Assets/ML-Agents/Scripts/Academy.cs:320)
+MLAgents.Academy.Awake () (at Assets/ML-Agents/Scripts/Academy.cs:227)
+
+Exception
+UnityAgentsException: The Communicator was unable to connect. Please make sure the External process is ready to accept communication with Unity.
+MLAgents.Batcher.SendAcademyParameters (MLAgents.CommunicatorObjects.UnityRLInitializationOutput academyParameters) (at Assets/ML-Agents/Scripts/Batcher.cs:83)
+MLAgents.Academy.InitializeEnvironment () (at Assets/ML-Agents/Scripts/Academy.cs:320)
+MLAgents.Academy.Awake () (at Assets/ML-Agents/Scripts/Academy.cs:227)
+
+Exception
+UnityAgentsException: The Communicator was unable to connect. Please make sure the External process is ready to accept communication with Unity.
+MLAgents.Batcher.SendAcademyParameters (MLAgents.CommunicatorObjects.UnityRLInitializationOutput academyParameters) (at Assets/ML-Agents/Scripts/Batcher.cs:83)
+MLAgents.Academy.InitializeEnvironment () (at Assets/ML-Agents/Scripts/Academy.cs:320)
+MLAgents.Academy.Awake () (at Assets/ML-Agents/Scripts/Academy.cs:227)
+
