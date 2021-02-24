@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -32,6 +33,10 @@ public class GameManager : MonoBehaviour
         } else {
             player.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
         }
+    }
+
+    public void ResetTrainingScene() {
+        SceneManager.LoadScene(1);
     }
 
     private void EndGame() {

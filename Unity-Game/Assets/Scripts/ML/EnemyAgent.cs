@@ -14,9 +14,7 @@ public class EnemyAgent : Agent
         AgentReset();
     }
 
-    public override void AgentReset() {
-        SceneManager.LoadScene(1);
-    }
+    public override void AgentReset() { }
 
     public override void CollectObservations() {
         
