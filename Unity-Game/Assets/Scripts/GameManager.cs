@@ -35,10 +35,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ResetTrainingScene() {
-        SceneManager.LoadScene(1);
-    }
-
     private void EndGame() {
         Debug.Log("WIN");
         FindObjectOfType<WinScreen>().YouWin();

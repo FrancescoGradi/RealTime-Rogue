@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
 
-public class RealTimeAcademy : Academy
-{
-  public override void AcademyReset() {
+public class RealTimeAcademy : Academy {
 
-      FindObjectOfType<GameManager>().ResetTrainingScene();
-  }
+  	public override void AcademyReset() { }
+	  
 }

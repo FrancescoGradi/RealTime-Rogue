@@ -8,13 +8,16 @@ using MLAgents;
 public class EnemyAgent : Agent
 {
     public Enemy enemy;
-    public float epsilon = 0.5f;
+    private EnemyMovement enemyMovement;
 
     void Start() {
         AgentReset();
+        enemyMovement = GetComponent<EnemyMovement>();
     }
 
-    public override void AgentReset() { }
+    public override void AgentReset() {
+        enemy.gameObject.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
+    }
 
     public override void CollectObservations() {
         
@@ -22,6 +25,10 @@ public class EnemyAgent : Agent
 
         obs.Add(enemy.gameObject.transform.position.x);
         obs.Add(enemy.gameObject.transform.position.z);
+
+        // Bounds del pavimento
+        if (obs[0] < -5f || obs[0] > 5f || obs[1] < -5 || obs[1] > 25)
+            Done();
 
         AddVectorObs(obs);
     }
@@ -31,13 +38,14 @@ public class EnemyAgent : Agent
         float horizontal = vectorAction[0];
         float vertical = vectorAction[1];
 
+        enemyMovement.AddMovement(horizontal, vertical);
+
         AddReward(-0.01f);
+    }
 
-        if (System.Math.Abs(enemy.gameObject.transform.position.z - 9) < epsilon) {
-            AddReward(100f);
-            Done();
-        }
-
+    public void TargetReached() {
+        AddReward(50f);
+        Done();
     }
 
 }

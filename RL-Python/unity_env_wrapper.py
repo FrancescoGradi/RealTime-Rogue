@@ -27,7 +27,7 @@ class UnityEnvWrapper(Environment):
         return dict(position=dict(type='float', shape=(2,)))
 
     def actions(self):
-        return dict(type='float', shape=(2,))
+        return dict(type='float', shape=(2,), min_value=-1.0, max_value=1.0)
 
     def reset(self):
 
@@ -49,19 +49,23 @@ class UnityEnvWrapper(Environment):
                 print("The environment didn't respond, it was necessary to close and reopen it")
 
         obs = self.get_input_observation(env_info)
-        print(obs)
 
         return obs
 
     def execute(self, actions):
 
         env_info = None
+
         signal.alarm(0)
+
         while env_info == None:
+
             signal.signal(signal.SIGALRM, self.handler)
             signal.alarm(3000)
+
             try:
                 env_info = self.unity_env.step([actions])[self.default_brain]
+
             except Exception as exc:
                 self.close()
                 self.unity_env = self.open_unity_environment(self.game_name, self.no_graphics, seed=int(time.time()),

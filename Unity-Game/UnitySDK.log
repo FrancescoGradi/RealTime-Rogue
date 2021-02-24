@@ -1,8 +1,57 @@
-24/02/2021 11:51:53
+24/02/2021 19:41:23
  
-Exception
-UnityAgentsException: The Communicator was unable to connect. Please make sure the External process is ready to accept communication with Unity.
-MLAgents.Batcher.SendAcademyParameters (MLAgents.CommunicatorObjects.UnityRLInitializationOutput academyParameters) (at Assets/ML-Agents/Scripts/Batcher.cs:83)
-MLAgents.Academy.InitializeEnvironment () (at Assets/ML-Agents/Scripts/Academy.cs:320)
-MLAgents.Academy.Awake () (at Assets/ML-Agents/Scripts/Academy.cs:227)
+Log
+Reward 1
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 2
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 3
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 4
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 5
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 6
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 7
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 8
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 9
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 10
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+
+Log
+Reward 11
+UnityEngine.Debug:Log(Object)
+EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
 
