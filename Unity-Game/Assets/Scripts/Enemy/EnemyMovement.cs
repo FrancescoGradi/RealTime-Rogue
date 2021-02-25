@@ -40,6 +40,11 @@ public class EnemyMovement : MonoBehaviour
 
     void Update() { 
 
+        
+    }
+
+    private void FixedUpdate() {
+
         if (direction.magnitude >= 0.05f) {
             animator.SetInteger("condition", 1);
             Movement();
@@ -53,9 +58,6 @@ public class EnemyMovement : MonoBehaviour
             Debug.Log("Reward " + targetsReached);
             agent.TargetReached();
         }
-    }
-
-    private void FixedUpdate() {
 
         count += 1;
         if (count == updateRate) {
@@ -80,7 +82,7 @@ public class EnemyMovement : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
         Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-        characterController.Move(moveDir.normalized * speed * Time.deltaTime);
+        characterController.Move(moveDir.normalized * speed * Time.fixedDeltaTime);
     }
 
 }

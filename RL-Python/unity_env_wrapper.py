@@ -12,7 +12,6 @@ class UnityEnvWrapper(Environment):
     def __init__(self, game_name=None, no_graphics=True, seed=None, worker_id=0, config=None):
 
         super(UnityEnvWrapper, self).__init__()
-        self._max_episode_timesteps = 100
 
         self.game_name = game_name
         self.no_graphics = no_graphics

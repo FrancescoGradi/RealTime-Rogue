@@ -377,7 +377,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.3539157, y: 1}
+    m_SensorSize: {x: 1.1762048, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -539,7 +539,7 @@ MonoBehaviour:
   brain: {fileID: 481257269}
   agentParameters:
     agentCameras: []
-    maxStep: 10000
+    maxStep: 200
     resetOnDone: 1
     onDemandDecision: 1
     numberOfActionsBetweenDecisions: 1
@@ -1218,7 +1218,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.3539157, y: 1}
+    m_SensorSize: {x: 1.1762048, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1791,7 +1791,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.3539157, y: 1}
+    m_SensorSize: {x: 1.1762048, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4142,7 +4142,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.3539157, y: 1}
+    m_SensorSize: {x: 1.1762048, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

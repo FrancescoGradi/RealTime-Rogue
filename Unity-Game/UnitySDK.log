@@ -1,57 +1,152 @@
-24/02/2021 19:41:23
+25/02/2021 18:28:13
  
 Log
 Reward 1
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 2
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 3
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 4
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 5
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 6
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 7
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 8
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 9
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 10
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
 Log
 Reward 11
 UnityEngine.Debug:Log(Object)
-EnemyMovement:Update() (at Assets/Scripts/Enemy/EnemyMovement.cs:53)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 12
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 13
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 14
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 15
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 16
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 17
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 18
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 19
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 20
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 21
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 22
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 23
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 24
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 25
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 26
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 27
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 28
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 29
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
+
+Log
+Reward 30
+UnityEngine.Debug:Log(Object)
+EnemyMovement:FixedUpdate() (at Assets/Scripts/Enemy/EnemyMovement.cs:58)
 
