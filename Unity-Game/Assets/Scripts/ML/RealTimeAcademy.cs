@@ -5,6 +5,19 @@ using MLAgents;
 
 public class RealTimeAcademy : Academy {
 
-  	public override void AcademyReset() { }
+	public GameObject target;
+    public List<GameObject> spawnPoints;
+
+	private void Start() {
+		
+		target.transform.position = new Vector3(spawnPoints[0].transform.position.x, target.transform.position.y, spawnPoints[0].transform.position.z);
+		
+	}
+
+  	public override void AcademyReset() {
+
+		spawnPoints = Utility.Shuffle(spawnPoints);
+		target.transform.position = new Vector3(spawnPoints[0].transform.position.x, target.transform.position.y, spawnPoints[0].transform.position.z);														
+	}
 	  
 }

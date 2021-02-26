@@ -15,8 +15,8 @@ public class ObjectsGenerator : MonoBehaviour
     private List<GameObject> activeEnvObjects = new List<GameObject> {};
 
     private void Start() {
-        int actual_n_items = UnityEngine.Random.Range(1, max_items);
-        int actual_n_envObjects = UnityEngine.Random.Range(3, max_objects);
+        int actual_n_items = UnityEngine.Random.Range(0, max_items);
+        int actual_n_envObjects = UnityEngine.Random.Range(0, max_objects);
 
         items = Utility.Shuffle(items);
         envObjects = Utility.Shuffle(envObjects);

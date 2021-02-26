@@ -8,6 +8,7 @@ using MLAgents;
 public class EnemyAgent : Agent
 {
     public Enemy enemy;
+    public GameObject target;
     private EnemyMovement enemyMovement;
 
     void Start() {
@@ -25,9 +26,12 @@ public class EnemyAgent : Agent
 
         obs.Add(enemy.gameObject.transform.position.x);
         obs.Add(enemy.gameObject.transform.position.z);
+        
+        obs.Add(target.transform.position.x);
+        obs.Add(target.transform.position.z);
 
         // Bounds del pavimento
-        if (obs[0] < -5f || obs[0] > 5f || obs[1] < -5 || obs[1] > 25)
+        if (obs[0] < -14.5f || obs[0] > 14.55f || obs[1] < -14.5 || obs[1] > 14.5)
             Done();
 
         AddVectorObs(obs);

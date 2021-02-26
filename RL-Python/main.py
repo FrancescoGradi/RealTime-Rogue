@@ -72,8 +72,8 @@ def evaluate(env, directory, num_episodes=200):
 if __name__ == '__main__':
 
     directory = "Unity"
-    num_episodes = 300
-    max_episode_timesteps = 200
+    num_episodes = 1500
+    max_episode_timesteps = 400
 
     env = UnityEnvWrapper(game_name=None, no_graphics=True, seed=None, worker_id=0, config=None)
 
