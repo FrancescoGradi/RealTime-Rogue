@@ -14,19 +14,20 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0f;
 
     private float turnSmoothVelocity;
-    private float horizontal;
-    private float vertical;
-    private Vector3 direction;
+    private float horizontal = 0f;
+    private float vertical = 0f;
+    private Vector3 direction = new Vector3(0, 0, 0);
     private float nextSprintTime = 0f;
+
+    private int count = 0;
+    private int updateRate = 20;
 
 
     private void Start() {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
     }
-
-    /*
-    private void Update() {
+    private void FixedUpdate() {
 
         if (Input.GetKey(KeyCode.Q) && Time.time >= nextSprintTime) {
             Sprint(4f);
@@ -49,13 +50,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (!characterController.isGrounded) {
-            characterController.Move(new Vector3(0, - gravity * Time.deltaTime, 0));
+            characterController.Move(new Vector3(0, - gravity * Time.fixedDeltaTime, 0));
 
-            if (characterController.velocity.y < - 25 * gravity * Time.deltaTime)
+            if (characterController.velocity.y < - 25 * gravity * Time.fixedDeltaTime)
                 FindObjectOfType<GameManager>().GameOver();
         }
     }
-    */
 
     private void Movement() {
 
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
         Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-        characterController.Move(moveDir.normalized * player.speed * Time.deltaTime);
+        characterController.Move(moveDir.normalized * player.speed * Time.fixedDeltaTime);
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {

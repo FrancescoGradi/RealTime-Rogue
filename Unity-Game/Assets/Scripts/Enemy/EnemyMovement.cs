@@ -38,11 +38,6 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-    void Update() { 
-
-        
-    }
-
     private void FixedUpdate() {
 
         if (direction.magnitude >= 0.05f) {

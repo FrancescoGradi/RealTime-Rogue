@@ -14,8 +14,8 @@ public class Combat : MonoBehaviour
 
     private float nextAttackTime = 0f;
 
-    void Update()
-    {
+    void Update() {
+
         if (Time.time >= nextAttackTime) {
 
             if (Input.GetKey(KeyCode.Space)) {
@@ -33,6 +33,7 @@ public class Combat : MonoBehaviour
                 nextAttackTime = Time.time + 4f / player.attackRate;
             }
         }
+        
     }
 
     private void Attack() {
