@@ -61,6 +61,9 @@
  <Reference Include="Cinemachine">
  <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.InputSystem">
+ <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>

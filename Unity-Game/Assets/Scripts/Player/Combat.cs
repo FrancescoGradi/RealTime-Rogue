@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Combat : MonoBehaviour
 {
     public Animator animator;
@@ -18,17 +19,17 @@ public class Combat : MonoBehaviour
 
         if (Time.time >= nextAttackTime) {
 
-            if (Input.GetKey(KeyCode.Space)) {
+            if (Input.GetButton("Fire1")) {
                 Attack();
                 nextAttackTime = Time.time + 1f / player.attackRate;
             }
 
-            if (Input.GetKey(KeyCode.F)) {
+            if (Input.GetButton("Fire2")) {
                 GreatAttack();
                 nextAttackTime = Time.time + 4f / player.attackRate;
             }
 
-            if (Input.GetKey(KeyCode.V)) {
+            if (Input.GetButton("Fire3")) {
                 MagicAttack();
                 nextAttackTime = Time.time + 4f / player.attackRate;
             }

@@ -8,7 +8,7 @@ public class Portal : MonoBehaviour {
 
     private Vector3 currentPosition;
     private Vector3 endPosition;
-    private int speed = 60;
+    private int speed = 50;
     private int high = -40;
     private bool started = false;
 
