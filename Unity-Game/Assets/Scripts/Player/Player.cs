@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 
     private void Update() {
 
-        if (Input.GetKey(KeyCode.E) && actualPotion != null) {
+        if (Input.GetButton("BaseAction") && actualPotion != null) {
             DrinkPotion();
         }
     }

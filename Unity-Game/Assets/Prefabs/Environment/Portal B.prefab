@@ -437,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 16
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
@@ -447,7 +447,7 @@ PrefabInstance:
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
@@ -458,6 +458,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
+        type: 3}
+      propertyPath: m_text
+      value: Press E/RB to Enter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 41.85
       objectReference: {fileID: 0}
     - target: {fileID: 8771489911115774669, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}

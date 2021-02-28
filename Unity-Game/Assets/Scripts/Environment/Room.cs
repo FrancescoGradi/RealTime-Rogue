@@ -24,7 +24,7 @@ public class Room : MonoBehaviour
 
     private void Update() {
         
-        if (roomClear && Input.GetKey(KeyCode.E)) {
+        if (roomClear && (Input.GetButton("BaseAction"))) {
             foreach (GameObject portal in activePortals) {
 
                 Collider[] nearbyPlayers = Physics.OverlapSphere(portal.transform.position, 3f, playerLayer);
@@ -37,6 +37,7 @@ public class Room : MonoBehaviour
     }
 
     public void RoomClear() {
+
         roomClear = true;
         FindObjectOfType<RoomClearedScreen>().Clear();
 
@@ -52,6 +53,20 @@ public class Room : MonoBehaviour
 
         permutation = Utility.Shuffle(permutation);
         
+        StartCoroutine(PortalInstantiateWaiter(4.5f, permutation));
+    }
+
+    private void OnDestroy() {
+
+        foreach (GameObject portal in activePortals) {
+            Destroy(portal);
+        }
+    }
+
+    private IEnumerator PortalInstantiateWaiter(float seconds, List<int> permutation) {
+        
+        yield return new WaitForSecondsRealtime(seconds);
+
         if (permutation[0] == 1) {
             GameObject tmp = Instantiate(portalT, new Vector3(0, 0, 14.5f), Quaternion.identity);
             activePortals.Add(tmp);
@@ -70,14 +85,6 @@ public class Room : MonoBehaviour
         if (permutation[3] == 1) {
             GameObject tmp = Instantiate(portalL, new Vector3(-14.5f, 0, 0), Quaternion.Euler(0, -90, 0));
             activePortals.Add(tmp);
-        }        
-    }
-
-    private void OnDestroy() {
-
-        foreach (GameObject portal in activePortals) {
-            Destroy(portal);
         }
     }
-
 }

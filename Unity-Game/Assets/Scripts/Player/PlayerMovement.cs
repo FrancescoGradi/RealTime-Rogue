@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private float vertical = 0f;
     private Vector3 direction = new Vector3(0, 0, 0);
     private float nextSprintTime = 0f;
+    private bool sprinting = false;
 
     private int count = 0;
     private int updateRate = 20;
@@ -29,14 +32,20 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate() {
 
-        if (Input.GetKey(KeyCode.Q) && Time.time >= nextSprintTime) {
-            Sprint(4f);
-            nextSprintTime = Time.time + 1f;
-        }
-
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         direction = new Vector3(horizontal, 0, vertical).normalized;
+
+        if (Input.GetButton("Sprint") && Time.time >= nextSprintTime && direction.magnitude >= 0.1f) {
+            sprinting = true;
+            player.speed *= 10;
+
+            player.GetComponent<BoxCollider>().enabled = false;
+
+            StartCoroutine(SprintWaiter(0.05f));
+
+            nextSprintTime = Time.time + 1f;
+        }
 
         if (direction.magnitude >= 0.1f && !animator.GetBool("attacking")) {
             animator.SetBool("running", true);
@@ -118,8 +127,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Sprint(float distance) {
-        this.gameObject.transform.Translate(new Vector3(0, 0, distance));
+    private IEnumerator SprintWaiter(float seconds) {
+        
+        yield return new WaitForSecondsRealtime(seconds);
+
+        player.GetComponent<BoxCollider>().enabled = true;
+        player.speed /= 10;
     }
     
 }
