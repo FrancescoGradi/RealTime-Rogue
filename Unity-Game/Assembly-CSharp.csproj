@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
      <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAcademy.cs" />
      <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAgent.cs" />
      <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DDecision.cs" />
@@ -146,9 +147,20 @@
      <Compile Include="Assets\ML-Agents\Scripts\SocketCommunicator.cs" />
      <Compile Include="Assets\ML-Agents\Scripts\UnityAgentsException.cs" />
      <Compile Include="Assets\OtherAssets\Dynamic Flickering Light\FlickeringLight.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\OtherAssets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\ConGUI.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\Lighting.cs" />
      <Compile Include="Assets\OtherAssets\Mixamo\Magic Pack\Demo\CameraScroll.cs" />
+     <Compile Include="Assets\Scripts\Effects\Explosion.cs" />
+     <Compile Include="Assets\Scripts\Effects\FireBall.cs" />
+     <Compile Include="Assets\Scripts\Effects\Smoke.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHealthBar.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
@@ -172,7 +184,6 @@
      <Compile Include="Assets\Scripts\ML\EnemyAgent.cs" />
      <Compile Include="Assets\Scripts\ML\RealTimeAcademy.cs" />
      <Compile Include="Assets\Scripts\Player\Combat.cs" />
-     <Compile Include="Assets\Scripts\Player\FireBall.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\UI\BillBoard.cs" />
@@ -182,6 +193,7 @@
      <None Include="Assets\OtherAssets\Dynamic Flickering Light\readme.txt" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\OtherAssets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\OtherAssets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />

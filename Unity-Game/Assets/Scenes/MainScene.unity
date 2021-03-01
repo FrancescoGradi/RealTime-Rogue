@@ -309,7 +309,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.3924243, y: 1}
+    m_SensorSize: {x: 1.3919667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1040,7 +1040,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.3924243, y: 1}
+    m_SensorSize: {x: 1.3919667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1613,7 +1613,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.3924243, y: 1}
+    m_SensorSize: {x: 1.3919667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3710,7 +3710,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.3924243, y: 1}
+    m_SensorSize: {x: 1.3919667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4475,6 +4475,12 @@ PrefabInstance:
       propertyPath: itemsHub
       value: 
       objectReference: {fileID: 1203982504}
+    - target: {fileID: 3533752938707969827, guid: c6756015f0021a3229125b72767f5e69,
+        type: 3}
+      propertyPath: fireball
+      value: 
+      objectReference: {fileID: 1000010823978654, guid: 3228a22491941734bb83ad691d17fcb9,
+        type: 3}
     - target: {fileID: 3533752938707969828, guid: c6756015f0021a3229125b72767f5e69,
         type: 3}
       propertyPath: playerHealthBar

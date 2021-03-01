@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask itemsLayer;
     public Transform cam;
     public ItemsHub itemsHub;
+    public Smoke smokeEffect;
 
     public float turnSmoothTime = 0.2f;
     public float gravity = 20.0f;
@@ -36,18 +37,22 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
         direction = new Vector3(horizontal, 0, vertical).normalized;
 
-        if (Input.GetButton("Sprint") && Time.time >= nextSprintTime && direction.magnitude >= 0.1f) {
-            sprinting = true;
-            player.speed *= 10;
-
-            player.GetComponent<BoxCollider>().enabled = false;
-
-            StartCoroutine(SprintWaiter(0.05f));
-
-            nextSprintTime = Time.time + 1f;
-        }
-
         if (direction.magnitude >= 0.1f && !animator.GetBool("attacking")) {
+            
+            if (Input.GetButton("Sprint") && Time.time >= nextSprintTime && direction.magnitude >= 0.1f) {
+                sprinting = true;
+                player.speed *= 10;
+
+                player.GetComponent<BoxCollider>().enabled = false;
+
+                StartCoroutine(SprintWaiter(0.03f));
+
+                if (smokeEffect != null)
+                    Instantiate(smokeEffect, this.gameObject.transform.position, Quaternion.identity);
+
+                nextSprintTime = Time.time + 1f;
+            }
+
             animator.SetBool("running", true);
             animator.SetInteger("condition", 1);
             

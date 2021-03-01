@@ -14,8 +14,9 @@ public class Combat : MonoBehaviour
     public float assistedRange = 15f;
 
     private float nextAttackTime = 0f;
+    public event System.Action OnAttack;
 
-    void Update() {
+    private void FixedUpdate() {
 
         if (Time.time >= nextAttackTime) {
 
@@ -34,14 +35,16 @@ public class Combat : MonoBehaviour
                 nextAttackTime = Time.time + 4f / player.attackRate;
             }
         }
-        
     }
 
     private void Attack() {
         animator.SetTrigger("attack");
         animator.SetBool("attacking", true);
 
-        StartCoroutine(AttackWaiter(1f));
+        StartCoroutine(AttackWaiter(2f));
+
+        if (OnAttack != null)
+            OnAttack();
 
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange, enemyLayers);
 

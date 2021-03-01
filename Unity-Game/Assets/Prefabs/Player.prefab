@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 3533752938707969826}
   - component: {fileID: 3533752938707969828}
   m_Layer: 11
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -924,7 +924,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   player: {fileID: 3533752938707969828}
-  fireball: {fileID: 100000, guid: d42d2a594cf3a44d79c3fdd83c8ce796, type: 3}
+  fireball: {fileID: 1000010823978654, guid: 3228a22491941734bb83ad691d17fcb9, type: 3}
+  assistedFireBallAngle: 45
+  assistedRange: 15
 --- !u!114 &3533752938707969826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -941,8 +943,10 @@ MonoBehaviour:
   itemsLayer:
     serializedVersion: 2
     m_Bits: 1024
-  cam: {fileID: 0}
+  cam: {fileID: 8812534323780265853, guid: 72fc4217cc56fb458b516d13a88e3a1d, type: 3}
   itemsHub: {fileID: 0}
+  smokeEffect: {fileID: 7202685680421894472, guid: cc054c1c01793eac0b0b93509445a324,
+    type: 3}
   turnSmoothTime: 0.2
   gravity: 20
 --- !u!114 &3533752938707969828
@@ -959,13 +963,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealthBar: {fileID: 0}
   itemsHub: {fileID: 0}
-  maxHealth: 50
+  HP: 50
+  ATK: 3
+  MANA: 3
+  DEF: 3
   currentHealth: 0
   speed: 6
-  damage: 5
   attackRange: 1
   attackRate: 2
   weaponName: Long Sword
+  actualWeaponDamage: 6
   sword: {fileID: 3557610573178438829}
   shield: {fileID: 3557475912593628281}
 --- !u!1 &3534600018385363839
