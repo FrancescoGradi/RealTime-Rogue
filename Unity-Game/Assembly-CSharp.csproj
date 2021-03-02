@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
      <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAcademy.cs" />
      <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAgent.cs" />
      <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DDecision.cs" />
@@ -146,6 +145,7 @@
      <Compile Include="Assets\ML-Agents\Scripts\RpcCommunicator.cs" />
      <Compile Include="Assets\ML-Agents\Scripts\SocketCommunicator.cs" />
      <Compile Include="Assets\ML-Agents\Scripts\UnityAgentsException.cs" />
+     <Compile Include="Assets\OtherAssets\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
      <Compile Include="Assets\OtherAssets\Dynamic Flickering Light\FlickeringLight.cs" />
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />

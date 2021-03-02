@@ -384,7 +384,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Standing_2H_Magic_Attack_01
+  m_Name: Magic Attack
   m_Speed: 1.75
   m_CycleOffset: 0
   m_Transitions:
@@ -437,7 +437,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NormalAttack01_SwordShield
+  m_Name: Attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -464,7 +464,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Run_SwordShield
+  m_Name: Run
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -491,8 +491,8 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NormalAttack02_SwordShield
-  m_Speed: 1
+  m_Name: Special Attack
+  m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101783068273452426}
@@ -505,20 +505,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3558db8e6c045c3418d8e7593f8a88de, type: 3}
+  m_Motion: {fileID: 7400000, guid: 5889b5d105eb0734d8d7dd680d01bcd7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102785458941511760
+--- !u!1102 &1102779844596456012
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 1H-RH@Attack01
+  m_Name: standing_melee_attack_360_high
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -531,7 +531,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3558db8e6c045c3418d8e7593f8a88de, type: 3}
+  m_Motion: {fileID: 7400000, guid: 5889b5d105eb0734d8d7dd680d01bcd7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -544,7 +544,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle_SwordShield
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -584,13 +584,13 @@ AnimatorStateMachine:
     m_Position: {x: 0, y: 480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102398097227850206}
-    m_Position: {x: 552, y: 192, z: 0}
+    m_Position: {x: 576, y: 192, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102105360320482038}
     m_Position: {x: 312, y: 24, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102785458941511760}
-    m_Position: {x: 1260, y: 0, z: 0}
+    m_State: {fileID: 1102779844596456012}
+    m_Position: {x: 1464, y: 24, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101524691637760860}

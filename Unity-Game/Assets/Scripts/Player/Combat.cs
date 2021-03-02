@@ -26,7 +26,7 @@ public class Combat : MonoBehaviour
             }
 
             if (Input.GetButton("Fire2")) {
-                GreatAttack();
+                SpecialAttack();
                 nextAttackTime = Time.time + 4f / player.attackRate;
             }
 
@@ -50,20 +50,20 @@ public class Combat : MonoBehaviour
 
         foreach(Collider enemy in hitEnemies) {
             Debug.Log("Hit " + enemy.name);
-            enemy.GetComponent<Enemy>().TakeDamage(player.actualWeaponDamage + player.ATK);
+            enemy.GetComponent<Enemy>().TakeDamage(player.actualWeaponDamage + player.ATK, 0.3f);
         }
     }
-    private void GreatAttack() {
+    private void SpecialAttack() {
         animator.SetTrigger("greatAttack");
         animator.SetBool("attacking", true);
 
         StartCoroutine(AttackWaiter(1f));
 
-        Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange, enemyLayers);
+        Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange * 3, enemyLayers);
 
         foreach(Collider enemy in hitEnemies) {
             Debug.Log("Hit " + enemy.name);
-            enemy.GetComponent<Enemy>().TakeDamage((player.actualWeaponDamage + player.ATK) * 2);
+            enemy.GetComponent<Enemy>().TakeDamage((player.actualWeaponDamage + player.ATK) * 2, 0.9f);
         }
     }
 

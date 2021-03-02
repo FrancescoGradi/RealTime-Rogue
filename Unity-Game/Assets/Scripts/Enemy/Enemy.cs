@@ -16,17 +16,9 @@ public class Enemy : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    public void TakeDamage(int damage) {
+    public void TakeDamage(int damage, float delay) {
 
-        currentHealth -= damage;
-
-        healthBar.SetHealth(currentHealth);
-
-        if (currentHealth <= 0) {
-            Die();
-        } else {
-            animator.SetTrigger("hit");
-        }
+        StartCoroutine(DamageWaiter(damage, delay));
     }
 
     private void Die() {
@@ -41,4 +33,19 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, 4f);
     }
 
+    
+    private IEnumerator DamageWaiter(int damage, float seconds) {
+        
+        yield return new WaitForSecondsRealtime(seconds);
+
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0) {
+            Die();
+        } else {
+            animator.SetTrigger("hit");
+        }
+    }
 }
