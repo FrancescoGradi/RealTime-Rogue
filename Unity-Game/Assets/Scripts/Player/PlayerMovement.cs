@@ -62,13 +62,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("running", false);
             animator.SetInteger("condition", 0);
         }
-
-        if (!characterController.isGrounded) {
-            characterController.Move(new Vector3(0, - gravity * Time.fixedDeltaTime, 0));
-
-            if (characterController.velocity.y < - 25 * gravity * Time.fixedDeltaTime)
-                FindObjectOfType<GameManager>().GameOver();
-        }
     }
 
     private void Movement() {
