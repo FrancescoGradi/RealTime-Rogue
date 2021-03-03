@@ -5,6 +5,7 @@ import numpy as np
 
 import signal
 import time
+import json
 
 
 class UnityEnvWrapper(Environment):
@@ -19,6 +20,9 @@ class UnityEnvWrapper(Environment):
         self.worker_id = worker_id
         self.unity_env = self.open_unity_environment(game_name, no_graphics, seed, worker_id)
         self.default_brain = self.unity_env.brain_names[0]
+
+        self.history = dict(rewards=[])
+        self.cumulative_rewards = 0
 
         self.set_config(config)
 
@@ -49,6 +53,9 @@ class UnityEnvWrapper(Environment):
 
         obs = self.get_input_observation(env_info)
 
+        self.history['rewards'].append(self.cumulative_rewards)
+        self.cumulative_rewards = 0
+
         return obs
 
     def execute(self, actions):
@@ -77,12 +84,17 @@ class UnityEnvWrapper(Environment):
 
         observation = self.get_input_observation(env_info)
 
+        self.cumulative_rewards += reward
+
         return [observation, done, reward]
 
     def open_unity_environment(self, game_name, no_graphics, seed, worker_id):
         return UnityEnvironment(game_name, no_graphics=no_graphics, seed=seed, worker_id=worker_id)
 
     def close(self):
+        with open('History/history.json', 'w') as history:
+            json.dump(self.history, history)
+
         self.unity_env.close()
 
     def set_config(self, config):
@@ -96,7 +108,7 @@ class UnityEnvWrapper(Environment):
 
         observation = {
             'position': np.asarray(env_info.vector_observations[0][:2]),
-            'target_position' : np.asarray(env_info.vector_observations[0][2:4])
+            'target_position': np.asarray(env_info.vector_observations[0][2:4])
         }
 
         return observation

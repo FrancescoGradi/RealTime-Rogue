@@ -19,12 +19,12 @@ public class EnemyHealthBar : MonoBehaviour
         
         damages.gameObject.SetActive(true);
         damages.text = (- (slider.value - health)).ToString();
-        StartCoroutine(RemoveAfterSeconds(2, damages.gameObject));
+        StartCoroutine(RemoveAfterSeconds(0.5f, damages.gameObject));
 
         slider.value = health;
     }
 
-    private IEnumerator RemoveAfterSeconds(int seconds, GameObject gameObject) {
+    private IEnumerator RemoveAfterSeconds(float seconds, GameObject gameObject) {
 
         yield return new WaitForSeconds(seconds);
         gameObject.SetActive(false);

@@ -34,11 +34,15 @@ public class EnemyMovement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         agent = GetComponent<EnemyAgent>();
-
-
     }
 
     private void FixedUpdate() {
+
+        count += 1;
+        if (count == updateRate) {
+            agent.RequestDecision();
+            count = 0;
+        }
 
         if (direction.magnitude >= 0.05f) {
             animator.SetInteger("condition", 1);
@@ -50,15 +54,9 @@ public class EnemyMovement : MonoBehaviour
         if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
             System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
             targetsReached += 1;
-            Debug.Log("Reward " + targetsReached);
             agent.TargetReached();
         }
 
-        count += 1;
-        if (count == updateRate) {
-            agent.RequestDecision();
-            count = 0;
-        }
     }
 
     public void AddMovement(float horizontal, float vertical) {
