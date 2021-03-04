@@ -2,10 +2,12 @@ from tensorforce import Agent, Environment, Runner
 from tensorforce.agents import PPOAgent
 from unity_env_wrapper import UnityEnvWrapper
 
+from stats_visualization import visualize_history
+
 net = [
     dict(type='retrieve', tensors=['position', 'target_position'], aggregation='concat'),
     dict(type='dense', size=256, activation='relu'),
-    dict(type='dense', size=128, activation='relu')
+    dict(type='dense', size=64, activation='relu')
 ]
 
 baseline = [
@@ -23,7 +25,7 @@ def train(env, directory, num_episodes=200):
                          network=net,
                          use_beta_distribution=True,
                          update_frequency=10,
-                         learning_rate=1e-3,
+                         learning_rate=5e-4,
                          subsampling_fraction=0.33,
                          optimization_steps=10,
                          likelihood_ratio_clipping=0.2,
@@ -39,7 +41,7 @@ def train(env, directory, num_episodes=200):
                          entropy_regularization=0.01,
                          saver=dict(
                              directory=directory,
-                             frequency=2000  # save checkpoint every 600 seconds (10 minutes)
+                             frequency=2000
                          )
                          )
 
@@ -75,15 +77,21 @@ def evaluate(env, directory, num_episodes=200):
 
 if __name__ == '__main__':
 
-    directory = "NetConBaseline"
-    num_episodes = 300
-    max_episode_timesteps = 400
+    directory = "Model_Checkpoints"
+    model_name = "QUADRO_25UR_4LR_net_256_200TS"
+    total_directory = directory + "/" + model_name
+
+    num_episodes = 600
+    max_episode_timesteps = 200
     # game_name = 'Compilati/3_03'
     game_name = None
 
-    env = UnityEnvWrapper(game_name=game_name, no_graphics=True, seed=None, worker_id=0, config=None)
+    env = UnityEnvWrapper(game_name=game_name, no_graphics=True, seed=None, worker_id=0, config=None,
+                          directory=total_directory, is_training=True)
 
     env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
-    # train(env=env, directory=directory, num_episodes=num_episodes)
-    evaluate(env=env, directory=directory, num_episodes=num_episodes)
+    # train(env=env, directory=total_directory, num_episodes=num_episodes)
+    evaluate(env=env, directory=total_directory, num_episodes=num_episodes)
+
+    visualize_history(directory=total_directory)

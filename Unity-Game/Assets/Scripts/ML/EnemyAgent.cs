@@ -30,10 +30,6 @@ public class EnemyAgent : Agent
         obs.Add(target.transform.position.x);
         obs.Add(target.transform.position.z);
 
-        // Bounds del pavimento
-        if (obs[0] < -14.5f || obs[0] > 14.55f || obs[1] < -14.5 || obs[1] > 14.5)
-            Done();
-
         AddVectorObs(obs);
     }
 
