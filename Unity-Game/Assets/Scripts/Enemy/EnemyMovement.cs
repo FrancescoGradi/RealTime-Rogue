@@ -27,7 +27,7 @@ public class EnemyMovement : MonoBehaviour
     public int updateRate = 20;
     private float turnSmoothVelocity;
 
-    private int targetsReached = 0;
+    private bool targetReached = false;
 
     void Start() {
 
@@ -37,26 +37,26 @@ public class EnemyMovement : MonoBehaviour
     }
 
     private void FixedUpdate() {
+        if (!targetReached) {
+            count += 1;
+            if (count == updateRate) {
+                agent.RequestDecision();
+                count = 0;
+            }
 
-        count += 1;
-        if (count == updateRate) {
-            agent.RequestDecision();
-            count = 0;
+            if (direction.magnitude >= 0.05f) {
+                animator.SetInteger("condition", 1);
+                Movement();
+            } else {
+                animator.SetInteger("condition", 0);
+            }
+
+            if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
+                System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
+                targetReached = true;
+                agent.TargetReached();
+            }
         }
-
-        if (direction.magnitude >= 0.05f) {
-            animator.SetInteger("condition", 1);
-            Movement();
-        } else {
-            animator.SetInteger("condition", 0);
-        }
-
-        if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
-            System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
-            targetsReached += 1;
-            agent.TargetReached();
-        }
-
     }
 
     public void AddMovement(float horizontal, float vertical) {
@@ -76,6 +76,10 @@ public class EnemyMovement : MonoBehaviour
 
         Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
         characterController.Move(moveDir.normalized * speed * Time.fixedDeltaTime);
+    }
+
+    public void SetTargetReached(bool targetReached) {
+        this.targetReached = targetReached;
     }
 
 }

@@ -13,13 +13,15 @@ public class EnemyAgent : Agent
     private EnemyMovement enemyMovement;
 
     void Start() {
-        AgentReset();
         enemyMovement = GetComponent<EnemyMovement>();
+        // AgentReset();
     }
 
     public override void AgentReset() {
         // enemy.gameObject.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
-        enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target), Quaternion.identity);
+        enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target, 0), Quaternion.identity);
+        enemyMovement.SetTargetReached(false);
+        enemyMovement.AddMovement(0, 0);
     }
 
     public override void CollectObservations() {

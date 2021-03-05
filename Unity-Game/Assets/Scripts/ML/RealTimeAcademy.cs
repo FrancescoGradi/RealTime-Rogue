@@ -16,7 +16,7 @@ public class RealTimeAcademy : Academy {
 		
 		// target.transform.position = new Vector3(spawnPoints[0].transform.position.x, target.transform.position.y, spawnPoints[0].transform.position.z);
 		
-		target.transform.position = GetRandomPosInRange(agent);
+		target.transform.position = GetRandomPosInRange(agent, 0.1f);
 
 	}
 
@@ -24,16 +24,17 @@ public class RealTimeAcademy : Academy {
 
 		// spawnPoints = Utility.Shuffle(spawnPoints);
 		// target.transform.position = new Vector3(spawnPoints[0].transform.position.x, target.transform.position.y, spawnPoints[0].transform.position.z);														
-		target.transform.position = GetRandomPosInRange(agent);
+		
+		target.transform.position = GetRandomPosInRange(agent, 0.1f);
 
 	}
 
-	public Vector3 GetRandomPosInRange(GameObject otherObject) {
+	public Vector3 GetRandomPosInRange(GameObject otherObject, float posY) {
 
-		Vector3 pos = new Vector3(Random.Range(-range, range), otherObject.transform.position.y, Random.Range(-range, range));
+		Vector3 pos = new Vector3(Random.Range(-range, range), posY, Random.Range(-range, range));
 
 		while (Vector3.Distance(pos, otherObject.gameObject.transform.position) < epsilon) {
-			pos = new Vector3(Random.Range(-range, range), 0.1f, Random.Range(-range, range));
+			pos = new Vector3(Random.Range(-range, range), posY, Random.Range(-range, range));
 		}
 
 		return pos;
