@@ -78,11 +78,11 @@ def evaluate(env, directory, num_episodes=200):
 if __name__ == '__main__':
 
     directory = "Model_Checkpoints"
-    model_name = "QUADRO_25UR_4LR_net_256_200TS"
+    model_name = "RANDOM_AGENT10_RANDOM_TARGET10_10000EP_30UR_4LR_net_256_300TS"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 600
-    max_episode_timesteps = 200
+    num_episodes = 10000
+    max_episode_timesteps = 300
     # game_name = 'Compilati/3_03'
     game_name = None
 

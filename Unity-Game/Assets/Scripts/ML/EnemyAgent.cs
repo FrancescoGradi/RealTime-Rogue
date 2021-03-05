@@ -9,6 +9,7 @@ public class EnemyAgent : Agent
 {
     public Enemy enemy;
     public GameObject target;
+    public RealTimeAcademy realTimeAcademy;
     private EnemyMovement enemyMovement;
 
     void Start() {
@@ -17,7 +18,8 @@ public class EnemyAgent : Agent
     }
 
     public override void AgentReset() {
-        enemy.gameObject.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
+        // enemy.gameObject.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
+        enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target), Quaternion.identity);
     }
 
     public override void CollectObservations() {
@@ -40,7 +42,7 @@ public class EnemyAgent : Agent
 
         enemyMovement.AddMovement(horizontal, vertical);
 
-        AddReward(-0.01f);
+        AddReward(-0.1f);
     }
 
     public void TargetReached() {
