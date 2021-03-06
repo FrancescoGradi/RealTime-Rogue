@@ -9,14 +9,16 @@ public class ObjectsGenerator : MonoBehaviour
     public List<GameObject> spawnPoints;
 
     public int max_items = 3;
-    public int max_objects = 8;
+    public int max_objects = 28;
 
     private List<GameObject> activeItems = new List<GameObject> {};
     private List<GameObject> activeEnvObjects = new List<GameObject> {};
 
     private void Start() {
+        
         int actual_n_items = UnityEngine.Random.Range(0, max_items);
-        int actual_n_envObjects = UnityEngine.Random.Range(0, max_objects);
+        // int actual_n_envObjects = UnityEngine.Random.Range(0, max_objects);
+        int actual_n_envObjects = max_objects;
 
         items = Utility.Shuffle(items);
         envObjects = Utility.Shuffle(envObjects);
@@ -41,7 +43,23 @@ public class ObjectsGenerator : MonoBehaviour
         }
     }
 
+    public List<GameObject> GetActiveEnvObjects() {
+
+        return activeEnvObjects;
+    }
+
+    public void ResetPositions() {
+
+        spawnPoints = Utility.Shuffle(spawnPoints);
+        for (int i = 0; i < activeEnvObjects.Count; i++) {
+            Vector3 pos = spawnPoints[i].gameObject.transform.position;
+            pos.y += 1;
+            activeEnvObjects[i].transform.position = pos;
+        }
+    }
+
     private void OnDestroy() {
+
         foreach (GameObject activeItem in activeItems) {
             Destroy(activeItem);
         }

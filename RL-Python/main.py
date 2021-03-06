@@ -1,3 +1,5 @@
+import tensorflow as tf
+
 from tensorforce import Agent, Environment, Runner
 from tensorforce.agents import PPOAgent
 from unity_env_wrapper import UnityEnvWrapper
@@ -77,21 +79,29 @@ def evaluate(env, directory, num_episodes=200):
 
 if __name__ == '__main__':
 
+    use_cuda = True
+
+    physical_devices = tf.config.experimental.list_physical_devices('GPU')
+    print(physical_devices)
+    # if len(physical_devices) > 0:
+    #    tf.config.experimental.set_memory_growth(physical_devices[0], True)
+
     directory = "Model_Checkpoints"
     model_name = "RANDOM_AGENT10_RANDOM_TARGET10_10000EP_30UR_4LR_net_256_300TS"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 10000
+    num_episodes = 30000
     max_episode_timesteps = 300
-    # game_name = 'Compilati/3_03'
+    # game_name = 'Compilati/6_03'
     game_name = None
 
-    env = UnityEnvWrapper(game_name=game_name, no_graphics=True, seed=None, worker_id=0, config=None,
-                          directory=total_directory, is_training=True)
+    with tf.device('/device:GPU:0'):
+        env = UnityEnvWrapper(game_name=game_name, no_graphics=True, seed=None, worker_id=0, config=None,
+                              directory=total_directory, is_training=True)
 
-    env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
+        env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
-    # train(env=env, directory=total_directory, num_episodes=num_episodes)
-    evaluate(env=env, directory=total_directory, num_episodes=num_episodes)
+        # train(env=env, directory=total_directory, num_episodes=num_episodes)
+        evaluate(env=env, directory=total_directory, num_episodes=num_episodes)
 
     visualize_history(directory=total_directory)

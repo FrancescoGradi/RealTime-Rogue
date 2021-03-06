@@ -6,25 +6,21 @@ using MLAgents;
 public class RealTimeAcademy : Academy {
 
 	public GameObject target;
-    public List<GameObject> spawnPoints;
 	public GameObject agent;
+	public ObjectsGenerator objectsGenerator;
 
 	public float range = 10;
 	private float epsilon = 1;
 
 	private void Start() {
-		
-		// target.transform.position = new Vector3(spawnPoints[0].transform.position.x, target.transform.position.y, spawnPoints[0].transform.position.z);
-		
+				
 		target.transform.position = GetRandomPosInRange(agent, 0.1f);
 
 	}
 
   	public override void AcademyReset() {
-
-		// spawnPoints = Utility.Shuffle(spawnPoints);
-		// target.transform.position = new Vector3(spawnPoints[0].transform.position.x, target.transform.position.y, spawnPoints[0].transform.position.z);														
 		
+		objectsGenerator.ResetPositions();
 		target.transform.position = GetRandomPosInRange(agent, 0.1f);
 
 	}
@@ -39,5 +35,4 @@ public class RealTimeAcademy : Academy {
 
 		return pos;
 	}
-	  
 }
