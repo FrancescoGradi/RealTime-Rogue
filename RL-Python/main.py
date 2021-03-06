@@ -7,13 +7,13 @@ from unity_env_wrapper import UnityEnvWrapper
 from stats_visualization import visualize_history
 
 net = [
-    dict(type='retrieve', tensors=['position', 'target_position'], aggregation='concat'),
+    dict(type='retrieve', tensors=['position', 'target_position', 'env_objects_positions'], aggregation='concat'),
     dict(type='dense', size=256, activation='relu'),
     dict(type='dense', size=64, activation='relu')
 ]
 
 baseline = [
-    dict(type='retrieve', tensors=['position', 'target_position'], aggregation='concat'),
+    dict(type='retrieve', tensors=['position', 'target_position', 'env_objects_positions'], aggregation='concat'),
     dict(type='dense', size=128, activation='relu'),
     dict(type='dense', size=64, activation='relu')
 ]
@@ -87,12 +87,12 @@ if __name__ == '__main__':
     #    tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints"
-    model_name = "RANDOM_AGENT10_RANDOM_TARGET10_10000EP_30UR_4LR_net_256_300TS"
+    model_name = "RANDOM_AGENT10_RANDOM_TARGET10_10000EP_30UR_4LR_net_256_300TS_WITH_OBSTACLES"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 30000
+    num_episodes = 10000
     max_episode_timesteps = 300
-    # game_name = 'Compilati/6_03'
+    # game_name = 'Compilati/3_03_bis'
     game_name = None
 
     with tf.device('/device:GPU:0'):

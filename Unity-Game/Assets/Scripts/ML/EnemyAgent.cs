@@ -10,6 +10,8 @@ public class EnemyAgent : Agent
     public Enemy enemy;
     public GameObject target;
     public RealTimeAcademy realTimeAcademy;
+    public ObjectsGenerator objectsGenerator;
+
     private EnemyMovement enemyMovement;
 
     void Start() {
@@ -33,6 +35,13 @@ public class EnemyAgent : Agent
         
         obs.Add(target.transform.position.x);
         obs.Add(target.transform.position.z);
+
+        List<GameObject> envObjects = objectsGenerator.GetActiveEnvObjects();
+
+        for (int i = 0; i < objectsGenerator.max_objects; i++) {
+            obs.Add(envObjects[i].transform.position.x);
+            obs.Add(envObjects[i].transform.position.z);
+        }
 
         AddVectorObs(obs);
     }
