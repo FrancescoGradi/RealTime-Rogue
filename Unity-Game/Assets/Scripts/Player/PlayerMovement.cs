@@ -64,6 +64,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    
+
     private void Movement() {
 
         float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;

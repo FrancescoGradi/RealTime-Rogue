@@ -17,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
     public float epsilon = 1f;
 
     public GameObject target;
+    public LayerMask envObjectsLayer;
 
 
     public float speed = 4f;
@@ -28,6 +29,7 @@ public class EnemyMovement : MonoBehaviour
     private float turnSmoothVelocity;
 
     private bool targetReached = false;
+
 
     void Start() {
 
@@ -82,4 +84,20 @@ public class EnemyMovement : MonoBehaviour
         this.targetReached = targetReached;
     }
 
+    public float GetRayCastDistance(float maxDistance, float angle) {
+
+        RaycastHit hit;
+        Vector3 direction = Quaternion.Euler(0f, angle, 0f) * transform.forward;
+        Vector3 pos = this.gameObject.transform.position;
+        pos.y += 1.5f;
+
+        if (Physics.Raycast(pos, direction, out hit, maxDistance, envObjectsLayer)) {
+            Debug.DrawRay(pos, direction * hit.distance, Color.yellow, Time.fixedDeltaTime);
+            return hit.distance;
+        }
+        else {
+            Debug.DrawRay(pos, direction * maxDistance, Color.white, Time.fixedDeltaTime);
+            return maxDistance;
+        }
+    }
 }

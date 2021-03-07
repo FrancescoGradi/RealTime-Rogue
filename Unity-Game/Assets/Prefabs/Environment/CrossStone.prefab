@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33145830098108554}
   - component: {fileID: 23098119394011110}
   - component: {fileID: 65936679038981352}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CrossStone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1901378438627998}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 1, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

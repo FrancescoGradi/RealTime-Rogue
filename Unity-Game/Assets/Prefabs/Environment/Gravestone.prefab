@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33893737342333462}
   - component: {fileID: 23860109998259094}
   - component: {fileID: 65026994466470198}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gravestone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906656229910602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.493, y: 0, z: 0.49}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -89,5 +89,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1946332, y: 1.7139499, z: 0.48538995}
+  m_Size: {x: 1.2, y: 1.7139499, z: 1}
   m_Center: {x: -0.000000029802322, y: 0.8569751, z: 0}

@@ -87,12 +87,12 @@ if __name__ == '__main__':
     #    tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints"
-    model_name = "RANDOM_AGENT10_RANDOM_TARGET10_10000EP_30UR_4LR_net_256_300TS_WITH_OBSTACLES"
+    model_name = "RANDOM_AGENT10_RANDOM_TARGET10_10000EP_30UR_4LR_net_256_300TS_WITH_OBSTACLES_WITH_RAYCASTS"
     total_directory = directory + "/" + model_name
 
     num_episodes = 10000
     max_episode_timesteps = 300
-    # game_name = 'Compilati/3_03_bis'
+    # game_name = 'Compilati/7_03'
     game_name = None
 
     with tf.device('/device:GPU:0'):
