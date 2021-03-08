@@ -54,6 +54,11 @@ public class EnemyAgent : Agent
             obs.Add(enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]));
         }
 
+        // Scoraggiamo l'andare verso un ostacolo
+
+        if (obs[5] < 1.5f)
+            AddReward(-1f);
+
         AddVectorObs(obs);
     }
 

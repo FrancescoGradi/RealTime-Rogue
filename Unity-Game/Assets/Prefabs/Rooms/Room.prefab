@@ -2273,6 +2273,10 @@ MonoBehaviour:
   portalB: {fileID: 1904352722251772, guid: ec6d2d6f17d11950ba9546e0e4e57f38, type: 3}
   portalL: {fileID: 1904352722251772, guid: 5379a70d97789948f8b66b0b0a015b91, type: 3}
   portalR: {fileID: 1904352722251772, guid: d19ca8730b3a7600aba161023ff168a1, type: 3}
+  patchedL: {fileID: 8981011672064381481, guid: 5fa1668ffafd01cba877512bf96a50bb,
+    type: 3}
+  patchedT: {fileID: 4121524956301834997, guid: 9417e8d429d6417fc83677730a0413df,
+    type: 3}
 --- !u!1 &6720022505753776571
 GameObject:
   m_ObjectHideFlags: 0

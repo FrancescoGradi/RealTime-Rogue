@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: B
+  healthText: {fileID: 1081213249713480708}
 --- !u!1 &1920705811248650
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +289,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a42e1736f178f4e2993d6e351d7a0e90, type: 2}
+  - {fileID: 2100000, guid: 18f63ff904099034daf971dac5b32582, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -437,37 +438,37 @@ PrefabInstance:
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_text
-      value: Press E/RB to Enter
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
       propertyPath: m_fontSize
-      value: 41.85
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8771489911115774669, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
@@ -482,3 +483,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 6111189876338829394}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1081213249713480708 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6615351796350946390, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
+    type: 3}
+  m_PrefabInstance: {fileID: 6111189876338829394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
