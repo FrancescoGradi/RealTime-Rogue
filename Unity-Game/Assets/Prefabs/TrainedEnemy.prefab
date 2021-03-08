@@ -269,7 +269,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8954920629681498401}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 9ce6002518e821e43b4f97c76700fbac, type: 3}
+  m_Avatar: {fileID: 9000000, guid: e4aa31f274820b94eb0d0b764e0f383b, type: 3}
   m_Controller: {fileID: 9100000, guid: d576ab3857d9b24489fafd85afb6c981, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -338,7 +338,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074e0cc11d4054c48ada3575ca99a029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  epsilon: 1
+  target: {fileID: 0}
+  envObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 0
   speed: 6
+  turnSmoothTime: 0.2
+  updateRate: 20
 --- !u!1 &8954920629731762509
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +479,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 9ce6002518e821e43b4f97c76700fbac, type: 3}
+  m_Mesh: {fileID: 4300000, guid: e4aa31f274820b94eb0d0b764e0f383b, type: 3}
   m_Bones:
   - {fileID: 8954920629753939495}
   - {fileID: 8954920629664184436}

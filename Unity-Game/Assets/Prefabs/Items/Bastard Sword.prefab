@@ -92,9 +92,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Bastard Sword
-  damage: 10
-  attackRate: 1.5
-  attackRange: 2
+  bonusHP: 0
+  bonusATK: 0
+  bonusMANA: 0
+  bonusDEF: 0
   material: {fileID: 2100000, guid: 6acc71550c566ce42a8bedab0c3b42af, type: 2}
 --- !u!65 &8786397394935493027
 BoxCollider:

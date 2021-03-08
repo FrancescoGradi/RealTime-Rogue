@@ -8,8 +8,8 @@ public class ObjectsGenerator : MonoBehaviour
     public List<GameObject> envObjects;
     public List<GameObject> spawnPoints;
 
-    public int max_items = 3;
-    public int max_objects = 28;
+    public int max_items = 4;
+    public int max_objects = 8;
 
     private List<GameObject> activeItems = new List<GameObject> {};
     private List<GameObject> activeEnvObjects = new List<GameObject> {};
@@ -38,7 +38,8 @@ public class ObjectsGenerator : MonoBehaviour
             spawnPoints.Reverse();
             
             for (int j = 0; j < actual_n_envObjects; j++) {
-                activeEnvObjects.Add(Instantiate(Utility.GetRandomObject(envObjects), spawnPoints[j].gameObject.transform.position, Quaternion.identity));
+                GameObject selectedEnvObject = Utility.GetRandomObject(envObjects);
+                activeEnvObjects.Add(Instantiate(selectedEnvObject, spawnPoints[j].gameObject.transform.position, selectedEnvObject.gameObject.transform.rotation));
             }
         }
     }

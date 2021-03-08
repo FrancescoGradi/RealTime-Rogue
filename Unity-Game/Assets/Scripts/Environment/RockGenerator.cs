@@ -7,7 +7,7 @@ public class RockGenerator : MonoBehaviour {
     public List<GameObject> rocks;
     public List<GameObject> spawnPoints;
 
-    public int max_rocks = 4;
+    public int max_rocks = 6;
 
     private List<GameObject> activeRocks = new List<GameObject> {};
  
