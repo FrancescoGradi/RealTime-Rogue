@@ -11,12 +11,14 @@ public class Room : MonoBehaviour
 
     public GameObject portalT;
     public GameObject portalB;
-
     public GameObject portalL;
     public GameObject portalR;
 
-    public GameObject patchedL;
     public GameObject patchedT;
+    public GameObject patchedB;
+    public GameObject patchedL;
+    public GameObject patchedR;
+
 
 
     private bool roomClear = false;
@@ -90,11 +92,17 @@ public class Room : MonoBehaviour
         if (permutation[1] == 1) {
             GameObject tmp = Instantiate(portalB, new Vector3(0, 0, -14.5f), Quaternion.Euler(0, -180, 0));
             activePortals.Add(tmp);
+        } else {
+            GameObject tmp = Instantiate(patchedB, patchedB.gameObject.transform.position, patchedB.gameObject.transform.rotation);
+            patchedInstantieted.Add(tmp);
         }
 
         if (permutation[2] == 1) {
             GameObject tmp = Instantiate(portalR, new Vector3(14.5f, 0, 0), Quaternion.Euler(0, 90, 0));
             activePortals.Add(tmp);
+        } else {
+            GameObject tmp = Instantiate(patchedR, patchedR.gameObject.transform.position, patchedR.gameObject.transform.rotation);
+            patchedInstantieted.Add(tmp);
         }
 
         if (permutation[3] == 1) {
