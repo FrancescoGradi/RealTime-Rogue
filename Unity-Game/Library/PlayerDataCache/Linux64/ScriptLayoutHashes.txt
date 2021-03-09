@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/8_03.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/9_03_bis.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -30,7 +30,6 @@ d227987243593b32ae57394d06018643 Cinemachine.dll:Cinemachine.CinemachineFixedSig
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 6a3b0de4653ca170e6e9c9f6b425593e Assembly-CSharp.dll:.FireBall
 f1d4755bab5ef0b46262de0e1c5506de Assembly-CSharp.dll:.Ball3DHardAgent
-303c5884cc59f4654bab9c5257efe6d1 Assembly-CSharp.dll:.FlickeringLight
 0cda84aa6322a2fd0a7bed58e5e121f1 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.AssetInspectorWindow
 fc169718e5fd24cea7425f24908c0418 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.PlayerInput.Editor.PlayerInputManagerEditor
 3cb84feb0ff5d1b002aa28043b1bd20c Assembly-CSharp.dll:.RockGenerator
@@ -75,6 +74,8 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 34263448d203b40332290311069d4914 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.OnScreen.OnScreenStick
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 459dd23711c0620bce2025aa11e95685 Assembly-CSharp.dll:.GridAcademy
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TemplateDecision
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -191,7 +192,7 @@ fc4659575ffc7614e5d042b0a0014c54 Unity.InputSystem.dll:UnityEngine.Experimental.
 8429f5e2e74458d387d20325476dffbf Assembly-CSharp.dll:.GunAim
 8a1511edcfd269b6938dd016efe00da5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UIGamepadInputModule
 df3ec0815ff483948b3dc4f12adcea86 Assembly-CSharp.dll:.Combat
-b1f2d7955c5c56ed57d1e76287b7930f Assembly-CSharp.dll:.Portal
+93f0617a8b73787514b996a764d5fa94 Assembly-CSharp.dll:.Portal
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 5cca31c99362907d3791789e3bb2ff73 Assembly-CSharp.dll:MLAgents.FlyCamera
 2ce2187bbae6f802011f568630bd3d1f Cinemachine.dll:Cinemachine.CinemachineOrbitalTransposer
@@ -275,7 +276,6 @@ b0d4220f49f3a8c75f5bc02940b9378b Assembly-CSharp.dll:MLAgents.JointDriveControll
 a66794b62dbf044668a5f102bb7908c2 Cinemachine.dll:Cinemachine.CinemachineIndependentImpulseListener
 6225eb0973ab0af667bc5f9d1b1b18de Cinemachine.dll:Cinemachine.CinemachineCollider
 bd50beb95120324d8c4e8386692b6e82 Cinemachine.dll:Cinemachine.CinemachineBlenderSettings
-58e68364412c67eae2bdb4954be2dcc2 Assembly-CSharp.dll:.Readme
 23066ceca838af0cf02e00e3cf5155c1 Cinemachine.dll:Cinemachine.CinemachineImpulseSource
 fbf2b0aa6fc0e8b1fb2162c7fd153c81 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputActionReference
 ca097b9b272861c9a7e9f94ad887519c Assembly-CSharp.dll:MLAgents.BCTeacherHelper
@@ -319,7 +319,7 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 6adf0680d8d7e110dab1c5470b12851b Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.BindingPropertiesPopup
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 1c9f5e53129919dac4bc78053b77dbaa Assembly-CSharp.dll:.HallwayAgent
-f306e740c5768e57ee9e478bfcdba5b0 Assembly-CSharp.dll:.Room
+d9afba224d5da2c345bc9d00fba501f8 Assembly-CSharp.dll:.Room
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachinePixelPerfect
 5f90fce9c2086ba21fd5972bcc55b288 Assembly-CSharp.dll:.BananaLogic
 54d2e229caa56e9a71e6df3a4bd1c8a5 Assembly-CSharp.dll:.WallJumpAcademy

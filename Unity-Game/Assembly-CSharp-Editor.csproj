@@ -58,7 +58,6 @@
      <Compile Include="Assets\ML-Agents\Editor\ResetParameterDrawer.cs" />
      <Compile Include="Assets\ML-Agents\Editor\Tests\EditModeTestActionMasker.cs" />
      <Compile Include="Assets\ML-Agents\Editor\Tests\MLAgentsEditModeTest.cs" />
-     <Compile Include="Assets\OtherAssets\EffectExamples\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
      <None Include="Assets\OtherAssets\EffectExamples\Editor\PackageManagerAssembly\PackageImportList.txt" />
  <Reference Include="Cinemachine">
  <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

@@ -146,7 +146,6 @@
      <Compile Include="Assets\ML-Agents\Scripts\SocketCommunicator.cs" />
      <Compile Include="Assets\ML-Agents\Scripts\UnityAgentsException.cs" />
      <Compile Include="Assets\OtherAssets\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
-     <Compile Include="Assets\OtherAssets\Dynamic Flickering Light\FlickeringLight.cs" />
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -154,7 +153,6 @@
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\OtherAssets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
-     <Compile Include="Assets\OtherAssets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\ConGUI.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\Lighting.cs" />
      <Compile Include="Assets\OtherAssets\Mixamo\Magic Pack\Demo\CameraScroll.cs" />
@@ -190,7 +188,6 @@
      <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\ShowFPS.cs" />
      <Compile Include="Assets\Scripts\Utility\Utility.cs" />
-     <None Include="Assets\OtherAssets\Dynamic Flickering Light\readme.txt" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\OtherAssets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />

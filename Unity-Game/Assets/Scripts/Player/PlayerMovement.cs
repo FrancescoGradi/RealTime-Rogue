@@ -21,10 +21,6 @@ public class PlayerMovement : MonoBehaviour
     private float vertical = 0f;
     private Vector3 direction = new Vector3(0, 0, 0);
     private float nextSprintTime = 0f;
-    private bool sprinting = false;
-
-    private int count = 0;
-    private int updateRate = 20;
 
 
     private void Start() {
@@ -40,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         if (direction.magnitude >= 0.1f && !animator.GetBool("attacking")) {
             
             if (Input.GetButton("Sprint") && Time.time >= nextSprintTime && direction.magnitude >= 0.1f) {
-                sprinting = true;
                 player.speed *= 10;
 
                 player.GetComponent<BoxCollider>().enabled = false;

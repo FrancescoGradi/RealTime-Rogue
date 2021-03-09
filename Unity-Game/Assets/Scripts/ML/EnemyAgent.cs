@@ -13,7 +13,7 @@ public class EnemyAgent : Agent
     public ObjectsGenerator objectsGenerator;
 
     private EnemyMovement enemyMovement;
-    public List<float> angles = new List<float>() {-30f, 0f, 30f};
+    public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 10f;
 
     void Start() {
@@ -53,10 +53,10 @@ public class EnemyAgent : Agent
         for (int i = 0; i < angles.Count; i++) {
             obs.Add(enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]));
         }
+        
+        // Scoraggiamo il movimento verso un ostacolo
 
-        // Scoraggiamo l'andare verso un ostacolo
-
-        if (obs[5] < 1.5f)
+        if (obs[4] < 1f)
             AddReward(-1f);
 
         AddVectorObs(obs);
