@@ -245,7 +245,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439462576}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1439462578
 Camera:
   m_ObjectHideFlags: 0
@@ -402,6 +402,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Training
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761456092668694139, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}

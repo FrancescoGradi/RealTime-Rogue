@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/9_03_bis.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/10_03_target_fixed_position.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -74,8 +74,6 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 34263448d203b40332290311069d4914 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.OnScreen.OnScreenStick
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 459dd23711c0620bce2025aa11e95685 Assembly-CSharp.dll:.GridAcademy
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TemplateDecision
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
