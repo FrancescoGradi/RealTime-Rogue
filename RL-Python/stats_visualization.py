@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
-import json
 import numpy as np
+
+import json
 
 
 def visualize_history(directory, num_mean=100, save_fig=False):
@@ -17,7 +18,8 @@ def visualize_history(directory, num_mean=100, save_fig=False):
     plt.figure('Reward Media')
 
     if waste != 0:
-        num_episodes = np.asarray(range(1, np.size(np.mean(history['rewards'][:-waste].reshape(-1, num_mean), axis=1)) + 1)) * num_mean
+        num_episodes = np.asarray(range(1, np.size(np.mean(history['rewards'][:-waste].reshape(-1, num_mean), axis=1))
+                                        + 1)) * num_mean
         plt.plot(num_episodes, np.mean(history['rewards'][:-waste].reshape(-1, num_mean), axis=1))
     else:
         num_episodes = np.asarray(
@@ -37,8 +39,8 @@ def visualize_history(directory, num_mean=100, save_fig=False):
 
 if __name__ == '__main__':
 
-    directory = "Model_Checkpoints"
-    model_name = "FIXED_AGENT_RANDOM_TARGET10_10000EP_30UR_4LR_net_256_250TS_WITH_OBSTACLES_WITH_RAYCASTS"
+    directory = "Model_Checkpoints/CurriculumObstacles"
+    model_name = "CURRICULUM_FIXEDAG_FIXEDTA_RANDOM10"
     total_directory = directory + "/" + model_name
 
-    visualize_history(directory=total_directory, save_fig=True)
+    visualize_history(directory=total_directory, num_mean=100, save_fig=True)

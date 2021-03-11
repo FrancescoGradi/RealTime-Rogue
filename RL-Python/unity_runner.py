@@ -1,11 +1,15 @@
 from tensorforce.execution.runner import Runner
+
 import numpy as np
+
 import time
+import os
+import json
 
 
 class UnityRunner(Runner):
 
-    def __init__(self, agent, environment, max_episode_timesteps=None, curriculum=None, num_completed_episodes=0):
+    def __init__(self, agent, environment, directory, curriculum=None, num_completed_episodes=0):
 
         self.curriculum = curriculum
         self.num_completed_episodes = num_completed_episodes
@@ -13,6 +17,15 @@ class UnityRunner(Runner):
 
         super(UnityRunner, self).__init__(agent, environment=environment,
                                           max_episode_timesteps=None)
+
+        self.directory = directory
+
+        os.makedirs(os.path.dirname(self.directory + '/History/history.json'), exist_ok=True)
+        try:
+            with open(directory + '/History/history.json') as h:
+                self.history = json.load(h)
+        except Exception as ex:
+            self.history = dict(rewards=[])
 
         self.unity_env.set_config(self.set_curriculum(self.curriculum, self.num_completed_episodes))
 
@@ -68,3 +81,12 @@ class UnityRunner(Runner):
             # Modifiche
             self.num_completed_episodes += 1
             self.unity_env.set_config(self.set_curriculum(self.curriculum, self.num_completed_episodes))
+
+    def update_history(self):
+        self.history['rewards'] = self.episode_rewards
+
+    def save_history(self):
+        self.update_history()
+        os.makedirs(os.path.dirname(self.directory + '/History/history.json'), exist_ok=True)
+        with open(self.directory + '/History/history.json', 'w') as history:
+            json.dump(self.history, history)

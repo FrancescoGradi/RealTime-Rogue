@@ -20,11 +20,13 @@ public class RealTimeAcademy : Academy {
   	public override void AcademyReset() {
 		
 		objectsGenerator.ResetPositions();
-		target.transform.position = GetRandomPosInRange(agent, 0.1f);
-
 		range = this.resetParameters["range"];
-		Debug.Log(range);
-		// target.transform.position = new Vector3(0, 0.1f, 0);
+
+		if ((int) this.resetParameters["target_fixed"] == 1) {
+			target.transform.position = new Vector3(0, 0.1f, 0);
+		} else {
+			target.transform.position = GetRandomPosInRange(agent, 0.1f);
+		}
 	}
 
 	public Vector3 GetRandomPosInRange(GameObject otherObject, float posY) {

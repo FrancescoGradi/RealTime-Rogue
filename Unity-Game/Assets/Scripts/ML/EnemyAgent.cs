@@ -22,8 +22,13 @@ public class EnemyAgent : Agent
     }
 
     public override void AgentReset() {
-        // enemy.gameObject.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
-        enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target, 0), Quaternion.identity);
+
+        if ((int) realTimeAcademy.resetParameters["agent_fixed"] == 1){
+            enemy.gameObject.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
+        } else {
+            enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target, 0), Quaternion.identity);
+        }
+
         enemyMovement.SetTargetReached(false);
         enemyMovement.AddMovement(0, 0);
     }

@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/10_03_target_fixed_position.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/11_03.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?

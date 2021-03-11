@@ -5,14 +5,11 @@ import numpy as np
 
 import signal
 import time
-import json
-import os
 
 
 class UnityEnvWrapper(Environment):
 
-    def __init__(self, game_name=None, no_graphics=True, seed=None, worker_id=0, config=None,
-                 directory="Model_Checkpoints", is_training=True):
+    def __init__(self, game_name=None, no_graphics=True, seed=None, worker_id=0, config=None):
 
         super(UnityEnvWrapper, self).__init__()
 
@@ -22,18 +19,6 @@ class UnityEnvWrapper(Environment):
         self.worker_id = worker_id
         self.unity_env = self.open_unity_environment(game_name, no_graphics, seed, worker_id)
         self.default_brain = self.unity_env.brain_names[0]
-
-        self.directory = directory
-        self.is_training = is_training
-
-        os.makedirs(os.path.dirname(self.directory + '/History/history.json'), exist_ok=True)
-        try:
-            with open(directory + '/History/history.json') as h:
-                self.history = json.load(h)
-        except Exception as ex:
-            self.history = dict(rewards=[])
-
-        self.cumulative_rewards = 0
 
         self.set_config(config)
 
@@ -65,9 +50,6 @@ class UnityEnvWrapper(Environment):
 
         obs = self.get_input_observation(env_info)
 
-        self.history['rewards'].append(self.cumulative_rewards)
-        self.cumulative_rewards = 0
-
         return obs
 
     def execute(self, actions):
@@ -96,20 +78,12 @@ class UnityEnvWrapper(Environment):
 
         observation = self.get_input_observation(env_info)
 
-        self.cumulative_rewards += reward
-
         return [observation, done, reward]
 
     def open_unity_environment(self, game_name, no_graphics, seed, worker_id):
         return UnityEnvironment(game_name, no_graphics=no_graphics, seed=seed, worker_id=worker_id)
 
     def close(self):
-
-        if self.is_training:
-            os.makedirs(os.path.dirname(self.directory + '/History/history.json'), exist_ok=True)
-            with open(self.directory + '/History/history.json', 'w') as history:
-                json.dump(self.history, history)
-
         self.unity_env.close()
 
     def set_config(self, config):
