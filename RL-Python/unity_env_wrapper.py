@@ -26,7 +26,13 @@ class UnityEnvWrapper(Environment):
         self.directory = directory
         self.is_training = is_training
 
-        self.history = dict(rewards=[])
+        os.makedirs(os.path.dirname(self.directory + '/History/history.json'), exist_ok=True)
+        try:
+            with open(directory + '/History/history.json') as h:
+                self.history = json.load(h)
+        except Exception as ex:
+            self.history = dict(rewards=[])
+
         self.cumulative_rewards = 0
 
         self.set_config(config)

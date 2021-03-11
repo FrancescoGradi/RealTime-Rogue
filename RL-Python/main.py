@@ -83,16 +83,16 @@ if __name__ == '__main__':
 
     physical_devices = tf.config.experimental.list_physical_devices('GPU')
     print(physical_devices)
-    # if len(physical_devices) > 0:
-    #    tf.config.experimental.set_memory_growth(physical_devices[0], True)
+    if len(physical_devices) > 0:
+        tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints"
-    model_name = "RANDOM_AGENT10_FIXED_TARGET_10000EP_30UR_4LR_net_256_250TS_WITH_OBSTACLES_WITH_RAYCASTS"
+    model_name = "PROVA_HISTORY"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 10000
+    num_episodes = 100
     max_episode_timesteps = 250
-    game_name = 'Compilati/10_03_target_fixed_position'
+    game_name = 'Compilati/9_03_bis'
     # game_name = None
 
     with tf.device('/device:GPU:0'):
@@ -104,4 +104,4 @@ if __name__ == '__main__':
         train(env=env, directory=total_directory, num_episodes=num_episodes)
         # evaluate(env=env, directory=total_directory, num_episodes=num_episodes)
 
-    visualize_history(directory=total_directory)
+    visualize_history(directory=total_directory, num_mean=100)
