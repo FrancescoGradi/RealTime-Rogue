@@ -1,9 +1,9 @@
 import tensorflow as tf
 
-from tensorforce import Agent, Environment, Runner
-from tensorforce.agents import PPOAgent
+from tensorforce import Agent, Environment
 from unity_env_wrapper import UnityEnvWrapper
 
+from unity_runner import UnityRunner
 from stats_visualization import visualize_history
 
 net = [
@@ -19,7 +19,7 @@ baseline = [
 ]
 
 
-def train(env, directory, num_episodes=200):
+def train(env, directory, curriculum=None, num_episodes=200):
 
     agent = Agent.create(agent='ppo',
                          environment=env,
@@ -45,11 +45,13 @@ def train(env, directory, num_episodes=200):
                              directory=directory,
                              frequency=2000
                          )
-                         )
+    )
 
-    runner = Runner(
+    runner = UnityRunner(
         agent=agent,
         environment=env,
+        max_episode_timesteps=max_episode_timesteps,
+        curriculum=curriculum
     )
 
     runner.run(num_episodes=num_episodes)
@@ -61,13 +63,15 @@ def train(env, directory, num_episodes=200):
     env.close()
 
 
-def evaluate(env, directory, num_episodes=200):
+def evaluate(env, directory, curriculum=None, num_episodes=200):
 
     agent = Agent.load(directory=directory)
 
-    runner = Runner(
+    runner = UnityRunner(
         agent=agent,
-        environment=env
+        environment=env,
+        max_episode_timesteps=max_episode_timesteps,
+        curriculum=curriculum
     )
 
     runner.run(num_episodes=num_episodes/10, evaluation=True)
@@ -79,6 +83,11 @@ def evaluate(env, directory, num_episodes=200):
 
 if __name__ == '__main__':
 
+    curriculum = {
+        'thresholds': [250, 1000, 150000],
+        'parameters': {'range': [5, 10, 12, 14]}
+    }
+
     use_cuda = True
 
     physical_devices = tf.config.experimental.list_physical_devices('GPU')
@@ -87,13 +96,13 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints"
-    model_name = "PROVA_HISTORY"
+    model_name = "PROVONA_CURRICULUM"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 100
+    num_episodes = 1500
     max_episode_timesteps = 250
-    game_name = 'Compilati/9_03_bis'
-    # game_name = None
+    # game_name = 'Compilati/9_03_bis'
+    game_name = None
 
     with tf.device('/device:GPU:0'):
         env = UnityEnvWrapper(game_name=game_name, no_graphics=True, seed=None, worker_id=0, config=None,
@@ -101,7 +110,7 @@ if __name__ == '__main__':
 
         env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
-        train(env=env, directory=total_directory, num_episodes=num_episodes)
-        # evaluate(env=env, directory=total_directory, num_episodes=num_episodes)
+        train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
+        # evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
 
     visualize_history(directory=total_directory, num_mean=100)

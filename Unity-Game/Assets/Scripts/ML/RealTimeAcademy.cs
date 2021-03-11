@@ -14,14 +14,16 @@ public class RealTimeAcademy : Academy {
 
 	private void Start() {
 				
-		target.transform.position = GetRandomPosInRange(agent, 0.1f);
-		// target.transform.position = new Vector3(0, 0.1f, 0);
+		AcademyReset();
 	}
 
   	public override void AcademyReset() {
 		
 		objectsGenerator.ResetPositions();
 		target.transform.position = GetRandomPosInRange(agent, 0.1f);
+
+		range = this.resetParameters["range"];
+		Debug.Log(range);
 		// target.transform.position = new Vector3(0, 0.1f, 0);
 	}
 
