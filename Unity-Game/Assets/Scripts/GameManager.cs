@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     private void Start() {
         
-        // actualRoom = Instantiate(initialRoom, new Vector3(0, 0, 0), Quaternion.identity);
+        actualRoom = Instantiate(initialRoom, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
     public void CreateNewRoom(string portalType) {

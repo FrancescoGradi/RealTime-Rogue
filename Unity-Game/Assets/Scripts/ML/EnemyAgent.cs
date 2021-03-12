@@ -15,6 +15,7 @@ public class EnemyAgent : Agent
     private EnemyMovement enemyMovement;
     public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 10f;
+    public float rayMinDistance = 1f;
 
     void Start() {
         enemyMovement = GetComponent<EnemyMovement>();
@@ -44,7 +45,6 @@ public class EnemyAgent : Agent
         obs.Add(target.transform.position.z);
 
         /*
-
         // Primo modo: restituisce tutte le posizioni globali degli ostacoli presenti sulla mappa
         List<GameObject> envObjects = objectsGenerator.GetActiveEnvObjects();
 
@@ -56,13 +56,15 @@ public class EnemyAgent : Agent
 
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env e restituiscono la distanza
         for (int i = 0; i < angles.Count; i++) {
-            obs.Add(enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]));
-        }
-        
-        // Scoraggiamo il movimento verso un ostacolo
+            float raycastDistance = enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]);
 
-        if (obs[4] < 1f)
-            AddReward(-1f);
+            // Scoraggiamo il movimento verso un ostacolo
+            if (raycastDistance < rayMinDistance) {
+                AddReward(-1f);
+            }
+
+            obs.Add(raycastDistance);
+        }
 
         AddVectorObs(obs);
     }

@@ -32,7 +32,7 @@ def visualize_history(directory, num_mean=100, save_fig=False):
     plt.grid()
 
     if save_fig:
-        plt.savefig(directory + '/History/' + model_name + '_reward.png', dpi=300)
+        plt.savefig(directory + '/History/' + 'reward.png', dpi=300)
 
     plt.show()
 
@@ -40,7 +40,7 @@ def visualize_history(directory, num_mean=100, save_fig=False):
 if __name__ == '__main__':
 
     directory = "Model_Checkpoints/CurriculumObstacles"
-    model_name = "CURRICULUM_FIXEDAG_FIXEDTA_RANDOM10"
+    model_name = "CURRICULUM_FIXEDTAR_FIXEDAG_RANDOM8_RANDOM10_3RAY"
     total_directory = directory + "/" + model_name
 
     visualize_history(directory=total_directory, num_mean=100, save_fig=True)

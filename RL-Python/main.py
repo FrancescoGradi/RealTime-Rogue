@@ -10,11 +10,11 @@ from train import train, evaluate
 if __name__ == '__main__':
 
     curriculum = {
-        'thresholds': [4000, 8000],
+        'thresholds': [3000, 6000],
         'parameters': {
             'range': [10, 10, 10],
-            'agent_fixed': [1, 0, 0],
-            'target_fixed': [0, 1, 0]
+            'agent_fixed': [0, 1, 0],
+            'target_fixed': [1, 0, 0]
         }
     }
 
@@ -22,18 +22,17 @@ if __name__ == '__main__':
     if len(physical_devices) > 0:
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-    directory = "Model_Checkpoints"
-    model_name = "Prova"
+    directory = "Model_Checkpoints/CurriculumObstacles"
+    model_name = "CURRICULUM_FIXEDAG_FIXEDTAR_RANDOM10_3RAY"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 150
+    num_episodes = 10000
     max_episode_timesteps = 250
-    # game_name = 'Compilati/11_03'
-    game_name = None
+    game_name = 'Compilati/12_03'
+    # game_name = None
 
     with tf.device('/device:GPU:0'):
-        env = UnityEnvWrapper(game_name=game_name, no_graphics=True, seed=None, worker_id=0, config=None)
-
+        env = UnityEnvWrapper(game_name=game_name)
         env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
         train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)

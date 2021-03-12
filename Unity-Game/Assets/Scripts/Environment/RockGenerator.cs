@@ -19,7 +19,7 @@ public class RockGenerator : MonoBehaviour {
         spawnPoints = Utility.Shuffle(spawnPoints);
 
         for (int i = 0; i < actual_n_rocks; i++) {
-            activeRocks.Add(Instantiate(Utility.GetRandomObject(rocks), spawnPoints[i].gameObject.transform.position, Quaternion.identity));
+            activeRocks.Add(Instantiate(Utility.GetRandomObject(rocks), spawnPoints[i].gameObject.transform.position, Quaternion.Euler(0, UnityEngine.Random.Range(0f, 360f), 0f)));
         }
     }
 

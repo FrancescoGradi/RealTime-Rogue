@@ -39,6 +39,9 @@ public class ObjectsGenerator : MonoBehaviour
             
             for (int j = 0; j < actual_n_envObjects; j++) {
                 GameObject selectedEnvObject = Utility.GetRandomObject(envObjects);
+                if ((int) UnityEngine.Random.Range(0, 3) == 0){
+                    selectedEnvObject.gameObject.transform.Rotate(new Vector3(0, -90f, 0));
+                }
                 activeEnvObjects.Add(Instantiate(selectedEnvObject, spawnPoints[j].gameObject.transform.position, selectedEnvObject.gameObject.transform.rotation));
             }
         }
