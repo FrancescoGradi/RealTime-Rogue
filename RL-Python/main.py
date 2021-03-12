@@ -10,7 +10,7 @@ from train import train, evaluate
 if __name__ == '__main__':
 
     curriculum = {
-        'thresholds': [3000, 6000],
+        'thresholds': [5000, 10000],
         'parameters': {
             'range': [10, 10, 10],
             'agent_fixed': [0, 1, 0],
@@ -23,10 +23,10 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints/CurriculumObstacles"
-    model_name = "CURRICULUM_FIXEDAG_FIXEDTAR_RANDOM10_3RAY"
+    model_name = "CURRICULUM_FIXEDTAR_FIXEDAG_RANDOM10_3RAY"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 10000
+    num_episodes = 15000
     max_episode_timesteps = 250
     game_name = 'Compilati/12_03'
     # game_name = None
@@ -36,6 +36,6 @@ if __name__ == '__main__':
         env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
         train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
-        # evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=None)
+        # evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
 
     visualize_history(directory=total_directory, num_mean=100, save_fig=True)
