@@ -428,7 +428,7 @@ PrefabInstance:
     - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: brainParameters.vectorObservationSize
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -458,7 +458,7 @@ PrefabInstance:
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: angles.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -478,12 +478,22 @@ PrefabInstance:
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: angles.Array.data[2]
-      value: 15
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: angles.Array.data[1]
-      value: -15
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: angles.Array.data[3]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: angles.Array.data[4]
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4864752178589568663, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}

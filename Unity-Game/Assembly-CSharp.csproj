@@ -169,7 +169,6 @@
      <Compile Include="Assets\Scripts\Environment\RockGenerator.cs" />
      <Compile Include="Assets\Scripts\Environment\Room.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\InitialRoom.cs" />
      <Compile Include="Assets\Scripts\Items\BastardSword.cs" />
      <Compile Include="Assets\Scripts\Items\BonusPotion.cs" />
      <Compile Include="Assets\Scripts\Items\GoldenShield.cs" />

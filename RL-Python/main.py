@@ -23,12 +23,12 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints/CurriculumObstacles"
-    model_name = "CURRICULUM_RANDOM5-10_3RAY_15angle"
+    model_name = "CURRICULUM_RANDOM5-10_5RAY_10_20angle"
     total_directory = directory + "/" + model_name
 
     num_episodes = 15000
     max_episode_timesteps = 250
-    # game_name = 'Compilati/13_03_15angle_ray'
+    game_name = 'Compilati/13_03_10_20angle_ray'
     game_name = None
 
     with tf.device('/device:GPU:0'):

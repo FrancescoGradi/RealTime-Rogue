@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/13_03_15angle_ray.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/13_03_10_20angle_ray.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -218,6 +218,7 @@ b5e9ac9ceb5179692cef40163e760642 Assembly-CSharp.dll:MLAgents.CoreBrainPlayer
 78e9466979745cbb0c3eb144aaae58ea Assembly-CSharp.dll:.GoalDetect
 a3def8b59a36744687edf8fd7e6f88c7 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.OnScreen.OnScreenButton
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:.UIActionInputModuleEnabler
+fa34bc8feb7cb4582d1fb3f1ed705e1e Assembly-CSharp.dll:.InitialRoom
 8945e293ce9cec94847aed6a3bcecd9b Assembly-CSharp.dll:.BouncerAcademy
 89be26d722c83f84ea329e8f5f08f5fa Assembly-CSharp.dll:.TennisAcademy
 7c792393fb82488bd20139dcc5ba26d8 Cinemachine.dll:Cinemachine.CinemachineTransposer
