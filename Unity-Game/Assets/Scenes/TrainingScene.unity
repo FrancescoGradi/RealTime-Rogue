@@ -478,12 +478,12 @@ PrefabInstance:
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: angles.Array.data[2]
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: angles.Array.data[1]
-      value: -5
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 4864752178589568663, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}

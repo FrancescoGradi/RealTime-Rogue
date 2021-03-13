@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public void CreateNewRoom(string portalType) {
         Destroy(actualRoom);
-        actualRoom = Instantiate(initialRoom, new Vector3(0, 0, 0), Quaternion.identity);
+        actualRoom = Instantiate(mainRoom, new Vector3(0, 0, 0), Quaternion.identity);
 
         if (portalType == "T") {
             player.transform.SetPositionAndRotation(new Vector3(0, 0, -12), Quaternion.identity);
