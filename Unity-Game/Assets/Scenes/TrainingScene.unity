@@ -502,6 +502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
+      propertyPath: envObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
       propertyPath: max_objects
       value: 10
       objectReference: {fileID: 0}

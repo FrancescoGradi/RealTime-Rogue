@@ -13,6 +13,7 @@ public class ItemsHub : MonoBehaviour
     public GameObject bonusPotionSprite;
 
     public TMP_Text itemCollected;
+    public GameObject itemCanvas;
 
     private GameObject actualSwordSprite;
     private GameObject actualShieldSprite;
@@ -25,10 +26,11 @@ public class ItemsHub : MonoBehaviour
 
     public void CollectedItem(string name) {
 
-        itemCollected.gameObject.SetActive(true);
+        itemCanvas.gameObject.SetActive(true);
+
         itemCollected.text = name + " collected!";
 
-        StartCoroutine(Wait(4f));
+        StartCoroutine(Wait(3f));
     }
 
     public void SetBastardSword() {
@@ -102,6 +104,6 @@ public class ItemsHub : MonoBehaviour
     private IEnumerator Wait(float seconds) {
         
         yield return new WaitForSecondsRealtime(seconds);
-        itemCollected.gameObject.SetActive(false);
+        itemCanvas.gameObject.SetActive(false);
     }
 }

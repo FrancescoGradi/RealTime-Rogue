@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class ShowFPS : MonoBehaviour
 {
     public float timer, refresh, avgFramerate;
     public string display = "{0} FPS";
-    public Text fpsText;
+    public TMP_Text fpsText;
     
     void Update() {
         float timelapse = Time.smoothDeltaTime;
