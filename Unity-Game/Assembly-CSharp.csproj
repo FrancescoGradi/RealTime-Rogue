@@ -182,6 +182,7 @@
      <Compile Include="Assets\Scripts\Menu\WinScreen.cs" />
      <Compile Include="Assets\Scripts\ML\EnemyAgent.cs" />
      <Compile Include="Assets\Scripts\ML\RealTimeAcademy.cs" />
+     <Compile Include="Assets\Scripts\ML\Target.cs" />
      <Compile Include="Assets\Scripts\Player\Combat.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />

@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/14_03_10_20angle_ray_bigOb.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/15_03_10_20angle_ray_mov_eps1.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -173,7 +173,7 @@ b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 b1a500449f4ef21f31d1802f6b38e368 Assembly-CSharp.dll:MLAgents.TargetContact
 611bc970ee9dc090779a3fac6a18fac6 Cinemachine.dll:Cinemachine.CinemachineFramingTransposer
 20594ff7d3793e7196b28e15e4d2d1b4 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.PlayerInput.PlayerInputManager
-3ff67cd9cd085c2f683aefbfee7c02ac Assembly-CSharp.dll:.ItemsHub
+9ea33338d174cb6689d9a0f2b3599655 Assembly-CSharp.dll:.ItemsHub
 0b70bc136734b0a82a7908bc7be10ca2 Assembly-CSharp.dll:.WinScreen
 9779f16baf07ca062ee367bd5d57c326 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.PlayerInput.PlayerInput
 7f9c9c0c2ddd3de046f36ccb615371ef Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UITouchInputModule
@@ -194,7 +194,7 @@ df3ec0815ff483948b3dc4f12adcea86 Assembly-CSharp.dll:.Combat
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 5cca31c99362907d3791789e3bb2ff73 Assembly-CSharp.dll:MLAgents.FlyCamera
 2ce2187bbae6f802011f568630bd3d1f Cinemachine.dll:Cinemachine.CinemachineOrbitalTransposer
-3d44ed4135db5fba06d61bae6281480b Assembly-CSharp.dll:.RealTimeAcademy
+e431ce292dc7df8e6e67cfd34f600a3b Assembly-CSharp.dll:.RealTimeAcademy
 7ca765ad7969aae95e8011264b9c4046 Cinemachine.dll:Cinemachine.CinemachineTriggerAction
 bd543bad7f9f6262f10595aadb130d22 Cinemachine.dll:Cinemachine.CinemachineComposer
 59020f4a14d8d70c2559b94b8804f969 Assembly-CSharp.dll:.PyramidAgent
@@ -214,7 +214,7 @@ c4bff8529e730cde368c4b0b7600f222 Assembly-CSharp.dll:.BastardSword
 bdcd612e570989effb1e97c07449c801 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.HID.Editor.HIDDescriptorWindow
 b5e9ac9ceb5179692cef40163e760642 Assembly-CSharp.dll:MLAgents.CoreBrainPlayer
 56df1fa7cea034df9863fe5a24200a32 Cinemachine.dll:Cinemachine.CinemachineTargetGroup
-7a5969bde0f3309aa060380831cebabc Assembly-CSharp.dll:.ShowFPS
+c7a99eb453aebbea543337e6fa21c199 Assembly-CSharp.dll:.ShowFPS
 78e9466979745cbb0c3eb144aaae58ea Assembly-CSharp.dll:.GoalDetect
 a3def8b59a36744687edf8fd7e6f88c7 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.OnScreen.OnScreenButton
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:.UIActionInputModuleEnabler
@@ -336,3 +336,4 @@ b5c3dbcb94925c8b595ad16a62b44788 Cinemachine.dll:Cinemachine.CinemachineBasicMul
 1994f8b165cd1b6e4b1669e09b537fa5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputSystemObject
 f1d4755bab5ef0b46262de0e1c5506de Assembly-CSharp.dll:.Ball3DAgent
 7e8b63eee6766b24ff7d26e2fc91d077 Assembly-CSharp.dll:.AgentSoccer
+656f1324e307a92cb3adf5794320045d Assembly-CSharp.dll:.Target

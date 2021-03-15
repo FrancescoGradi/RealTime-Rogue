@@ -8,20 +8,48 @@ public class ItemsHub : MonoBehaviour
     public GameObject longSwordSprite;
     public GameObject bastardSwordSprite;
     public GameObject woodShieldSprite;
-    public GameObject goldShieldSprite;
+    public GameObject goldenShieldSprite;
     public GameObject healthPotionSprite;
     public GameObject bonusPotionSprite;
+    public GameObject emptySprite;
 
     public TMP_Text itemCollected;
     public GameObject itemCanvas;
 
     private GameObject actualSwordSprite;
     private GameObject actualShieldSprite;
-    private GameObject actualPotion;
+    private GameObject actualPotionSprite;
 
     void Start() {
-        SetLongSword();
-        SetWoodShield();
+
+        actualShieldSprite = Instantiate(emptySprite);
+        actualShieldSprite.transform.SetParent(this.gameObject.transform);
+
+        Vector3 pos = this.gameObject.transform.position;
+        
+        actualShieldSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
+
+
+        actualSwordSprite = Instantiate(emptySprite);
+        actualSwordSprite.transform.SetParent(this.gameObject.transform);
+
+        pos = this.gameObject.transform.position;
+        pos.x -= 175;
+        
+        actualSwordSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
+
+
+        actualPotionSprite = Instantiate(emptySprite);
+        actualPotionSprite.transform.SetParent(this.gameObject.transform);
+
+        pos = this.gameObject.transform.position;
+        pos.x -= 350;
+        
+        actualPotionSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
+
+
+        SetSword("Long Sword");
+        SetShield("Wood Shield");
     }
 
     public void CollectedItem(string name) {
@@ -33,72 +61,61 @@ public class ItemsHub : MonoBehaviour
         StartCoroutine(Wait(3f));
     }
 
-    public void SetBastardSword() {
+    public void SetSword(string name) {
+
+        Vector3 posSprite = actualSwordSprite.transform.position;
         Destroy(actualSwordSprite);
-        actualSwordSprite = Instantiate(bastardSwordSprite);
+
+        if (name == "Long Sword") {
+            actualSwordSprite = Instantiate(longSwordSprite, posSprite, Quaternion.identity);
+        } else if (name == "Bastard Sword") {
+            actualSwordSprite = Instantiate(bastardSwordSprite, posSprite, Quaternion.identity);
+        } else {
+            actualSwordSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
+        }
+
         actualSwordSprite.transform.SetParent(this.gameObject.transform);
-
-        Vector3 pos = this.gameObject.transform.position;
-        pos.x -= 250;
-        
-        actualSwordSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
     }
 
-    public void SetLongSword() {
-        Destroy(actualSwordSprite);
-        actualSwordSprite = Instantiate(longSwordSprite);
-        actualSwordSprite.transform.SetParent(this.gameObject.transform);
+    public void SetShield(string name) {
 
-        Vector3 pos = this.gameObject.transform.position;
-        pos.x -= 250;
-        
-        actualSwordSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
-    }
-
-    public void SetWoodShield() {
+        Vector3 posSprite = actualShieldSprite.transform.position;
         Destroy(actualShieldSprite);
-        actualShieldSprite = Instantiate(woodShieldSprite);
+
+        if (name == "Wood Shield") {
+            actualShieldSprite = Instantiate(woodShieldSprite, posSprite, Quaternion.identity);
+        } else if (name == "Golden Shield") {
+            actualShieldSprite = Instantiate(goldenShieldSprite, posSprite, Quaternion.identity);
+        } else {
+            actualShieldSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
+        }
+
         actualShieldSprite.transform.SetParent(this.gameObject.transform);
-
-        Vector3 pos = this.gameObject.transform.position;
-        
-        actualShieldSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
     }
 
-    public void SetGoldShield() {
-        Destroy(actualShieldSprite);
-        actualShieldSprite = Instantiate(goldShieldSprite);
-        actualShieldSprite.transform.SetParent(this.gameObject.transform);
+    public void SetPotion(string name) {
 
-        Vector3 pos = this.gameObject.transform.position;
-        
-        actualShieldSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
-    }
+        Vector3 posSprite = actualPotionSprite.transform.position;
+        Destroy(actualPotionSprite);
 
-    public void SetHealthPotion() {
-        Destroy(actualPotion);
-        actualPotion = Instantiate(healthPotionSprite);
-        actualPotion.transform.SetParent(this.gameObject.transform);
+        if (name == "Health Potion") {
+            actualPotionSprite = Instantiate(healthPotionSprite, posSprite, Quaternion.identity);
+        } else if (name == "Bonus Potion") {
+            actualPotionSprite = Instantiate(bonusPotionSprite, posSprite, Quaternion.identity);
+        } else {
+            actualPotionSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
+        }
 
-        Vector3 pos = this.gameObject.transform.position;
-        pos.x -= 500;
-        
-        actualPotion.transform.SetPositionAndRotation(pos, Quaternion.identity);
-    }
-
-    public void SetBonusPotion() {
-        Destroy(actualPotion);
-        actualPotion = Instantiate(bonusPotionSprite);
-        actualPotion.transform.SetParent(this.gameObject.transform);
-
-        Vector3 pos = this.gameObject.transform.position;
-        pos.x -= 500;
-        
-        actualPotion.transform.SetPositionAndRotation(pos, Quaternion.identity);
+        actualPotionSprite.transform.SetParent(this.gameObject.transform);
     }
 
     public void DestroyActualPotion() {
-        Destroy(actualPotion);
+        
+        Vector3 posSprite = actualPotionSprite.transform.position;
+        Destroy(actualPotionSprite);
+
+        actualPotionSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
+        actualPotionSprite.transform.SetParent(this.gameObject.transform);
     }
 
     private IEnumerator Wait(float seconds) {

@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         if (actualItem.itemName == "Bastard Sword") {
 
             itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetBastardSword();
+            itemsHub.SetSword(actualItem.itemName);
 
             BastardSword weapon = actualItem.GetComponent<BastardSword>();
             player.SetWeapon(actualItem.name, weapon.bonusATK, weapon.material);
@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         } else if (actualItem.itemName == "Golden Shield") {
 
             itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetGoldShield();
+            itemsHub.SetShield(actualItem.itemName);
 
             GoldenShield shield = actualItem.GetComponent<GoldenShield>();
             player.SetShield(actualItem.name, shield.material);
@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
         } else if (actualItem.itemName == "Health Potion") {
 
             itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetHealthPotion();
+            itemsHub.SetPotion(actualItem.itemName);
 
             player.SetActualPotion(actualItem.itemName);
 
@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         } else if (actualItem.itemName == "Bonus Potion") {
             
             itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetBonusPotion();
+            itemsHub.SetPotion(actualItem.itemName);
 
             player.SetActualPotion(actualItem.itemName);
 

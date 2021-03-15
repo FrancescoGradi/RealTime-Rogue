@@ -14,16 +14,9 @@ if __name__ == '__main__':
         'parameters': {
             'range': [5, 6, 7, 8, 9, 10],
             'agent_fixed': [0, 0, 0, 0, 0, 0],
-            'target_fixed': [0, 0, 0, 0, 0, 0]
-        }
-    }
-
-    curriculum = {
-        'thresholds': [5000, 8000, 11000],
-        'parameters': {
-            'range': [5, 6, 7, 8, 9, 10],
-            'agent_fixed': [0, 0, 0, 0, 0, 0],
-            'target_fixed': [0, 0, 0, 0, 0, 0]
+            'target_fixed': [0, 0, 0, 0, 0, 0],
+            'translate_factor': [1, 1, 1, 1, 1, 1],
+            'update_movement': [40, 40, 40, 40, 40, 40]
         }
     }
 
@@ -31,13 +24,13 @@ if __name__ == '__main__':
     if len(physical_devices) > 0:
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-    directory = "Model_Checkpoints/CurriculumObstacles"
-    model_name = "BIGOB_CURRICULUM_RANDOM5_5RAY_10_20angle"
+    directory = "Model_Checkpoints/MovingTarget"
+    model_name = "MV40_1_CURRICULUM_RANDOM5-10_3RAY_10_20angle_15000EP_EPS1"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 10000
+    num_episodes = 15000
     max_episode_timesteps = 250
-    game_name = 'Compilati/14_03_10_20angle_ray_bigOb'
+    game_name = 'Compilati/15_03_10_20angle_ray_mov_eps1'
     # game_name = None
 
     with tf.device('/device:GPU:0'):
@@ -45,6 +38,6 @@ if __name__ == '__main__':
         env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
         train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
-        # evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
+        # evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=None)
 
     visualize_history(directory=total_directory, num_mean=100, save_fig=True)
