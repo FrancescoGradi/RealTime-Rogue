@@ -611,11 +611,11 @@ MonoBehaviour:
     - key: speed
       value: 2
     - key: update_movement
-      value: 0
+      value: 100
   target: {fileID: 1766056851}
   agent: {fileID: 1766056847}
   objectsGenerator: {fileID: 1766056846}
-  range: 10
+  range: 6
 --- !u!143 &1766056850
 CharacterController:
   m_ObjectHideFlags: 0
@@ -648,5 +648,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   updateMovement: 100
   translateFactor: 1
-  moving: 1
   speed: 2

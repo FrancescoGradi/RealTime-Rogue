@@ -36,19 +36,19 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints/SmoothMovingTarget"
-    model_name = "MV100_2_CURRICULUM_RANDOM5-7_3RAY_10_20angle_15000EP_EPS075"
+    model_name = "MV100_2_CURRICULUM_RANDOM5-6_3RAY_10_20angle_10000EP_EPS075"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 15000
+    num_episodes = 10000
     max_episode_timesteps = 250
-    game_name = 'Compilati/16_03_smov_eps075'
-    # game_name = None
+    # game_name = 'Compilati/16_03_smov_eps075'
+    game_name = None
 
     with tf.device('/device:GPU:0'):
         env = UnityEnvWrapper(game_name=game_name)
         env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
-        train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
-        # evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=None)
+        # train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
+        evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=None)
 
     visualize_history(directory=total_directory, num_mean=100, save_fig=True)
