@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/15_03_10_20angle_ray_mov_eps1.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/16_03_smov_eps075.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -190,7 +190,7 @@ fc4659575ffc7614e5d042b0a0014c54 Unity.InputSystem.dll:UnityEngine.Experimental.
 8429f5e2e74458d387d20325476dffbf Assembly-CSharp.dll:.GunAim
 8a1511edcfd269b6938dd016efe00da5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UIGamepadInputModule
 df3ec0815ff483948b3dc4f12adcea86 Assembly-CSharp.dll:.Combat
-93f0617a8b73787514b996a764d5fa94 Assembly-CSharp.dll:.Portal
+320786c49832c601e4ca35371ec61ce7 Assembly-CSharp.dll:.Portal
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 5cca31c99362907d3791789e3bb2ff73 Assembly-CSharp.dll:MLAgents.FlyCamera
 2ce2187bbae6f802011f568630bd3d1f Cinemachine.dll:Cinemachine.CinemachineOrbitalTransposer
@@ -308,6 +308,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 892803c092b9dc58897616d0c0abc4d3 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputDebuggerWindow
 ffd3ed4fcd23b3e7745287c99a637247 Cinemachine.dll:Cinemachine.Cinemachine3rdPersonAim
 973d1aecca0eea32d70ca4d210753cc0 Assembly-CSharp.dll:.PushBlockAcademy
+3b0e0b7e826e62871c04f0792a7de5a8 Assembly-CSharp.dll:.Target
 5e84370a36252d6aa37d6a7bd37710f7 Cinemachine.dll:Cinemachine.Cinemachine3rdPersonFollow
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 6adf0680d8d7e110dab1c5470b12851b Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.AdvancedDropdownWindow
@@ -336,4 +337,3 @@ b5c3dbcb94925c8b595ad16a62b44788 Cinemachine.dll:Cinemachine.CinemachineBasicMul
 1994f8b165cd1b6e4b1669e09b537fa5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputSystemObject
 f1d4755bab5ef0b46262de0e1c5506de Assembly-CSharp.dll:.Ball3DAgent
 7e8b63eee6766b24ff7d26e2fc91d077 Assembly-CSharp.dll:.AgentSoccer
-656f1324e307a92cb3adf5794320045d Assembly-CSharp.dll:.Target

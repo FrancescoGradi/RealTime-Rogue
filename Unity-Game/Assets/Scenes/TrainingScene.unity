@@ -513,7 +513,7 @@ PrefabInstance:
     - target: {fileID: 4864752178589568663, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: epsilon
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -608,10 +608,10 @@ MonoBehaviour:
       value: 0
     - key: target_fixed
       value: 0
-    - key: translate_factor
-      value: 0.5
+    - key: speed
+      value: 2
     - key: update_movement
-      value: 40
+      value: 0
   target: {fileID: 1766056851}
   agent: {fileID: 1766056847}
   objectsGenerator: {fileID: 1766056846}
@@ -646,6 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee33f9d095c2c04d90e640edf743acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateMovement: 40
+  updateMovement: 100
   translateFactor: 1
   moving: 1
+  speed: 2

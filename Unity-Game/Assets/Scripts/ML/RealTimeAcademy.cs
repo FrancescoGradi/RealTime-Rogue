@@ -10,7 +10,7 @@ public class RealTimeAcademy : Academy {
 	public ObjectsGenerator objectsGenerator;
 
 	public float range = 10;
-	private float epsilon = 1;
+	private float epsilon = 2f;
 
 	private void Start() {
 				
@@ -21,13 +21,13 @@ public class RealTimeAcademy : Academy {
 		
 		objectsGenerator.ResetPositions();
 		range = this.resetParameters["range"];
-		target.translateFactor = this.resetParameters["translate_factor"];
 		target.updateMovement = (int) this.resetParameters["update_movement"];
+		target.speed = this.resetParameters["speed"];
 
 		if ((int) this.resetParameters["target_fixed"] == 1) {
-			target.gameObject.transform.position = new Vector3(0, 0.1f, 0);
+			target.ResetPosition(new Vector3(0, 0.1f, 0));
 		} else {
-			target.gameObject.transform.position = GetRandomPosInRange(agent, 0.1f);
+			target.ResetPosition(GetRandomPosInRange(agent, 0.1f));
 		}
 	}
 
