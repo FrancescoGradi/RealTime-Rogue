@@ -518,7 +518,7 @@ PrefabInstance:
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: envObjects.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -615,7 +615,7 @@ MonoBehaviour:
   target: {fileID: 1766056851}
   agent: {fileID: 1766056847}
   objectsGenerator: {fileID: 1766056846}
-  range: 7
+  range: 8
 --- !u!143 &1766056850
 CharacterController:
   m_ObjectHideFlags: 0

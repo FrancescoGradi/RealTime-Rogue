@@ -46,9 +46,9 @@ public class GameManager : MonoBehaviour
     private void SetInitialPortalNum(string portalType) {
 
         if (portalType == "T") {
-            initialPortalNum = 0;
-        } else if (portalType == "B") {
             initialPortalNum = 1;
+        } else if (portalType == "B") {
+            initialPortalNum = 0;
         } else if (portalType == "R") {
             initialPortalNum = 2;
         } else if (portalType == "L") {

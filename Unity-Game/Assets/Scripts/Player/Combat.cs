@@ -49,7 +49,6 @@ public class Combat : MonoBehaviour
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange, enemyLayers);
 
         foreach(Collider enemy in hitEnemies) {
-            Debug.Log("Hit " + enemy.name);
             enemy.GetComponent<Enemy>().TakeDamage(player.actualWeaponDamage + player.ATK, 0.3f);
         }
     }
@@ -62,7 +61,6 @@ public class Combat : MonoBehaviour
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange * 3, enemyLayers);
 
         foreach(Collider enemy in hitEnemies) {
-            Debug.Log("Hit " + enemy.name);
             enemy.GetComponent<Enemy>().TakeDamage((player.actualWeaponDamage + player.ATK) * 2, 0.9f);
         }
     }

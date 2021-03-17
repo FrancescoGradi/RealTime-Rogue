@@ -26,7 +26,7 @@ public class Room : MonoBehaviour
     private List<GameObject> patchedInstantieted = new List<GameObject> {};
 
 
-    private void Start() {
+    private void Awake() {
 
         System.Random random = new System.Random();
 
@@ -41,6 +41,7 @@ public class Room : MonoBehaviour
         permutation = Utility.Shuffle(permutation);
 
         initialPortalNum = FindObjectOfType<GameManager>().GetInitialPortalNum();
+        Debug.Log(initialPortalNum);
         permutation[initialPortalNum] = 1;
         
         PortalInstantiation(permutation);
@@ -51,9 +52,9 @@ public class Room : MonoBehaviour
         if (roomClear && (Input.GetButton("BaseAction"))) {
             foreach (GameObject portal in activePortals) {
 
-                if (initialPortalNum == 0 && portal.GetComponent<Portal>().GetPortalType() == "B") {
+                if (initialPortalNum == 0 && portal.GetComponent<Portal>().GetPortalType() == "T") {
                 continue;
-                } else if (initialPortalNum == 1 && portal.GetComponent<Portal>().GetPortalType() == "T") {
+                } else if (initialPortalNum == 1 && portal.GetComponent<Portal>().GetPortalType() == "B") {
                     continue;
                 } else if (initialPortalNum == 2 && portal.GetComponent<Portal>().GetPortalType() == "L") {
                     continue;
@@ -77,9 +78,9 @@ public class Room : MonoBehaviour
 
         foreach (GameObject portal in activePortals) {
 
-            if (initialPortalNum == 0 && portal.GetComponent<Portal>().GetPortalType() == "B") {
+            if (initialPortalNum == 0 && portal.GetComponent<Portal>().GetPortalType() == "T") {
                 continue;
-            } else if (initialPortalNum == 1 && portal.GetComponent<Portal>().GetPortalType() == "T") {
+            } else if (initialPortalNum == 1 && portal.GetComponent<Portal>().GetPortalType() == "B") {
                 continue;
             } else if (initialPortalNum == 2 && portal.GetComponent<Portal>().GetPortalType() == "L") {
                 continue;

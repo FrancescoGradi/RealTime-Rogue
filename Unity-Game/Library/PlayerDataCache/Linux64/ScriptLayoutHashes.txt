@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/16_03_smov_eps075.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/17_03_smov_eps075.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -281,7 +281,7 @@ ca097b9b272861c9a7e9f94ad887519c Assembly-CSharp.dll:MLAgents.BCTeacherHelper
 2f16042ce22284a0a3c0e57f1749be4c Assembly-CSharp.dll:MLAgents.CoreBrainHeuristic
 2c3a39709c6492546e40152ccfbb2702 Assembly-CSharp.dll:.SoccerAcademy
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:MLAgents.AdjustTrainingTimescale
-c8c5e65e9fb858572516474d6e2102bc Assembly-CSharp.dll:.PauseMenu
+3c5b039ab358bb6c96419de234ebc7f9 Assembly-CSharp.dll:.PauseMenu
 3b760e6526e13f7504f59e210145899a Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.PostFX.CinemachineVolumeSettings
 939895993e33a5e257bd14c4f195b1b3 Assembly-CSharp.dll:.ExtinguishableFire
