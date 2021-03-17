@@ -1,6 +1,2 @@
-17/03/2021 14:23:55
+17/03/2021 16:03:50
  
-Exception
-NullReferenceException: Object reference not set to an instance of an object
-Room.Start () (at Assets/Scripts/Environment/Room.cs:43)
-

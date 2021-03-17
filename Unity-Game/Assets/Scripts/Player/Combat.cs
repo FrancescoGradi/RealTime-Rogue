@@ -75,10 +75,7 @@ public class Combat : MonoBehaviour
                 Vector3 forward = this.gameObject.transform.forward;
 
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
-                Debug.Log("Angle" + angle);
-                if (angle > 4f && angle < -4f) {
-                    this.gameObject.transform.Rotate(0, angle, 0);
-                }
+                this.gameObject.transform.Rotate(0, -angle, 0);
                 break;
             }
         }

@@ -36,11 +36,11 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints/SmoothMovingTarget"
-    model_name = "MV100_3_CURRICULUM_RANDOM5-8_3RAY_10_20angle_20000EP_EPS075_350TS"
+    model_name = "MV100_3_CURRICULUM_RANDOM5-8_3RAY_10_20angle_20000EP_EPS075_450TS"
     total_directory = directory + "/" + model_name
 
     num_episodes = 20000
-    max_episode_timesteps = 350
+    max_episode_timesteps = 450
     game_name = 'Compilati/17_03_smov_eps075'
     # game_name = None
 
