@@ -21,6 +21,7 @@ public class Room : MonoBehaviour
 
 
     private bool roomClear = false;
+    private int initialPortalNum;
     private List<GameObject> activePortals = new List<GameObject> {};
     private List<GameObject> patchedInstantieted = new List<GameObject> {};
 
@@ -29,7 +30,7 @@ public class Room : MonoBehaviour
 
         System.Random random = new System.Random();
 
-        int n_portals = random.Next(1, 5);
+        int n_portals = random.Next(2, 5);
 
         List<int> permutation = new List<int> {0, 0, 0, 0};
 
@@ -38,8 +39,11 @@ public class Room : MonoBehaviour
         }
 
         permutation = Utility.Shuffle(permutation);
+
+        initialPortalNum = FindObjectOfType<GameManager>().GetInitialPortalNum();
+        permutation[initialPortalNum] = 1;
         
-        PortalInstantiation(4.5f, permutation);
+        PortalInstantiation(permutation);
     }
 
     private void Update() {
@@ -47,10 +51,20 @@ public class Room : MonoBehaviour
         if (roomClear && (Input.GetButton("BaseAction"))) {
             foreach (GameObject portal in activePortals) {
 
-                Collider[] nearbyPlayers = Physics.OverlapSphere(portal.transform.position, 3f, playerLayer);
+                if (initialPortalNum == 0 && portal.GetComponent<Portal>().GetPortalType() == "B") {
+                continue;
+                } else if (initialPortalNum == 1 && portal.GetComponent<Portal>().GetPortalType() == "T") {
+                    continue;
+                } else if (initialPortalNum == 2 && portal.GetComponent<Portal>().GetPortalType() == "L") {
+                    continue;
+                } else if (initialPortalNum == 3 && portal.GetComponent<Portal>().GetPortalType() == "R" ) {
+                    continue;
+                } else {
+                    Collider[] nearbyPlayers = Physics.OverlapSphere(portal.transform.position, 3f, playerLayer);
 
-                foreach (Collider player in nearbyPlayers) {
-                    FindObjectOfType<GameManager>().CreateNewRoom(portal.GetComponent<Portal>().GetPortalType());
+                    foreach (Collider player in nearbyPlayers) {
+                        FindObjectOfType<GameManager>().CreateNewRoom(portal.GetComponent<Portal>().GetPortalType());
+                    }
                 }
             }
         }
@@ -62,7 +76,18 @@ public class Room : MonoBehaviour
         FindObjectOfType<RoomClearedScreen>().Clear();
 
         foreach (GameObject portal in activePortals) {
-            portal.GetComponent<Portal>().SetOpenPortal();
+
+            if (initialPortalNum == 0 && portal.GetComponent<Portal>().GetPortalType() == "B") {
+                continue;
+            } else if (initialPortalNum == 1 && portal.GetComponent<Portal>().GetPortalType() == "T") {
+                continue;
+            } else if (initialPortalNum == 2 && portal.GetComponent<Portal>().GetPortalType() == "L") {
+                continue;
+            } else if (initialPortalNum == 3 && portal.GetComponent<Portal>().GetPortalType() == "R" ) {
+                continue;
+            } else {
+                portal.GetComponent<Portal>().SetOpenPortal();
+            }
         }
 
     }
@@ -78,7 +103,7 @@ public class Room : MonoBehaviour
         }
     }
 
-    private void PortalInstantiation(float seconds, List<int> permutation) {
+    private void PortalInstantiation(List<int> permutation) {
         
         if (permutation[0] == 1) {
             GameObject tmp = Instantiate(portalT, new Vector3(0, 0, 14.5f), Quaternion.identity);

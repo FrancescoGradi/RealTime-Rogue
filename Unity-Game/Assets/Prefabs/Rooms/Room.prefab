@@ -2362,7 +2362,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   portalT: {fileID: 1904352722251772, guid: 4c2122c626d9a1d4c99d4ae898ccc727, type: 3}
-  portalB: {fileID: 6358260403890276496, guid: de24c59e08de074998421acc18976bc1, type: 3}
+  portalB: {fileID: 7631705557413236409, guid: 5b3cef0d69d73f4eaaaf089afd827536, type: 3}
   portalL: {fileID: 5423313461019373416, guid: 10363caedb91948fbbfe4cd0968bce45, type: 3}
   portalR: {fileID: 6358260403890276496, guid: de24c59e08de074998421acc18976bc1, type: 3}
   patchedT: {fileID: 4121524956301834997, guid: 9417e8d429d6417fc83677730a0413df,
