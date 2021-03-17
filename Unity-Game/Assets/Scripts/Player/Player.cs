@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 
     private void Update() {
 
-        if (Input.GetButton("BaseAction") && actualPotion != null) {
+        if (actualPotion != null && Input.GetAxis("Drink") > 0) {
             DrinkPotion();
         }
     }

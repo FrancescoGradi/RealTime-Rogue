@@ -647,5 +647,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateMovement: 100
-  translateFactor: 1
+  translateFactor: 2
   speed: 3
