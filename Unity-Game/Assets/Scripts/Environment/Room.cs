@@ -40,8 +40,12 @@ public class Room : MonoBehaviour
 
         permutation = Utility.Shuffle(permutation);
 
-        initialPortalNum = FindObjectOfType<GameManager>().GetInitialPortalNum();
-        Debug.Log(initialPortalNum);
+        try {
+            initialPortalNum = FindObjectOfType<GameManager>().GetInitialPortalNum();
+        } catch (Exception e) {
+            Debug.Log(e);
+            initialPortalNum = 0;
+        }
         permutation[initialPortalNum] = 1;
         
         PortalInstantiation(permutation);

@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
-public class Player : MonoBehaviour
-{
+public class Player : MonoBehaviour {
     public HealthBar playerHealthBar;
     public ItemsHub itemsHub;
 
@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public int actualWeaponDamage = 6;
     public MeshRenderer sword;
     public MeshRenderer shield;
+    public Spikes spikes;
 
     private string actualPotion;
 
@@ -40,7 +41,7 @@ public class Player : MonoBehaviour
 
     public void SetWeapon(string weaponName, int bonusATK, Material material) {
         this.weaponName = weaponName;
-        this.actualWeaponDamage += bonusATK;
+        this.actualWeaponDamage = bonusATK;
 
         sword.material = material;
     }
@@ -56,16 +57,46 @@ public class Player : MonoBehaviour
     private void DrinkPotion() {
 
         if (actualPotion == "Health Potion") {
+
+            itemsHub.DrinkPotionCanvasFeedback("+10 HP");
+
             currentHealth += 10;
             if (currentHealth > HP) {
                 currentHealth = HP;
             }
             playerHealthBar.SetHealth(currentHealth);
+
+        } else if (actualPotion == "Bonus Potion") {
+
+            itemsHub.DrinkPotionCanvasFeedback("+5 All Stats");
+
+            ATK += 5;
+            MANA += 5;
+            DEF += 5;
+            speed += 2f;
+
+            Spikes tmp = Instantiate(spikes, this.gameObject.transform.position, Quaternion.identity);
+            tmp.gameObject.transform.SetParent(this.gameObject.transform);
+
+            StartCoroutine(WaitBonusPotion(5f));
         }
 
         actualPotion = null;
 
         itemsHub.DestroyActualPotion();
+
+    }
+
+    private IEnumerator WaitBonusPotion(float seconds) {
+
+        yield return new WaitForSecondsRealtime(seconds);
+
+        ATK -= 5;
+        MANA -= 5;
+        DEF -= 5;
+        speed -= 2f;
+
+        itemsHub.DrinkPotionCanvasFeedback("Bonus Potion Over!");
 
     }
 }

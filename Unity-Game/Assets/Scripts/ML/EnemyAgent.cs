@@ -30,6 +30,8 @@ public class EnemyAgent : Agent
             enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target, 0), Quaternion.identity);
         }
 
+        enemyMovement.updateRate = (int) realTimeAcademy.resetParameters["agent_update_rate"];
+
         enemyMovement.SetTargetReached(false);
         enemyMovement.AddMovement(0, 0);
     }

@@ -91,7 +91,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0527c0f0daa67ec32a7925234e37980a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Golden Shield
+  bonusHP: 0
+  bonusATK: 0
+  bonusMANA: 0
+  bonusDEF: 8
   material: {fileID: 2100000, guid: 6acc71550c566ce42a8bedab0c3b42af, type: 2}
 --- !u!65 &5548030960698655193
 BoxCollider:

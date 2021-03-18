@@ -975,6 +975,7 @@ MonoBehaviour:
   actualWeaponDamage: 6
   sword: {fileID: 3557610573178438829}
   shield: {fileID: 3557475912593628281}
+  spikes: {fileID: 5434128566314953014, guid: 031c55d76042df8b19858825e8602c2d, type: 3}
 --- !u!1 &3534600018385363839
 GameObject:
   m_ObjectHideFlags: 0

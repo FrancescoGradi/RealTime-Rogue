@@ -25,8 +25,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb3b9f3d8139f29ca1e2a16b63c7f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  healthBonus: 10
+  itemName: Health Potion
+  bonusHP: 10
+  bonusATK: 0
+  bonusMANA: 0
+  bonusDEF: 0
 --- !u!1001 &1892156261548453786
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bastard Sword
   bonusHP: 0
-  bonusATK: 0
+  bonusATK: 8
   bonusMANA: 0
   bonusDEF: 0
   material: {fileID: 2100000, guid: 6acc71550c566ce42a8bedab0c3b42af, type: 2}

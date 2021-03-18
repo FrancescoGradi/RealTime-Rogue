@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ItemsHub : MonoBehaviour
-{
+public class ItemsHub : MonoBehaviour {
     public GameObject longSwordSprite;
     public GameObject bastardSwordSprite;
     public GameObject woodShieldSprite;
@@ -59,6 +58,14 @@ public class ItemsHub : MonoBehaviour
         itemCollected.text = name + " collected!";
 
         StartCoroutine(Wait(3f));
+    }
+
+    public void DrinkPotionCanvasFeedback(string name) {
+
+        itemCanvas.gameObject.SetActive(true);
+        itemCollected.text = name;
+
+        StartCoroutine(Wait(2f));
     }
 
     public void SetSword(string name) {
