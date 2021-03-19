@@ -197,9 +197,11 @@
      <Compile Include="Assets\Scripts\Player\Combat.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Stats.cs" />
      <Compile Include="Assets\Scripts\UI\BillBoard.cs" />
      <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\ShowFPS.cs" />
+     <Compile Include="Assets\Scripts\UI\Stats.cs" />
      <Compile Include="Assets\Scripts\Utility\Utility.cs" />
      <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
      <None Include="Assets\OtherAssets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

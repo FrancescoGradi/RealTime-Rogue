@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/18_03_nolights.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/19_03_nolights_fixed0_02_bis.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?

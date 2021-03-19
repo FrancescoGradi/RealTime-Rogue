@@ -98,6 +98,7 @@ public class Combat : MonoBehaviour
         animator.SetBool("attacking", false);
         GameObject new_fireball = Instantiate(fireball, new Vector3(player.transform.position.x, player.transform.position.y + 1f, player.transform.position.z + 1f), player.transform.rotation);
         new_fireball.GetComponent<FireBall>().enemyLayers = enemyLayers;
+        new_fireball.GetComponent<FireBall>().damages = player.MANA;
     }
 
     private void OnDrawGizmosSelected() {

@@ -15,6 +15,7 @@ if __name__ == '__main__':
             'range': [5, 6, 7, 8, 9, 10],
             'agent_fixed': [0, 0, 0, 0, 0, 0],
             'target_fixed': [0, 0, 0, 0, 0, 0],
+            'agent_update_rate': [25, 25, 25, 25],
             'speed': [2, 2, 2, 2, 2, 2],
             'update_movement': [100, 100, 100, 100, 100, 100]
         }
@@ -26,7 +27,7 @@ if __name__ == '__main__':
             'range': [5, 6, 7, 8],
             'agent_fixed': [0, 0, 0, 0],
             'target_fixed': [0, 0, 0, 0],
-            'agent_update_rate': [20, 20, 20, 20],
+            'agent_update_rate': [30, 30, 30, 30],
             'speed': [3, 3, 3, 3],
             'update_movement': [100, 100, 100, 100]
         }
@@ -37,12 +38,13 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints/SmoothMovingTarget"
-    model_name = "RAPID100_3_CURRICULUM_RANDOM5-7_3RAY_15000EP_500TS_UR20"
+    model_name = "RAPID100_3_CURRICULUM_RANDOM5-7_3RAY_15000EP_25TS_UR30"
+    # model_name = "PROVA"
     total_directory = directory + "/" + model_name
 
     num_episodes = 15000
-    max_episode_timesteps = 500
-    # game_name = 'Compilati/18_03_nolights'
+    max_episode_timesteps = 25
+    # game_name = 'Compilati/19_03_nolights_fixed0_02'
     game_name = None
 
     with tf.device('/device:GPU:0'):

@@ -443,6 +443,11 @@ PrefabInstance:
       propertyPath: angles.Array.data[4]
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4864752178589568663, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: envObjectsLayer.m_Bits
@@ -456,7 +461,7 @@ PrefabInstance:
     - target: {fileID: 4864752178589568663, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: updateRate
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
