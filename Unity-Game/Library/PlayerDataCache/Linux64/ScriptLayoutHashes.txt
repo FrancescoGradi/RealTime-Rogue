@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/19_03_nolights_fixed0_02_bis.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/20_03_discrete_actions.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -313,6 +313,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachineInputProvider
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputActionImporterEditor
 0d85f4fda1e0e70cd92c084d12f05cdc Assembly-CSharp.dll:MLAgents.CameraFollow
+01ddb0802d2099564c485e5d0c54b6bb Assembly-CSharp.dll:.Stats
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputActionAssetEditor
 89be26d722c83f84ea329e8f5f08f5fa Assembly-CSharp.dll:.BasicAcademy
 892803c092b9dc58897616d0c0abc4d3 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputDebuggerWindow

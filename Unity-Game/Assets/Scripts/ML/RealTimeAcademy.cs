@@ -20,6 +20,7 @@ public class RealTimeAcademy : Academy {
   	public override void AcademyReset() {
 		
 		objectsGenerator.ResetPositions();
+		
 		range = this.resetParameters["range"];
 		target.updateMovement = (int) this.resetParameters["update_movement"];
 		target.speed = this.resetParameters["speed"];

@@ -10,7 +10,6 @@ public class EnemyAgent : Agent
     public Enemy enemy;
     public GameObject target;
     public RealTimeAcademy realTimeAcademy;
-    public ObjectsGenerator objectsGenerator;
 
     private EnemyMovement enemyMovement;
     public List<float> angles = new List<float>() {0f};
@@ -71,10 +70,70 @@ public class EnemyAgent : Agent
         AddVectorObs(obs);
     }
 
+    /*
+
+    // Caso vettore delle azioni CONTINUO
+
     public override void AgentAction(float[] vectorAction, string textAction) {
 
         float horizontal = vectorAction[0];
         float vertical = vectorAction[1];
+
+        enemyMovement.AddMovement(horizontal, vertical);
+
+        AddReward(-0.1f);
+    }
+
+    */
+
+    // Caso vettore delle azioni DISCRETO
+
+    public override void AgentAction(float[] vectorAction, string textAction) {
+
+        float horizontal = 0f;
+        float vertical = 0f;
+
+        // Nessun movimento e movimento in ciascuna delle 8 direzioni cardinali
+
+        switch ((int) vectorAction[0]) {
+
+            case 0:
+                horizontal = 0f;
+                vertical = 0f;
+                break;
+            case 1:
+                horizontal = 1f;
+                vertical = 0f;
+                break;
+            case 2:
+                horizontal = 0f;
+                vertical = -1f;
+                break;
+            case 3:
+                horizontal = -1f;
+                vertical = 0f;
+                break;
+            case 4:
+                horizontal = 1f;
+                vertical = 1f;
+                break;
+            case 5:
+                horizontal = 1f;
+                vertical = -1f;
+                break;
+            case 6:
+                horizontal = -1f;
+                vertical = -1f;
+                break;
+            case 7:
+                horizontal = -1f;
+                vertical = 1f;
+                break;
+            case 8:
+                horizontal = 0f;
+                vertical = 1f;
+                break;
+        }
 
         enemyMovement.AddMovement(horizontal, vertical);
 

@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class MainMenu : MonoBehaviour {
 
     public GameObject mainFirstButton;
+    public GameObject optionsMenu;
 
     private void Start() {
         EventSystem.current.SetSelectedGameObject(null);
@@ -21,6 +22,18 @@ public class MainMenu : MonoBehaviour {
 
         Debug.Log("Quit");
         Application.Quit();
+    }
+
+    public void OpenOptions() {
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionsMenu);
+    }
+
+    public void CloseOptions() {
+        
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(mainFirstButton);
     }
 
     private IEnumerator PlayWaiter(float seconds) {

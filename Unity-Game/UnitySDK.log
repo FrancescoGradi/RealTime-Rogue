@@ -1,2 +1,8 @@
-19/03/2021 21:10:34
+20/03/2021 21:46:50
  
+Log
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Room.Start () [0x0005b] in /home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/Scripts/Environment/Room.cs:44 
+UnityEngine.Debug:Log(Object)
+Room:Start() (at Assets/Scripts/Environment/Room.cs:46)
+

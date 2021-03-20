@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 800616031680524858}
   - component: {fileID: 800616031683392026}
   - component: {fileID: 800616031682425050}
-  - component: {fileID: 800616031680425493}
+  - component: {fileID: 1046267844369135133}
   m_Layer: 0
-  m_Name: Basement_Wall_Prison
+  m_Name: Basement_Wall_Patched B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,8 +78,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &800616031680425493
-MeshCollider:
+--- !u!65 &1046267844369135133
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,7 +88,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: dc9f3484ce4f67f419753556f57cae0f, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 4.000003, y: 0.16653194, z: 3.1751034}
+  m_Center: {x: -0.00000047683716, y: -0.0032657727, z: 1.5442396}

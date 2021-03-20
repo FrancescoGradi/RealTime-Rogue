@@ -8,7 +8,9 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool gamePaused = false;
     public GameObject pauseMenuUI;
+    public GameObject optionsMenuUI;
     public GameObject pauseFirstButton;
+    public GameObject optionsMenuFirstButton;
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause")) {
@@ -32,6 +34,24 @@ public class PauseMenu : MonoBehaviour
 
         Time.timeScale = 0f;
         gamePaused = true;
+    }
+
+    public void OpenOptions() {
+        
+        pauseMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionsMenuFirstButton);
+    }
+
+    public void CloseOptions() {
+
+        pauseMenuUI.SetActive(true);
+        optionsMenuUI.SetActive(false);
+        
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pauseFirstButton);
     }
 
     public void LoadMenu() {

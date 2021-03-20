@@ -26,7 +26,7 @@ public class Room : MonoBehaviour
     private List<GameObject> patchedInstantieted = new List<GameObject> {};
 
 
-    private void Awake() {
+    private void Start() {
 
         System.Random random = new System.Random();
 
