@@ -348,6 +348,9 @@
  <Reference Include="PackageManagerAssembly">
  <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/OtherAssets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
  </Reference>
+ <Reference Include="JMOAssets_CartoonFXFreeWelcome">
+ <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/OtherAssets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -362,9 +365,6 @@
  </Reference>
  <Reference Include="clipper_library">
  <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Library/PackageCache/com.unity.cinemachine@2.7.1/Runtime/ThirdParty/clipper_library.dll</HintPath>
- </Reference>
- <Reference Include="JMOAssets_CartoonFXFreeWelcome">
- <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/OtherAssets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/home/fra/Unity/Hub/Editor/2018.4.31f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

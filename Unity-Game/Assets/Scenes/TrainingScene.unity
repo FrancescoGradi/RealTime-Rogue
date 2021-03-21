@@ -663,7 +663,7 @@ MonoBehaviour:
     - key: target_fixed
       value: 0
     - key: speed
-      value: 1
+      value: 3
     - key: update_movement
       value: 100
     - key: agent_update_rate

@@ -28,7 +28,7 @@ if __name__ == '__main__':
             'agent_fixed': [0, 0, 0, 0, 0],
             'target_fixed': [0, 0, 0, 0, 0],
             'agent_update_rate': [25, 25, 25, 25, 25],
-            'speed': [1, 1, 1, 1, 1],
+            'speed': [3, 3, 3, 3, 3],
             'update_movement': [100, 100, 100, 100, 100]
         }
     }
@@ -38,7 +38,7 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints/DiscreteMov"
-    model_name = "SPEED1_CURRICULUM5-8_TS30_UR25"
+    model_name = "SPEED3_CURRICULUM5-8_TS30_UR25"
     total_directory = directory + "/" + model_name
 
     num_episodes = 10000
