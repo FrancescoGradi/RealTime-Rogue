@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using MLAgents;
+
 public class Target : MonoBehaviour {
 
     public int updateMovement = 100;
     public float translateFactor = 2f;
     public float speed = 2f;
+    public int HP = 5;
+    public int currentHealth = 5;
 
     private int count = 0;
     private CharacterController characterController;
@@ -14,8 +18,10 @@ public class Target : MonoBehaviour {
     private bool moving = false;
 
 
+
     private void Start() {
         characterController = GetComponent<CharacterController>();
+        currentHealth = HP;
     }
 
     void FixedUpdate() {
@@ -37,6 +43,7 @@ public class Target : MonoBehaviour {
 
     public void ResetPosition(Vector3 pos) {
 
+        currentHealth = HP;
         direction = new Vector3(0, 0, 0);
         moving = false;
         this.gameObject.transform.position = pos;
@@ -48,5 +55,28 @@ public class Target : MonoBehaviour {
 
     private void ChangeRandomMovement() {
         direction = new Vector3((int) UnityEngine.Random.Range(-translateFactor, translateFactor), 0f, (int) UnityEngine.Random.Range(-translateFactor, translateFactor));
+    }
+
+    public void TakeDamage(int damage, float delay) {
+
+        StartCoroutine(DamageWaiter(damage, delay));
+    }
+
+    private IEnumerator DamageWaiter(int damage, float seconds) {
+        
+        yield return new WaitForSecondsRealtime(seconds);
+
+        currentHealth -= damage;
+
+        if (currentHealth <= 0) {
+            StartCoroutine(PlayerDownWaiter(0.3f));
+        }
+    }
+
+    private IEnumerator PlayerDownWaiter(float seconds) {
+
+        yield return new WaitForSecondsRealtime(seconds);
+
+        FindObjectOfType<EnemyAgent>().PlayerDown();
     }
 }

@@ -39,24 +39,28 @@ public class EnemyMovement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        if (!targetReached) {
-            count += 1;
-            if (count == updateRate) {
-                agent.RequestDecision();
-                count = 0;
-            }
 
+        count += 1;
+        if (count == updateRate) {
+            agent.RequestDecision();
+            count = 0;
+        }
+
+        if (!animator.GetBool("attacking")) {
+            
             if (direction.magnitude >= 0.05f) {
                 animator.SetInteger("condition", 1);
                 Movement();
             } else {
                 animator.SetInteger("condition", 0);
             }
-
-            if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
-                System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
-                targetReached = true;
-                agent.TargetReached();
+            
+            if (!targetReached) {
+                if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
+                    System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
+                    targetReached = true;
+                    agent.TargetReached();
+                }
             }
         }
     }

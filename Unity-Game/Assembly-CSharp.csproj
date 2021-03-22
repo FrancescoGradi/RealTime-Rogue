@@ -171,8 +171,10 @@
      <Compile Include="Assets\Scripts\Effects\Smoke.cs" />
      <Compile Include="Assets\Scripts\Effects\Spikes.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyCombat.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHealthBar.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\EnemyCombat.cs" />
      <Compile Include="Assets\Scripts\Environment\EnemyGenerator.cs" />
      <Compile Include="Assets\Scripts\Environment\InitialRoom.cs" />
      <Compile Include="Assets\Scripts\Environment\ObjectsGenerator.cs" />

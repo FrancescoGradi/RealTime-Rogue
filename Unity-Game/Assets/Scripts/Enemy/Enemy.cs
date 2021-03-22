@@ -7,13 +7,24 @@ public class Enemy : MonoBehaviour
     public Animator animator;
     public EnemyHealthBar healthBar;
 
-    public int maxHealth = 20;
+    public int HP = 20;
+    public int ATK = 3;
+    public int MANA = 3;
+    public int DEF = 3;
+    
     public int currentHealth;
+    public float speed = 6.0f;
+
+    public float attackRange = 1.5f;
+    public float attackRate = 2f;
+
+    public string weaponName = "Long Sword";
+    public int actualWeaponDamage = 6;
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        currentHealth = HP;
+        healthBar.SetMaxHealth(HP);
     }
 
     public void TakeDamage(int damage, float delay) {

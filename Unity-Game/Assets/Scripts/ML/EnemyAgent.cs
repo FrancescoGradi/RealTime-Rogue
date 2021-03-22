@@ -12,12 +12,14 @@ public class EnemyAgent : Agent
     public RealTimeAcademy realTimeAcademy;
 
     private EnemyMovement enemyMovement;
+    private EnemyCombat enemyCombat;
     public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 10f;
     public float rayMinDistance = 1f;
 
     void Start() {
         enemyMovement = GetComponent<EnemyMovement>();
+        enemyCombat = GetComponent<EnemyCombat>();
         // AgentReset();
     }
 
@@ -93,7 +95,7 @@ public class EnemyAgent : Agent
         float horizontal = 0f;
         float vertical = 0f;
 
-        // Nessun movimento e movimento in ciascuna delle 8 direzioni cardinali
+        // Nessun movimento e movimento in ciascuna delle 8 direzioni cardinali + attacco
 
         switch ((int) vectorAction[0]) {
 
@@ -133,6 +135,11 @@ public class EnemyAgent : Agent
                 horizontal = 0f;
                 vertical = 1f;
                 break;
+            case 9:
+                horizontal = 0f;
+                vertical = 0f;
+                enemyCombat.NormalAttack();
+                break;
         }
 
         enemyMovement.AddMovement(horizontal, vertical);
@@ -141,6 +148,11 @@ public class EnemyAgent : Agent
     }
 
     public void TargetReached() {
+        AddReward(5f);
+        // Done();
+    }
+
+    public void PlayerDown() {
         AddReward(50f);
         Done();
     }

@@ -124,7 +124,7 @@ class UnityDiscreteEnvWrapper(Environment):
                     env_objects_distances=dict(type='float', shape=(5,)))
 
     def actions(self):
-        return dict(type='int', num_values=9)
+        return dict(type='int', num_values=10)
 
     def reset(self):
 

@@ -22,13 +22,13 @@ if __name__ == '__main__':
     }
 
     curriculum = {
-        'thresholds': [4000, 6000, 8000, 10000],
+        'thresholds': [4000, 8000, 10000, 12000],
         'parameters': {
             'range': [5, 6, 7, 8, 9],
             'agent_fixed': [0, 0, 0, 0, 0],
             'target_fixed': [0, 0, 0, 0, 0],
             'agent_update_rate': [25, 25, 25, 25, 25],
-            'speed': [3, 3, 3, 3, 3],
+            'speed': [0, 0, 0, 0, 0],
             'update_movement': [100, 100, 100, 100, 100]
         }
     }
@@ -37,13 +37,13 @@ if __name__ == '__main__':
     if len(physical_devices) > 0:
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-    directory = "Model_Checkpoints/DiscreteMov"
-    model_name = "SPEED3_CURRICULUM5-8_TS30_UR25"
+    directory = "Model_Checkpoints/DiscreteWithAttack"
+    model_name = "SPEED0_CURRICULUM5-7_TS30_UR25"
     total_directory = directory + "/" + model_name
 
     num_episodes = 10000
     max_episode_timesteps = 30
-    # game_name = 'Compilati/20_03_discrete_actions'
+    # game_name = 'Compilati/22_03_discrete_attack'
     game_name = None
 
     with tf.device('/device:GPU:0'):

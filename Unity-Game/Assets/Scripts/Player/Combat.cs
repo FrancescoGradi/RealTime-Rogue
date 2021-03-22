@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Combat : MonoBehaviour
-{
+public class Combat : MonoBehaviour {
     public Animator animator;
     public Transform attackPoint;
     public LayerMask enemyLayers;
