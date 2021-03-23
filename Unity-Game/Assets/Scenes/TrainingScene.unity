@@ -653,11 +653,11 @@ MonoBehaviour:
   resetParameters:
     resetParameters:
     - key: range
-      value: 7
+      value: 5
     - key: agent_fixed
-      value: 1
-    - key: target_fixed
       value: 0
+    - key: target_fixed
+      value: 1
     - key: speed
       value: 0
     - key: update_movement

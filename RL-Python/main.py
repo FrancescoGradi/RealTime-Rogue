@@ -22,12 +22,12 @@ if __name__ == '__main__':
     }
 
     curriculum = {
-        'thresholds': [4000, 8000, 10000, 12000],
+        'thresholds': [5000, 8000, 10000, 12000],
         'parameters': {
             'range': [5, 6, 7, 8, 9],
-            'agent_fixed': [1, 1, 1, 1, 0],
+            'agent_fixed': [0, 0, 0, 0, 0],
             'target_fixed': [0, 0, 0, 0, 0],
-            'agent_update_rate': [25, 25, 25, 25, 25],
+            'agent_update_rate': [15, 15, 15, 15, 15],
             'speed': [0, 0, 0, 0, 0],
             'update_movement': [100, 100, 100, 100, 100]
         }
@@ -38,11 +38,11 @@ if __name__ == '__main__':
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
     directory = "Model_Checkpoints/DiscreteWithAttack"
-    model_name = "SPEED0_AGENT_FIXED_CURRICULUM5_TS15_UR25"
+    model_name = "SPEED0_CURRICULUM5_TS8_UR15_NO_TARGET_REACHED_REWARD"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 10000
-    max_episode_timesteps = 15
+    num_episodes = 5000
+    max_episode_timesteps = 8
     # game_name = 'Compilati/23_03_discrete_attack'
     game_name = None
 
@@ -51,6 +51,6 @@ if __name__ == '__main__':
         env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
         # train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
-        evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=None)
+        evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
 
     visualize_history(directory=total_directory, num_mean=100, save_fig=True)

@@ -58,7 +58,7 @@ public class EnemyMovement : MonoBehaviour
             if (!targetReached) {
                 if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
                     System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
-                    targetReached = true;
+                    // targetReached = true;
                     agent.TargetReached();
                 }
             }
