@@ -16,6 +16,7 @@ public class Target : MonoBehaviour {
     private CharacterController characterController;
     private Vector3 direction = new Vector3(0, 0, 0);
     private bool moving = false;
+    private bool isDown = false;
 
 
 
@@ -45,6 +46,7 @@ public class Target : MonoBehaviour {
 
         currentHealth = HP;
         direction = new Vector3(0, 0, 0);
+        isDown = false;
         moving = false;
         this.gameObject.transform.position = pos;
     }
@@ -68,7 +70,8 @@ public class Target : MonoBehaviour {
 
         currentHealth -= damage;
 
-        if (currentHealth <= 0) {
+        if (!isDown && currentHealth <= 0) {
+            isDown = true;
             StartCoroutine(PlayerDownWaiter(0.3f));
         }
     }

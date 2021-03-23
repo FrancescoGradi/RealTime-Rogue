@@ -655,7 +655,7 @@ MonoBehaviour:
     - key: range
       value: 7
     - key: agent_fixed
-      value: 0
+      value: 1
     - key: target_fixed
       value: 0
     - key: speed

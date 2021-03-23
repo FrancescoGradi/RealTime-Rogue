@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/22_03_discrete_attack.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/23_03_discrete_attack.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -228,6 +228,7 @@ a3def8b59a36744687edf8fd7e6f88c7 Unity.InputSystem.dll:UnityEngine.Experimental.
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:.UIActionInputModuleEnabler
 fa34bc8feb7cb4582d1fb3f1ed705e1e Assembly-CSharp.dll:.InitialRoom
 8945e293ce9cec94847aed6a3bcecd9b Assembly-CSharp.dll:.BouncerAcademy
+8a4893644ec61993a4f779e840027e37 Assembly-CSharp.dll:.EnemyCombat
 89be26d722c83f84ea329e8f5f08f5fa Assembly-CSharp.dll:.TennisAcademy
 7c792393fb82488bd20139dcc5ba26d8 Cinemachine.dll:Cinemachine.CinemachineTransposer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -349,4 +350,3 @@ b5c3dbcb94925c8b595ad16a62b44788 Cinemachine.dll:Cinemachine.CinemachineBasicMul
 1994f8b165cd1b6e4b1669e09b537fa5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputSystemObject
 f1d4755bab5ef0b46262de0e1c5506de Assembly-CSharp.dll:.Ball3DAgent
 7e8b63eee6766b24ff7d26e2fc91d077 Assembly-CSharp.dll:.AgentSoccer
-8a4893644ec61993a4f779e840027e37 Assembly-CSharp.dll:.EnemyCombat
