@@ -5,6 +5,7 @@ import numpy as np
 
 import signal
 import time
+import logging
 
 
 class UnityEnvWrapper(Environment):
@@ -39,6 +40,7 @@ class UnityEnvWrapper(Environment):
             signal.alarm(60)
 
             try:
+                logging.getLogger("mlagents.envs").setLevel(logging.WARNING)
                 env_info = self.unity_env.reset(train_mode=True, config=self.config)[self.default_brain]
 
             except Exception as exc:
@@ -136,6 +138,7 @@ class UnityDiscreteEnvWrapper(Environment):
             signal.alarm(60)
 
             try:
+                logging.getLogger("mlagents.envs").setLevel(logging.WARNING)
                 env_info = self.unity_env.reset(train_mode=True, config=self.config)[self.default_brain]
 
             except Exception as exc:

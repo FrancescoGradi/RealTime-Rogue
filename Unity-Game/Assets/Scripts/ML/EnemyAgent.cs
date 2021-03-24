@@ -72,7 +72,6 @@ public class EnemyAgent : Agent
         AddVectorObs(obs);
     }
 
-    /*
 
     // Caso vettore delle azioni CONTINUO
 
@@ -86,7 +85,7 @@ public class EnemyAgent : Agent
         AddReward(-0.1f);
     }
 
-    */
+    /*
 
     // Caso vettore delle azioni DISCRETO
 
@@ -147,9 +146,11 @@ public class EnemyAgent : Agent
         AddReward(-0.1f);
     }
 
+    */
+
     public void TargetReached() {
-        AddReward(5f);
-        // Done();
+        AddReward(50f);
+        Done();
     }
 
     public void PlayerDown() {

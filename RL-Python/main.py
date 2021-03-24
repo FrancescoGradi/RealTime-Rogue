@@ -22,13 +22,13 @@ if __name__ == '__main__':
     }
 
     curriculum = {
-        'thresholds': [5000, 8000, 10000, 12000],
+        'thresholds': [5000, 10000, 15000, 20000],
         'parameters': {
-            'range': [5, 6, 7, 8, 9],
+            'range': [7, 6, 7, 8, 9],
             'agent_fixed': [0, 0, 0, 0, 0],
             'target_fixed': [0, 0, 0, 0, 0],
-            'agent_update_rate': [15, 15, 15, 15, 15],
-            'speed': [0, 0, 0, 0, 0],
+            'agent_update_rate': [20, 20, 20, 20, 20],
+            'speed': [2, 2, 2, 2, 2],
             'update_movement': [100, 100, 100, 100, 100]
         }
     }
@@ -37,17 +37,17 @@ if __name__ == '__main__':
     if len(physical_devices) > 0:
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-    directory = "Model_Checkpoints/DiscreteWithAttack"
-    model_name = "SPEED0_CURRICULUM5_TS8_UR15_NO_TARGET_REACHED_REWARD"
+    directory = "Model_Checkpoints/NewContinuous"
+    model_name = "RAPID20_2_CURRICULUM5-7_TS25_UR20"
     total_directory = directory + "/" + model_name
 
-    num_episodes = 5000
-    max_episode_timesteps = 8
-    # game_name = 'Compilati/23_03_discrete_attack'
+    num_episodes = 15000
+    max_episode_timesteps = 25
+    # game_name = 'Compilati/24_03_cont'
     game_name = None
 
     with tf.device('/device:GPU:0'):
-        env = UnityDiscreteEnvWrapper(game_name=game_name)
+        env = UnityEnvWrapper(game_name=game_name)
         env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
 
         # train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
