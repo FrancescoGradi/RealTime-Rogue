@@ -1,0 +1,22 @@
+{
+  "directory": "Model_Checkpoints/NewContinuous",
+  "model_name": "RAPID100_3_CURRICULUM5-7_TS40_UR5",
+  "game_name": "Compilati/24_03_cont",
+
+  "num_episodes": 30000,
+  "max_episode_timesteps": 40,
+  "worker_id": 2,
+
+  "curriculum" : {
+    "thresholds": [10000, 20000, 30000, 40000],
+    "parameters": {
+        "range": [7, 6, 7, 8, 9],
+        "agent_fixed": [0, 0, 0, 0, 0],
+        "target_fixed": [0, 0, 0, 0, 0],
+        "agent_update_rate": [5, 5, 5, 5, 5],
+        "speed": [3, 3, 3, 3, 3],
+        "update_movement": [100, 100, 100, 100, 100]
+    }
+  }
+
+}
