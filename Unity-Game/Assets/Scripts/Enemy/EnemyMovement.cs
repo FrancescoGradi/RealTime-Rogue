@@ -39,14 +39,14 @@ public class EnemyMovement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-
-        count += 1;
-        if (count == updateRate) {
-            agent.RequestDecision();
-            count = 0;
-        }
-
+        
         if (!targetReached && !animator.GetBool("attacking")) {
+
+            count += 1;
+            if (count == updateRate || count > 1000) {
+                agent.RequestDecision();
+                count = 0;
+            }
             
             if (direction.magnitude >= 0.05f) {
                 animator.SetInteger("condition", 1);
@@ -54,7 +54,7 @@ public class EnemyMovement : MonoBehaviour
             } else {
                 animator.SetInteger("condition", 0);
             }
-            
+            /*
             if (!targetReached) {
                 if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
                     System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
@@ -62,6 +62,7 @@ public class EnemyMovement : MonoBehaviour
                     agent.TargetReached();
                 }
             }
+            */
         }
     }
 

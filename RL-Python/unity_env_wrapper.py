@@ -28,7 +28,7 @@ class UnityEnvWrapper(Environment):
                     env_objects_distances=dict(type='float', shape=(5,)))
 
     def actions(self):
-        return dict(type='float', shape=(2,), min_value=-1.0, max_value=1.0)
+        return dict(type='float', shape=(3,), min_value=-1.0, max_value=1.0)
 
     def reset(self):
 

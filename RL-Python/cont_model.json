@@ -1,21 +1,21 @@
 {
-  "directory": "Model_Checkpoints/NewContinuous",
-  "model_name": "RAPID100_3_CURRICULUM5-7_TS40_UR5",
-  "game_name": "Compilati/24_03_cont",
+  "directory": "Model_Checkpoints/AttackContinuous",
+  "model_name": "RANDOM7_TS15_UR15_10000EP",
+  "game_name": "Compilati/26_03_cont_att",
 
-  "num_episodes": 30000,
-  "max_episode_timesteps": 40,
-  "worker_id": 2,
+  "num_episodes": 10000,
+  "max_episode_timesteps": 15,
+  "worker_id": 3,
 
   "curriculum" : {
-    "thresholds": [10000, 20000, 30000, 40000],
+    "thresholds": [10000, 120000],
     "parameters": {
-        "range": [7, 6, 7, 8, 9],
-        "agent_fixed": [0, 0, 0, 0, 0],
-        "target_fixed": [0, 0, 0, 0, 0],
-        "agent_update_rate": [5, 5, 5, 5, 5],
-        "speed": [3, 3, 3, 3, 3],
-        "update_movement": [100, 100, 100, 100, 100]
+        "range": [7, 5, 6],
+        "agent_fixed": [0, 0, 0],
+        "target_fixed": [0, 0, 0],
+        "agent_update_rate": [15, 15, 15],
+        "speed": [0, 0, 0],
+        "update_movement": [100, 100, 100]
     }
   }
 

@@ -79,8 +79,14 @@ public class EnemyAgent : Agent
 
         float horizontal = vectorAction[0];
         float vertical = vectorAction[1];
+        float attack = vectorAction[2];
 
-        enemyMovement.AddMovement(horizontal, vertical);
+        if (attack > 0) {
+            enemyCombat.NormalAttack();
+            enemyMovement.AddMovement(0, 0);
+        } else {
+            enemyMovement.AddMovement(horizontal, vertical);
+        }
 
         AddReward(-0.1f);
     }

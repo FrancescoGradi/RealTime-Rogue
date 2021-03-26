@@ -450,7 +450,7 @@ PrefabInstance:
     - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: brainParameters.vectorActionDescriptions.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -490,12 +490,22 @@ PrefabInstance:
     - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: brainParameters.vectorActionDescriptions.Array.data[0]
-      value: 
+      value: Horizontal
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: brainParameters.vectorActionDescriptions.Array.data[1]
-      value: 
+      value: Vertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: brainParameters.vectorActionSize.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761456093376152031, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: brainParameters.vectorActionDescriptions.Array.data[2]
+      value: Attack
       objectReference: {fileID: 0}
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}

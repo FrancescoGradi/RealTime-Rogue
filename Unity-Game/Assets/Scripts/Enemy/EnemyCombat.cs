@@ -22,7 +22,7 @@ public class EnemyCombat : MonoBehaviour {
             animator.SetTrigger("attack");
             animator.SetBool("attacking", true);
 
-            StartCoroutine(AttackWaiter(2f));
+            StartCoroutine(AttackWaiter(0.3f));
 
             Collider[] hitPlayers = Physics.OverlapSphere(attackPoint.position, enemy.attackRange, playerLayer);
 

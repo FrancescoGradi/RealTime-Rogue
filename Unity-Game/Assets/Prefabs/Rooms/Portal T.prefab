@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33798625310349016}
   - component: {fileID: 23053701299499878}
   - component: {fileID: 65734894327236936}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 33666035808504006}
   - component: {fileID: 23262262211982868}
   - component: {fileID: 65364844108101120}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gate 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4237509593823348}
   - component: {fileID: 8254201024022332920}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Portal T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 33057923890972814}
   - component: {fileID: 23101618973109520}
   - component: {fileID: 64152246331877296}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gate_1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 2447668011027789886}
   - component: {fileID: 1750379501681797805}
   - component: {fileID: 2044098415513610000}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 2451829087247846813}
   - component: {fileID: 4312381765318698317}
   - component: {fileID: 1048329149087039911}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 740786165278227841}
   - component: {fileID: 5935820894407394340}
   - component: {fileID: 4712402286938779633}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,6 +636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 161008792021009977, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 404350784402027771, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
         type: 3}
@@ -781,6 +786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enter Text UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771489911115774669, guid: 2f6e2ae5dfe187abeb11c697c1748e14,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f6e2ae5dfe187abeb11c697c1748e14, type: 3}
