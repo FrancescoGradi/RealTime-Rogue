@@ -32,6 +32,7 @@ public class EnemyAgent : Agent
         }
 
         enemyMovement.updateRate = (int) realTimeAcademy.resetParameters["agent_update_rate"];
+        enemyMovement.epsilon = realTimeAcademy.resetParameters["attack_range_epsilon"];
 
         enemyMovement.SetTargetReached(false);
         enemyMovement.AddMovement(0, 0);
@@ -47,17 +48,8 @@ public class EnemyAgent : Agent
         obs.Add(target.transform.position.x);
         obs.Add(target.transform.position.z);
 
-        /*
-        // Primo modo: restituisce tutte le posizioni globali degli ostacoli presenti sulla mappa
-        List<GameObject> envObjects = objectsGenerator.GetActiveEnvObjects();
-
-        for (int i = 0; i < objectsGenerator.max_objects; i++) {
-            obs.Add(envObjects[i].transform.position.x);
-            obs.Add(envObjects[i].transform.position.z);
-        }
-        */
-
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env e restituiscono la distanza
+        
         for (int i = 0; i < angles.Count; i++) {
             float raycastDistance = enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]);
 
@@ -68,6 +60,11 @@ public class EnemyAgent : Agent
 
             obs.Add(raycastDistance);
         }
+
+        // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
+        // ad attaccare
+
+        obs.Add(enemyMovement.IsInRange());
 
         AddVectorObs(obs);
     }

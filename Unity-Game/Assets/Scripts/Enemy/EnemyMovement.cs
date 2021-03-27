@@ -105,4 +105,14 @@ public class EnemyMovement : MonoBehaviour
             return maxDistance;
         }
     }
+
+    public float IsInRange() {
+
+        if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
+            System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
+            return 1f;
+        } else {
+            return 0f;
+        }
+    }
 }

@@ -10,7 +10,7 @@ public class RealTimeAcademy : Academy {
 	public ObjectsGenerator objectsGenerator;
 
 	public float range = 10;
-	private float epsilon = 2f;
+	private float epsilon = 4f;
 
 	private void Start() {
 				
