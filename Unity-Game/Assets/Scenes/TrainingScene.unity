@@ -350,7 +350,7 @@ PrefabInstance:
     - target: {fileID: 4490743899798736545, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: attackRange
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4490743900742117162, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -595,7 +595,7 @@ PrefabInstance:
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: max_objects
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}

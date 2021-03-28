@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 4f;
     public float turnSmoothTime = 0.2f;
 
+    public float fieldOfViewTargetAngle = 60f;
+
     private Vector3 direction = new Vector3(0, 0, 0);
     private int count = 0;
     public int updateRate = 20;
@@ -108,7 +110,16 @@ public class EnemyMovement : MonoBehaviour
 
     public float IsInRange() {
 
-        if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
+        // Verifico che il target si trovi davanti rispetto al mio agente
+
+        Vector3 targetDir = target.gameObject.transform.position - this.gameObject.transform.position;
+        float angle = Vector3.SignedAngle(targetDir, this.gameObject.transform.forward, Vector3.up);
+
+        // Se il target si trova in quel determinato angolo rispetto all'agente ed e' sufficientemente vicino,
+        // allora si trova nel range per l'attacco
+
+        if (angle < fieldOfViewTargetAngle && angle > -fieldOfViewTargetAngle &&
+            System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
             System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
             return 1f;
         } else {

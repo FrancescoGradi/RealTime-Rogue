@@ -40,7 +40,7 @@ public class Combat : MonoBehaviour {
         animator.SetTrigger("attack");
         animator.SetBool("attacking", true);
 
-        StartCoroutine(AttackWaiter(2f));
+        StartCoroutine(AttackWaiter(0.3f));
 
         if (OnAttack != null)
             OnAttack();

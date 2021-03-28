@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     public float speed = 6.0f;
 
     public float attackRange = 2f;
-    public float attackRate = 2f;
+    public float attackRate = 3f;
 
     public string weaponName = "Long Sword";
     public int actualWeaponDamage = 6;
