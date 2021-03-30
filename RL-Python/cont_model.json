@@ -1,21 +1,21 @@
 {
   "directory": "Model_Checkpoints/AttackContinuousTargetSpeed",
-  "model_name": "SPEED4_RANDOM5-14_TS30_UR15_EPS1_80000EP",
+  "model_name": "SPEED4_UM30_RANDOM5-7_TS30_UR15_EPS1_30000EP",
   "game_name": "Compilati/28_03_with_obs",
 
-  "num_episodes": 80000,
+  "num_episodes": 30000,
   "max_episode_timesteps": 30,
-  "worker_id": 2,
+  "worker_id": 3,
 
   "curriculum" : {
-    "thresholds": [8000, 16000, 24000, 32000, 40000, 48000, 56000, 64000, 72000],
+    "thresholds": [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000],
     "parameters": {
         "range": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
         "agent_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         "target_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         "agent_update_rate": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15],
         "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-        "update_movement": [100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
+        "update_movement": [30, 30, 30, 30, 30, 30, 30, 30, 30, 30],
         "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     }
   }
