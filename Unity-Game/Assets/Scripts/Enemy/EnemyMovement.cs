@@ -56,7 +56,7 @@ public class EnemyMovement : MonoBehaviour
             } else {
                 animator.SetInteger("condition", 0);
             }
-            /*
+            
             if (!targetReached) {
                 if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
                     System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
@@ -64,7 +64,6 @@ public class EnemyMovement : MonoBehaviour
                     agent.TargetReached();
                 }
             }
-            */
         }
     }
 

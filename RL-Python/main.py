@@ -46,11 +46,11 @@ if __name__ == '__main__':
 
     with tf.device('/device:GPU:0'):
         if args.train:
-            env = UnityEnvWrapper(game_name=game_name, worker_id=worker_id)
+            env = UnityDiscreteEnvWrapper(game_name=game_name, worker_id=worker_id)
             env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
             train(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
         elif args.eval:
-            env = UnityEnvWrapper(game_name=None, worker_id=0)
+            env = UnityDiscreteEnvWrapper(game_name=None, worker_id=0)
             env = Environment.create(environment=env, max_episode_timesteps=max_episode_timesteps)
             evaluate(env=env, directory=total_directory, num_episodes=num_episodes, curriculum=curriculum)
         else:

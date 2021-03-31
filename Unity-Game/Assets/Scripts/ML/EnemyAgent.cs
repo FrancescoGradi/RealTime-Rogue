@@ -71,6 +71,7 @@ public class EnemyAgent : Agent
 
 
     // Caso vettore delle azioni CONTINUO
+    /*
 
     public override void AgentAction(float[] vectorAction, string textAction) {
 
@@ -88,7 +89,7 @@ public class EnemyAgent : Agent
         AddReward(-0.1f);
     }
 
-    /*
+    */
 
     // Caso vettore delle azioni DISCRETO
 
@@ -137,11 +138,6 @@ public class EnemyAgent : Agent
                 horizontal = 0f;
                 vertical = 1f;
                 break;
-            case 9:
-                horizontal = 0f;
-                vertical = 0f;
-                enemyCombat.NormalAttack();
-                break;
         }
 
         enemyMovement.AddMovement(horizontal, vertical);
@@ -149,7 +145,6 @@ public class EnemyAgent : Agent
         AddReward(-0.1f);
     }
 
-    */
 
     public void TargetReached() {
         AddReward(50f);
