@@ -132,7 +132,7 @@ class UnityDiscreteEnvWrapper(Environment):
                     in_range=dict(type='float', shape=(1,)))
 
     def actions(self):
-        return dict(type='int', num_values=9)
+        return dict(type='int', num_values=17)
 
     def reset(self):
 

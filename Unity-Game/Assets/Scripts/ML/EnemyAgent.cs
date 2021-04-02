@@ -91,7 +91,8 @@ public class EnemyAgent : Agent
 
     */
 
-    // Caso vettore delle azioni DISCRETO
+    /*
+    // Caso vettore delle azioni DISCRETO 8 + 1
 
     public override void AgentAction(float[] vectorAction, string textAction) {
 
@@ -137,6 +138,93 @@ public class EnemyAgent : Agent
             case 8:
                 horizontal = 0f;
                 vertical = 1f;
+                break;
+        }
+
+        enemyMovement.AddMovement(horizontal, vertical);
+
+        AddReward(-0.1f);
+    }
+
+    */
+
+    // Caso vettore delle azioni DISCRETO 16 + 1
+    public override void AgentAction(float[] vectorAction, string textAction) {
+
+        float horizontal = 0f;
+        float vertical = 0f;
+
+        // Nessun movimento e movimento in ciascuna delle 8 direzioni cardinali + attacco
+
+        switch ((int) vectorAction[0]) {
+
+            case 0:
+                horizontal = 0f;
+                vertical = 0f;
+                break;
+            case 1:
+                horizontal = 1f;
+                vertical = 0f;
+                break;
+            case 2:
+                horizontal = 0.924f;
+                vertical = 0.382f;
+                break;
+            case 3:
+                horizontal = 0.707f;
+                vertical = 0.707f;
+                break;
+            case 4:
+                horizontal = 0.382f;
+                vertical = 0.924f;
+                break;
+            case 5:
+                horizontal = 0f;
+                vertical = 1f;
+                break;
+            case 6:
+                horizontal = -0.382f;
+                vertical = 0.924f;
+                break;
+            case 7:
+                horizontal = -0.707f;
+                vertical = 0.707f;
+                break;
+            case 8:
+                horizontal = -0.924f;
+                vertical = 0.382f;
+                break;
+            case 9:
+                horizontal = -1f;
+                vertical = 0f;
+                break;
+            case 10:
+                horizontal = -0.924f;
+                vertical = -0.382f;
+                break;
+            case 11:
+                horizontal = -0.707f;
+                vertical = -0.707f;
+                break;
+            case 12:
+                horizontal = -0.382f;
+                vertical = -0.924f;
+                break;
+            case 13:
+                horizontal = 0f;
+                vertical = -1f;
+                break;
+            case 14:
+                horizontal = 0.382f;
+                vertical = -0.924f;
+                break;
+            case 15:
+                horizontal = 0.707f;
+                vertical = -0.707f;
+                break;
+            case 16:
+                horizontal = 0.924f;
+                vertical = -0.382f;
                 break;
         }
 
