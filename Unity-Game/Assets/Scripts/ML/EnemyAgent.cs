@@ -226,6 +226,11 @@ public class EnemyAgent : Agent
                 horizontal = 0.924f;
                 vertical = -0.382f;
                 break;
+            case 17:
+                horizontal = 0f;
+                vertical = 0f;
+                enemyCombat.NormalAttack();
+                break;
         }
 
         enemyMovement.AddMovement(horizontal, vertical);

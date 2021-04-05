@@ -1,22 +1,22 @@
 {
-  "directory": "Model_Checkpoints/NewDiscreteMov",
-  "model_name": "SPEED4_UM50_RANDOM5-9_TS30_UR15_50000EP_17ACTIONS",
-  "game_name": "Compilati/3_04_discrete",
+  "directory": "Model_Checkpoints/NewDiscreteWithAttack",
+  "model_name": "SPEED4_UM50_RANDOM5-14_TS30_UR15_100000EP_18ACTIONS",
+  "game_name": "Compilati/5_04_discrete_att",
 
-  "num_episodes": 50000,
+  "num_episodes": 100000,
   "max_episode_timesteps": 30,
-  "worker_id": 3,
+  "worker_id": 2,
 
   "curriculum" : {
-    "thresholds": [10000, 20000, 30000, 40000],
+    "thresholds": [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000],
     "parameters": {
-        "range": [5, 6, 7, 8, 9],
-        "agent_fixed": [0, 0, 0, 0, 0],
-        "target_fixed": [0, 0, 0, 0, 0],
-        "agent_update_rate": [15, 15, 15, 15, 15],
-        "speed": [4, 4, 4, 4, 4],
-        "update_movement": [50, 50, 50, 50, 50],
-        "attack_range_epsilon": [1, 1, 1, 1, 1]
+        "range": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+        "agent_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "target_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "agent_update_rate": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15],
+        "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+        "update_movement": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
+        "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     }
   }
 
