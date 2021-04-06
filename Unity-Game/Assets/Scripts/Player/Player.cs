@@ -3,6 +3,21 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Player : MonoBehaviour {
+
+    #region Singleton
+
+    public static Player instance;
+
+    private void Awake() {
+        if (instance != null) {
+            Debug.LogWarning("More than one Player instance found!");
+            return;
+        }
+        instance = this;
+    }
+
+    #endregion
+
     public HealthBar playerHealthBar;
     public ItemsHub itemsHub;
 
@@ -58,14 +73,7 @@ public class Player : MonoBehaviour {
 
         if (actualPotion == "Health Potion") {
 
-            itemsHub.DrinkPotionCanvasFeedback("+10 HP");
-
-            currentHealth += 10;
-            if (currentHealth > HP) {
-                currentHealth = HP;
-            }
-            playerHealthBar.SetHealth(currentHealth);
-
+            AddHealth(5);
         } else if (actualPotion == "Bonus Potion") {
 
             itemsHub.DrinkPotionCanvasFeedback("+5 All Stats");
@@ -85,6 +93,17 @@ public class Player : MonoBehaviour {
 
         itemsHub.DestroyActualPotion();
 
+    }
+
+    public void AddHealth(int health) {
+
+        itemsHub.DrinkPotionCanvasFeedback("+" + health.ToString() + " HP");
+
+        currentHealth += health;
+        if (currentHealth > HP) {
+            currentHealth = HP;
+        }
+        playerHealthBar.SetHealth(currentHealth);
     }
 
     private IEnumerator WaitBonusPotion(float seconds) {

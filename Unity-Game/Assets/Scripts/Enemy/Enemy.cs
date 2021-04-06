@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
-{
+public class Enemy : MonoBehaviour {
+    
     public Animator animator;
     public EnemyHealthBar healthBar;
 
@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour
     }
 
     private void Die() {
-        Debug.Log("Enemy died");
         animator.SetTrigger("dead");
 
         GetComponent<Collider>().enabled = false;

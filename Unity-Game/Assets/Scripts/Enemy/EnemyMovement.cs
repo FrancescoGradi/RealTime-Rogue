@@ -4,8 +4,7 @@ using UnityEngine;
 
 using MLAgents;
 
-public class EnemyMovement : MonoBehaviour
-{
+public class EnemyMovement : MonoBehaviour {
 
     private CharacterController characterController;
     private Animator animator;

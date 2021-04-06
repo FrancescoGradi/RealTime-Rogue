@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Stats : MonoBehaviour
-{
+public class Stats : MonoBehaviour {
+    
     public Player player;
     public GameObject stats;
     public TMP_Text ATK;

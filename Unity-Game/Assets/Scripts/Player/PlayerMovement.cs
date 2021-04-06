@@ -2,8 +2,8 @@
 using System.Collections;
 
 
-public class PlayerMovement : MonoBehaviour
-{
+public class PlayerMovement : MonoBehaviour {
+    
     private CharacterController characterController;
     private Animator animator;
 

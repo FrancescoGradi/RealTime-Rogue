@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 using MLAgents;
 
-public class EnemyAgent : Agent
-{
+public class EnemyAgent : Agent {
     public Enemy enemy;
     public GameObject target;
     public RealTimeAcademy realTimeAcademy;

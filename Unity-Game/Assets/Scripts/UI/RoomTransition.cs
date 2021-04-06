@@ -12,6 +12,4 @@ public class RoomTransition : MonoBehaviour {
         this.roomText.text = text;
         transition.SetTrigger("Start");
     }
-
-
 }

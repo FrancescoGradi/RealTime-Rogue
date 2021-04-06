@@ -20,7 +20,7 @@ public class InitialRoom : MonoBehaviour {
 
             if (SearchNearbyPlayers(stairs).Length > 0) {
                 roomChanged = true;
-                FindObjectOfType<GameManager>().CreateNewRoom("T");
+                GameManager.instance.CreateNewRoom("T");
             }
 
             if (SearchNearbyPlayers(healthPot).Length > 0) {

@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+public class ShowFPS : MonoBehaviour {
 
-public class ShowFPS : MonoBehaviour
-{
     public float timer, refresh, avgFramerate;
     public string display = "{0} FPS";
     public TMP_Text fpsText;
@@ -22,5 +21,4 @@ public class ShowFPS : MonoBehaviour
 
         fpsText.text = string.Format(display, avgFramerate.ToString());
     }
-    
 }

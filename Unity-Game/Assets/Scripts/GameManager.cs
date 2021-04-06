@@ -4,8 +4,22 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 
-public class GameManager : MonoBehaviour
-{
+public class GameManager : MonoBehaviour {
+
+    #region Singleton
+
+    public static GameManager instance;
+
+    private void Awake() {
+        if (instance != null) {
+            Debug.LogWarning("More than one Game Manager instance found!");
+            return;
+        }
+        instance = this;
+    }
+
+    #endregion
+
     public GameObject initialRoom;
     public GameObject mainRoom;
 
@@ -16,7 +30,6 @@ public class GameManager : MonoBehaviour
     private GameObject actualRoom;
     private int initialPortalNum;
     private int roomNumber;
-
 
 
     private void Start() {

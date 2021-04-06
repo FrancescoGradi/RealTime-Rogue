@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class EnemyHealthBar : MonoBehaviour
-{
+public class EnemyHealthBar : MonoBehaviour {
     public Slider slider;
     public TMP_Text damages;
 

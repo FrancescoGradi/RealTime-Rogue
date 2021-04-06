@@ -3,8 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Room : MonoBehaviour
-{
+public class Room : MonoBehaviour {
 
     public LayerMask playerLayer;
 
@@ -42,7 +41,7 @@ public class Room : MonoBehaviour
         permutation = Utility.Shuffle(permutation);
 
         try {
-            initialPortalNum = FindObjectOfType<GameManager>().GetInitialPortalNum();
+            initialPortalNum = GameManager.instance.GetInitialPortalNum();
         } catch (Exception e) {
             Debug.Log(e);
             initialPortalNum = 0;
@@ -70,7 +69,7 @@ public class Room : MonoBehaviour
 
                     foreach (Collider player in nearbyPlayers) {
                         roomChanged = true;
-                        FindObjectOfType<GameManager>().CreateNewRoom(portal.GetComponent<Portal>().GetPortalType());
+                        GameManager.instance.CreateNewRoom(portal.GetComponent<Portal>().GetPortalType());
                         break;
                     }
                 }
