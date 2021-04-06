@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 451560}
   - component: {fileID: 3308840}
   - component: {fileID: 2380810}
-  - component: {fileID: 8752958241373015635}
+  - component: {fileID: 2453211980361515133}
   m_Layer: 0
   m_Name: Rock C
   m_TagString: Untagged
@@ -78,8 +78,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8752958241373015635
-MeshCollider:
+--- !u!65 &2453211980361515133
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,7 +88,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 19497d68b37d2594fb3e269601d333be, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.2151852, y: 0.85753477, z: 1.1476779}
+  m_Center: {x: 0.084005564, y: 0.28504598, z: -0.009593248}

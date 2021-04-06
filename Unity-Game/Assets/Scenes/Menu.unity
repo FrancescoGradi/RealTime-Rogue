@@ -1840,15 +1840,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: MyThirdGame
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b6f5c46a0570fbbf9f1182540fa240f, type: 2}
+  m_sharedMaterial: {fileID: 21612451701066576, guid: 4b6f5c46a0570fbbf9f1182540fa240f,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4286874756
+  m_fontColor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1866,7 +1867,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 144.5
+  m_fontSize: 172
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1

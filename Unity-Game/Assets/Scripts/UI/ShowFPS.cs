@@ -17,6 +17,9 @@ public class ShowFPS : MonoBehaviour
 
         if (timer <= 0) avgFramerate = (int) (1f / timelapse);
 
+        if (avgFramerate < 1)
+            avgFramerate = 0;
+
         fpsText.text = string.Format(display, avgFramerate.ToString());
     }
     

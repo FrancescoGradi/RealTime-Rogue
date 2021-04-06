@@ -321,8 +321,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8954920629681498413}
   healthBar: {fileID: 8954920629856927123}
-  maxHealth: 20
+  HP: 20
+  ATK: 3
+  MANA: 3
+  DEF: 3
   currentHealth: 0
+  speed: 6
+  attackRange: 2
+  attackRate: 3
+  weaponName: Long Sword
+  actualWeaponDamage: 6
 --- !u!1 &8954920629731762509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,7 +2048,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b6f5c46a0570fbbf9f1182540fa240f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2118,7 +2126,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
