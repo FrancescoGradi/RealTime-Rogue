@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,17 +11,33 @@ public class GameManager : MonoBehaviour
 
     public Player player;
 
+    public TMP_Text roomNumberText;
+
     private GameObject actualRoom;
     private int initialPortalNum;
+    private int roomNumber;
 
 
 
     private void Start() {
         
+        roomNumber = 1;
+        roomNumberText.text = "Room " + roomNumber.ToString();
+
         actualRoom = Instantiate(initialRoom, new Vector3(0, initialRoom.gameObject.transform.position.y, 0), Quaternion.identity);
     }
 
     public void CreateNewRoom(string portalType) {
+        StartCoroutine(InstantiationWaiter(portalType));
+    }
+
+    private IEnumerator InstantiationWaiter(string portalType) {
+
+        roomNumber += 1;
+        roomNumberText.text = "Room " + roomNumber.ToString();
+        FindObjectOfType<RoomTransition>().Transition(roomNumberText.text);
+
+        yield return new WaitForSecondsRealtime(1f);
 
         SetInitialPortalNum(portalType);
         Destroy(actualRoom);

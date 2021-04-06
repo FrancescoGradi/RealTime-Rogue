@@ -12,12 +12,14 @@ public class InitialRoom : MonoBehaviour {
     public LayerMask playerLayer;
 
     private float epsilon = 3f;
+    private bool roomChanged = false;
 
     private void Update() {
 
-        if (Input.GetButton("BaseAction")) {
-            
+        if (Input.GetButton("BaseAction") && !roomChanged) {
+
             if (SearchNearbyPlayers(stairs).Length > 0) {
+                roomChanged = true;
                 FindObjectOfType<GameManager>().CreateNewRoom("T");
             }
 

@@ -21,6 +21,7 @@ public class Room : MonoBehaviour
 
 
     private bool roomClear = false;
+    private bool roomChanged = false;
     private int initialPortalNum;
     private List<GameObject> activePortals = new List<GameObject> {};
     private List<GameObject> patchedInstantieted = new List<GameObject> {};
@@ -53,7 +54,7 @@ public class Room : MonoBehaviour
 
     private void Update() {
         
-        if (roomClear && (Input.GetButton("BaseAction"))) {
+        if (roomClear && (Input.GetButton("BaseAction")) && !roomChanged) {
             foreach (GameObject portal in activePortals) {
 
                 if (initialPortalNum == 0 && portal.GetComponent<Portal>().GetPortalType() == "T") {
@@ -68,7 +69,9 @@ public class Room : MonoBehaviour
                     Collider[] nearbyPlayers = Physics.OverlapSphere(portal.transform.position, 3f, playerLayer);
 
                     foreach (Collider player in nearbyPlayers) {
+                        roomChanged = true;
                         FindObjectOfType<GameManager>().CreateNewRoom(portal.GetComponent<Portal>().GetPortalType());
+                        break;
                     }
                 }
             }
