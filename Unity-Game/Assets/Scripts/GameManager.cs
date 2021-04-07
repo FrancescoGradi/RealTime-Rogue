@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour {
 
     private void Start() {
         
-        roomNumber = 1;
+        roomNumber = 0;
         roomNumberText.text = "Room " + roomNumber.ToString();
 
         actualRoom = Instantiate(initialRoom, new Vector3(0, initialRoom.gameObject.transform.position.y, 0), Quaternion.identity);
