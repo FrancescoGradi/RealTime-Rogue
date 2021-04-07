@@ -16,7 +16,8 @@ public class EnemyMovement : MonoBehaviour {
     public float epsilon = 1f;
 
     public GameObject target;
-    public LayerMask envObjectsLayer;
+    public int envObjectsLayer = 12;
+    public int itemsLayer = 10;
 
 
     public float speed = 4f;
@@ -90,20 +91,39 @@ public class EnemyMovement : MonoBehaviour {
         this.targetReached = targetReached;
     }
 
-    public float GetRayCastDistance(float maxDistance, float angle) {
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+
+        Item actualItem = hit.gameObject.GetComponent<Item>();
+        if (actualItem != null) {
+            // Pozione presa -> piccola reward
+            agent.HealthPotionCollectedReward();
+            // CollectItem(actualItem);
+            Destroy(actualItem.gameObject);
+        }
+    }
+
+    public List<float> GetRayCastDistance(float maxDistance, float angle) {
 
         RaycastHit hit;
         Vector3 direction = Quaternion.Euler(0f, angle, 0f) * transform.forward;
         Vector3 pos = this.gameObject.transform.position;
         pos.y += 1.5f;
 
-        if (Physics.Raycast(pos, direction, out hit, maxDistance, envObjectsLayer)) {
-            Debug.DrawRay(pos, direction * hit.distance, Color.yellow, Time.fixedDeltaTime);
-            return hit.distance;
-        }
-        else {
+        if (Physics.Raycast(pos, direction, out hit, maxDistance)) {
+
+            if (hit.transform.gameObject.layer == envObjectsLayer) {
+                Debug.DrawRay(pos, direction * hit.distance, Color.yellow, Time.fixedDeltaTime);
+                return new List<float> {hit.distance / maxDistance, 0, 1, 0};
+            } else if (hit.transform.gameObject.layer == itemsLayer) {
+                Debug.DrawRay(pos, direction * hit.distance, Color.red, Time.fixedDeltaTime);
+                return new List<float> {hit.distance / maxDistance, 0, 0, 1};
+            } else {
+                Debug.DrawRay(pos, direction * maxDistance, Color.white, Time.fixedDeltaTime);
+                return new List<float> {1, 1, 0, 0};
+            }     
+        } else {
             Debug.DrawRay(pos, direction * maxDistance, Color.white, Time.fixedDeltaTime);
-            return maxDistance;
+            return new List<float> {1, 1, 0, 0};
         }
     }
 

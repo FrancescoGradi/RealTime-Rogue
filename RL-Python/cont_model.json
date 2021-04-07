@@ -1,11 +1,11 @@
 {
-  "directory": "Model_Checkpoints/AttackContinuousTargetSpeed",
-  "model_name": "SPEED4_UM30_RANDOM5-7_TS30_UR15_EPS1_30000EP",
-  "game_name": "Compilati/28_03_with_obs",
+  "directory": "Model_Checkpoints/HealthPotion",
+  "model_name": "SPEED_0_CURRICULUM5-7_TS30_UR15_30000EP",
+  "game_name": "Compilati/7_04_potion",
 
   "num_episodes": 30000,
   "max_episode_timesteps": 30,
-  "worker_id": 3,
+  "worker_id": 1,
 
   "curriculum" : {
     "thresholds": [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000],
@@ -14,7 +14,7 @@
         "agent_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         "target_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         "agent_update_rate": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15],
-        "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+        "speed": [0, 0, 0, 0, 0, 4, 4, 4, 4, 4],
         "update_movement": [30, 30, 30, 30, 30, 30, 30, 30, 30, 30],
         "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     }

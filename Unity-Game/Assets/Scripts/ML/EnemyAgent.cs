@@ -50,14 +50,17 @@ public class EnemyAgent : Agent {
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env e restituiscono la distanza
         
         for (int i = 0; i < angles.Count; i++) {
-            float raycastDistance = enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]);
+            List<float> raycastVector = enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]);
 
             // Scoraggiamo il movimento verso un ostacolo
-            if (raycastDistance < rayMinDistance) {
+            if (raycastVector[0] < (rayMinDistance / raycastMaxDistance)) {
                 AddReward(-1f);
             }
 
-            obs.Add(raycastDistance);
+            obs.Add(raycastVector[0]);
+            obs.Add(raycastVector[1]);
+            obs.Add(raycastVector[2]);
+            obs.Add(raycastVector[3]);
         }
 
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
@@ -68,10 +71,7 @@ public class EnemyAgent : Agent {
         AddVectorObs(obs);
     }
 
-
     // Caso vettore delle azioni CONTINUO
-    /*
-
     public override void AgentAction(float[] vectorAction, string textAction) {
 
         float horizontal = vectorAction[0];
@@ -87,8 +87,6 @@ public class EnemyAgent : Agent {
 
         AddReward(-0.1f);
     }
-
-    */
 
     /*
     // Caso vettore delle azioni DISCRETO 8 + 1
@@ -144,8 +142,6 @@ public class EnemyAgent : Agent {
 
         AddReward(-0.1f);
     }
-
-    */
 
     // Caso vettore delle azioni DISCRETO 16 + 1
     public override void AgentAction(float[] vectorAction, string textAction) {
@@ -237,10 +233,15 @@ public class EnemyAgent : Agent {
         AddReward(-0.1f);
     }
 
+    */
 
     public void TargetReached() {
         AddReward(50f);
         Done();
+    }
+
+    public void HealthPotionCollectedReward() {
+        AddReward(1f);
     }
 
     public void PlayerDown() {

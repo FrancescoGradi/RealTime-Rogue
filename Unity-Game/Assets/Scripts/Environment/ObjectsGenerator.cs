@@ -16,8 +16,9 @@ public class ObjectsGenerator : MonoBehaviour
 
     private void Start() {
         
-        int actual_n_items = UnityEngine.Random.Range(0, max_items);
+        // int actual_n_items = UnityEngine.Random.Range(0, max_items);
         // int actual_n_envObjects = UnityEngine.Random.Range(0, max_objects);
+        int actual_n_items = max_items;
         int actual_n_envObjects = max_objects;
 
         items = Utility.Shuffle(items);
@@ -54,9 +55,27 @@ public class ObjectsGenerator : MonoBehaviour
 
     public void ResetPositions() {
 
+        // Devo distruggerli ogni volta perche' l'agente potrebbe aver preso (e quindi distrutto) qualche oggetto
+
+        foreach (GameObject activeItem in activeItems) {
+            Destroy(activeItem);
+        }
+
         spawnPoints = Utility.Shuffle(spawnPoints);
+
+        Vector3 pos = new Vector3(0, 0, 0);
+
+        for (int i = 0; i < max_items; i++) {
+            pos = spawnPoints[i].gameObject.transform.position;
+            pos.y += 1;
+            GameObject selectedItem = Utility.GetRandomObject(items);
+            activeItems.Add(Instantiate(selectedItem, pos, selectedItem.gameObject.transform.rotation));
+        }
+
+        spawnPoints.Reverse();
+
         for (int i = 0; i < activeEnvObjects.Count; i++) {
-            Vector3 pos = spawnPoints[i].gameObject.transform.position;
+            pos = spawnPoints[i].gameObject.transform.position;
             pos.y += 1;
             activeEnvObjects[i].transform.position = pos;
         }

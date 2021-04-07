@@ -21,8 +21,7 @@ public class Enemy : MonoBehaviour {
     public string weaponName = "Long Sword";
     public int actualWeaponDamage = 6;
 
-    void Start()
-    {
+    void Start() {
         currentHealth = HP;
         healthBar.SetMaxHealth(HP);
     }
