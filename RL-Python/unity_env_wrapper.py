@@ -26,7 +26,7 @@ class UnityEnvWrapper(Environment):
     def states(self):
         return dict(position=dict(type='float', shape=(2,)),
                     target_position=dict(type='float', shape=(2,)),
-                    env_objects_distances=dict(type='float', shape=(20,)),
+                    env_objects_distances=dict(type='float', shape=(28,)),
                     in_range=dict(type='float', shape=(1,)))
 
     def actions(self):
@@ -103,8 +103,8 @@ class UnityEnvWrapper(Environment):
         observation = {
             'position': np.asarray(env_info.vector_observations[0][:2]),
             'target_position': np.asarray(env_info.vector_observations[0][2:4]),
-            'env_objects_distances': np.asarray(env_info.vector_observations[0][4:24]),
-            'in_range': np.asarray(env_info.vector_observations[0][24:25])
+            'env_objects_distances': np.asarray(env_info.vector_observations[0][4:32]),
+            'in_range': np.asarray(env_info.vector_observations[0][32:33])
         }
 
         return observation

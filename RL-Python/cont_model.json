@@ -1,11 +1,11 @@
 {
   "directory": "Model_Checkpoints/HealthPotion",
-  "model_name": "SPEED_0_CURRICULUM5-7_TS30_UR15_30000EP",
-  "game_name": "Compilati/7_04_potion",
+  "model_name": "6POTIONS_7_RAYS_SPEED_0_CURRICULUM5-9_TS30_UR15_50000EP_REWARD32",
+  "game_name": "Compilati/8_04_potion_reward_6_potions",
 
-  "num_episodes": 30000,
+  "num_episodes": 50000,
   "max_episode_timesteps": 30,
-  "worker_id": 1,
+  "worker_id": 4,
 
   "curriculum" : {
     "thresholds": [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000],
@@ -16,7 +16,8 @@
         "agent_update_rate": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15],
         "speed": [0, 0, 0, 0, 0, 4, 4, 4, 4, 4],
         "update_movement": [30, 30, 30, 30, 30, 30, 30, 30, 30, 30],
-        "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "health_potion_reward": [32, 32, 32, 32, 32, 32, 1, 1, 1, 1]
     }
   }
 

@@ -15,6 +15,7 @@ public class EnemyAgent : Agent {
     public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 10f;
     public float rayMinDistance = 1f;
+    public float healthPotionReward = 16f;
 
     void Start() {
         enemyMovement = GetComponent<EnemyMovement>();
@@ -32,6 +33,7 @@ public class EnemyAgent : Agent {
 
         enemyMovement.updateRate = (int) realTimeAcademy.resetParameters["agent_update_rate"];
         enemyMovement.epsilon = realTimeAcademy.resetParameters["attack_range_epsilon"];
+        healthPotionReward = realTimeAcademy.resetParameters["health_potion_reward"];
 
         enemyMovement.SetTargetReached(false);
         enemyMovement.AddMovement(0, 0);
@@ -53,7 +55,7 @@ public class EnemyAgent : Agent {
             List<float> raycastVector = enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]);
 
             // Scoraggiamo il movimento verso un ostacolo
-            if (raycastVector[0] < (rayMinDistance / raycastMaxDistance)) {
+            if (raycastVector[2] == 1 && raycastVector[0] < (rayMinDistance / raycastMaxDistance)) {
                 AddReward(-1f);
             }
 
@@ -241,7 +243,7 @@ public class EnemyAgent : Agent {
     }
 
     public void HealthPotionCollectedReward() {
-        AddReward(1f);
+        AddReward(healthPotionReward);
     }
 
     public void PlayerDown() {
