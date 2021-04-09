@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/8_04_potion_reward_6_potions.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/9_04_8gradi.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -354,3 +354,4 @@ b5c3dbcb94925c8b595ad16a62b44788 Cinemachine.dll:Cinemachine.CinemachineBasicMul
 1994f8b165cd1b6e4b1669e09b537fa5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputSystemObject
 f1d4755bab5ef0b46262de0e1c5506de Assembly-CSharp.dll:.Ball3DAgent
 7e8b63eee6766b24ff7d26e2fc91d077 Assembly-CSharp.dll:.AgentSoccer
+01448e6623b59046ed64338fa657313e Assembly-CSharp.dll:.StatMod

@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class PauseMenu : MonoBehaviour
-{
+public class PauseMenu : MonoBehaviour {
     public static bool gamePaused = false;
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;

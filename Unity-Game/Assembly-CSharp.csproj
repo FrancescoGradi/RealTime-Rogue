@@ -194,6 +194,7 @@
      <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\RoomClearedScreen.cs" />
+     <Compile Include="Assets\Scripts\Menu\StatModMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\WinScreen.cs" />
      <Compile Include="Assets\Scripts\ML\EnemyAgent.cs" />
      <Compile Include="Assets\Scripts\ML\RealTimeAcademy.cs" />
@@ -201,10 +202,12 @@
      <Compile Include="Assets\Scripts\Player\Combat.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\StatModMenu.cs" />
      <Compile Include="Assets\Scripts\UI\BillBoard.cs" />
      <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\RoomTransition.cs" />
      <Compile Include="Assets\Scripts\UI\ShowFPS.cs" />
+     <Compile Include="Assets\Scripts\UI\StatMod.cs" />
      <Compile Include="Assets\Scripts\UI\Stats.cs" />
      <Compile Include="Assets\Scripts\Utility\Utility.cs" />
      <None Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
