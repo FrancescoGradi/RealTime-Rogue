@@ -202,7 +202,6 @@
      <Compile Include="Assets\Scripts\Player\Combat.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\StatModMenu.cs" />
      <Compile Include="Assets\Scripts\UI\BillBoard.cs" />
      <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\RoomTransition.cs" />

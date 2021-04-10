@@ -83,13 +83,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ef2a29e5bf70baa9eeb09a4cac4e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stairs: {fileID: 5416151976843545085}
-  healthPot: {fileID: 4694082259646624751}
-  magicTable: {fileID: 1556355638556431926}
-  weaponRack: {fileID: 1922234929167250521}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 2048
 --- !u!1 &3901560089938610099
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,12 +911,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d491b8efddadfa778f1106190f51151, type: 3}
---- !u!1 &4694082259646624751 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6617234830538290737, guid: 5d491b8efddadfa778f1106190f51151,
-    type: 3}
-  m_PrefabInstance: {fileID: 1941507690234676702}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4852354613885319971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6460018093908049661, guid: 5d491b8efddadfa778f1106190f51151,
@@ -999,12 +986,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 027e2ef3a04aa2a88a9eb59d0607190a, type: 3}
---- !u!1 &1556355638556431926 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1110374528766391931, guid: 027e2ef3a04aa2a88a9eb59d0607190a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1941507690259161165}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7508842041213565228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8270116314679056737, guid: 027e2ef3a04aa2a88a9eb59d0607190a,
@@ -1416,7 +1397,7 @@ PrefabInstance:
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.336375
+      value: 3.288
       objectReference: {fileID: 0}
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}
@@ -1471,7 +1452,7 @@ PrefabInstance:
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 95
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}
@@ -1728,12 +1709,6 @@ PrefabInstance:
 --- !u!4 &1922234929167149177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5895583696831924534, guid: 33b88a355dbcf1249aeafebe7d0f5879,
-    type: 3}
-  m_PrefabInstance: {fileID: 5439350375936909647}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1922234929167250521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5895583696832419094, guid: 33b88a355dbcf1249aeafebe7d0f5879,
     type: 3}
   m_PrefabInstance: {fileID: 5439350375936909647}
   m_PrefabAsset: {fileID: 0}
@@ -2437,7 +2412,7 @@ PrefabInstance:
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.336375
+      value: 3.288
       objectReference: {fileID: 0}
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}
@@ -2492,7 +2467,7 @@ PrefabInstance:
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 95
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 8702035252243329273, guid: 01758e662295c9347b35b7bdee71f5b4,
         type: 3}

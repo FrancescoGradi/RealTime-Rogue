@@ -73,7 +73,8 @@ public class Player : MonoBehaviour {
 
         if (actualPotion == "Health Potion") {
 
-            AddHealth(5);
+            AddHealth(10);
+
         } else if (actualPotion == "Bonus Potion") {
 
             itemsHub.DrinkPotionCanvasFeedback("+5 All Stats");
