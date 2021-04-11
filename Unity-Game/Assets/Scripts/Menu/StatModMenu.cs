@@ -133,10 +133,9 @@ public class StatModMenu : MonoBehaviour {
         Player.instance.speed = (float) speedStatMod.actualValue;
     }
 
-    private void Pause() {
+    public void Pause() {
 
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(firstButton);
+        SetFirstButton();
 
         Time.timeScale = 0f;
         gamePaused = true;
@@ -146,12 +145,18 @@ public class StatModMenu : MonoBehaviour {
         StartCoroutine(ResumeWaiter(0.2f));
     }
 
+    private void SetFirstButton() {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(firstButton);
+    }
+
     private IEnumerator ResumeWaiter(float seconds) {
         yield return new WaitForSecondsRealtime(seconds);
 
         Time.timeScale = 1f;
         gamePaused = false;
 
-        Object.Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
+        MagicTable.instance.SetInMenu(false);
     }
 }

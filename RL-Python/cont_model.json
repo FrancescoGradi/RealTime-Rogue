@@ -1,11 +1,11 @@
 {
   "directory": "Model_Checkpoints/HealthPotion",
-  "model_name": "6POTIONS_13_RAYS_8GRADI_SPEED_4_UM50_CURRICULUM5-14_TS30_UR15_120000EP_REWARD8",
+  "model_name": "6POTIONS_13_RAYS_8GRADI_SPEED_4_UM50_CURRICULUM5-14_TS40_UR15_120000EP_REWARD8",
   "game_name": "Compilati/9_04_8gradi",
 
   "num_episodes": 120000,
-  "max_episode_timesteps": 30,
-  "worker_id": 2,
+  "max_episode_timesteps": 40,
+  "worker_id": 3,
 
   "curriculum" : {
     "thresholds": [12000, 24000, 36000, 48000, 60000, 72000, 84000, 96000, 108000],

@@ -6,17 +6,32 @@ using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour {
     public static bool gamePaused = false;
+
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
+    public GameObject commandListMenuUI;
+
     public GameObject pauseFirstButton;
     public GameObject optionsMenuFirstButton;
+    public GameObject commandListMenuFirstButton;
+
+    private bool isInOptionsMenu = false;
+    private bool isInCommandListMenu = false;
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause")) {
-            if (gamePaused) {
+            if (gamePaused && !isInCommandListMenu && !isInOptionsMenu) {
                 Resume();
-            } else {
+            } else if (!isInCommandListMenu && !isInOptionsMenu) {
                 Pause();
+            }
+        } else if (gamePaused && Input.GetButtonDown("Fire3")) {
+            if (!isInCommandListMenu && !isInOptionsMenu) {
+                Resume();
+            } else if (isInCommandListMenu) {
+                CloseCommandList();
+            } else if (isInOptionsMenu) {
+                CloseOptions();
             }
         }
     }
@@ -40,6 +55,8 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
 
+        isInOptionsMenu = true;
+
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(optionsMenuFirstButton);
     }
@@ -48,9 +65,35 @@ public class PauseMenu : MonoBehaviour {
 
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
+
+        isInOptionsMenu = false;
         
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(pauseFirstButton);
+    }
+
+    public void OpenCommandList() {
+
+        optionsMenuUI.SetActive(false);
+        commandListMenuUI.SetActive(true);
+
+        isInCommandListMenu = true;
+        isInOptionsMenu = false;
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(commandListMenuFirstButton);
+    }
+
+    public void CloseCommandList() {
+
+        commandListMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(true);
+
+        isInCommandListMenu = false;
+        isInOptionsMenu = true;
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionsMenuFirstButton);
     }
 
     public void LoadMenu() {
