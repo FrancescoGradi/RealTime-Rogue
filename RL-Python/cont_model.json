@@ -1,19 +1,19 @@
 {
   "directory": "Model_Checkpoints/HealthPotion",
-  "model_name": "6POTIONS_13_RAYS_8GRADI_SPEED_4_UM50_CURRICULUM5-14_TS40_UR15_120000EP_REWARD8",
+  "model_name": "6POTIONS_13_RAYS_8GRADI_SPEED_4_UM50_CURRICULUM5-14_TS40_UR10_150000EP_REWARD8",
   "game_name": "Compilati/9_04_8gradi",
 
-  "num_episodes": 120000,
+  "num_episodes": 150000,
   "max_episode_timesteps": 40,
-  "worker_id": 3,
+  "worker_id": 2,
 
   "curriculum" : {
-    "thresholds": [12000, 24000, 36000, 48000, 60000, 72000, 84000, 96000, 108000],
+    "thresholds": [15000, 30000, 45000, 60000, 75000, 90000, 105000, 120000, 135000],
     "parameters": {
         "range": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
         "agent_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         "target_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        "agent_update_rate": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15],
+        "agent_update_rate": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
         "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         "update_movement": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
         "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],

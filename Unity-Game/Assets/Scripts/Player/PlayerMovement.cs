@@ -48,14 +48,12 @@ public class PlayerMovement : MonoBehaviour {
                 nextSprintTime = Time.time + 1f;
             }
 
-            animator.SetBool("running", true);
-            animator.SetInteger("condition", 1);
+            animator.SetInteger("running", 1);
             
             Movement();
 
         }  else {
-            animator.SetBool("running", false);
-            animator.SetInteger("condition", 0);
+            animator.SetInteger("running", 0);
         }
     }
 

@@ -40,7 +40,7 @@ public class Combat : MonoBehaviour {
         animator.SetTrigger("attack");
         animator.SetBool("attacking", true);
 
-        StartCoroutine(AttackWaiter(0.3f));
+        StartCoroutine(AttackWaiter(0.67f));
 
         if (OnAttack != null)
             OnAttack();
@@ -55,7 +55,7 @@ public class Combat : MonoBehaviour {
         animator.SetTrigger("greatAttack");
         animator.SetBool("attacking", true);
 
-        StartCoroutine(AttackWaiter(1f));
+        StartCoroutine(AttackWaiter(1.5f));
 
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange * 3, enemyLayers);
 
@@ -94,10 +94,11 @@ public class Combat : MonoBehaviour {
     private IEnumerator MagicWaiter(float seconds) {
         
         yield return new WaitForSecondsRealtime(seconds);
-        animator.SetBool("attacking", false);
         GameObject new_fireball = Instantiate(fireball, new Vector3(player.transform.position.x, player.transform.position.y + 1f, player.transform.position.z + 1f), player.transform.rotation);
         new_fireball.GetComponent<FireBall>().enemyLayers = enemyLayers;
         new_fireball.GetComponent<FireBall>().damages = player.MANA;
+
+        animator.SetBool("attacking", false);
     }
 
     private void OnDrawGizmosSelected() {

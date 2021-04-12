@@ -51,10 +51,10 @@ public class EnemyMovement : MonoBehaviour {
             }
             
             if (direction.magnitude >= 0.05f) {
-                animator.SetInteger("condition", 1);
+                animator.SetInteger("running", 1);
                 Movement();
             } else {
-                animator.SetInteger("condition", 0);
+                animator.SetInteger("running", 0);
             }
             /*
             if (!targetReached) {
