@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour {
     private CharacterController characterController;
     private Animator animator;
     private EnemyAgent agent;
+    private Enemy enemy;
 
     private float horizontal;
     private float vertical;
@@ -38,6 +39,7 @@ public class EnemyMovement : MonoBehaviour {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         agent = GetComponent<EnemyAgent>();
+        enemy = GetComponent<Enemy>();
     }
 
     private void FixedUpdate() {
@@ -73,7 +75,6 @@ public class EnemyMovement : MonoBehaviour {
         this.horizontal = horizontal;
         this.vertical = vertical;
         direction = new Vector3(horizontal, 0, vertical);
-
     }
 
     public void Movement() {
@@ -95,9 +96,16 @@ public class EnemyMovement : MonoBehaviour {
 
         Item actualItem = hit.gameObject.GetComponent<Item>();
         if (actualItem != null) {
-            // Pozione presa -> piccola reward
-            agent.HealthPotionCollectedReward();
-            // CollectItem(actualItem);
+            CollectItem(actualItem);
+        }
+    }
+
+    private void CollectItem(Item actualItem) {
+
+        if (actualItem.itemName == "Health Potion") {
+
+            enemy.SetActualPotion(actualItem.itemName);
+
             Destroy(actualItem.gameObject);
         }
     }

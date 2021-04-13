@@ -168,6 +168,7 @@
      <Compile Include="Assets\OtherAssets\Mixamo\Magic Pack\Demo\CameraScroll.cs" />
      <Compile Include="Assets\Scripts\Effects\Explosion.cs" />
      <Compile Include="Assets\Scripts\Effects\FireBall.cs" />
+     <Compile Include="Assets\Scripts\Effects\HealthPotionCircleEffect.cs" />
      <Compile Include="Assets\Scripts\Effects\Smoke.cs" />
      <Compile Include="Assets\Scripts\Effects\Spikes.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />

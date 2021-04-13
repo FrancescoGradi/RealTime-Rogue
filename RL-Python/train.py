@@ -12,7 +12,7 @@ def train(env, directory, curriculum=None, num_episodes=200):
                          network=net,
                          use_beta_distribution=True,
                          update_frequency=10,
-                         learning_rate=1e-5,
+                         learning_rate=5e-5,
                          subsampling_fraction=0.33,
                          optimization_steps=10,
                          likelihood_ratio_clipping=0.2,
@@ -20,7 +20,7 @@ def train(env, directory, curriculum=None, num_episodes=200):
                          estimate_terminal=False,
                          critic_network=baseline,
                          critic_optimizer=dict(
-                              optimizer=dict(type='adam', learning_rate=1e-4),
+                              optimizer=dict(type='adam', learning_rate=5e-4),
                          ),
                          exploration=0.0,
                          variable_noise=0.0,

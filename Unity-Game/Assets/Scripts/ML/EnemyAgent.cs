@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 using MLAgents;
 
 public class EnemyAgent : Agent {
-    public Enemy enemy;
     public GameObject target;
     public RealTimeAcademy realTimeAcademy;
 
+    private Enemy enemy;
     private EnemyMovement enemyMovement;
     private EnemyCombat enemyCombat;
     public List<float> angles = new List<float>() {0f};
@@ -18,6 +18,7 @@ public class EnemyAgent : Agent {
     public float healthPotionReward = 16f;
 
     void Start() {
+        enemy = GetComponent<Enemy>();
         enemyMovement = GetComponent<EnemyMovement>();
         enemyCombat = GetComponent<EnemyCombat>();
         // AgentReset();
@@ -34,6 +35,8 @@ public class EnemyAgent : Agent {
         enemyMovement.updateRate = (int) realTimeAcademy.resetParameters["agent_update_rate"];
         enemyMovement.epsilon = realTimeAcademy.resetParameters["attack_range_epsilon"];
         healthPotionReward = realTimeAcademy.resetParameters["health_potion_reward"];
+
+        enemy.ResetStatsAndItems();
 
         enemyMovement.SetTargetReached(false);
         enemyMovement.AddMovement(0, 0);
@@ -70,6 +73,13 @@ public class EnemyAgent : Agent {
 
         obs.Add(enemyMovement.IsInRange());
 
+        // 1 se l'agente ha una pozione o 0 se non ce l'ha
+        if (enemy.HasActualPotion()) {
+            obs.Add(1);
+        } else {
+            obs.Add(0);
+        }
+
         AddVectorObs(obs);
     }
 
@@ -79,12 +89,20 @@ public class EnemyAgent : Agent {
         float horizontal = vectorAction[0];
         float vertical = vectorAction[1];
         float attack = vectorAction[2];
+        float drink = vectorAction[3];
+
+        // Debug.Log("Drink --> " + drink);
 
         if (attack > 0) {
             enemyCombat.NormalAttack();
             enemyMovement.AddMovement(0, 0);
         } else {
             enemyMovement.AddMovement(horizontal, vertical);
+        }
+
+        if (drink > 0) {
+            enemy.DrinkPotion();
+            AddReward(-0.1f);
         }
 
         AddReward(-0.1f);

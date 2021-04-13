@@ -27,11 +27,12 @@ class UnityEnvWrapper(Environment):
         return dict(position=dict(type='float', shape=(2,)),
                     target_position=dict(type='float', shape=(2,)),
                     env_objects_distances=dict(type='float', shape=(52,)),
-                    in_range=dict(type='float', shape=(1,)))
+                    in_range=dict(type='float', shape=(1,)),
+                    actual_potion=dict(type='float', shape=(1,)))
 
     def actions(self):
-        # Horizontal, Vertical, Attack
-        return dict(type='float', shape=(3,), min_value=-1.0, max_value=1.0)
+        # Horizontal, Vertical, Attack, Drink
+        return dict(type='float', shape=(4,), min_value=-1.0, max_value=1.0)
 
     def reset(self):
 
@@ -104,7 +105,8 @@ class UnityEnvWrapper(Environment):
             'position': np.asarray(env_info.vector_observations[0][:2]),
             'target_position': np.asarray(env_info.vector_observations[0][2:4]),
             'env_objects_distances': np.asarray(env_info.vector_observations[0][4:56]),
-            'in_range': np.asarray(env_info.vector_observations[0][56:57])
+            'in_range': np.asarray(env_info.vector_observations[0][56:57]),
+            'actual_potion': np.asarray(env_info.vector_observations[0][57:58])
         }
 
         return observation

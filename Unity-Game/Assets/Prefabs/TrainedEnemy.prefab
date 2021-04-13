@@ -302,7 +302,7 @@ Animator:
   m_GameObject: {fileID: 8954920629681498401}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e4aa31f274820b94eb0d0b764e0f383b, type: 3}
-  m_Controller: {fileID: 9100000, guid: d576ab3857d9b24489fafd85afb6c981, type: 2}
+  m_Controller: {fileID: 9100000, guid: b7a5d12827a3a31f79bdc276d1ad3829, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -356,6 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8954920629681498413}
   healthBar: {fileID: 8954920629856927123}
+  agent: {fileID: 0}
   HP: 20
   ATK: 3
   MANA: 3
@@ -366,6 +367,8 @@ MonoBehaviour:
   attackRate: 2
   weaponName: Long Sword
   actualWeaponDamage: 6
+  healthPotionCircleEffect: {fileID: 2211798128389284414, guid: 7891ee7076cc728bebd50946ce4a980f,
+    type: 3}
 --- !u!114 &114566097790413080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,9 +383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   epsilon: 1
   target: {fileID: 0}
-  envObjectsLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  envObjectsLayer: 12
+  itemsLayer: 10
   speed: 6
   turnSmoothTime: 0.2
   fieldOfViewTargetAngle: 60
@@ -1610,7 +1612,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8954920630375710560}
-  m_LocalRotation: {x: 0.0022206402, y: 0.032422718, z: -0.068294086, w: 0.99713576}
+  m_LocalRotation: {x: 0.0022206404, y: 0.032422718, z: -0.06829409, w: 0.99713576}
   m_LocalPosition: {x: -0.17600696, y: 0.023320874, z: 0.14720303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

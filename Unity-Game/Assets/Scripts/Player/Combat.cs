@@ -40,7 +40,7 @@ public class Combat : MonoBehaviour {
         animator.SetTrigger("attack");
         animator.SetBool("attacking", true);
 
-        StartCoroutine(AttackWaiter(0.67f));
+        StartCoroutine(AttackWaiter(0.6f));
 
         if (OnAttack != null)
             OnAttack();
@@ -60,7 +60,7 @@ public class Combat : MonoBehaviour {
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange * 3, enemyLayers);
 
         foreach(Collider enemy in hitEnemies) {
-            enemy.GetComponent<Enemy>().TakeDamage((player.actualWeaponDamage + player.ATK) * 2, 0.9f);
+            enemy.GetComponent<Enemy>().TakeDamage((player.actualWeaponDamage + player.ATK), 0.9f);
         }
     }
 

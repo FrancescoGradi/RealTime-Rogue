@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
     public int currentHealth;
     public float speed = 6.0f;
 
-    public float attackRange = 1.5f;
+    public float attackRange = 2f;
     public float attackRate = 2f;
 
     public string weaponName = "Long Sword";
@@ -37,6 +37,7 @@ public class Player : MonoBehaviour {
     public MeshRenderer sword;
     public MeshRenderer shield;
     public Spikes spikes;
+    public HealthPotionCircleEffect healthPotionCircleEffect;
 
     private string actualPotion;
 
@@ -105,6 +106,12 @@ public class Player : MonoBehaviour {
             currentHealth = HP;
         }
         playerHealthBar.SetHealth(currentHealth);
+
+        HealthPotionCircleEffect tmp = Instantiate(healthPotionCircleEffect, this.gameObject.transform.position, healthPotionCircleEffect.gameObject.transform.rotation);
+        Vector3 pos = tmp.gameObject.transform.position;
+        pos.y = 0.2f;
+        tmp.gameObject.transform.position = pos;
+        tmp.gameObject.transform.SetParent(this.gameObject.transform);
     }
 
     private IEnumerator WaitBonusPotion(float seconds) {
