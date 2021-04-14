@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour {
             // Add Health
             agent.HealthPotionCollectedReward();
             
-            HealthPotionAnimation();
+            // HealthPotionAnimation();
         }
 
         actualPotion = null;

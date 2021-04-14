@@ -71,7 +71,7 @@ public class Target : MonoBehaviour {
 
         if (!isDown && currentHealth <= 0) {
             isDown = true;
-            StartCoroutine(PlayerDownWaiter(0.3f));
+            StartCoroutine(PlayerDownWaiter(0f));
         }
     }
 

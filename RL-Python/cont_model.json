@@ -1,23 +1,23 @@
 {
-  "directory": "Model_Checkpoints/HealthPotionWithDrinkAction",
-  "model_name": "6POTIONS_13_RAYS_8GRADI_SPEED_4_UM50_CURRICULUM5-7_TS40_UR10_45000EP_REWARD8_WITH_NEG_DRINKING",
-  "game_name": "Compilati/13_04_neg_reward_drinking",
+  "directory": "Model_Checkpoints/HealthPotionSolo",
+  "model_name": "6POTIONS_13_RAYS_8GRADI_TS40_UR10_45000EP_REWARD16",
+  "game_name": "Compilati/14_04_No_Target",
 
   "num_episodes": 45000,
   "max_episode_timesteps": 40,
-  "worker_id": 1,
+  "worker_id": 2,
 
   "curriculum" : {
-    "thresholds": [15000, 30000, 45000, 60000, 75000, 90000, 105000, 120000, 135000],
+    "thresholds": [150000, 300000, 450000, 600000, 750000, 900000, 1050000, 1200000, 1350000],
     "parameters": {
-        "range": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+        "range": [14, 6, 7, 8, 9, 10, 11, 12, 13, 14],
         "agent_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         "target_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         "agent_update_rate": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
         "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         "update_movement": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
         "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        "health_potion_reward": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+        "health_potion_reward": [16, 8, 8, 8, 8, 8, 8, 8, 8, 8]
     }
   }
 
