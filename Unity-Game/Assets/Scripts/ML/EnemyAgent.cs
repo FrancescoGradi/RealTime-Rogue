@@ -46,11 +46,17 @@ public class EnemyAgent : Agent {
         
         List<float> obs = new List<float>();
 
-        obs.Add(enemy.gameObject.transform.position.x);
-        obs.Add(enemy.gameObject.transform.position.z);
-        
-        obs.Add(target.transform.position.x);
-        obs.Add(target.transform.position.z);
+        // Posizioni normalizzate secondo la grandezza massima della mappa
+
+        obs.Add(enemy.gameObject.transform.position.x / 15f);
+        obs.Add(enemy.gameObject.transform.position.z / 15f);
+
+        // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto
+
+        obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
+
+        obs.Add(target.transform.position.x / 15f);
+        obs.Add(target.transform.position.z / 15f);
 
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env e restituiscono la distanza
         
@@ -88,6 +94,8 @@ public class EnemyAgent : Agent {
 
         float horizontal = vectorAction[0];
         float vertical = vectorAction[1];
+
+        /*
         float attack = vectorAction[2];
         float drink = vectorAction[3];
 
@@ -104,6 +112,10 @@ public class EnemyAgent : Agent {
             enemy.DrinkPotion();
             AddReward(-0.1f);
         }
+
+        */
+
+        enemyMovement.AddMovement(horizontal, vertical);
 
         AddReward(-0.1f);
     }

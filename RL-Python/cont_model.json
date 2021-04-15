@@ -1,11 +1,11 @@
 {
   "directory": "Model_Checkpoints/HealthPotionSolo",
-  "model_name": "6POTIONS_13_RAYS_8GRADI_TS40_UR10_45000EP_REWARD16",
-  "game_name": "Compilati/14_04_No_Target",
+  "model_name": "12POTIONS_13_RAYS_8GRADI_TS35_UR10_50000EP_REWARD8_FORWARD_NO_ATTACK",
+  "game_name": "Compilati/15_04_No_Target_No_Attack",
 
-  "num_episodes": 45000,
-  "max_episode_timesteps": 40,
-  "worker_id": 2,
+  "num_episodes": 50000,
+  "max_episode_timesteps": 35,
+  "worker_id": 3,
 
   "curriculum" : {
     "thresholds": [150000, 300000, 450000, 600000, 750000, 900000, 1050000, 1200000, 1350000],
@@ -17,7 +17,7 @@
         "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         "update_movement": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
         "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        "health_potion_reward": [16, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+        "health_potion_reward": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
     }
   }
 

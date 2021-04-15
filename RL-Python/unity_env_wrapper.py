@@ -25,6 +25,7 @@ class UnityEnvWrapper(Environment):
 
     def states(self):
         return dict(position=dict(type='float', shape=(2,)),
+                    forward_direction=dict(type='float', shape=(1,)),
                     target_position=dict(type='float', shape=(2,)),
                     env_objects_distances=dict(type='float', shape=(52,)),
                     in_range=dict(type='float', shape=(1,)),
@@ -32,7 +33,7 @@ class UnityEnvWrapper(Environment):
 
     def actions(self):
         # Horizontal, Vertical, Attack, Drink
-        return dict(type='float', shape=(4,), min_value=-1.0, max_value=1.0)
+        return dict(type='float', shape=(2,), min_value=-1.0, max_value=1.0)
 
     def reset(self):
 
@@ -103,10 +104,11 @@ class UnityEnvWrapper(Environment):
 
         observation = {
             'position': np.asarray(env_info.vector_observations[0][:2]),
-            'target_position': np.asarray(env_info.vector_observations[0][2:4]),
-            'env_objects_distances': np.asarray(env_info.vector_observations[0][4:56]),
-            'in_range': np.asarray(env_info.vector_observations[0][56:57]),
-            'actual_potion': np.asarray(env_info.vector_observations[0][57:58])
+            'forward_direction': np.asarray(env_info.vector_observations[0][2:3]),
+            'target_position': np.asarray(env_info.vector_observations[0][3:5]),
+            'env_objects_distances': np.asarray(env_info.vector_observations[0][5:57]),
+            'in_range': np.asarray(env_info.vector_observations[0][57:58]),
+            'actual_potion': np.asarray(env_info.vector_observations[0][58:59])
         }
 
         return observation

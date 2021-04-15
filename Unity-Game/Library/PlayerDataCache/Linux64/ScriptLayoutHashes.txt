@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/14_04_No_Target.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/15_04_No_Target_No_Attack.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -197,7 +197,6 @@ fc4659575ffc7614e5d042b0a0014c54 Unity.InputSystem.dll:UnityEngine.Experimental.
 1e81c90a371b359c8c3efc0ec6ed96d0 Assembly-CSharp.dll:.BananaAgent
 8429f5e2e74458d387d20325476dffbf Assembly-CSharp.dll:.GunAim
 8a1511edcfd269b6938dd016efe00da5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UIGamepadInputModule
-df3ec0815ff483948b3dc4f12adcea86 Assembly-CSharp.dll:.Combat
 4aac268d7e435f7a65add91aaba819a4 Assembly-CSharp.dll:.CFX_Demo_RandomDir
 c2235b72cb5eaf8e601425d243ebe0f7 Assembly-CSharp.dll:.Portal
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
@@ -357,3 +356,4 @@ b5c3dbcb94925c8b595ad16a62b44788 Cinemachine.dll:Cinemachine.CinemachineBasicMul
 1994f8b165cd1b6e4b1669e09b537fa5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputSystemObject
 f1d4755bab5ef0b46262de0e1c5506de Assembly-CSharp.dll:.Ball3DAgent
 7e8b63eee6766b24ff7d26e2fc91d077 Assembly-CSharp.dll:.AgentSoccer
+df3ec0815ff483948b3dc4f12adcea86 Assembly-CSharp.dll:.PlayerCombat

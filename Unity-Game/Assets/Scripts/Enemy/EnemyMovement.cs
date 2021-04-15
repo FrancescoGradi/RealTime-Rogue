@@ -107,6 +107,8 @@ public class EnemyMovement : MonoBehaviour {
             enemy.SetActualPotion(actualItem.itemName);
 
             Destroy(actualItem.gameObject);
+
+            enemy.DrinkPotion();
         }
     }
 
