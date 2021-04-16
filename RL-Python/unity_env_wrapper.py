@@ -24,12 +24,18 @@ class UnityEnvWrapper(Environment):
         self.set_config(config)
 
     def states(self):
+
+        '''
         return dict(position=dict(type='float', shape=(2,)),
                     forward_direction=dict(type='float', shape=(1,)),
                     target_position=dict(type='float', shape=(2,)),
                     env_objects_distances=dict(type='float', shape=(52,)),
                     in_range=dict(type='float', shape=(1,)),
                     actual_potion=dict(type='float', shape=(1,)))
+        '''
+
+        return dict(cell_view=dict(type='float', shape=(25,)))
+
 
     def actions(self):
         # Horizontal, Vertical, Attack, Drink
@@ -102,6 +108,7 @@ class UnityEnvWrapper(Environment):
 
     def get_input_observation(self, env_info):
 
+        '''
         observation = {
             'position': np.asarray(env_info.vector_observations[0][:2]),
             'forward_direction': np.asarray(env_info.vector_observations[0][2:3]),
@@ -109,6 +116,11 @@ class UnityEnvWrapper(Environment):
             'env_objects_distances': np.asarray(env_info.vector_observations[0][5:57]),
             'in_range': np.asarray(env_info.vector_observations[0][57:58]),
             'actual_potion': np.asarray(env_info.vector_observations[0][58:59])
+        }
+        '''
+
+        observation = {
+            'cell_view': np.asarray(env_info.vector_observations[0][:25])
         }
 
         return observation

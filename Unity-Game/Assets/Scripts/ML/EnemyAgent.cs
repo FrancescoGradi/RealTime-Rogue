@@ -8,6 +8,7 @@ using MLAgents;
 public class EnemyAgent : Agent {
     public GameObject target;
     public RealTimeAcademy realTimeAcademy;
+    public LocalCellView localCellView;
 
     private Enemy enemy;
     private EnemyMovement enemyMovement;
@@ -45,6 +46,8 @@ public class EnemyAgent : Agent {
     public override void CollectObservations() {
         
         List<float> obs = new List<float>();
+
+        /*
 
         // Posizioni normalizzate secondo la grandezza massima della mappa
 
@@ -85,6 +88,23 @@ public class EnemyAgent : Agent {
         } else {
             obs.Add(0);
         }
+
+        */
+
+        // Local Cell View: altro modo per ottenere delle osservazioni locali sullo stato
+
+        localCellView.SetPosition(enemy.gameObject.transform.position.x, enemy.gameObject.transform.position.z);
+
+        List<float> cells = localCellView.GetLocalCellView();
+
+        foreach (float cellValue in cells) {
+            obs.Add(cellValue);
+        }
+
+        // Reward negativa con gli ostacoli
+
+        if (cells[12] == 1f)
+            AddReward(-1f); 
 
         AddVectorObs(obs);
     }
