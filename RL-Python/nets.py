@@ -1,10 +1,10 @@
-net2 = [
+net1 = [
     dict(type='retrieve', tensors=['forward_direction', 'env_objects_distances'], aggregation='concat'),
     dict(type='dense', size=256, activation='relu'),
     dict(type='dense', size=64, activation='relu')
 ]
 
-baseline2 = [
+baseline1 = [
     dict(type='retrieve', tensors=['forward_direction', 'env_objects_distances'], aggregation='concat'),
     dict(type='dense', size=128, activation='relu'),
     dict(type='dense', size=64, activation='relu')

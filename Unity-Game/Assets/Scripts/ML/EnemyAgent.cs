@@ -9,14 +9,15 @@ public class EnemyAgent : Agent {
     public GameObject target;
     public RealTimeAcademy realTimeAcademy;
     public LocalCellView localCellView;
-
-    private Enemy enemy;
-    private EnemyMovement enemyMovement;
-    private EnemyCombat enemyCombat;
+    
     public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 10f;
     public float rayMinDistance = 1f;
     public float healthPotionReward = 16f;
+
+    private Enemy enemy;
+    private EnemyMovement enemyMovement;
+    private EnemyCombat enemyCombat;
 
     void Start() {
         enemy = GetComponent<Enemy>();

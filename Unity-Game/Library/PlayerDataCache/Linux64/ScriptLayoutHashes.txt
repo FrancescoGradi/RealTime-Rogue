@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/16_04_cell_view.x86_64
+/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/17_04_rays.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?

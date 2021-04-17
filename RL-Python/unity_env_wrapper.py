@@ -24,7 +24,6 @@ class UnityEnvWrapper(Environment):
         self.set_config(config)
 
     def states(self):
-
         '''
         return dict(position=dict(type='float', shape=(2,)),
                     forward_direction=dict(type='float', shape=(1,)),
@@ -33,7 +32,6 @@ class UnityEnvWrapper(Environment):
                     in_range=dict(type='float', shape=(1,)),
                     actual_potion=dict(type='float', shape=(1,)))
         '''
-
         return dict(cell_view=dict(type='float', shape=(25,)))
 
 
@@ -118,10 +116,10 @@ class UnityEnvWrapper(Environment):
             'actual_potion': np.asarray(env_info.vector_observations[0][58:59])
         }
         '''
-
         observation = {
             'cell_view': np.asarray(env_info.vector_observations[0][:25])
         }
+
 
         return observation
 

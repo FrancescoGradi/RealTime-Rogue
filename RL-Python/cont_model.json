@@ -1,11 +1,11 @@
 {
   "directory": "Model_Checkpoints/HealthPotionSolo",
-  "model_name": "12POTIONS_TS35_UR10_50000EP_REWARD16_CELL_VIEW",
-  "game_name": "Compilati/16_04_cell_view",
+  "model_name": "6POTIONS_RANDOM_TS35_UR10_50000EP_REWARD32_CELL_VIEW",
+  "game_name": "Compilati/17_04_cell_view",
 
   "num_episodes": 50000,
   "max_episode_timesteps": 35,
-  "worker_id": 4,
+  "worker_id": 5,
 
   "curriculum" : {
     "thresholds": [150000, 300000, 450000, 600000, 750000, 900000, 1050000, 1200000, 1350000],
@@ -17,7 +17,7 @@
         "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         "update_movement": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
         "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        "health_potion_reward": [16, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+        "health_potion_reward": [32, 8, 8, 8, 8, 8, 8, 8, 8, 8]
     }
   }
 
