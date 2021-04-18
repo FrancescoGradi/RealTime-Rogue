@@ -65,8 +65,6 @@ public class ObjectsGenerator : MonoBehaviour
 
         Vector3 pos = new Vector3(0, 0, 0);
 
-        /*
-
         // Implementazione con spawn points
 
         for (int i = 0; i < max_items; i++) {
@@ -76,7 +74,7 @@ public class ObjectsGenerator : MonoBehaviour
             activeItems.Add(Instantiate(selectedItem, pos, selectedItem.gameObject.transform.rotation));
         }
 
-        */
+        /*
 
         // Implementazione con spawn totalmente casuali senza spawn points
 
@@ -87,6 +85,7 @@ public class ObjectsGenerator : MonoBehaviour
             GameObject selectedItem = Utility.GetRandomObject(items);
             activeItems.Add(Instantiate(selectedItem, pos, selectedItem.gameObject.transform.rotation));
         }
+        */
 
         spawnPoints.Reverse();
 

@@ -105,10 +105,7 @@ public class EnemyMovement : MonoBehaviour {
         if (actualItem.itemName == "Health Potion") {
 
             enemy.SetActualPotion(actualItem.itemName);
-
             Destroy(actualItem.gameObject);
-
-            enemy.DrinkPotion();
         }
     }
 

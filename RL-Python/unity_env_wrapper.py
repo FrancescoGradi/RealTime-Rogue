@@ -31,13 +31,18 @@ class UnityEnvWrapper(Environment):
                     env_objects_distances=dict(type='float', shape=(52,)),
                     in_range=dict(type='float', shape=(1,)),
                     actual_potion=dict(type='float', shape=(1,)))
+
         '''
-        return dict(cell_view=dict(type='float', shape=(25,)))
+        return dict(position=dict(type='float', shape=(2,)),
+                    target_position=dict(type='float', shape=(2,)),
+                    cell_view=dict(type='float', shape=(25,)),
+                    in_range=dict(type='float', shape=(1,)),
+                    actual_potion=dict(type='float', shape=(1,)))
 
 
     def actions(self):
         # Horizontal, Vertical, Attack, Drink
-        return dict(type='float', shape=(2,), min_value=-1.0, max_value=1.0)
+        return dict(type='float', shape=(4,), min_value=-1.0, max_value=1.0)
 
     def reset(self):
 
@@ -105,7 +110,6 @@ class UnityEnvWrapper(Environment):
         raise Exception("end of time")
 
     def get_input_observation(self, env_info):
-
         '''
         observation = {
             'position': np.asarray(env_info.vector_observations[0][:2]),
@@ -117,9 +121,12 @@ class UnityEnvWrapper(Environment):
         }
         '''
         observation = {
-            'cell_view': np.asarray(env_info.vector_observations[0][:25])
+            'position': np.asarray(env_info.vector_observations[0][:2]),
+            'target_position': np.asarray(env_info.vector_observations[0][2:4]),
+            'cell_view': np.asarray(env_info.vector_observations[0][4:29]),
+            'in_range': np.asarray(env_info.vector_observations[0][29:30]),
+            'actual_potion': np.asarray(env_info.vector_observations[0][30:31])
         }
-
 
         return observation
 

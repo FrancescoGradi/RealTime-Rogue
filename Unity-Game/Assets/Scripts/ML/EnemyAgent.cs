@@ -48,8 +48,6 @@ public class EnemyAgent : Agent {
         
         List<float> obs = new List<float>();
 
-        /*
-
         // Posizioni normalizzate secondo la grandezza massima della mappa
 
         obs.Add(enemy.gameObject.transform.position.x / 15f);
@@ -57,12 +55,30 @@ public class EnemyAgent : Agent {
 
         // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto
 
-        obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
+        // obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
 
         obs.Add(target.transform.position.x / 15f);
         obs.Add(target.transform.position.z / 15f);
 
-        // Secondo modo: raggi di lunghezza massima che intersecano oggetti env e restituiscono la distanza
+
+        // Local Cell View: modo per ottenere delle osservazioni locali sullo stato
+
+        localCellView.SetPosition(enemy.gameObject.transform.position.x, enemy.gameObject.transform.position.z);
+
+        List<float> cells = localCellView.GetLocalCellView();
+
+        foreach (float cellValue in cells) {
+            obs.Add(cellValue);
+        }
+
+        // Reward negativa con gli ostacoli
+
+        if (cells[12] == 1f)
+            AddReward(-1f); 
+
+        /*
+
+        // Secondo modo: raggi di lunghezza massima che intersecano oggetti env-item e restituiscono la distanza
         
         for (int i = 0; i < angles.Count; i++) {
             List<float> raycastVector = enemyMovement.GetRayCastDistance(raycastMaxDistance, angles[i]);
@@ -78,6 +94,8 @@ public class EnemyAgent : Agent {
             obs.Add(raycastVector[3]);
         }
 
+        */
+
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
         // ad attaccare
 
@@ -89,24 +107,7 @@ public class EnemyAgent : Agent {
         } else {
             obs.Add(0);
         }
-
-        */
-
-        // Local Cell View: altro modo per ottenere delle osservazioni locali sullo stato
-
-        localCellView.SetPosition(enemy.gameObject.transform.position.x, enemy.gameObject.transform.position.z);
-
-        List<float> cells = localCellView.GetLocalCellView();
-
-        foreach (float cellValue in cells) {
-            obs.Add(cellValue);
-        }
-
-        // Reward negativa con gli ostacoli
-
-        if (cells[12] == 1f)
-            AddReward(-1f); 
-
+        
         AddVectorObs(obs);
     }
 
@@ -115,8 +116,6 @@ public class EnemyAgent : Agent {
 
         float horizontal = vectorAction[0];
         float vertical = vectorAction[1];
-
-        /*
         float attack = vectorAction[2];
         float drink = vectorAction[3];
 
@@ -133,8 +132,6 @@ public class EnemyAgent : Agent {
             enemy.DrinkPotion();
             AddReward(-0.1f);
         }
-
-        */
 
         enemyMovement.AddMovement(horizontal, vertical);
 
