@@ -1,9 +1,9 @@
 {
   "directory": "Model_Checkpoints/HealthPotionSolo",
-  "model_name": "SPEED4_CURRICULUM5_14_TS40_UR10_150000EP_REWARD16_CELL_VIEW",
-  "game_name": "Compilati/18_04_cell_view",
+  "model_name": "PROVA",
+  "game_name": "Compilati/18_04_rays",
 
-  "num_episodes": 150000,
+  "num_episodes": 10000,
   "max_episode_timesteps": 40,
   "worker_id": 2,
 
@@ -17,7 +17,7 @@
         "speed": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         "update_movement": [50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
         "attack_range_epsilon": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        "health_potion_reward": [16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+        "health_potion_reward": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
     }
   }
 

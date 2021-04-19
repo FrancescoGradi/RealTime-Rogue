@@ -55,12 +55,12 @@ public class EnemyAgent : Agent {
 
         // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto
 
-        // obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
+        obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
 
         obs.Add(target.transform.position.x / 15f);
         obs.Add(target.transform.position.z / 15f);
 
-
+        /*
         // Local Cell View: modo per ottenere delle osservazioni locali sullo stato
 
         localCellView.SetPosition(enemy.gameObject.transform.position.x, enemy.gameObject.transform.position.z);
@@ -76,7 +76,7 @@ public class EnemyAgent : Agent {
         if (cells[12] == 1f)
             AddReward(-1f); 
 
-        /*
+        */
 
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env-item e restituiscono la distanza
         
@@ -93,8 +93,6 @@ public class EnemyAgent : Agent {
             obs.Add(raycastVector[2]);
             obs.Add(raycastVector[3]);
         }
-
-        */
 
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
         // ad attaccare

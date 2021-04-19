@@ -24,7 +24,6 @@ class UnityEnvWrapper(Environment):
         self.set_config(config)
 
     def states(self):
-        '''
         return dict(position=dict(type='float', shape=(2,)),
                     forward_direction=dict(type='float', shape=(1,)),
                     target_position=dict(type='float', shape=(2,)),
@@ -38,6 +37,8 @@ class UnityEnvWrapper(Environment):
                     cell_view=dict(type='float', shape=(25,)),
                     in_range=dict(type='float', shape=(1,)),
                     actual_potion=dict(type='float', shape=(1,)))
+                '''
+
 
 
     def actions(self):
@@ -110,7 +111,6 @@ class UnityEnvWrapper(Environment):
         raise Exception("end of time")
 
     def get_input_observation(self, env_info):
-        '''
         observation = {
             'position': np.asarray(env_info.vector_observations[0][:2]),
             'forward_direction': np.asarray(env_info.vector_observations[0][2:3]),
@@ -127,6 +127,9 @@ class UnityEnvWrapper(Environment):
             'in_range': np.asarray(env_info.vector_observations[0][29:30]),
             'actual_potion': np.asarray(env_info.vector_observations[0][30:31])
         }
+        
+                '''
+
 
         return observation
 
