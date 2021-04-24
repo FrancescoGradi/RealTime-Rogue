@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/UnityProjects/MyThirdGame/RL-Python/Compilati/18_04_cell_view.x86_64
+/home/fra/PycharmProjects/rl_sesto/envs/24_04_cell_view.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -221,7 +221,7 @@ c4bff8529e730cde368c4b0b7600f222 Assembly-CSharp.dll:.BastardSword
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachinePipeline
 df3ec0815ff483948b3dc4f12adcea86 Assembly-CSharp.dll:.PlayerCombat
 694d20920c0e41f567e119f7159a3644 Cinemachine.dll:Cinemachine.CinemachinePath
-cfa18e9e3c193c2225fd86811c2912e3 Assembly-CSharp.dll:.LocalCellView
+877f9ebf497388fec7f3bbdb20f5c60e Assembly-CSharp.dll:.LocalCellView
 660deb0ce569359218f0ba85b7ce0e3a Assembly-CSharp.dll:.CFX_LightIntensityFade
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 635fe9f95d92a3b2fc685a5acec976fc Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputStateWindow

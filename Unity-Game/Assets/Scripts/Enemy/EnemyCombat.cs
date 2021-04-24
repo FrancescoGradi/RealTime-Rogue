@@ -18,18 +18,15 @@ public class EnemyCombat : MonoBehaviour {
 
     public void NormalAttack() {
 
-        if (Time.time >= nextAttackTime) {
-            animator.SetTrigger("attack");
-            animator.SetBool("attacking", true);
+        animator.SetTrigger("attack");
+        animator.SetBool("attacking", true);
 
-            StartCoroutine(AttackWaiter(0));
+        StartCoroutine(AttackWaiter(0));
 
-            Collider[] hitPlayers = Physics.OverlapSphere(attackPoint.position, enemy.attackRange, playerLayer);
+        Collider[] hitPlayers = Physics.OverlapSphere(attackPoint.position, enemy.attackRange, playerLayer);
 
-            foreach(Collider player in hitPlayers) {
-                player.GetComponent<Target>().TakeDamage(enemy.actualWeaponDamage + enemy.ATK, 0f);
-            }
-            nextAttackTime = Time.time + 1f / enemy.attackRate;
+        foreach(Collider player in hitPlayers) {
+            player.GetComponent<Target>().TakeDamage(enemy.actualWeaponDamage + enemy.ATK, 0f);
         }
     }
 
