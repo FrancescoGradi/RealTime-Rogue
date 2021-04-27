@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/PycharmProjects/rl_sesto/envs/24_04_cell_view.x86_64
+/home/fra/PycharmProjects/rl_sesto/envs/27_04_cell_view.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -39,7 +39,7 @@ fc169718e5fd24cea7425f24908c0418 Unity.InputSystem.dll:UnityEngine.Experimental.
 af56f77a30c1a2da1680c736a6f5c6e8 Cinemachine.dll:Cinemachine.GroupWeightManipulator
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:MLAgents.Monitor
 66a76d307baa3e8eb65d877c961f1b43 Cinemachine.dll:.CinemachineRecomposer
-2d956aee6e59741588883b8aaa2f093f Assembly-CSharp.dll:.EnemyMovement
+91f7e0d39bef9f5f881f9ab86077f099 Assembly-CSharp.dll:.EnemyMovement
 32fce7b97c39bff4b4f6c0f53f7e6bf1 Cinemachine.dll:Cinemachine.CinemachineCollisionImpulseSource
 65bb7df6b5d144a99edab5f83322b1d9 Assembly-CSharp.dll:.RoomClearedScreen
 7f9c9c0c2ddd3de046f36ccb615371ef Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UIXRInputModule

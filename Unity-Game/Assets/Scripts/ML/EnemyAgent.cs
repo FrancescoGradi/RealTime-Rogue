@@ -91,7 +91,9 @@ public class EnemyAgent : Agent {
             obs.Add(raycastVector[1]);
             obs.Add(raycastVector[2]);
             obs.Add(raycastVector[3]);
+            obs.Add(raycastVector[4]);
         }
+
         */
 
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente

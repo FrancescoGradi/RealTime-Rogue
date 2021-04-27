@@ -18,6 +18,7 @@ public class EnemyMovement : MonoBehaviour {
 
     public GameObject target;
     public int envObjectsLayer = 12;
+    public int playerLayer = 11;
     public int itemsLayer = 10;
 
 
@@ -120,17 +121,20 @@ public class EnemyMovement : MonoBehaviour {
 
             if (hit.transform.gameObject.layer == envObjectsLayer) {
                 Debug.DrawRay(pos, direction * hit.distance, Color.yellow, Time.fixedDeltaTime);
-                return new List<float> {hit.distance / maxDistance, 0, 1, 0};
+                return new List<float> {hit.distance / maxDistance, 0, 1, 0, 0};
             } else if (hit.transform.gameObject.layer == itemsLayer) {
                 Debug.DrawRay(pos, direction * hit.distance, Color.red, Time.fixedDeltaTime);
-                return new List<float> {hit.distance / maxDistance, 0, 0, 1};
+                return new List<float> {hit.distance / maxDistance, 0, 0, 1, 0};
+            } else if (hit.transform.gameObject.layer == playerLayer) {
+                Debug.DrawRay(pos, direction * hit.distance, Color.green, Time.fixedDeltaTime);
+                return new List<float> {hit.distance / maxDistance, 0, 0, 0, 1};
             } else {
                 Debug.DrawRay(pos, direction * maxDistance, Color.white, Time.fixedDeltaTime);
-                return new List<float> {1, 1, 0, 0};
+                return new List<float> {1, 1, 0, 0, 0};
             }     
         } else {
             Debug.DrawRay(pos, direction * maxDistance, Color.white, Time.fixedDeltaTime);
-            return new List<float> {1, 1, 0, 0};
+            return new List<float> {1, 1, 0, 0, 0};
         }
     }
 
