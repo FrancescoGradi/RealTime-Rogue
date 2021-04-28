@@ -60,6 +60,8 @@ public class EnemyAgent : Agent {
         obs.Add(target.transform.position.x / 15f);
         obs.Add(target.transform.position.z / 15f);
 
+        /*
+
         // Local Cell View: modo per ottenere delle osservazioni locali sullo stato
 
         localCellView.SetPosition(enemy.gameObject.transform.position.x, enemy.gameObject.transform.position.z);
@@ -75,7 +77,7 @@ public class EnemyAgent : Agent {
         if (cells[12] == 1f)
             AddReward(-1f); 
 
-        /*
+        */
 
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env-item e restituiscono la distanza
         
@@ -93,8 +95,6 @@ public class EnemyAgent : Agent {
             obs.Add(raycastVector[3]);
             obs.Add(raycastVector[4]);
         }
-
-        */
 
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
         // ad attaccare
