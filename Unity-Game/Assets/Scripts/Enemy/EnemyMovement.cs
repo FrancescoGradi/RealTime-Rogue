@@ -32,8 +32,6 @@ public class EnemyMovement : MonoBehaviour {
     public int updateRate = 20;
     private float turnSmoothVelocity;
 
-    private bool targetReached = false;
-
 
     void Start() {
 
@@ -45,7 +43,7 @@ public class EnemyMovement : MonoBehaviour {
 
     private void FixedUpdate() {
         
-        if (!targetReached && !animator.GetBool("attacking")) {
+        if (!animator.GetBool("attacking")) {
 
             count += 1;
             if (count == updateRate || count > 1000) {
@@ -59,15 +57,6 @@ public class EnemyMovement : MonoBehaviour {
             } else {
                 animator.SetInteger("running", 0);
             }
-            /*
-            if (!targetReached) {
-                if (System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
-                    System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
-                    targetReached = true;
-                    agent.TargetReached();
-                }
-            }
-            */
         }
     }
 
@@ -87,10 +76,6 @@ public class EnemyMovement : MonoBehaviour {
 
         Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
         characterController.Move(moveDir.normalized * speed * Time.fixedDeltaTime);
-    }
-
-    public void SetTargetReached(bool targetReached) {
-        this.targetReached = targetReached;
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {

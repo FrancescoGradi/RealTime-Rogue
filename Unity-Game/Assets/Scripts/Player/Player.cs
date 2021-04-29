@@ -44,8 +44,11 @@ public class Player : MonoBehaviour {
     private void Start() {
 
         currentHealth = HP - 15;
-        playerHealthBar.SetMaxHealth(HP);
-        playerHealthBar.SetHealth(currentHealth);
+
+        if (playerHealthBar != null) {
+            playerHealthBar.SetMaxHealth(HP);
+            playerHealthBar.SetHealth(currentHealth);
+        }
     }
 
     private void Update() {

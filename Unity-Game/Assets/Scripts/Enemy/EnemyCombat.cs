@@ -26,7 +26,9 @@ public class EnemyCombat : MonoBehaviour {
         Collider[] hitPlayers = Physics.OverlapSphere(attackPoint.position, enemy.attackRange, playerLayer);
 
         foreach(Collider player in hitPlayers) {
-            player.GetComponent<Target>().TakeDamage(enemy.actualWeaponDamage + enemy.ATK, 0f);
+            int damage = enemy.actualWeaponDamage + enemy.ATK;
+            player.GetComponent<Target>().TakeDamage(damage, 0f);
+            break;
         }
     }
 
