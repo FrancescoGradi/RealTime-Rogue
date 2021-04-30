@@ -1,4 +1,4 @@
-29/04/2021 17:42:08
+30/04/2021 16:31:45
  
 Log
 System.NullReferenceException: Object reference not set to an instance of an object
@@ -7,558 +7,2888 @@ UnityEngine.Debug:Log(Object)
 Room:Start() (at Assets/Scripts/Environment/Room.cs:46)
 
 Log
-Danni 9
+-0,1011929   0,5078384   -0,8048055   0,6927466
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,09680867   0,4581692   -0,8030127   0,7204537
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,1035213   0,4775198   -0,7976208   0,708509
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,08363885   0,4305019   -0,805993   0,7334303
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,07214963   0,4266678   -0,801963   0,7326711
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,09031975   0,3862624   -0,7949085   0,7320544
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,08786392   0,3727943   -0,8142214   0,7225156
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,1057402   0,3311292   -0,8083698   0,726301
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,1812542   0,3493692   -0,8117175   0,7126575
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,2390081   0,2428977   -0,80698   0,7105801
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3858464   0,2976677   -0,7867042   0,6924895
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3493582   0,2215502   -0,7859675   0,7205675
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3923629   0,1551102   -0,7390579   0,7051508
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,1007642   0,2963948   -0,8173121   0,7411544
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,1691624   0,254671   -0,8065405   0,7278324
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3112301   0,2305269   -0,7941715   0,7008544
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,2422283   0,7742316   -0,7930465   0,5333411
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,2495594   0,138418   -0,7958906   0,7259825
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,2168604   0,05592477   -0,7518878   0,7361022
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,740774   0,423713   -0,8257359   0,6380464
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,1945369   0,7243806   -0,3072059   0,519785
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,1297892   -0,06620032   -0,7872604   0,6955565
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,07937908   0,03255141   -0,7827234   0,6978763
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,001312017   -0,02193022   -0,7798981   0,6952997
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,03970337   -0,02879971   -0,7756544   0,6899613
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,03970337   -0,02879971   -0,7756544   0,6899613
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,03970337   -0,02879971   -0,7756544   0,6899613
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,03970337   -0,02879971   -0,7756544   0,6899613
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,03970337   -0,02879971   -0,7756544   0,6899613
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,03970337   -0,02879971   -0,7756544   0,6899613
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,7407066   0,03978741   0,2450405   0,6390955
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,03684759   -0,04262787   -0,7835027   0,7000602
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,2816581   0,7011598   -0,2005658   0,5110874
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,7730646   -0,01898271   -0,4893306   0,7349873
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,8601245   -0,6031408   0,3961825   0,6924905
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,04595006   -0,6468953   -0,4755775   0,7015076
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,7069684   -0,09975255   -0,4244136   0,7093247
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,8932632   -0,2609675   0,2148089   0,6314185
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,8899413   -0,3053445   -0,1086702   0,6151248
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,8874588   -0,3229987   -0,06990457   0,6295285
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,8874588   -0,3229987   -0,06990457   0,6295285
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,2889921   -0,2321799   -0,7846584   0,7226781
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3077943   -0,2262992   -0,7905229   0,7038563
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3135152   -0,2072099   -0,7845796   0,7170129
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3676621   -0,354242   -0,7459489   0,6907156
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,284972   -0,2893934   -0,7493889   0,7138016
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,2581351   -0,2979034   -0,7612752   0,6962498
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,2548993   -0,1967647   -0,7952804   0,7365009
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,368296   -0,3728943   -0,753626   0,6950978
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,3626369   -0,3778166   -0,7507085   0,7009372
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,705996   -0,3720911   -0,7545208   0,6033201
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,8989733   -0,3183776   0,02396131   0,6416469
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,7938157   -0,06394511   0,4829684   0,6936715
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,7885516   -0,05174333   0,4853092   0,6935067
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,04868907   0,438938   0,273689   0,6655649
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,7891157   -0,05505252   0,4844546   0,6937042
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,8832716   -0,3686089   0,2014143   0,6508096
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,5561747   -0,6140789   -0,4735391   0,6453031
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0   0   0   0
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+-0,05565554   0,6306659   -0,7972835   0,6752316
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,3196142   0,8466499   -0,7880084   0,4761727
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
 MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 
 Log
-Danni 9
+0,8976855   0,3347373   -0,7073261   0,6253277
 UnityEngine.Debug:Log(Object)
-EnemyCombat:NormalAttack() (at Assets/Scripts/Enemy/EnemyCombat.cs:31)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8166206   -0,007472694   -0,7101791   0,7522365
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9030726   -0,2901606   -0,3312348   0,71847
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8678753   -0,6267776   0,4044381   0,7343098
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9091176   -0,3444374   -0,6168247   0,7305465
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9086548   -0,2599792   -0,6219944   0,7120426
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2396894   -0,08374602   -0,8113424   0,7828263
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,05015981   -0,01415867   -0,7699589   0,7918038
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,04516304   -0,02324092   -0,7691926   0,7919637
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,05025315   -0,0255515   -0,7696357   0,793051
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,0366683   -0,01256597   -0,7604498   0,7853996
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,03774154   -0,01583332   -0,7605375   0,7856587
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,03774154   -0,01583332   -0,7605375   0,7856587
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,03913891   -0,01773393   -0,7606749   0,7858752
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1516138   -0,05261111   -0,8161997   0,7821003
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,0887928   -0,02341706   -0,8108515   0,7590051
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8269495   -0,08487821   -0,7111661   0,7694877
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8799715   -0,08042324   -0,6773263   0,7529496
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8892714   -0,05657214   -0,6701602   0,7525381
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1888306   -0,6751209   0,1438062   0,7534366
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2337984   -0,727803   -0,2261679   0,7468635
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,125917   -0,7174694   -0,2315012   0,7598662
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1055801   -0,7444967   -0,2524117   0,76072
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,0849911   -0,7441224   -0,2357979   0,7606308
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8263807   -0,6273927   0,4227129   0,705518
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8592743   -0,4127063   -0,02878433   0,7155342
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8886639   -0,3524476   0,1568037   0,619042
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5936865   -0,5821077   -0,5193607   0,6172317
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5968601   -0,5280294   -0,5859522   0,6336373
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08974588   -0,02777421   -0,6791846   0,7498279
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08175194   -0,02584112   -0,6803901   0,7516426
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07861489   -0,01468259   -0,6805515   0,752059
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07486945   -0,01252151   -0,680704   0,7529759
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07283908   -0,02175921   -0,6807902   0,7540277
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,01926166   -0,6295977   -0,3140644   0,7121519
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1115733   -0,7734271   0,05168891   0,7115455
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08040088   -0,7964804   -0,1816123   0,6935362
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,09915751   -0,7835784   -0,1480232   0,6773348
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,09915751   -0,7835784   -0,1480232   0,6773348
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1242428   -0,142388   -0,8311576   0,7749791
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3248566   -0,05227333   -0,8384873   0,8021866
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2511697   -0,04422277   -0,8303995   0,8030386
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2820106   0,01987505   -0,8305373   0,7964066
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2742462   0,0237323   -0,8301929   0,7954248
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3110653   0,02084267   -0,8322197   0,7968092
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3490674   0,01960301   -0,8342006   0,7985263
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,386541   0,01773715   -0,836094   0,8001831
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4238325   0,01532984   -0,8378436   0,8017586
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4599999   0,01524413   -0,8394768   0,8028792
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4867159   0,03990293   -0,8408905   0,802096
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,506701   0,06462371   -0,8420184   0,8009421
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,506153   0,08825052   -0,8423129   0,7990174
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5043706   0,1077794   -0,8424829   0,7972275
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5212162   0,1413413   -0,8440434   0,7907385
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,537589   0,2049476   -0,8303092   0,7761276
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4828196   0,2111828   -0,8404852   0,7794284
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4731873   0,2415842   -0,8349019   0,7724866
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4481534   0,2275891   -0,8382946   0,7797801
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3720636   0,1701815   -0,8264513   0,7957373
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4112134   0,1676891   -0,8327025   0,7787721
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3196959   0,1927614   -0,8341987   0,7885214
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2868497   0,1821088   -0,8353114   0,7848676
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2354099   0,1998677   -0,8351641   0,7750406
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2319928   0,2211422   -0,8338806   0,7677621
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2955025   0,1658628   -0,8268985   0,7667913
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,357255   0,4674529   -0,828231   0,6963298
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,114028   0,8534403   -0,3147699   0,454427
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,005590498   0,5447667   0,4084661   0,6343689
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,003276467   0,5465525   0,4074745   0,6340364
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,06281865   0,5893135   0,01435828   0,6208107
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1774907   0,07091415   -0,7742934   0,7477189
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,02803785   0,7705355   -0,05123609   0,5632777
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,02351332   0,6063126   -0,147662   0,6516105
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,02060521   0,5942022   -0,1903965   0,6556233
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,07274997   0,1028759   -0,7913906   0,7520814
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,09876978   -0,6111498   -0,1804618   0,7344574
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1015784   -0,6206974   0,07102108   0,7549031
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1397257   -0,6636139   -0,2920141   0,7451074
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1876494   -0,09909403   -0,7893392   0,759657
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1876494   -0,09909403   -0,7893392   0,759657
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1115879   -0,3123336   -0,7551576   0,7532283
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,0681349   -0,6676571   -0,7874854   0,7129078
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,09933686   -0,7998749   -0,772025   0,6151396
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5331785   -0,8445144   -0,1738751   0,6262115
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1065719   -0,690968   -0,1354296   0,7378215
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8750827   -0,5586561   0,3442358   0,6367711
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7724705   -0,05668324   -0,3191138   0,7119044
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1326025   0,5401351   -0,2274863   0,6809058
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1089854   0,5121906   0,1720988   0,6892221
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,7048194   0,5595633   0,1950859   0,5320673
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9009348   0,2237674   -0,6629574   0,6746376
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9041263   0,2017463   -0,6811305   0,6930707
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,871042   -0,07074469   -0,6952412   0,7608626
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9092017   0,1818825   -0,7007209   0,6936681
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,06065118   0,4681768   0,2484602   0,6993694
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,09363854   0,4851277   -0,1814512   0,6939473
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7372776   -0,01370931   -0,02462357   0,7156926
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7590613   -0,001806676   0,1927743   0,7106122
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8447735   0,3412515   0,001723886   0,5733529
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3556749   0,7536315   0,2690166   0,4739324
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,02387422   0,594312   -0,192589   0,6573308
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0   0   0   0
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,6136923   -0,2597871   -0,6327559   0,6417788
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,63037   -0,2422633   -0,7130015   0,63864
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,6792135   -0,2751321   -0,7049352   0,5968921
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,6143576   -0,1930341   -0,7087792   0,6672895
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5825382   -0,1684818   -0,6741464   0,7241956
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4445879   -0,1212308   -0,7589843   0,6967524
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,46016   -0,08416873   -0,7529687   0,7098224
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5102892   -0,09239221   -0,7590568   0,6907215
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4890653   0,01559711   -0,7581327   0,6859965
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5950412   0,08537173   -0,7065313   0,666639
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4426664   0,1255109   -0,7558735   0,7021639
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2158363   0,06192875   -0,7967228   0,7512619
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2475668   0,2701509   -0,8197441   0,6805757
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2349231   0,3077517   -0,8197993   0,6825285
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4257507   0,5649644   -0,7539698   0,6117269
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4181824   0,5682507   -0,763387   0,5651461
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,04839182   0,1493086   -0,8129238   0,7133926
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,05401284   0,139977   -0,7705507   0,736585
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,05582386   0,1401156   -0,7703078   0,7366333
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,0503124   0,140959   -0,7707864   0,7371886
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07356286   0,1336958   -0,778018   0,7354081
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08159667   0,1338199   -0,7771139   0,7341691
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08110464   0,1346139   -0,7770418   0,7338511
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08827865   0,133894   -0,7655903   0,7351258
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,086887   0,1001917   -0,7638377   0,7333751
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08611959   0,1012056   -0,7638332   0,7329928
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,09046328   0,1005816   -0,7632664   0,7322848
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07845694   0,110516   -0,7520837   0,7329675
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,04867041   0,09588277   -0,7583399   0,7331588
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,04265612   0,09672081   -0,7590156   0,7344123
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,03678703   0,097175   -0,7596254   0,7354908
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,03098834   0,09701443   -0,7602211   0,7364461
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7331904   0,1015638   0,09860325   0,6679579
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7409585   0,09708047   0,1026428   0,6668358
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7245083   0,02843583   -0,334952   0,6624104
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,01929444   -0,6490078   -0,3671776   0,688305
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,006356001   -0,6404353   0,008710623   0,6852945
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4683015   -0,8399216   -0,09990662   0,5692363
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5335289   -0,8153757   -0,1158038   0,6129501
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5635323   -0,7994667   -0,1515004   0,6101528
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5635323   -0,7994667   -0,1515004   0,6101528
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3559977   -0,4367634   -0,7309513   0,7335709
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4116969   -0,3195329   -0,7478991   0,7007734
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4017162   -0,2744896   -0,7622459   0,674351
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4787192   -0,2955368   -0,7510778   0,6324445
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,460043   -0,3523059   -0,759753   0,6538004
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4807412   -0,3282183   -0,7567064   0,6537944
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4762725   -0,2782419   -0,7474328   0,6239128
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4586021   -0,2615517   -0,7478038   0,6851159
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4518316   -0,1902094   -0,7400814   0,7018554
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,437033   -0,1083483   -0,743166   0,7003584
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3847679   -0,03438675   -0,7575195   0,7082471
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3621985   0,01614332   -0,7625537   0,7101593
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3558162   0,01909816   -0,7777946   0,7084304
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3690732   0,1018761   -0,781666   0,6831928
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,352584   0,0698595   -0,7826406   0,703607
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3663641   0,06097662   -0,7604076   0,6933748
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4831888   0,1975679   -0,7813653   0,6601413
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8930376   0,2926372   -0,4616268   0,543225
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8030374   0,09094536   0,2097491   0,6729548
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8051542   0,08704245   0,2098469   0,6729352
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8813595   -0,2536834   -0,199456   0,6300517
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6034769   -0,5144272   0,278706   0,7066504
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6800814   -0,01750314   -0,6510043   0,7345278
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8996056   0,2552097   -0,6531987   0,6452427
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,01290184   0,6278107   0,3124334   0,6122642
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1122692   0,1176313   -0,7876247   0,7378068
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,009709239   0,05682063   -0,7653175   0,7784716
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,0287174   -0,6185544   -0,3126767   0,7358811
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5098673   -0,8500555   -0,2678981   0,7393924
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,03059304   -0,7176831   -0,3045099   0,7511337
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,04557753   -0,7026068   -0,3240451   0,7576463
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8589636   -0,6013916   0,5109588   0,7421145
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,791961   -0,06406403   -0,6644264   0,7682424
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08817101   0,556427   -0,256005   0,6734724
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6136258   0,0274688   -0,3240708   0,7381662
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8215231   0,3773067   -0,2587194   0,5900333
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7927365   0,05018127   -0,2089201   0,6786691
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8133258   -0,3672696   0,5857688   0,6841195
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8119212   -0,02044505   -0,1263473   0,6924925
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8337153   0,0652889   0,3917491   0,6692305
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8337153   0,0652889   0,3917491   0,6692305
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2484193   0,2531081   -0,8344823   0,7563704
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2574682   0,2615272   -0,8261706   0,7390535
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1641387   0,2104253   -0,8204832   0,7665416
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2547084   0,340767   -0,833841   0,7338283
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1645941   0,3322606   -0,8255903   0,7170618
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5486914   0,3042529   -0,8608869   0,7107208
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5155956   0,2207445   -0,8572981   0,7220958
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5754272   0,2143945   -0,8564373   0,7339218
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5257463   0,19523   -0,8540031   0,7434028
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5795939   0,1429062   -0,8588293   0,7496768
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6797045   0,1571779   -0,8511634   0,7293328
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,814449   0,5406511   -0,8295209   0,6114165
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6788907   0,6025106   -0,7708932   0,5589373
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2863759   0,38327   -0,8176342   0,7036525
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2882624   0,3566475   -0,8233237   0,6907698
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,13798   0,7163464   -0,8145587   0,6154938
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1060475   0,1397992   -0,8198969   0,7505002
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3376024   0,7526388   -0,1090017   0,4181749
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,04015625   0,2205386   -0,8060907   0,6982509
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7231649   0,0602417   -0,3457589   0,6596215
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1037741   0,06462073   -0,7977046   0,6917157
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4970604   -0,7881622   -0,1840264   0,5643474
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8807103   -0,2815016   -0,1864713   0,5925452
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5406359   -0,8160434   -0,1326872   0,5648713
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7926517   -0,3638453   0,400287   0,6065373
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,803968   0,09326005   -0,2397863   0,6328241
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,6158026   -0,3914192   -0,6258821   0,5832419
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4671214   -0,7057289   -0,6365741   0,5870324
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,4749696   -0,7210064   -0,6189753   0,5758506
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,02277792   -0,8550079   -0,359776   0,6833375
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1326153   -0,6594787   0,02910602   0,7229239
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1292865   -0,6596889   0,02783561   0,7231699
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1224416   -0,658811   0,02573025   0,7237593
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1207112   -0,05586684   -0,7858539   0,7337534
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07526636   0,01138449   -0,7431406   0,7101588
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,7498033   0,003794074   -0,5692649   0,7176967
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8444127   -0,0568428   -0,6102518   0,7420155
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,03235888   0,5638689   0,02587581   0,6379282
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,340939   0,7583957   0,05616558   0,4232408
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8281984   0,3477876   0,0830338   0,5480319
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0   0   0   0
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2640896   -0,6008877   -0,7609174   0,6801738
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2710331   -0,5772953   -0,7605981   0,6949503
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2788006   -0,5375599   -0,769577   0,6747046
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2224116   -0,548059   -0,7707714   0,6621233
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2294294   -0,5014032   -0,7631966   0,6888417
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2353648   -0,4707962   -0,7681038   0,6869907
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1963919   -0,4390047   -0,7678774   0,6979265
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1650306   -0,3533331   -0,7552727   0,7008071
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1349037   -0,2419798   -0,7843173   0,7307625
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,0003650188   -0,6550832   -0,7451125   0,6931975
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,09777355   -0,7320517   -0,2492278   0,7209619
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6150998   -0,07373106   -0,5788526   0,746799
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,03575647   -0,02751213   -0,7992903   0,7717192
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,04186356   0,01193464   -0,8004628   0,7703151
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1857162   0,3666383   -0,81532   0,7283005
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,06508064   -0,02809244   -0,7905823   0,7503756
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,901132   0,231425   -0,690491   0,668625
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8959508   0,2311022   -0,6781433   0,6416141
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8664542   -0,04237604   -0,7112023   0,7455082
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3233881   0,7341353   0,1619546   0,5660961
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3704225   0,8070734   -0,4105079   0,4849193
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,01777881   0,5780109   -0,3069816   0,6853898
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,001555264   0,09375441   -0,7696732   0,7802658
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8724285   0,2772015   -0,3460687   0,6765087
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,7962236   0,2984027   -0,02565306   0,6572863
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2626741   0,7400725   -0,1983197   0,5310041
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6496131   0,5207635   0,5099785   0,564743
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4718353   0,3829541   -0,800424   0,70578
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07657945   0,4806846   -0,2395924   0,66091
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2943082   0,6594193   0,1602722   0,5745572
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,05707669   0,465301   0,1742636   0,6814694
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7577825   0,5592612   0,5069646   0,4377441
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7757869   -0,1016852   -0,2882581   0,6879127
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,796517   -0,05131805   -0,2630935   0,690415
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5184133   0,6542879   0,2467397   0,4747458
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,253476   0,4668453   0,1978571   0,6603471
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0   0   0   0
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1384541   0,3713297   -0,8198177   0,7114528
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3536297   0,3447343   -0,8352169   0,7179352
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,380182   0,356333   -0,8205321   0,7297857
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5509217   0,1235532   -0,8585588   0,7694548
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,915025   -0,008719325   -0,8368832   0,7074286
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9104314   -0,08300245   -0,8055682   0,7258883
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9088959   -0,3603619   -0,6002624   0,7306222
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,7111748   -0,5330333   0,4037428   0,7447853
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,3653376   -0,8595185   -0,2397832   0,6690865
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8192061   -0,4398   -0,1800533   0,6703402
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8728374   -0,5643855   0,4030188   0,6216995
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,8918642   -0,3142698   -0,1183692   0,6426498
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,5252672   -0,8359836   -0,1314617   0,6128755
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,08796394   -0,6826318   -0,3752329   0,7148651
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,07312584   -0,6950825   -0,3576934   0,7161391
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,03629225   -0,6947568   -0,3882838   0,7036639
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,04796153   -0,6951339   -0,3728033   0,7015338
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8068894   -0,6725838   0,5094457   0,7102945
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,5820072   -0,5540255   -0,7511898   0,725636
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8765912   -0,6509089   -0,8009965   0,7132846
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9112316   -0,466365   -0,7031076   0,7164187
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,9021027   -0,243827   -0,7410665   0,7297701
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,8503411   -0,08062434   -0,6898071   0,7589742
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,6478961   0,4295697   0,3282613   0,6092292
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1573071   0,758269   -0,4047174   0,551064
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,1963011   0,7971827   -0,6053177   0,5356549
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,4241635   0,7742404   -0,3277994   0,4792416
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,01032311   0,5250139   0,4197131   0,6431457
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,6274298   0,4876785   0,6613841   0,542465
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,7844118   0,1699553   -0,2007374   0,6320157
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0   0   0   0
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,1067821   -0,5171567   -0,7878504   0,6951691
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+-0,2129875   -0,3871456   -0,765821   0,6828605
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,001571298   -0,2237983   -0,8157751   0,7072684
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,07401037   -0,3099008   -0,808049   0,7257489
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,3047856   -0,3792567   -0,8288157   0,7732458
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2619725   -0,4085965   -0,820876   0,7720885
+UnityEngine.Debug:Log(Object)
+EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+0,2652571   -0,4160913   -0,8247621   0,7789029
+UnityEngine.Debug:Log(Object)
 EnemyAgent:AgentAction(Single[], String) (at Assets/Scripts/ML/EnemyAgent.cs:125)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)

@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour {
 
     public HealthPotionCircleEffect healthPotionCircleEffect;
 
+    private List<int> initialRandomHP = new List<int>{5, 10, 15, 20};
+
     void Start() {
         currentHealth = HP;
         healthBar.SetMaxHealth(HP);
@@ -38,7 +40,9 @@ public class Enemy : MonoBehaviour {
 
     public void ResetStatsAndItems() {
 
-        HP = 20;
+        // HP Iniziali con valore casuale: 5, 10, 15, 20
+
+        currentHealth = initialRandomHP[(int)(UnityEngine.Random.Range(0, initialRandomHP.Count))];
         ATK = 3;
         MANA = 3;
         DEF = 3;
@@ -49,6 +53,8 @@ public class Enemy : MonoBehaviour {
         actualWeaponDamage = 6;
 
         actualPotion = null;
+
+        healthBar.SetHealth(currentHealth);
     }
 
     private void Die() {
@@ -76,8 +82,17 @@ public class Enemy : MonoBehaviour {
     public void DrinkPotion() {
         
         if (actualPotion == "Health Potion") {
-            // Add Health
-            agent.HealthPotionCollectedReward();
+            
+            // L'idea è vedere se l'agente riesce a capire se gli conviene perdere tempo per prendere una pozione, oppure no
+
+            if (currentHealth >= HP) {
+                currentHealth = HP;
+            } else {
+                currentHealth += 5;
+                if (currentHealth > HP)
+                    currentHealth = HP;
+                agent.HealthPotionCollectedReward();
+            }
             
             HealthPotionAnimation();
         }

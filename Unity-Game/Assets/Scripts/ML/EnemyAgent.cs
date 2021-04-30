@@ -106,6 +106,10 @@ public class EnemyAgent : Agent {
         } else {
             obs.Add(0);
         }
+
+        // STATS
+
+        obs.Add(enemy.currentHealth / enemy.HP);
         
         AddVectorObs(obs);
     }
@@ -118,7 +122,7 @@ public class EnemyAgent : Agent {
         float attack = vectorAction[2];
         float drink = vectorAction[3];
 
-        // Debug.Log(horizontal + "   " + vertical + "   " + attack + "   " + drink);
+        Debug.Log(horizontal + "   " + vertical + "   " + attack + "   " + drink);
         // Debug.Log("Drink --> " + drink);
 
         if (attack > 0) {

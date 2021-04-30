@@ -20,12 +20,15 @@ public class Target : MonoBehaviour {
     private float turnSmoothVelocity;
     private bool moving = false;
     private bool isDown = false;
+    public EnemyHealthBar healthBar;
+
 
 
     private void Start() {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         currentHealth = HP;
+        healthBar.SetMaxHealth(HP);
     }
 
     void FixedUpdate() {
@@ -53,10 +56,13 @@ public class Target : MonoBehaviour {
     public void ResetPosition(Vector3 pos) {
 
         currentHealth = HP;
+        healthBar.SetHealth(currentHealth);
+
         direction = new Vector3(0, 0, 0);
         isDown = false;
         moving = false;
         this.gameObject.transform.position = pos;
+
     }
 
     public void Movement() {
@@ -70,13 +76,91 @@ public class Target : MonoBehaviour {
         characterController.Move(moveDir.normalized * speed * Time.fixedDeltaTime);
     }
 
-    private void ChangeRandomMovement() {
-        direction = new Vector3((int) UnityEngine.Random.Range(-translateFactor, translateFactor), 0f, (int) UnityEngine.Random.Range(-translateFactor, translateFactor));
-    }
-
     public void TakeDamage(int damage, float delay) {
 
         StartCoroutine(DamageWaiter(damage, delay));
+    }
+
+    private void ChangeRandomMovement() {
+
+        float horizontal = 0f;
+        float vertical = 0f;
+
+        // Nessun movimento e movimento in ciascuna delle 16 direzioni cardinali + fermo
+
+        switch ((int)(UnityEngine.Random.Range(0, 17))) {
+
+            case 0:
+                horizontal = 0f;
+                vertical = 0f;
+                break;
+            case 1:
+                horizontal = 1f;
+                vertical = 0f;
+                break;
+            case 2:
+                horizontal = 0.924f;
+                vertical = 0.382f;
+                break;
+            case 3:
+                horizontal = 0.707f;
+                vertical = 0.707f;
+                break;
+            case 4:
+                horizontal = 0.382f;
+                vertical = 0.924f;
+                break;
+            case 5:
+                horizontal = 0f;
+                vertical = 1f;
+                break;
+            case 6:
+                horizontal = -0.382f;
+                vertical = 0.924f;
+                break;
+            case 7:
+                horizontal = -0.707f;
+                vertical = 0.707f;
+                break;
+            case 8:
+                horizontal = -0.924f;
+                vertical = 0.382f;
+                break;
+            case 9:
+                horizontal = -1f;
+                vertical = 0f;
+                break;
+            case 10:
+                horizontal = -0.924f;
+                vertical = -0.382f;
+                break;
+            case 11:
+                horizontal = -0.707f;
+                vertical = -0.707f;
+                break;
+            case 12:
+                horizontal = -0.382f;
+                vertical = -0.924f;
+                break;
+            case 13:
+                horizontal = 0f;
+                vertical = -1f;
+                break;
+            case 14:
+                horizontal = 0.382f;
+                vertical = -0.924f;
+                break;
+            case 15:
+                horizontal = 0.707f;
+                vertical = -0.707f;
+                break;
+            case 16:
+                horizontal = 0.924f;
+                vertical = -0.382f;
+                break;
+        }
+
+        direction = new Vector3(horizontal, 0, vertical);
     }
 
     private IEnumerator DamageWaiter(int damage, float seconds) {
@@ -84,6 +168,8 @@ public class Target : MonoBehaviour {
         yield return new WaitForSecondsRealtime(seconds);
 
         currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
 
         if (!isDown && currentHealth <= 0) {
             isDown = true;
