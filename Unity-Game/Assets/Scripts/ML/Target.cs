@@ -53,8 +53,9 @@ public class Target : MonoBehaviour {
             
     }
 
-    public void ResetPosition(Vector3 pos) {
+    public void ResetPosition(Vector3 pos, int maxHP) {
 
+        HP = maxHP;
         currentHealth = HP;
         healthBar.SetHealth(currentHealth);
 

@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/PycharmProjects/rl_sesto/envs/30_04.x86_64
+/home/fra/PycharmProjects/rl_sesto/envs/3_05.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -328,7 +328,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 ffd3ed4fcd23b3e7745287c99a637247 Cinemachine.dll:Cinemachine.Cinemachine3rdPersonAim
 973d1aecca0eea32d70ca4d210753cc0 Assembly-CSharp.dll:.PushBlockAcademy
 8139346f724c1028fdf5d94458e436b1 Assembly-CSharp.dll:.RoomTransition
-3e770418b78501e0d235580b2f98d64f Assembly-CSharp.dll:.Target
+1e29fbf01ad3b44ed2fb9d5e0c278c13 Assembly-CSharp.dll:.Target
 5e84370a36252d6aa37d6a7bd37710f7 Cinemachine.dll:Cinemachine.Cinemachine3rdPersonFollow
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 6adf0680d8d7e110dab1c5470b12851b Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.AdvancedDropdownWindow

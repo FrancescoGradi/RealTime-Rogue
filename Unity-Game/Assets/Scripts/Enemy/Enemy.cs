@@ -91,6 +91,7 @@ public class Enemy : MonoBehaviour {
                 currentHealth += 5;
                 if (currentHealth > HP)
                     currentHealth = HP;
+                healthBar.SetHealth(currentHealth);
                 agent.HealthPotionCollectedReward();
             }
             

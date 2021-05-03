@@ -28,11 +28,8 @@ public class EnemyAgent : Agent {
 
     public override void AgentReset() {
 
-        if ((int) realTimeAcademy.resetParameters["agent_fixed"] == 1){
-            enemy.gameObject.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
-        } else {
-            enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target, 0), Quaternion.identity);
-        }
+        
+        enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target, 0), Quaternion.identity);
 
         enemyMovement.updateRate = (int) realTimeAcademy.resetParameters["agent_update_rate"];
         enemyMovement.epsilon = realTimeAcademy.resetParameters["attack_range_epsilon"];
@@ -122,7 +119,7 @@ public class EnemyAgent : Agent {
         float attack = vectorAction[2];
         float drink = vectorAction[3];
 
-        Debug.Log(horizontal + "   " + vertical + "   " + attack + "   " + drink);
+        // Debug.Log(horizontal + "   " + vertical + "   " + attack + "   " + drink);
         // Debug.Log("Drink --> " + drink);
 
         if (attack > 0) {

@@ -2264,10 +2264,6 @@ MonoBehaviour:
     resetParameters:
     - key: range
       value: 14
-    - key: agent_fixed
-      value: 0
-    - key: target_fixed
-      value: 1
     - key: speed
       value: 4
     - key: update_movement
@@ -2278,6 +2274,8 @@ MonoBehaviour:
       value: 1
     - key: health_potion_reward
       value: 8
+    - key: max_target_HP
+      value: 20
   target: {fileID: 1766056858}
   agent: {fileID: 1766056847}
   objectsGenerator: {fileID: 1766056846}
@@ -2376,8 +2374,8 @@ MonoBehaviour:
   updateMovement: 50
   translateFactor: 1
   speed: 6
-  HP: 50
-  currentHealth: 5
+  HP: 20
+  currentHealth: 20
   healthBar: {fileID: 240307314}
 --- !u!1 &1773052027
 GameObject:

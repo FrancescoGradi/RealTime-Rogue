@@ -24,12 +24,9 @@ public class RealTimeAcademy : Academy {
 		range = this.resetParameters["range"];
 		target.updateMovement = (int) this.resetParameters["update_movement"];
 		target.speed = this.resetParameters["speed"];
+		int maxTargetHP = (int) this.resetParameters["max_target_HP"];
 
-		if ((int) this.resetParameters["target_fixed"] == 1) {
-			target.ResetPosition(new Vector3(0, 0.1f, 0));
-		} else {
-			target.ResetPosition(GetRandomPosInRange(agent, 0.1f));
-		}
+		target.ResetPosition(GetRandomPosInRange(agent, 0.1f), maxTargetHP);
 	}
 
 	public Vector3 GetRandomPosInRange(GameObject otherObject, float posY) {
