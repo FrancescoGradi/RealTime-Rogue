@@ -7,7 +7,7 @@ public class EnemyCombat : MonoBehaviour {
     public Animator animator;
     public Transform attackPoint;
     public LayerMask playerLayer;
-
+    public GameObject hitEffect;
 
     private Enemy enemy;
     private float nextAttackTime = 0f;
@@ -21,20 +21,28 @@ public class EnemyCombat : MonoBehaviour {
         animator.SetTrigger("attack");
         animator.SetBool("attacking", true);
 
-        StartCoroutine(AttackWaiter(0));
+        StartCoroutine(AttackWaiter(0.5f));
 
         Collider[] hitPlayers = Physics.OverlapSphere(attackPoint.position, enemy.attackRange, playerLayer);
 
         foreach(Collider player in hitPlayers) {
             int damage = enemy.actualWeaponDamage + enemy.ATK;
-            player.GetComponent<Target>().TakeDamage(damage, 0f);
+            player.GetComponent<Target>().TakeDamage(damage, 0.1f);
+            StartCoroutine(HitEffect(player.transform.position, 0.1f));
             break;
         }
     }
 
     private IEnumerator AttackWaiter(float seconds) {
         
-        yield return new WaitForSecondsRealtime(seconds);
+        yield return new WaitForSeconds(seconds);
         animator.SetBool("attacking", false);
+    }
+    private IEnumerator HitEffect(Vector3 pos, float seconds) {
+
+        yield return new WaitForSeconds(seconds);
+
+        GameObject hit = Instantiate(hitEffect, pos, Quaternion.identity);
+        Destroy(hit, 0.5f);
     }
 }

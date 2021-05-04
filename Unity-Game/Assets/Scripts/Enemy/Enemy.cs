@@ -87,6 +87,7 @@ public class Enemy : MonoBehaviour {
 
             if (currentHealth >= HP) {
                 currentHealth = HP;
+                agent.AddReward(-2f);
             } else {
                 currentHealth += 5;
                 if (currentHealth > HP)

@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/PycharmProjects/rl_sesto/envs/3_05.x86_64
+/home/fra/PycharmProjects/rl_sesto/envs/4_05.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -219,7 +219,7 @@ ee945fbca932a40ae48ea633f04e82d0 Assembly-CSharp.dll:.PyramidSwitch
 204ea02909ea3f738dafe3ff633d2a93 Cinemachine.dll:Cinemachine.CinemachineTrackedDolly
 c4bff8529e730cde368c4b0b7600f222 Assembly-CSharp.dll:.BastardSword
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachinePipeline
-df3ec0815ff483948b3dc4f12adcea86 Assembly-CSharp.dll:.PlayerCombat
+66dfa112ad311d0cf291c025153627a0 Assembly-CSharp.dll:.PlayerCombat
 694d20920c0e41f567e119f7159a3644 Cinemachine.dll:Cinemachine.CinemachinePath
 877f9ebf497388fec7f3bbdb20f5c60e Assembly-CSharp.dll:.LocalCellView
 660deb0ce569359218f0ba85b7ce0e3a Assembly-CSharp.dll:.CFX_LightIntensityFade
@@ -234,7 +234,7 @@ a3def8b59a36744687edf8fd7e6f88c7 Unity.InputSystem.dll:UnityEngine.Experimental.
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:.UIActionInputModuleEnabler
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.InitialRoom
 8945e293ce9cec94847aed6a3bcecd9b Assembly-CSharp.dll:.BouncerAcademy
-8a4893644ec61993a4f779e840027e37 Assembly-CSharp.dll:.EnemyCombat
+2d5e0fde652478be2020436ad7dd1bb3 Assembly-CSharp.dll:.EnemyCombat
 89be26d722c83f84ea329e8f5f08f5fa Assembly-CSharp.dll:.TennisAcademy
 7c792393fb82488bd20139dcc5ba26d8 Cinemachine.dll:Cinemachine.CinemachineTransposer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator

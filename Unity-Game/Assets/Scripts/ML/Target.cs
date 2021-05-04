@@ -57,6 +57,7 @@ public class Target : MonoBehaviour {
 
         HP = maxHP;
         currentHealth = HP;
+        healthBar.SetMaxHealth(currentHealth);
         healthBar.SetHealth(currentHealth);
 
         direction = new Vector3(0, 0, 0);
@@ -166,7 +167,7 @@ public class Target : MonoBehaviour {
 
     private IEnumerator DamageWaiter(int damage, float seconds) {
         
-        yield return new WaitForSecondsRealtime(seconds);
+        yield return new WaitForSeconds(seconds);
 
         currentHealth -= damage;
 
@@ -174,13 +175,13 @@ public class Target : MonoBehaviour {
 
         if (!isDown && currentHealth <= 0) {
             isDown = true;
-            StartCoroutine(PlayerDownWaiter(0.3f));
+            StartCoroutine(PlayerDownWaiter(0f));
         }
     }
 
     private IEnumerator PlayerDownWaiter(float seconds) {
 
-        yield return new WaitForSecondsRealtime(seconds);
+        yield return new WaitForSeconds(seconds);
 
         FindObjectOfType<EnemyAgent>().PlayerDown();
     }
