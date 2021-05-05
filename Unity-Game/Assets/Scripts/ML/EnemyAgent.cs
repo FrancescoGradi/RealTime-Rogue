@@ -120,7 +120,6 @@ public class EnemyAgent : Agent {
         float drink = vectorAction[3];
 
         // Debug.Log(horizontal + "   " + vertical + "   " + attack + "   " + drink);
-        // Debug.Log("Drink --> " + drink);
 
         if (attack > 0) {
             enemyCombat.NormalAttack();
@@ -134,6 +133,24 @@ public class EnemyAgent : Agent {
         }
 
         AddReward(-0.1f);
+    }
+
+    public void HealthPotionCollectedReward() {
+        AddReward(healthPotionReward);
+    }
+
+    public void PlayerDown() {
+        // Bisogna stabilire chi è morto, tra player e target, passando dalla realtime Academy (che sa chi è chi)
+        if (realTimeAcademy.IsTargetDown()) {
+            // La reward finale dipende anche dagli HP rimasti dell'agente
+            if (enemy.currentHealth > 0) {
+                AddReward(10f * (float) enemy.currentHealth);
+            } else {
+                AddReward(10f);
+            }
+        }
+
+        Done();
     }
 
     /*
@@ -282,19 +299,5 @@ public class EnemyAgent : Agent {
     }
 
     */
-
-    public void TargetReached() {
-        AddReward(50f);
-        Done();
-    }
-
-    public void HealthPotionCollectedReward() {
-        AddReward(healthPotionReward);
-    }
-
-    public void PlayerDown() {
-        AddReward(50f);
-        Done();
-    }
 
 }

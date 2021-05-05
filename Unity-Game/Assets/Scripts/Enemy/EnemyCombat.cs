@@ -27,7 +27,7 @@ public class EnemyCombat : MonoBehaviour {
 
         foreach(Collider player in hitPlayers) {
             int damage = enemy.actualWeaponDamage + enemy.ATK;
-            player.GetComponent<Target>().TakeDamage(damage, 0.1f);
+            player.GetComponent<Enemy>().TakeDamage(damage, 0.1f);
             StartCoroutine(HitEffect(player.transform.position, 0.1f));
             break;
         }

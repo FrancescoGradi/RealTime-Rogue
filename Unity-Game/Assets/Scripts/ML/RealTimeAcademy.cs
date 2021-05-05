@@ -5,7 +5,7 @@ using MLAgents;
 
 public class RealTimeAcademy : Academy {
 
-	public Target target;
+	public GameObject target;
 	public GameObject agent;
 	public ObjectsGenerator objectsGenerator;
 
@@ -22,11 +22,7 @@ public class RealTimeAcademy : Academy {
 		objectsGenerator.ResetPositions();
 		
 		range = this.resetParameters["range"];
-		target.updateMovement = (int) this.resetParameters["update_movement"];
-		target.speed = this.resetParameters["speed"];
-		int maxTargetHP = (int) this.resetParameters["max_target_HP"];
-
-		target.ResetPosition(GetRandomPosInRange(agent, 0.1f), maxTargetHP);
+		target.GetComponent<Enemy>().speed = this.resetParameters["speed"];
 	}
 
 	public Vector3 GetRandomPosInRange(GameObject otherObject, float posY) {
@@ -39,4 +35,14 @@ public class RealTimeAcademy : Academy {
 
 		return pos;
 	}
+
+	public bool IsTargetDown() {
+
+		if (target.GetComponent<Enemy>().currentHealth <= 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 }

@@ -78,6 +78,8 @@ public class Target : MonoBehaviour {
         characterController.Move(moveDir.normalized * speed * Time.fixedDeltaTime);
     }
 
+    
+
     public void TakeDamage(int damage, float delay) {
 
         StartCoroutine(DamageWaiter(damage, delay));
