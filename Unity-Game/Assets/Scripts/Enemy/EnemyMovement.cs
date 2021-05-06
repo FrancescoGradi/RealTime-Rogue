@@ -43,7 +43,7 @@ public class EnemyMovement : MonoBehaviour {
 
     private void FixedUpdate() {
         
-        if (!animator.GetBool("attacking") && playerLayer == 11) {
+        if (!animator.GetBool("attacking")) {
 
             count += 1;
             if (count == updateRate || count > 1000) {

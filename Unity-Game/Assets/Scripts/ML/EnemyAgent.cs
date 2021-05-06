@@ -106,7 +106,7 @@ public class EnemyAgent : Agent {
 
         // STATS
 
-        obs.Add(enemy.currentHealth / enemy.HP);
+        obs.Add((float) enemy.currentHealth / (float) enemy.HP);
         
         AddVectorObs(obs);
     }
