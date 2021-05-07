@@ -38,16 +38,19 @@ public class Enemy : MonoBehaviour {
         StartCoroutine(DamageWaiter(damage, delay));
     }
 
-    public void ResetStatsAndItems() {
+    public void ResetStatsAndItems(bool randomHealth, int health, float speed) {
 
         // HP Iniziali con valore casuale: 5, 10, 15, 20
+        if (randomHealth)
+            currentHealth = initialRandomHP[(int)(UnityEngine.Random.Range(0, initialRandomHP.Count))];
+        else
+            currentHealth = health;
 
-        currentHealth = initialRandomHP[(int)(UnityEngine.Random.Range(0, initialRandomHP.Count))];
         ATK = 3;
         MANA = 3;
         DEF = 3;
 
-        speed = 6.0f;
+        this.speed = speed;
 
         weaponName = "Long Sword";
         actualWeaponDamage = 6;
@@ -92,7 +95,6 @@ public class Enemy : MonoBehaviour {
                 if (currentHealth > HP)
                     currentHealth = HP;
                 healthBar.SetHealth(currentHealth);
-                agent.HealthPotionCollectedReward();
             }
             
             HealthPotionAnimation();

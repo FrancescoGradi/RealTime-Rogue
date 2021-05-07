@@ -23,22 +23,9 @@ public class EnemyAgent : Agent {
         enemy = GetComponent<Enemy>();
         enemyMovement = GetComponent<EnemyMovement>();
         enemyCombat = GetComponent<EnemyCombat>();
-        // AgentReset();
     }
 
-    public override void AgentReset() {
-
-        
-        enemy.gameObject.transform.SetPositionAndRotation(realTimeAcademy.GetRandomPosInRange(target, 0), Quaternion.identity);
-
-        enemyMovement.updateRate = (int) realTimeAcademy.resetParameters["agent_update_rate"];
-        enemyMovement.epsilon = realTimeAcademy.resetParameters["attack_range_epsilon"];
-        healthPotionReward = realTimeAcademy.resetParameters["health_potion_reward"];
-
-        enemy.ResetStatsAndItems();
-
-        enemyMovement.AddMovement(0, 0);
-    }
+    public override void AgentReset() { }
 
     public override void CollectObservations() {
         
@@ -72,7 +59,6 @@ public class EnemyAgent : Agent {
             AddReward(-1f); 
 
         /*
-
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env-item e restituiscono la distanza
         
         for (int i = 0; i < angles.Count; i++) {
@@ -89,7 +75,6 @@ public class EnemyAgent : Agent {
             obs.Add(raycastVector[3]);
             obs.Add(raycastVector[4]);
         }
-
         */
 
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
@@ -107,6 +92,7 @@ public class EnemyAgent : Agent {
         // STATS
 
         obs.Add((float) enemy.currentHealth / (float) enemy.HP);
+        obs.Add((float) target.GetComponent<Enemy>().currentHealth / (float) target.GetComponent<Enemy>().HP);
         
         AddVectorObs(obs);
     }
@@ -118,9 +104,13 @@ public class EnemyAgent : Agent {
         float vertical = vectorAction[1];
         float attack = vectorAction[2];
         float drink = vectorAction[3];
-
-        // Debug.Log(horizontal + "   " + vertical + "   " + attack + "   " + drink);
-
+        /*
+        if (enemyMovement.playerLayer == 11) {
+            Debug.Log("Agent action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
+        } else if (enemyMovement.playerLayer == 9) {
+            Debug.Log("Target action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
+        }
+        */
         if (attack > 0) {
             enemyCombat.NormalAttack();
             enemyMovement.AddMovement(0, 0);
@@ -135,18 +125,14 @@ public class EnemyAgent : Agent {
         AddReward(-0.1f);
     }
 
-    public void HealthPotionCollectedReward() {
-        AddReward(healthPotionReward);
-    }
-
     public void PlayerDown() {
         // Bisogna stabilire chi è morto, tra player e target, passando dalla realtime Academy (che sa chi è chi)
         if (realTimeAcademy.IsTargetDown()) {
             // La reward finale dipende anche dagli HP rimasti dell'agente
             if (enemy.currentHealth > 0) {
-                AddReward(10f * (float) enemy.currentHealth);
+                AddReward(5f * (float) enemy.currentHealth);
             } else {
-                AddReward(10f);
+                AddReward(5f);
             }
         }
 

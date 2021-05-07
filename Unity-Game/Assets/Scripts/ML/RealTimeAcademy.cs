@@ -21,8 +21,10 @@ public class RealTimeAcademy : Academy {
 		
 		objectsGenerator.ResetPositions();
 		
-		range = this.resetParameters["range"];
-		target.GetComponent<Enemy>().speed = this.resetParameters["speed"];
+		range = this.resetParameters["spawn_range"];
+
+		AgentReset();
+		TargetReset();
 	}
 
 	public Vector3 GetRandomPosInRange(GameObject otherObject, float posY) {
@@ -43,6 +45,31 @@ public class RealTimeAcademy : Academy {
 		} else {
 			return false;
 		}
+	}
+
+	private void AgentReset() {
+
+		agent.transform.SetPositionAndRotation(this.GetRandomPosInRange(target, 0), Quaternion.identity);
+
+		agent.GetComponent<EnemyMovement>().updateRate = (int) this.resetParameters["agent_update_rate"];
+        agent.GetComponent<EnemyMovement>().epsilon = this.resetParameters["attack_range_epsilon"];
+
+        agent.GetComponent<Enemy>().ResetStatsAndItems(true, 0, 6f);
+
+        agent.GetComponent<EnemyMovement>().AddMovement(0, 0);
+    }
+
+	private void TargetReset() {
+
+		target.transform.SetPositionAndRotation(this.GetRandomPosInRange(agent, 0), Quaternion.identity);
+
+		target.GetComponent<EnemyMovement>().updateRate = (int) this.resetParameters["target_update_rate"];
+        target.GetComponent<EnemyMovement>().epsilon = this.resetParameters["attack_range_epsilon"];
+
+        target.GetComponent<Enemy>().ResetStatsAndItems(false, (int) this.resetParameters["target_HP"], this.resetParameters["target_speed"]);
+
+        target.GetComponent<EnemyMovement>().AddMovement(0, 0);
+
 	}
 
 }
