@@ -1253,16 +1253,16 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.9372549, b: 0.3372549, a: 1}
-        key1: {r: 0.93333334, g: 0.25490198, b: 0, a: 0.49803922}
-        key2: {r: 0.654902, g: 0, b: 0, a: 0.039215688}
+        key0: {r: 1, g: 0.58895886, b: 0, a: 1}
+        key1: {r: 1, g: 0.58341366, b: 0, a: 1}
+        key2: {r: 1, g: 0, b: 0, a: 1}
         key3: {r: 0.654902, g: 0, b: 0, a: 0.039215688}
         key4: {r: 0.654902, g: 0, b: 0, a: 0.039215688}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 24479
+        ctime1: 19448
         ctime2: 65535
         ctime3: 65535
         ctime4: 65535
@@ -4660,7 +4660,7 @@ GameObject:
   - component: {fileID: 19800004}
   - component: {fileID: 19900004}
   m_Layer: 0
-  m_Name: Hit
+  m_Name: Hit Red
   m_TagString: FxTemporaire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5866,17 +5866,17 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.9019608, b: 0, a: 1}
-        key1: {r: 1, g: 0.60784316, b: 0, a: 0.49803922}
-        key2: {r: 1, g: 0, b: 0, a: 0.039215688}
-        key3: {r: 0.654902, g: 0, b: 0, a: 0.039215688}
-        key4: {r: 1, g: 0, b: 0, a: 0.039215688}
+        key0: {r: 1, g: 0.58895886, b: 0, a: 1}
+        key1: {r: 1, g: 0.58341366, b: 0, a: 1}
+        key2: {r: 1, g: 0, b: 0, a: 1}
+        key3: {r: 1, g: 0, b: 0, a: 0.039215688}
+        key4: {r: 0.654902, g: 0, b: 0, a: 0.039215688}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 13107
-        ctime2: 38357
+        ctime1: 19448
+        ctime2: 65535
         ctime3: 65535
         ctime4: 65535
         ctime5: 0
@@ -5891,7 +5891,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 4
+        m_NumColorKeys: 3
         m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2

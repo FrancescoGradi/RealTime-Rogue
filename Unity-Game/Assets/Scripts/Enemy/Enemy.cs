@@ -46,6 +46,8 @@ public class Enemy : MonoBehaviour {
         else
             currentHealth = health;
 
+        healthBar.SetHealth(currentHealth);
+
         ATK = 3;
         MANA = 3;
         DEF = 3;
@@ -57,7 +59,7 @@ public class Enemy : MonoBehaviour {
 
         actualPotion = null;
 
-        healthBar.SetHealth(currentHealth);
+        animator.SetBool("attacking", false);
     }
 
     private void Die() {

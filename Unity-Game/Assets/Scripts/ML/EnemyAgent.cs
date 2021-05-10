@@ -43,6 +43,11 @@ public class EnemyAgent : Agent {
         obs.Add(target.transform.position.x / 15f);
         obs.Add(target.transform.position.z / 15f);
 
+        // Differenze tra le posizioni tra target e agent
+
+        obs.Add((target.transform.position.x / 15f) - (enemy.gameObject.transform.position.x / 15f));
+        obs.Add((target.transform.position.z / 15f) - (enemy.gameObject.transform.position.z / 15f));
+
         // Local Cell View: modo per ottenere delle osservazioni locali sullo stato
 
         localCellView.SetPosition(enemy.gameObject.transform.position.x, enemy.gameObject.transform.position.z);
@@ -53,10 +58,13 @@ public class EnemyAgent : Agent {
             obs.Add(cellValue);
         }
 
-        // Reward negativa con gli ostacoli
+        // Reward negativa con gli ostacoli 12->5x5, 17, 24-> 7x7
 
-        if (cells[12] == 1f)
-            AddReward(-1f); 
+        if (cells[17] == 1f)
+            AddReward(-1f);
+        
+        if (cells[24] == 1f)
+            AddReward(-1f);
 
         /*
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env-item e restituiscono la distanza
@@ -104,13 +112,13 @@ public class EnemyAgent : Agent {
         float vertical = vectorAction[1];
         float attack = vectorAction[2];
         float drink = vectorAction[3];
-        /*
+
         if (enemyMovement.playerLayer == 11) {
             Debug.Log("Agent action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
         } else if (enemyMovement.playerLayer == 9) {
-            Debug.Log("Target action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
+            // Debug.Log("Target action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
         }
-        */
+        
         if (attack > 0) {
             enemyCombat.NormalAttack();
             enemyMovement.AddMovement(0, 0);
@@ -131,6 +139,7 @@ public class EnemyAgent : Agent {
             // La reward finale dipende anche dagli HP rimasti dell'agente
             if (enemy.currentHealth > 0) {
                 AddReward(5f * (float) enemy.currentHealth);
+                Debug.Log("Reward " + (5f * (float) enemy.currentHealth));
             } else {
                 AddReward(5f);
             }

@@ -54,7 +54,9 @@ public class RealTimeAcademy : Academy {
 		agent.GetComponent<EnemyMovement>().updateRate = (int) this.resetParameters["agent_update_rate"];
         agent.GetComponent<EnemyMovement>().epsilon = this.resetParameters["attack_range_epsilon"];
 
-        agent.GetComponent<Enemy>().ResetStatsAndItems(true, 0, 6f);
+		int hp = Utility.GetRandomInt((int) this.resetParameters["min_agent_HP"], (int) this.resetParameters["max_agent_HP"]);
+
+        agent.GetComponent<Enemy>().ResetStatsAndItems(false, hp, 6f);
 
         agent.GetComponent<EnemyMovement>().AddMovement(0, 0);
     }
@@ -66,10 +68,11 @@ public class RealTimeAcademy : Academy {
 		target.GetComponent<EnemyMovement>().updateRate = (int) this.resetParameters["target_update_rate"];
         target.GetComponent<EnemyMovement>().epsilon = this.resetParameters["attack_range_epsilon"];
 
-        target.GetComponent<Enemy>().ResetStatsAndItems(false, (int) this.resetParameters["target_HP"], this.resetParameters["target_speed"]);
+		int hp = Utility.GetRandomInt((int) this.resetParameters["min_target_HP"], (int) this.resetParameters["max_target_HP"]);
+
+        target.GetComponent<Enemy>().ResetStatsAndItems(false, hp, this.resetParameters["target_speed"]);
 
         target.GetComponent<EnemyMovement>().AddMovement(0, 0);
-
 	}
 
 }

@@ -23,5 +23,11 @@ public static class Utility {
 
         return objects[(int)(UnityEngine.Random.Range(0, objects.Count))];
     }
+
+    public static int GetRandomInt(int min, int max) {
+
+		System.Random random = new System.Random();
+		return random.Next(min, max + 1);
+	}
     
 }
