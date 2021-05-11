@@ -1,6 +1,6 @@
 Linux64
 PlayerPath?
-/home/fra/PycharmProjects/rl_sesto/envs/10_05.x86_64
+/home/fra/PycharmProjects/rl_sesto/envs/11_05_global.x86_64
 SceneListBegin?
 Assets/Scenes/TrainingScene.unity
 SceneListEnd?
@@ -310,7 +310,7 @@ c9d82efce43bc39755a9b0221ab7070d Assembly-CSharp.dll:.BananaAcademy
 4d45eafb54b2bb6184c151134eae9362 Assembly-CSharp.dll:.GameOverScreen
 28331099c6700b1b6c3999df98a031be Assembly-CSharp.dll:.ConGUI
 22b6f85488483186c0909ace92a3443c Assembly-CSharp.dll:MLAgents.CoreBrainInternal
-bec46d49ec7e3cb66e8db77a555743d5 Assembly-CSharp.dll:.EnemyAgent
+4a64ae03ed60fd1790a8ce8227eab1aa Assembly-CSharp.dll:.EnemyAgent
 2249013e3c3ce7af5a097fb8e102fbd5 Assembly-CSharp.dll:.ReacherGoal
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 6ff1c52123c50b3d73f35cd0e2e65dfd Cinemachine.dll:Cinemachine.CinemachineSmoothPath
