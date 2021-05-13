@@ -100,6 +100,11 @@ public class Player : MonoBehaviour {
 
     }
 
+    public void TakeDamage(int damage, float delay) {
+
+        StartCoroutine(DamageWaiter(damage, delay));
+    }
+
     public void AddHealth(int health) {
 
         itemsHub.DrinkPotionCanvasFeedback("+" + health.ToString() + " HP");
@@ -119,7 +124,7 @@ public class Player : MonoBehaviour {
 
     private IEnumerator WaitBonusPotion(float seconds) {
 
-        yield return new WaitForSecondsRealtime(seconds);
+        yield return new WaitForSeconds(seconds);
 
         ATK -= 5;
         MANA -= 5;
@@ -128,5 +133,18 @@ public class Player : MonoBehaviour {
 
         itemsHub.DrinkPotionCanvasFeedback("Bonus Potion Over!");
 
+    }
+    private IEnumerator DamageWaiter(int damage, float seconds) {
+        
+        yield return new WaitForSeconds(seconds);
+
+        currentHealth -= damage;
+
+        playerHealthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0) {
+            // TO-DO Gestire la morte del player con schermata di GAME-OVER
+            Debug.Log("Player died!");
+        }
     }
 }

@@ -46,7 +46,8 @@ public class Enemy : MonoBehaviour {
         else
             currentHealth = health;
 
-        healthBar.SetHealth(currentHealth);
+        if (healthBar.isActiveAndEnabled)
+            healthBar.SetHealth(currentHealth);
 
         ATK = 3;
         MANA = 3;
@@ -117,7 +118,7 @@ public class Enemy : MonoBehaviour {
     
     private IEnumerator DamageWaiter(int damage, float seconds) {
         
-        yield return new WaitForSecondsRealtime(seconds);
+        yield return new WaitForSeconds(seconds);
 
         currentHealth -= damage;
 

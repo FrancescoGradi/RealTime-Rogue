@@ -32,6 +32,8 @@ public class EnemyAgent : Agent {
         
         List<float> obs = new List<float>();
 
+        /*
+
         // Posizioni normalizzate secondo la grandezza massima della mappa
 
         obs.Add(enemy.gameObject.transform.position.x / 15f);
@@ -49,7 +51,7 @@ public class EnemyAgent : Agent {
         obs.Add((target.transform.position.x / 15f) - (enemy.gameObject.transform.position.x / 15f));
         obs.Add((target.transform.position.z / 15f) - (enemy.gameObject.transform.position.z / 15f));
 
-        /*
+        */
 
         // Global Cell View: osservazioni globali sullo stato -> mappa globale di dimensione 19x19
 
@@ -59,7 +61,6 @@ public class EnemyAgent : Agent {
             obs.Add(cellValue);
         }
 
-        */
 
         // Local Cell View: modo per ottenere delle osservazioni locali sullo stato
 
@@ -113,7 +114,16 @@ public class EnemyAgent : Agent {
         // STATS
 
         obs.Add((float) enemy.currentHealth / (float) enemy.HP);
-        obs.Add((float) target.GetComponent<Enemy>().currentHealth / (float) target.GetComponent<Enemy>().HP);
+
+        if (target.GetComponent<Enemy>() != null)
+            obs.Add((float) target.GetComponent<Enemy>().currentHealth / (float) target.GetComponent<Enemy>().HP);
+        else if (target.GetComponent<Player>() != null)
+            obs.Add((float) target.GetComponent<Player>().currentHealth / (float) target.GetComponent<Player>().HP);
+
+
+        // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto (GLOBAL)
+        
+        obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
         
         AddVectorObs(obs);
     }
@@ -156,11 +166,16 @@ public class EnemyAgent : Agent {
             // La reward finale dipende anche dagli HP rimasti dell'agente
             if (enemy.currentHealth > 0) {
                 AddReward(5f * (float) enemy.currentHealth);
-                // Debug.Log("Reward " + (5f * (float) enemy.currentHealth));
+                // Debug.Log("AGENT WIN! With " + ((float) enemy.currentHealth) + " HP");
             } else {
                 AddReward(5f);
             }
+        } else {
+            // Debug.Log("TARGET WIN! With " + ((float) target.GetComponent<Enemy>().currentHealth) + " HP");
+            // target.GetComponent<Player>().currentHealth = target.GetComponent<Player>().HP;
         }
+
+
 
         Done();
     }
