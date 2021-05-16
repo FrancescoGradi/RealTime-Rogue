@@ -88,7 +88,21 @@ public class EnemyMovement : MonoBehaviour {
 
     private void CollectItem(Item actualItem) {
 
-        if (actualItem.itemName == "Health Potion") {
+        if (actualItem.itemName == "Bastard Sword") {
+
+            BastardSword weapon = actualItem.GetComponent<BastardSword>();
+            enemy.SetWeapon(actualItem.name, weapon.bonusATK, weapon.material);
+            
+            Destroy(actualItem.gameObject);
+
+        } else if (actualItem.itemName == "Golden Shield") {
+
+            GoldenShield shield = actualItem.GetComponent<GoldenShield>();
+            enemy.SetShield(actualItem.name, shield.bonusDEF, shield.material);
+
+            Destroy(actualItem.gameObject);
+
+        } else if (actualItem.itemName == "Health Potion") {
 
             enemy.SetActualPotion(actualItem.itemName);
             Destroy(actualItem.gameObject);

@@ -121,6 +121,12 @@ public class EnemyAgent : Agent {
             obs.Add((float) target.GetComponent<Player>().currentHealth / (float) target.GetComponent<Player>().HP);
 
 
+        obs.Add((float) (enemy.ATK + enemy.actualWeaponDamage) / 11f);
+        obs.Add((float) (target.GetComponent<Enemy>().ATK + target.GetComponent<Enemy>().actualWeaponDamage) / 11f);
+
+        obs.Add((float) (enemy.DEF + enemy.actualShieldDef) / 7f);
+        obs.Add((float) (target.GetComponent<Enemy>().DEF + target.GetComponent<Enemy>().actualShieldDef) / 7f);
+
         // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto (GLOBAL)
         
         obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);

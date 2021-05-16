@@ -20,7 +20,15 @@ public class Enemy : MonoBehaviour {
     public float attackRate = 3f;
 
     public string weaponName = "Long Sword";
+    public MeshRenderer sword;
+    public Material initialSwordMaterial;
     public int actualWeaponDamage = 6;
+
+    public string shieldName = "Wood Shield";
+    public MeshRenderer shield;
+    public Material initialShieldMaterial;
+    public int actualShieldDef = 2;
+
 
     private string actualPotion;
 
@@ -34,6 +42,12 @@ public class Enemy : MonoBehaviour {
     }
 
     public void TakeDamage(int damage, float delay) {
+        
+        // Riduzione del danno per lo scudo
+        damage -= (DEF + actualShieldDef);
+
+        if (damage < 0)
+            damage = 0;
 
         StartCoroutine(DamageWaiter(damage, delay));
     }
@@ -57,6 +71,11 @@ public class Enemy : MonoBehaviour {
 
         weaponName = "Long Sword";
         actualWeaponDamage = 6;
+        sword.material = initialSwordMaterial;
+
+        shieldName = "Wood Shield";
+        actualShieldDef = 2;
+        shield.material = initialShieldMaterial;
 
         actualPotion = null;
 
@@ -72,7 +91,21 @@ public class Enemy : MonoBehaviour {
 
         Destroy(gameObject, 4f);
     }
-    
+
+    public void SetWeapon(string weaponName, int bonusATK, Material material) {
+        this.weaponName = weaponName;
+        this.actualWeaponDamage = bonusATK;
+
+        sword.material = material;
+    }
+
+    public void SetShield(string shieldName, int bonusDEF, Material material) {
+        this.shieldName = shieldName;
+        this.actualShieldDef = bonusDEF;
+
+        shield.material = material;
+    }
+
     public void SetActualPotion(string actualPotion) {
         this.actualPotion = actualPotion;
     }
