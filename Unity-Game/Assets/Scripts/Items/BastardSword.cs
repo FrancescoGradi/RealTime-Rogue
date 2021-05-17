@@ -8,7 +8,7 @@ public class BastardSword : Item {
     private void start() {
         itemName = "Bastard Sword";
 
-        bonusATK = 8;
+        bonusATK = 10;
         bonusHP = 0;
         bonusMANA = 0;
         bonusDEF = 0;

@@ -12,7 +12,7 @@ public class GoldenShield : Item
         bonusATK = 0;
         bonusHP = 0;
         bonusMANA = 0;
-        bonusDEF = 4;
+        bonusDEF = 6;
     }
     
     private void Update() {
