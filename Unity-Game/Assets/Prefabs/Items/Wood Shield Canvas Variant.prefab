@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 502563800674346293, guid: 1cee259a69d749a308653a23d84e50f4,
         type: 3}
       propertyPath: m_Name
-      value: Wood Shield Canvas
+      value: Wood Shield Canvas Variant
       objectReference: {fileID: 0}
     - target: {fileID: 502563800674346294, guid: 1cee259a69d749a308653a23d84e50f4,
         type: 3}
@@ -126,7 +126,7 @@ PrefabInstance:
     - target: {fileID: 502563801814818440, guid: 1cee259a69d749a308653a23d84e50f4,
         type: 3}
       propertyPath: m_text
-      value: +6 DEF
+      value: +2 DEF
       objectReference: {fileID: 0}
     - target: {fileID: 502563801814818440, guid: 1cee259a69d749a308653a23d84e50f4,
         type: 3}
@@ -136,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 502563801814818440, guid: 1cee259a69d749a308653a23d84e50f4,
         type: 3}
       propertyPath: m_fontSize
-      value: 22.05
+      value: 22.8
       objectReference: {fileID: 0}
     - target: {fileID: 502563801814818440, guid: 1cee259a69d749a308653a23d84e50f4,
         type: 3}
@@ -147,6 +147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 502563801814818440, guid: 1cee259a69d749a308653a23d84e50f4,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cee259a69d749a308653a23d84e50f4, type: 3}

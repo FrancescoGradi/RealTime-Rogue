@@ -25,6 +25,7 @@ public class EnemyGenerator : MonoBehaviour {
     public void EnemyDown() {
 
         n_enemies -= 1;
+        GameManager.instance.AddEnemyKill();
         if (n_enemies <= 0) {
             FindObjectOfType<Room>().RoomClear();
         }

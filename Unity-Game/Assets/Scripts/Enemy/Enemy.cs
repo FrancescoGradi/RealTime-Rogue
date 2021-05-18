@@ -84,6 +84,9 @@ public class Enemy : MonoBehaviour {
 
     private void Die() {
 
+        animator.SetBool("dead", true);
+        healthBar.gameObject.SetActive(false);
+
         GetComponent<Collider>().enabled = false;
         this.enabled = false;
 
@@ -159,6 +162,7 @@ public class Enemy : MonoBehaviour {
 
         if (currentHealth <= 0) {
             FindObjectOfType<EnemyAgent>().PlayerDown();
+            // Die();
         }
     }
 }

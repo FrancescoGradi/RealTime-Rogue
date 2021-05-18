@@ -30,12 +30,15 @@ public class GameManager : MonoBehaviour {
     private GameObject actualRoom;
     private int initialPortalNum;
     private int roomNumber;
+    private int killedEnemies; 
 
 
     private void Start() {
         
         roomNumber = 0;
         roomNumberText.text = "Room " + roomNumber.ToString();
+
+        killedEnemies = 0;
 
         actualRoom = Instantiate(initialRoom, new Vector3(0, initialRoom.gameObject.transform.position.y, 0), Quaternion.identity);
     }
@@ -71,6 +74,18 @@ public class GameManager : MonoBehaviour {
 
     public int GetInitialPortalNum() {
         return initialPortalNum;
+    }
+
+    public int GetRoomNumber() {
+        return roomNumber;
+    }
+
+    public int GetKilledEnemies() {
+        return killedEnemies;
+    }
+
+    public void AddEnemyKill() {
+        killedEnemies += 1;
     }
 
     private void SetInitialPortalNum(string portalType) {

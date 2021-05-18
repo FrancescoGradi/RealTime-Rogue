@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectsGenerator : MonoBehaviour
-{
+public class ObjectsGenerator : MonoBehaviour {
     public List<GameObject> items;
     public List<GameObject> envObjects;
     public List<GameObject> spawnPoints;

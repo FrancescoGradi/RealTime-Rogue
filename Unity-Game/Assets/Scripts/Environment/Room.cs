@@ -17,8 +17,6 @@ public class Room : MonoBehaviour {
     public GameObject patchedL;
     public GameObject patchedR;
 
-
-
     private bool roomClear = false;
     private bool roomChanged = false;
     private int initialPortalNum;
