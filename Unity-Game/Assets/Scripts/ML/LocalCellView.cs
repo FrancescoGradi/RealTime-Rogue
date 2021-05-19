@@ -7,6 +7,7 @@ public class LocalCellView : MonoBehaviour {
     public List<GameObject> cellSpawnPoints;
     public int envObjectsLayer = 12;
     public int playerLayer = 11;
+    public int enemyLayer = 9;
     public int itemsLayer = 10;
     public float cellRadius = 0.9f;
 
@@ -31,16 +32,18 @@ public class LocalCellView : MonoBehaviour {
                         // Qua dobbiamo adesso distinguere tra Health Potion, 
                         if (hit.gameObject.GetComponent<BastardSword>() != null) {
                             DrawX(cellSpawnPoint.transform.position, Color.magenta);
-                            localCellView.Add(5);
+                            localCellView.Add(6);
                         } else if (hit.gameObject.GetComponent<GoldenShield>() != null) {
                             DrawX(cellSpawnPoint.transform.position, Color.green);
-                            localCellView.Add(4);
+                            localCellView.Add(5);
                         } else if (hit.gameObject.GetComponent<HealthPotion>() != null) {
                             DrawX(cellSpawnPoint.transform.position, Color.blue);
-                            localCellView.Add(3);
+                            localCellView.Add(4);
                         }
-                    }
-                    else if (hit.transform.gameObject.layer == playerLayer) {
+                    } else if (hit.transform.gameObject.layer == enemyLayer) {
+                        DrawX(cellSpawnPoint.transform.position, Color.gray);
+                        localCellView.Add(3);
+                    } else if (hit.transform.gameObject.layer == playerLayer) {
                         DrawX(cellSpawnPoint.transform.position, Color.red);
                         localCellView.Add(2);
                     } else if (hit.transform.gameObject.layer == envObjectsLayer) {
@@ -66,8 +69,8 @@ public class LocalCellView : MonoBehaviour {
 
     private void DrawX(Vector3 pos, Color color) {
         if (playerLayer == 11) {
-            Debug.DrawLine(new Vector3(pos.x + 0.5f, pos.y, pos.z), new Vector3(pos.x - 0.5f, pos.y, pos.z), color, Time.fixedDeltaTime * 4);
-            Debug.DrawLine(new Vector3(pos.x, pos.y, pos.z + 0.5f), new Vector3(pos.x, pos.y, pos.z - 0.5f), color, Time.fixedDeltaTime * 4);
+            Debug.DrawLine(new Vector3(pos.x + 0.5f, pos.y, pos.z), new Vector3(pos.x - 0.5f, pos.y, pos.z), color, Time.fixedDeltaTime * 5);
+            Debug.DrawLine(new Vector3(pos.x, pos.y, pos.z + 0.5f), new Vector3(pos.x, pos.y, pos.z - 0.5f), color, Time.fixedDeltaTime * 5);
         }
     }   
 }
