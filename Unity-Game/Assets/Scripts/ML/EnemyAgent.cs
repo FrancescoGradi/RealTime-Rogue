@@ -10,6 +10,9 @@ public class EnemyAgent : Agent {
     public RealTimeAcademy realTimeAcademy;
     public LocalCellView localCellView;
     public LocalCellView globalCellView;
+
+    public int maxTransformerEntities = 10;
+    public float maskValue = 99f;
     
     public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 8f;
@@ -19,11 +22,14 @@ public class EnemyAgent : Agent {
     private Enemy enemy;
     private EnemyMovement enemyMovement;
     private EnemyCombat enemyCombat;
+    public GameObject actualRoom;
 
     void Start() {
         enemy = GetComponent<Enemy>();
         enemyMovement = GetComponent<EnemyMovement>();
         enemyCombat = GetComponent<EnemyCombat>();
+
+        // actualRoom = GameManager.instance.GetActualRoom();
     }
 
     public override void AgentReset() { }
@@ -53,6 +59,26 @@ public class EnemyAgent : Agent {
 
         */
 
+        // Input per il transformer relativo al target 
+
+        obs.Add(0f);
+        obs.Add(target.transform.position.x / 15f);
+        obs.Add(target.transform.position.z / 15f);
+        obs.Add((target.transform.position.x / 15f) - (enemy.gameObject.transform.position.x / 15f));
+        obs.Add((target.transform.position.z / 15f) - (enemy.gameObject.transform.position.z / 15f));
+        if (target.GetComponent<Enemy>() != null)
+            obs.Add((float) target.GetComponent<Enemy>().currentHealth / (float) target.GetComponent<Enemy>().HP);
+        else if (target.GetComponent<Player>() != null)
+            obs.Add((float) target.GetComponent<Player>().currentHealth / (float) target.GetComponent<Player>().HP);
+
+        List<float> itemsVectors = GetItemsVectors();
+
+        foreach (float item in itemsVectors) {
+            obs.Add(item);
+        }
+
+        /*
+
         // Global Cell View: osservazioni globali sullo stato -> mappa globale di dimensione 19x19
 
         List<float> globalCells = globalCellView.GetLocalCellView();
@@ -61,6 +87,7 @@ public class EnemyAgent : Agent {
             obs.Add(cellValue);
         }
 
+        */
 
         // Local Cell View: modo per ottenere delle osservazioni locali sullo stato
 
@@ -99,6 +126,16 @@ public class EnemyAgent : Agent {
         }
         */
 
+        // Posizioni normalizzate secondo la grandezza massima della mappa
+
+        obs.Add(enemy.gameObject.transform.position.x / 15f);
+        obs.Add(enemy.gameObject.transform.position.z / 15f);
+
+        // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto
+
+        obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
+
+
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
         // ad attaccare
 
@@ -120,7 +157,7 @@ public class EnemyAgent : Agent {
         else if (target.GetComponent<Player>() != null)
             obs.Add((float) target.GetComponent<Player>().currentHealth / (float) target.GetComponent<Player>().HP);
 
-
+        /*
         obs.Add((float) (enemy.ATK + enemy.actualWeaponDamage) / 13f);
         obs.Add((float) (target.GetComponent<Enemy>().ATK + target.GetComponent<Enemy>().actualWeaponDamage) / 13f);
 
@@ -130,7 +167,8 @@ public class EnemyAgent : Agent {
         // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto (GLOBAL)
         
         obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
-        
+        */
+
         AddVectorObs(obs);
     }
 
@@ -181,9 +219,54 @@ public class EnemyAgent : Agent {
             // target.GetComponent<Player>().currentHealth = target.GetComponent<Player>().HP;
         }
 
-
-
         Done();
+    }
+
+    private List<float> GetItemsVectors() {
+
+        List<GameObject> items = actualRoom.GetComponentInChildren<ObjectsGenerator>().GetActiveItems();
+
+        if (items.Count > maxTransformerEntities - 1)
+            throw new System.Exception("Too many items for transformer!");
+        
+        List<float> itemsVectors = new List<float> {};
+
+        // [tipo, posizione.x, posizione.z, distanza agente item x, distanza agente item z, vita normalizzata]
+
+        float type = maskValue;
+
+        foreach (GameObject item in items) {
+            
+            if (item.GetComponent<HealthPotion>() != null) {
+                type = 1f;
+            } else if (item.GetComponent<BastardSword>() != null) {
+                type = 2f;
+            } else if (item.GetComponent<GoldenShield>() != null) {
+                type = 3f;
+            } else {
+                type = maskValue;
+            }
+
+            itemsVectors.Add(type);
+            itemsVectors.Add(item.transform.position.x / 15f);
+            itemsVectors.Add(item.transform.position.z / 15f);
+            itemsVectors.Add((item.transform.position.x / 15f) - (enemy.gameObject.transform.position.x / 15f));
+            itemsVectors.Add((item.transform.position.z / 15f) - (enemy.gameObject.transform.position.z / 15f));
+            itemsVectors.Add(((float) item.GetComponent<Item>().bonusHP / 20f));
+        }
+
+        // La dimensione dell'input é fissa a prescindere dal numero di item --> grazie alla maschera
+
+        for (int i = 0; i < maxTransformerEntities - items.Count - 1; i++) {
+            itemsVectors.Add(maskValue);
+            itemsVectors.Add(maskValue);
+            itemsVectors.Add(maskValue);
+            itemsVectors.Add(maskValue);
+            itemsVectors.Add(maskValue);
+            itemsVectors.Add(maskValue);
+        }
+
+        return itemsVectors;
     }
 
     /*

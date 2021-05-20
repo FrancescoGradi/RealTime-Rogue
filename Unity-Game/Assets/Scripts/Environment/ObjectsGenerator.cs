@@ -47,6 +47,21 @@ public class ObjectsGenerator : MonoBehaviour {
         }
     }
 
+    public List<GameObject> GetActiveItems() {
+        
+        List<GameObject> actualItems = new List<GameObject> {};
+
+        foreach (GameObject item in activeItems) {
+            if (item != null) {
+                actualItems.Add(item);
+            } else {
+                Destroy(item);
+            }
+        }
+
+        return actualItems;
+    }
+
     public List<GameObject> GetActiveEnvObjects() {
 
         return activeEnvObjects;
@@ -59,6 +74,8 @@ public class ObjectsGenerator : MonoBehaviour {
         foreach (GameObject activeItem in activeItems) {
             Destroy(activeItem);
         }
+
+        activeItems = new List<GameObject> {};
 
         spawnPoints = Utility.Shuffle(spawnPoints);
 

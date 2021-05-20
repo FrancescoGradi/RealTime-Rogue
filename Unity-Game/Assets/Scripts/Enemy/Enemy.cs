@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour {
     public int actualShieldDef = 2;
 
 
-    private string actualPotion;
+    private Item actualPotion;
 
     public HealthPotionCircleEffect healthPotionCircleEffect;
 
@@ -109,7 +109,7 @@ public class Enemy : MonoBehaviour {
         shield.material = material;
     }
 
-    public void SetActualPotion(string actualPotion) {
+    public void SetActualPotion(Item actualPotion) {
         this.actualPotion = actualPotion;
     }
 
@@ -122,23 +122,25 @@ public class Enemy : MonoBehaviour {
     }
 
     public void DrinkPotion() {
-        
-        if (actualPotion == "Health Potion") {
-            
-            // L'idea è vedere se l'agente riesce a capire se gli conviene perdere tempo per prendere una pozione, oppure no
 
-            if (currentHealth >= HP) {
-                currentHealth = HP;
-            } else {
-                currentHealth += 5;
-                if (currentHealth > HP)
+        if (actualPotion != null) {
+
+            if (actualPotion.name == "Health Potion") {
+            
+                if (currentHealth >= HP) {
                     currentHealth = HP;
-                healthBar.SetHealth(currentHealth);
+                } else {
+                    currentHealth += actualPotion.bonusHP;
+                    if (currentHealth > HP)
+                        currentHealth = HP;
+                    healthBar.SetHealth(currentHealth);
+                }
+                
+                HealthPotionAnimation();
             }
-            
-            HealthPotionAnimation();
-        }
 
+        }
+        
         actualPotion = null;
     }
 

@@ -80,6 +80,10 @@ public class GameManager : MonoBehaviour {
         return roomNumber;
     }
 
+    public GameObject GetActualRoom() {
+        return actualRoom;
+    }
+
     public int GetKilledEnemies() {
         return killedEnemies;
     }
