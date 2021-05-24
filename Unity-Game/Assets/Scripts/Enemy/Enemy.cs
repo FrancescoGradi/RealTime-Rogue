@@ -110,6 +110,7 @@ public class Enemy : MonoBehaviour {
     }
 
     public void SetActualPotion(Item actualPotion) {
+        
         this.actualPotion = actualPotion;
     }
 
@@ -125,7 +126,7 @@ public class Enemy : MonoBehaviour {
 
         if (actualPotion != null) {
 
-            if (actualPotion.name == "Health Potion") {
+            if (actualPotion.GetComponent<HealthPotion>() != null) {
             
                 if (currentHealth >= HP) {
                     currentHealth = HP;
@@ -135,6 +136,8 @@ public class Enemy : MonoBehaviour {
                         currentHealth = HP;
                     healthBar.SetHealth(currentHealth);
                 }
+
+                Destroy(actualPotion.gameObject);
                 
                 HealthPotionAnimation();
             }

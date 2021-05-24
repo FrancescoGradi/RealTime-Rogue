@@ -10,7 +10,6 @@ public class EnemyCombat : MonoBehaviour {
     public GameObject hitEffect;
 
     private Enemy enemy;
-    private float nextAttackTime = 0f;
 
     private void Start() {
         enemy = GetComponent<Enemy>();

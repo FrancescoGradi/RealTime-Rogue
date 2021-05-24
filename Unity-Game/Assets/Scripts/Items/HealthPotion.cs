@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPotion : Item
-{
+public class HealthPotion : Item {
     
     private void Start() {
+
         itemName = "Health Potion";
 
         bonusATK = 0;
         bonusHP = 5;
         bonusMANA = 0;
         bonusDEF = 0;
-
     }
 }

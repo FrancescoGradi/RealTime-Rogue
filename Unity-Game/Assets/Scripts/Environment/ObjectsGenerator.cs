@@ -52,7 +52,7 @@ public class ObjectsGenerator : MonoBehaviour {
         List<GameObject> actualItems = new List<GameObject> {};
 
         foreach (GameObject item in activeItems) {
-            if (item != null) {
+            if (item != null && item.activeSelf) {
                 actualItems.Add(item);
             } else {
                 Destroy(item);

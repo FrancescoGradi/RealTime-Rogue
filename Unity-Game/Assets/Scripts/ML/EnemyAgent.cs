@@ -181,13 +181,11 @@ public class EnemyAgent : Agent {
         float drink = vectorAction[3];
 
         /*
-
         if (enemyMovement.playerLayer == 11) {
             Debug.Log("Agent action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
         } else if (enemyMovement.playerLayer == 9) {
             Debug.Log("Target action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
         }
-
         */
         
         if (attack > 0) {
