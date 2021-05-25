@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour {
 
     private Item actualPotion;
 
+    public GameObject healthPotionSprite;
     public HealthPotionCircleEffect healthPotionCircleEffect;
 
     private List<int> initialRandomHP = new List<int>{5, 10, 15, 20};
@@ -78,6 +79,7 @@ public class Enemy : MonoBehaviour {
         shield.material = initialShieldMaterial;
 
         actualPotion = null;
+        healthPotionSprite.SetActive(false);
 
         animator.SetBool("attacking", false);
     }
@@ -110,8 +112,15 @@ public class Enemy : MonoBehaviour {
     }
 
     public void SetActualPotion(Item actualPotion) {
+
+        if (this.actualPotion != null)
+            Destroy(this.actualPotion.gameObject);
         
         this.actualPotion = actualPotion;
+
+        if (this.actualPotion.GetComponent<HealthPotion>() != null) {
+            healthPotionSprite.SetActive(true);
+        }
     }
 
     public bool HasActualPotion() {
@@ -139,6 +148,7 @@ public class Enemy : MonoBehaviour {
 
                 Destroy(actualPotion.gameObject);
                 
+                healthPotionSprite.SetActive(false);
                 HealthPotionAnimation();
             }
 

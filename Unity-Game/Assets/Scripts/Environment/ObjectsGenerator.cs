@@ -54,9 +54,7 @@ public class ObjectsGenerator : MonoBehaviour {
         foreach (GameObject item in activeItems) {
             if (item != null && item.activeSelf) {
                 actualItems.Add(item);
-            } else {
-                Destroy(item);
-            }
+            } 
         }
 
         return actualItems;
