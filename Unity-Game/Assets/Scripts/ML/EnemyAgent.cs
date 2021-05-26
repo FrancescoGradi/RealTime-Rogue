@@ -17,7 +17,6 @@ public class EnemyAgent : Agent {
     public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 8f;
     public float rayMinDistance = 1f;
-    public float healthPotionReward = 16f;
 
     private Enemy enemy;
     private EnemyMovement enemyMovement;
@@ -30,6 +29,10 @@ public class EnemyAgent : Agent {
         enemyCombat = GetComponent<EnemyCombat>();
 
         // actualRoom = GameManager.instance.GetActualRoom();
+    }
+
+    public void HealthPotionReward() {
+        AddReward(8f);
     }
 
     public override void AgentReset() { }
@@ -101,11 +104,11 @@ public class EnemyAgent : Agent {
 
         // Reward negativa con gli ostacoli 12->5x5, 17, 24-> 7x7
 
-        if (cells[17] == 1f)
-            AddReward(-1f);
+        //if (cells[17] == 1f)
+        //    AddReward(-1f);
         
-        if (cells[24] == 1f)
-            AddReward(-1f);
+        //if (cells[24] == 1f)
+        //    AddReward(-1f);
 
         /*
         // Secondo modo: raggi di lunghezza massima che intersecano oggetti env-item e restituiscono la distanza
@@ -187,6 +190,8 @@ public class EnemyAgent : Agent {
             Debug.Log("Target action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
         }
         */
+
+        attack = -1f;
         
         if (attack > 0) {
             enemyCombat.NormalAttack();

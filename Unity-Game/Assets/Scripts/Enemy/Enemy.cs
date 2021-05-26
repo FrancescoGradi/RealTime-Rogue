@@ -136,6 +136,8 @@ public class Enemy : MonoBehaviour {
         if (actualPotion != null) {
 
             if (actualPotion.GetComponent<HealthPotion>() != null) {
+
+                agent.HealthPotionReward();
             
                 if (currentHealth >= HP) {
                     currentHealth = HP;

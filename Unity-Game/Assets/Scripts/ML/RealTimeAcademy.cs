@@ -19,6 +19,7 @@ public class RealTimeAcademy : Academy {
 
   	public override void AcademyReset() {
 		
+		objectsGenerator.SetMaxItems((int) this.resetParameters["max_items"]);
 		objectsGenerator.ResetPositions();
 		
 		range = this.resetParameters["spawn_range"];

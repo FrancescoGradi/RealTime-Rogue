@@ -8,7 +8,7 @@ public class ObjectsGenerator : MonoBehaviour {
     public List<GameObject> spawnPoints;
 
     public int max_items = 4;
-    public int max_objects = 8;
+    public int max_objects = 4;
 
     private List<GameObject> activeItems = new List<GameObject> {};
     private List<GameObject> activeEnvObjects = new List<GameObject> {};
@@ -65,6 +65,14 @@ public class ObjectsGenerator : MonoBehaviour {
         return activeEnvObjects;
     }
 
+    public void SetMaxItems(int max_items) {
+        if (max_items + max_objects > spawnPoints.Count) {
+            throw new System.Exception("Too many instantiated items and env objects!");
+        } else {
+            this.max_items = max_items;
+        }
+    }
+
     public void ResetPositions() {
 
         // Devo distruggerli ogni volta perche' l'agente potrebbe aver preso (e quindi distrutto) qualche oggetto
@@ -79,6 +87,8 @@ public class ObjectsGenerator : MonoBehaviour {
 
         Vector3 pos = new Vector3(0, 0, 0);
 
+        /*
+
         // Implementazione con spawn points
 
         for (int i = 0; i < max_items; i++) {
@@ -88,7 +98,7 @@ public class ObjectsGenerator : MonoBehaviour {
             activeItems.Add(Instantiate(selectedItem, pos, selectedItem.gameObject.transform.rotation));
         }
 
-        /*
+        */
 
         // Implementazione con spawn totalmente casuali senza spawn points
 
@@ -99,7 +109,6 @@ public class ObjectsGenerator : MonoBehaviour {
             GameObject selectedItem = Utility.GetRandomObject(items);
             activeItems.Add(Instantiate(selectedItem, pos, selectedItem.gameObject.transform.rotation));
         }
-        */
 
         spawnPoints.Reverse();
 
