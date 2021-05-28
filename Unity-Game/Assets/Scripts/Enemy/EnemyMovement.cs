@@ -93,14 +93,14 @@ public class EnemyMovement : MonoBehaviour {
             BastardSword weapon = actualItem.GetComponent<BastardSword>();
             enemy.SetWeapon(actualItem.name, weapon.bonusATK, weapon.material);
             
-            Destroy(actualItem.gameObject);
+            actualItem.gameObject.SetActive(false);
 
         } else if (actualItem.itemName == "Golden Shield") {
 
             GoldenShield shield = actualItem.GetComponent<GoldenShield>();
             enemy.SetShield(actualItem.name, shield.bonusDEF, shield.material);
 
-            Destroy(actualItem.gameObject);
+            actualItem.gameObject.SetActive(false);
 
         } else if (actualItem.GetComponent<HealthPotion>() != null) {
 

@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
     public EnemyAgent agent;
 
     public int HP = 20;
-    public int ATK = 3;
+    public int ATK = 4;
     public int MANA = 3;
     public int DEF = 3;
     
@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour {
         if (healthBar.isActiveAndEnabled)
             healthBar.SetHealth(currentHealth);
 
-        ATK = 3;
+        ATK = 4;
         MANA = 3;
         DEF = 3;
 
@@ -136,8 +136,6 @@ public class Enemy : MonoBehaviour {
         if (actualPotion != null) {
 
             if (actualPotion.GetComponent<HealthPotion>() != null) {
-
-                agent.HealthPotionReward();
             
                 if (currentHealth >= HP) {
                     currentHealth = HP;
