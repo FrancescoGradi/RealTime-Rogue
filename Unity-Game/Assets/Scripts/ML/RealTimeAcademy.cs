@@ -19,6 +19,11 @@ public class RealTimeAcademy : Academy {
 
   	public override void AcademyReset() {
 		
+		List<float> itemsWeights = new List<float> {};
+		itemsWeights.Add(this.resetParameters["health_potion_frequency"]);
+		itemsWeights.Add(this.resetParameters["shield_frequency"]);
+		itemsWeights.Add(this.resetParameters["sword_frequency"]);		
+
 		objectsGenerator.SetMaxItems((int) this.resetParameters["max_items"]);
 		objectsGenerator.ResetPositions();
 		

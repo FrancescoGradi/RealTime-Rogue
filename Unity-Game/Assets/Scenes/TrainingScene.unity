@@ -24515,6 +24515,11 @@ PrefabInstance:
       propertyPath: assistedAngle
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 3504360502067627646, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: assistedDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3690188769928158159, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: m_Layer
@@ -25702,6 +25707,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
+      propertyPath: initialItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: itemsWeights.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
       propertyPath: max_objects
       value: 6
       objectReference: {fileID: 0}
@@ -25746,6 +25761,39 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 743041622132703717, guid: 721af7e81c8930b979c741d7b47d3f8d,
         type: 3}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: initialItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 1893007542203255268, guid: 7bf72cf682ed292ddba13c86b9d4c8f9,
+        type: 3}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: initialItems.Array.data[2]
+      value: 
+      objectReference: {fileID: 743041622132703717, guid: 721af7e81c8930b979c741d7b47d3f8d,
+        type: 3}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: initialItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 2161362798396853350, guid: c276cecf17cf46930aca4e7ae4a0ae2a,
+        type: 3}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: itemsWeights.Array.data[0]
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: itemsWeights.Array.data[1]
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800546106296385417, guid: 0c78014563475df4aba5353cfc7c2b92,
+        type: 3}
+      propertyPath: itemsWeights.Array.data[2]
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 9111493317315643300, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -25838,6 +25886,12 @@ MonoBehaviour:
       value: 20
     - key: max_items
       value: 6
+    - key: health_potion_frequency
+      value: 0.8
+    - key: shield_frequency
+      value: 0.1
+    - key: sword_frequency
+      value: 0.1
   target: {fileID: 1766056860}
   agent: {fileID: 1766056847}
   objectsGenerator: {fileID: 1766056846}

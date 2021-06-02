@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectsGenerator : MonoBehaviour {
-    public List<GameObject> items;
+    public List<GameObject> initialItems;
+    public List<float> itemsWeights;
     public List<GameObject> envObjects;
     public List<GameObject> spawnPoints;
 
     public int max_items = 4;
     public int max_objects = 4;
 
+    private List<GameObject> items;
     private List<GameObject> activeItems = new List<GameObject> {};
     private List<GameObject> activeEnvObjects = new List<GameObject> {};
 
@@ -20,7 +22,7 @@ public class ObjectsGenerator : MonoBehaviour {
         int actual_n_items = max_items;
         int actual_n_envObjects = max_objects;
 
-        items = Utility.Shuffle(items);
+        items = ItemsVectorGeneratorFromWeights(initialItems, itemsWeights);
         envObjects = Utility.Shuffle(envObjects);
         spawnPoints = Utility.Shuffle(spawnPoints);
 
@@ -45,6 +47,27 @@ public class ObjectsGenerator : MonoBehaviour {
                 activeEnvObjects.Add(Instantiate(selectedEnvObject, spawnPoints[j].gameObject.transform.position, selectedEnvObject.gameObject.transform.rotation));
             }
         }
+    }
+
+    // La soluzione per avere una collezione di elementi random pesati è avere un vettore più grande che rispetti questa proporzione
+    // e poi scegliere un elemento casuale da questo (il vettore non cambia, per questo è efficiente per il training): soluzione ruota della fortuna
+
+    private List<GameObject> ItemsVectorGeneratorFromWeights(List<GameObject> itms, List<float> weights) {
+
+        if (itms.Count != weights.Count)
+            throw new System.Exception("Initial items and weights have different dimension!");
+
+        List<GameObject> full_items = new List<GameObject> {};
+
+        for (int i = 0; i < weights.Count; i++) {
+            float weight = weights[i];
+            while (weight >= 0.045f) {
+                full_items.Add(itms[i]);
+                weight -= 0.05f;
+            }
+        }
+
+        return full_items;
     }
 
     public List<GameObject> GetActiveItems() {
@@ -84,6 +107,8 @@ public class ObjectsGenerator : MonoBehaviour {
         activeItems = new List<GameObject> {};
 
         spawnPoints = Utility.Shuffle(spawnPoints);
+
+        items = ItemsVectorGeneratorFromWeights(initialItems, itemsWeights);
 
         Vector3 pos = new Vector3(0, 0, 0);
 
