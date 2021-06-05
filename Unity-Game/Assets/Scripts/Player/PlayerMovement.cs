@@ -77,8 +77,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void CollectItem(Item actualItem) {
-        
-        if (actualItem.itemName == "Bastard Sword") {
+
+        if (actualItem.GetComponent<BastardSword>() != null) {
 
             itemsHub.CollectedItem(actualItem.itemName);
             itemsHub.SetSword(actualItem.itemName);
@@ -86,36 +86,26 @@ public class PlayerMovement : MonoBehaviour {
             BastardSword weapon = actualItem.GetComponent<BastardSword>();
             player.SetWeapon(actualItem.name, weapon.bonusATK, weapon.material);
             
-            Destroy(actualItem.gameObject);
+            actualItem.gameObject.SetActive(false);
 
-        } else if (actualItem.itemName == "Golden Shield") {
+        } else if (actualItem.GetComponent<GoldenShield>() != null) {
 
             itemsHub.CollectedItem(actualItem.itemName);
             itemsHub.SetShield(actualItem.itemName);
 
             GoldenShield shield = actualItem.GetComponent<GoldenShield>();
-            player.SetShield(actualItem.name, shield.material);
+            player.SetShield(actualItem.name, shield.bonusDEF, shield.material);
 
-            Destroy(actualItem.gameObject);
+            actualItem.gameObject.SetActive(false);
 
-        } else if (actualItem.itemName == "Health Potion") {
-
-            itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetPotion(actualItem.itemName);
-
-            player.SetActualPotion(actualItem.itemName);
-
-            Destroy(actualItem.gameObject);
-
-        } else if (actualItem.itemName == "Bonus Potion") {
+        } else if (actualItem.GetComponent<HealthPotion>() != null || actualItem.GetComponent<BonusPotion>() != null) {
             
             itemsHub.CollectedItem(actualItem.itemName);
             itemsHub.SetPotion(actualItem.itemName);
 
-            player.SetActualPotion(actualItem.itemName);
-
-            Destroy(actualItem.gameObject);
-        }
+            player.SetActualPotion(actualItem);
+            actualItem.gameObject.SetActive(false);
+        } 
     }
 
     private IEnumerator SprintWaiter(float seconds) {

@@ -88,25 +88,25 @@ public class EnemyMovement : MonoBehaviour {
 
     private void CollectItem(Item actualItem) {
 
-        if (actualItem.itemName == "Bastard Sword") {
+        if (actualItem.GetComponent<BastardSword>() != null) {
 
             BastardSword weapon = actualItem.GetComponent<BastardSword>();
             enemy.SetWeapon(actualItem.name, weapon.bonusATK, weapon.material);
             
             actualItem.gameObject.SetActive(false);
 
-        } else if (actualItem.itemName == "Golden Shield") {
+        } else if (actualItem.GetComponent<GoldenShield>() != null) {
 
             GoldenShield shield = actualItem.GetComponent<GoldenShield>();
             enemy.SetShield(actualItem.name, shield.bonusDEF, shield.material);
 
             actualItem.gameObject.SetActive(false);
 
-        } else if (actualItem.GetComponent<HealthPotion>() != null) {
+        } else if (actualItem.GetComponent<HealthPotion>() != null || actualItem.GetComponent<BonusPotion>() != null) {
 
             enemy.SetActualPotion(actualItem);
             actualItem.gameObject.SetActive(false);
-        }
+        } 
     }
 
     public List<float> GetRayCastDistance(float maxDistance, float angle) {

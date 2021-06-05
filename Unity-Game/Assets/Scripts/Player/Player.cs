@@ -33,13 +33,17 @@ public class Player : MonoBehaviour {
     public float attackRate = 2f;
 
     public string weaponName = "Long Sword";
-    public int actualWeaponDamage = 6;
     public MeshRenderer sword;
+    public int actualWeaponDamage = 6;
+
+    public string shieldName = "Wood Shield";
     public MeshRenderer shield;
+    public int actualShieldDef = 2;
+
     public Spikes spikes;
     public HealthPotionCircleEffect healthPotionCircleEffect;
 
-    private string actualPotion;
+    private Item actualPotion;
 
     private void Start() {
 
@@ -65,42 +69,56 @@ public class Player : MonoBehaviour {
         sword.material = material;
     }
 
-    internal void SetShield(string name, Material material) {
+    public void SetShield(string shieldName, int bonusDEF, Material material) {
+        this.shieldName = shieldName;
+        this.actualShieldDef = bonusDEF;
+
         shield.material = material;
     }
 
-    public void SetActualPotion(string actualPotion) {
-        this.actualPotion = actualPotion;
+    public void SetActualPotion(Item actualPotion) {
+
+        if (this.actualPotion != null)
+            Destroy(this.actualPotion.gameObject);
+        
+        this.actualPotion = actualPotion;  
     }
 
     private void DrinkPotion() {
 
-        if (actualPotion == "Health Potion") {
+        if (actualPotion != null) {
 
-            AddHealth(10);
+            if (actualPotion.GetComponent<HealthPotion>() != null) {
+            
+                AddHealth(actualPotion.bonusHP);
+                Destroy(actualPotion.gameObject);
 
-        } else if (actualPotion == "Bonus Potion") {
+            } else if (actualPotion.GetComponent<BonusPotion>() != null) {
 
-            itemsHub.DrinkPotionCanvasFeedback("+5 All Stats");
+                itemsHub.DrinkPotionCanvasFeedback("+5 All Stats");
 
-            ATK += 5;
-            MANA += 5;
-            DEF += 5;
-            speed += 2f;
+                ATK += 5;
+                MANA += 5;
+                DEF += 5;
+                speed += 2f;
 
-            Spikes tmp = Instantiate(spikes, this.gameObject.transform.position, Quaternion.identity);
-            tmp.gameObject.transform.SetParent(this.gameObject.transform);
+                Spikes tmp = Instantiate(spikes, this.gameObject.transform.position, Quaternion.identity);
+                tmp.gameObject.transform.SetParent(this.gameObject.transform);
 
-            StartCoroutine(WaitBonusPotion(5f));
+                StartCoroutine(WaitBonusPotion(5f));
+            }
         }
 
-        actualPotion = null;
-
         itemsHub.DestroyActualPotion();
-
     }
 
     public void TakeDamage(int damage, float delay) {
+
+        // Riduzione del danno per lo scudo
+        damage -= (DEF + actualShieldDef);
+
+        if (damage < 0)
+            damage = 0;
 
         StartCoroutine(DamageWaiter(damage, delay));
     }
@@ -134,6 +152,7 @@ public class Player : MonoBehaviour {
         itemsHub.DrinkPotionCanvasFeedback("Bonus Potion Over!");
 
     }
+    
     private IEnumerator DamageWaiter(int damage, float seconds) {
         
         yield return new WaitForSeconds(seconds);

@@ -69,10 +69,16 @@ public class EnemyAgent : Agent {
         obs.Add(target.transform.position.z / 15f);
         obs.Add((target.transform.position.x / 15f) - (enemy.gameObject.transform.position.x / 15f));
         obs.Add((target.transform.position.z / 15f) - (enemy.gameObject.transform.position.z / 15f));
-        if (target.GetComponent<Enemy>() != null)
+        if (target.GetComponent<Enemy>() != null) {
             obs.Add((float) target.GetComponent<Enemy>().currentHealth / (float) target.GetComponent<Enemy>().HP);
-        else if (target.GetComponent<Player>() != null)
+            obs.Add((float) target.GetComponent<Enemy>().ATK / 10f);
+            obs.Add((float) target.GetComponent<Enemy>().DEF / 10f);
+        }
+        else if (target.GetComponent<Player>() != null) {
             obs.Add((float) target.GetComponent<Player>().currentHealth / (float) target.GetComponent<Player>().HP);
+            obs.Add((float) target.GetComponent<Player>().ATK / 10f);
+            obs.Add((float) target.GetComponent<Player>().DEF / 10f);
+        }
 
         List<float> itemsVectors = GetItemsVectors();
 
@@ -161,10 +167,19 @@ public class EnemyAgent : Agent {
             obs.Add((float) target.GetComponent<Player>().currentHealth / (float) target.GetComponent<Player>().HP);
 
         obs.Add((float) (enemy.ATK + enemy.actualWeaponDamage) / 14f);
-        obs.Add((float) (target.GetComponent<Enemy>().ATK + target.GetComponent<Enemy>().actualWeaponDamage) / 14f);
+        
+        if (target.GetComponent<Enemy>() != null)
+            obs.Add(((float) target.GetComponent<Enemy>().ATK + target.GetComponent<Enemy>().actualWeaponDamage) / 14f);
+        else if (target.GetComponent<Player>() != null)
+            obs.Add(((float) target.GetComponent<Player>().ATK + target.GetComponent<Player>().actualWeaponDamage) / 14f);
+
 
         obs.Add((float) (enemy.DEF + enemy.actualShieldDef) / 9f);
-        obs.Add((float) (target.GetComponent<Enemy>().DEF + target.GetComponent<Enemy>().actualShieldDef) / 9f);
+
+        if (target.GetComponent<Enemy>() != null)
+            obs.Add(((float) target.GetComponent<Enemy>().DEF + target.GetComponent<Enemy>().actualShieldDef) / 9f);
+        else if (target.GetComponent<Player>() != null)
+            obs.Add(((float) target.GetComponent<Player>().DEF + target.GetComponent<Player>().actualShieldDef) / 9f);
 
         /*
         // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto (GLOBAL)
@@ -202,7 +217,7 @@ public class EnemyAgent : Agent {
             enemy.DrinkPotion();
         }
 
-        AddReward(-0.1f);
+        AddReward(-0.045f);
     }
 
     public void PlayerDown() {
@@ -254,11 +269,15 @@ public class EnemyAgent : Agent {
             itemsVectors.Add((item.transform.position.x / 15f) - (enemy.gameObject.transform.position.x / 15f));
             itemsVectors.Add((item.transform.position.z / 15f) - (enemy.gameObject.transform.position.z / 15f));
             itemsVectors.Add(((float) item.GetComponent<Item>().bonusHP / 20f));
+            itemsVectors.Add(((float) item.GetComponent<Item>().bonusATK / 10f));
+            itemsVectors.Add(((float) item.GetComponent<Item>().bonusDEF / 10f));                        
         }
 
         // La dimensione dell'input é fissa a prescindere dal numero di item --> grazie alla maschera
 
         for (int i = 0; i < maxTransformerEntities - items.Count - 1; i++) {
+            itemsVectors.Add(maskValue);
+            itemsVectors.Add(maskValue);
             itemsVectors.Add(maskValue);
             itemsVectors.Add(maskValue);
             itemsVectors.Add(maskValue);

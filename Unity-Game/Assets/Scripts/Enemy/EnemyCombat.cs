@@ -9,7 +9,7 @@ public class EnemyCombat : MonoBehaviour {
     public LayerMask playerLayer;
     public GameObject hitEffect;
     public float assistedAngle = 175;
-    public float assistedDistance = 2f;
+    public float assistedDistance = 3f;
 
     private Enemy enemy;
 
@@ -29,8 +29,7 @@ public class EnemyCombat : MonoBehaviour {
         foreach(Collider player in hitPlayers) {
             
             // Mira assistita per i colpi in mischia
-            if (Vector3.Distance(enemy.gameObject.transform.position, player.gameObject.transform.position) < assistedDistance && 
-                EnemyInFieldOfView(player.gameObject)) {
+            if (Vector3.Distance(enemy.gameObject.transform.position, player.gameObject.transform.position) < assistedDistance) {
                 Vector3 targetDir = player.gameObject.transform.position - this.gameObject.transform.position;
                 Vector3 forward = this.gameObject.transform.forward;
 

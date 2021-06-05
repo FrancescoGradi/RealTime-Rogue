@@ -9,7 +9,7 @@ public class HealthPotion : Item {
         itemName = "Health Potion";
 
         bonusATK = 0;
-        bonusHP = 5;
+        bonusHP = 10;
         bonusMANA = 0;
         bonusDEF = 0;
     }
