@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4063383342110808243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8954920629753939495}
@@ -363,7 +363,7 @@ MonoBehaviour:
   DEF: 3
   currentHealth: 0
   speed: 6
-  attackRange: 3
+  attackRange: 4.5
   attackRate: 2
   weaponName: Long Sword
   sword: {fileID: 0}
@@ -431,6 +431,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   hitEffect: {fileID: 0}
+  assistedAngle: 175
+  assistedDistance: 3
 --- !u!1 &8954920629731762509
 GameObject:
   m_ObjectHideFlags: 0

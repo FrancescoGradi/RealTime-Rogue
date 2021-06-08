@@ -29,5 +29,10 @@ public static class Utility {
 		System.Random random = new System.Random();
 		return random.Next(min, max + 1);
 	}
+
+    public static float GetRandomFloat(float min, float max) {
+
+        return Random.Range(min, max);
+    }
     
 }

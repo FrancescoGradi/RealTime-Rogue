@@ -13,6 +13,7 @@ public class EnemyAgent : Agent {
 
     public int maxTransformerEntities = 10;
     public float maskValue = 99f;
+    public int randomActionPerc = 10;
     
     public List<float> angles = new List<float>() {0f};
     public float raycastMaxDistance = 8f;
@@ -205,6 +206,15 @@ public class EnemyAgent : Agent {
             Debug.Log("Target action " + horizontal + "   " + vertical + "   " + attack + "   " + drink);
         }
         */
+
+        // Vogliamo che a volte (< 10% per dire) il nemico compia delle azioni casuali
+
+        if (enemyMovement.playerLayer == 9 && Utility.GetRandomInt(0, 99) < randomActionPerc) {
+            horizontal = Utility.GetRandomFloat(-1f, 1f);
+            vertical = Utility.GetRandomFloat(-1f, 1f);
+            attack = Utility.GetRandomFloat(-1f, 1f);
+            drink = Utility.GetRandomFloat(-1f, 1f);
+        }
         
         if (attack > 0) {
             enemyCombat.NormalAttack();

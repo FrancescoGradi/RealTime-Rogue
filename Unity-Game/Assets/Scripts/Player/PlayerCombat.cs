@@ -12,6 +12,7 @@ public class PlayerCombat : MonoBehaviour {
     public GameObject hitEffect;
     public float assistedFireBallAngle = 45;
     public float assistedRange = 15f;
+    public float assistedDistance = 3f;
 
     private float nextAttackTime = 0f;
     public event System.Action OnAttack;
@@ -51,7 +52,7 @@ public class PlayerCombat : MonoBehaviour {
         bool firstEnemy = true;
 
         foreach(Collider enemy in hitEnemies) {
-            if (firstEnemy && EnemyInFieldOfView(enemy.gameObject)) {
+            if (firstEnemy && Vector3.Distance(enemy.gameObject.transform.position, player.gameObject.transform.position) < assistedDistance) {
                 Vector3 targetDir = enemy.gameObject.transform.position - this.gameObject.transform.position;
                 Vector3 forward = this.gameObject.transform.forward;
 
