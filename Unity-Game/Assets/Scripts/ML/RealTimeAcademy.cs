@@ -53,6 +53,12 @@ public class RealTimeAcademy : Academy {
 		}
 	}
 
+	public void EndEpisode() {
+
+		agent.GetComponent<Agent>().Done();
+		target.GetComponent<Agent>().Done();
+	}
+
 	private void AgentReset() {
 
 		agent.transform.SetPositionAndRotation(this.GetRandomPosInRange(target, 0), Quaternion.identity);

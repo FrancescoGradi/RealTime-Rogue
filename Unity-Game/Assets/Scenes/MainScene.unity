@@ -4318,6 +4318,7 @@ MonoBehaviour:
   hitEffect: {fileID: 100004, guid: d6adffd19900fee1babd6149e8e13d5f, type: 3}
   assistedFireBallAngle: 45
   assistedRange: 15
+  assistedDistance: 3
 --- !u!95 &1275339082 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3485452824646687543, guid: c6756015f0021a3229125b72767f5e69,

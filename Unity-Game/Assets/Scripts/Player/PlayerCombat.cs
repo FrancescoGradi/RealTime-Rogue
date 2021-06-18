@@ -115,9 +115,8 @@ public class PlayerCombat : MonoBehaviour {
     private IEnumerator MagicWaiter(float seconds) {
         
         yield return new WaitForSecondsRealtime(seconds);
-        GameObject new_fireball = Instantiate(fireball, new Vector3(player.transform.position.x, player.transform.position.y + 1f, player.transform.position.z + 1f), player.transform.rotation);
-        new_fireball.GetComponent<FireBall>().enemyLayers = enemyLayers;
-        new_fireball.GetComponent<FireBall>().damages = player.MANA;
+        GameObject new_fireball = Instantiate(fireball, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z), player.transform.rotation);
+        new_fireball.GetComponent<FireBall>().damages = player.MANA + 5;
 
         animator.SetBool("attacking", false);
     }

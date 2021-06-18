@@ -4782,8 +4782,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010823978654}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -10.45, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4000012936073094}
@@ -9273,9 +9273,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 512
-  fireballRadius: 3
-  fireballSpeed: 0.3
+    m_Bits: 5632
+  radius: 0.1
+  speed: 0.3
   damages: 8
   explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
 --- !u!1 &1000013439165456

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 using MLAgents;
 
 public class EnemyAgent : Agent {
+
+    public int enemyClass;
     public GameObject target;
     public RealTimeAcademy realTimeAcademy;
     public LocalCellView localCellView;
@@ -149,7 +151,7 @@ public class EnemyAgent : Agent {
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
         // ad attaccare
 
-        obs.Add(enemyMovement.IsInRange());
+        obs.Add(enemyMovement.IsInRange(enemyClass));
 
         // 1 se l'agente ha una pozione o 0 se non ce l'ha
         if (enemy.HasActualPotion()) {
@@ -157,7 +159,7 @@ public class EnemyAgent : Agent {
         } else {
             obs.Add(0);
         }
-
+        /*
         // STATS
 
         obs.Add((float) enemy.currentHealth / (float) enemy.HP);
@@ -181,6 +183,30 @@ public class EnemyAgent : Agent {
             obs.Add(((float) target.GetComponent<Enemy>().DEF + target.GetComponent<Enemy>().actualShieldDef) / 9f);
         else if (target.GetComponent<Player>() != null)
             obs.Add(((float) target.GetComponent<Player>().DEF + target.GetComponent<Player>().actualShieldDef) / 9f);
+        */
+        
+        // NEW STATS
+
+        obs.Add((float) enemy.currentHealth);
+
+        if (target.GetComponent<Enemy>() != null)
+            obs.Add((float) target.GetComponent<Enemy>().currentHealth);
+        else if (target.GetComponent<Player>() != null)
+            obs.Add((float) target.GetComponent<Player>().currentHealth);
+
+        obs.Add((float) (enemy.ATK + enemy.actualWeaponDamage));
+        
+        if (target.GetComponent<Enemy>() != null)
+            obs.Add((float) target.GetComponent<Enemy>().ATK + target.GetComponent<Enemy>().actualWeaponDamage);
+        else if (target.GetComponent<Player>() != null)
+            obs.Add((float) target.GetComponent<Player>().ATK + target.GetComponent<Player>().actualWeaponDamage);
+
+        obs.Add((float) (enemy.DEF + enemy.actualShieldDef));
+
+        if (target.GetComponent<Enemy>() != null)
+            obs.Add(((float) target.GetComponent<Enemy>().DEF + target.GetComponent<Enemy>().actualShieldDef));
+        else if (target.GetComponent<Player>() != null)
+            obs.Add(((float) target.GetComponent<Player>().DEF + target.GetComponent<Player>().actualShieldDef));
 
         /*
         // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto (GLOBAL)
@@ -217,7 +243,11 @@ public class EnemyAgent : Agent {
         }
         
         if (attack > 0) {
-            enemyCombat.NormalAttack();
+            if (enemyClass == 0) {
+                enemyCombat.NormalAttack();
+            } else {
+                enemyCombat.MagicAttack();
+            }
             enemyMovement.AddMovement(0, 0);
         } else {
             enemyMovement.AddMovement(horizontal, vertical);
@@ -233,19 +263,21 @@ public class EnemyAgent : Agent {
     public void PlayerDown() {
         // Bisogna stabilire chi è morto, tra player e target, passando dalla realtime Academy (che sa chi è chi)
         if (realTimeAcademy.IsTargetDown()) {
+
             // La reward finale dipende anche dagli HP rimasti dell'agente
             if (enemy.currentHealth > 0) {
                 AddReward(5f * (float) enemy.currentHealth);
                 // Debug.Log("AGENT WIN! With " + ((float) enemy.currentHealth) + " HP");
             } else {
                 AddReward(5f);
-            }
-        } else {
-            // Debug.Log("TARGET WIN! With " + ((float) target.GetComponent<Enemy>().currentHealth) + " HP");
-            // target.GetComponent<Player>().currentHealth = target.GetComponent<Player>().HP;
+            }            
+
         }
 
-        Done();
+
+
+        // Done();
+        realTimeAcademy.EndEpisode();
     }
 
     private List<float> GetItemsVectors() {

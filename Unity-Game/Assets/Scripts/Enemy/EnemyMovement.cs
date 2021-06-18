@@ -20,6 +20,7 @@ public class EnemyMovement : MonoBehaviour {
     public int envObjectsLayer = 12;
     public int playerLayer = 11;
     public int itemsLayer = 10;
+    public int enemiesLayer = 9;
 
 
     public float speed = 4f;
@@ -31,6 +32,7 @@ public class EnemyMovement : MonoBehaviour {
     private int count = 0;
     public int updateRate = 20;
     private float turnSmoothVelocity;
+    private float maxDistance = 10;
 
 
     void Start() {
@@ -51,7 +53,7 @@ public class EnemyMovement : MonoBehaviour {
                 count = 0;
             }
             
-            if (direction.magnitude >= 0.05f) {
+            if (direction.magnitude >= 0.15f) {
                 animator.SetInteger("running", 1);
                 Movement();
             } else {
@@ -137,22 +139,61 @@ public class EnemyMovement : MonoBehaviour {
         }
     }
 
-    public float IsInRange() {
+    public float IsInRange(int enemyClass) {
 
-        // Verifico che il target si trovi davanti rispetto al mio agente
+        if (enemyClass == 0) {
+            // Verifico che il target si trovi davanti rispetto al mio agente
 
-        Vector3 targetDir = target.gameObject.transform.position - this.gameObject.transform.position;
-        float angle = Vector3.SignedAngle(targetDir, this.gameObject.transform.forward, Vector3.up);
+            Vector3 targetDir = target.gameObject.transform.position - this.gameObject.transform.position;
+            float angle = Vector3.SignedAngle(targetDir, this.gameObject.transform.forward, Vector3.up);
 
-        // Se il target si trova in quel determinato angolo rispetto all'agente ed e' sufficientemente vicino,
-        // allora si trova nel range per l'attacco
+            // Se il target si trova in quel determinato angolo rispetto all'agente ed e' sufficientemente vicino,
+            // allora si trova nel range per l'attacco
 
-        if (angle < fieldOfViewTargetAngle && angle > -fieldOfViewTargetAngle &&
-            System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
-            System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
-            return 1f;
+            if (angle < fieldOfViewTargetAngle && angle > -fieldOfViewTargetAngle &&
+                System.Math.Abs(this.gameObject.transform.position.z - target.transform.position.z) < epsilon && 
+                System.Math.Abs(this.gameObject.transform.position.x - target.transform.position.x) < epsilon) {
+                return 1f;
+            } else {
+                return 0f;
+            }
         } else {
-            return 0f;
+            
+            // Casto un raggio per vedere se il target si trova nella line of sight dell'agente per l'attacco a distanza
+
+            RaycastHit hit;
+            Vector3 direction = target.gameObject.transform.position - this.gameObject.transform.position;
+            Vector3 pos = this.gameObject.transform.position;
+            pos.y += 1.5f;
+
+            if (Physics.Raycast(pos, direction, out hit, maxDistance)) {
+                if (hit.transform.gameObject.layer == envObjectsLayer) {
+                    DrawRayColor(pos, direction * hit.distance, Color.yellow);
+                    return 0f;
+                } else if (hit.transform.gameObject.layer == itemsLayer) {
+                    DrawRayColor(pos, direction * hit.distance, Color.red);
+                    return 0f;
+                } else if (hit.transform.gameObject.layer == playerLayer) {
+                    DrawRayColor(pos, direction * hit.distance, Color.green);
+                    return 1f;
+                } else if (hit.transform.gameObject.layer == enemiesLayer) {
+                    DrawRayColor(pos, direction * hit.distance, Color.magenta);
+                    return 1f;
+                }
+            } else {
+                DrawRayColor(pos, direction * maxDistance, Color.white);
+                return 0f;
+            }
+
+        }
+
+        return 0f;
+    }
+
+    private void DrawRayColor(Vector3 pos, Vector3 direction, Color color) {
+
+        if (playerLayer == 11) {
+            Debug.DrawRay(pos, direction, color, Time.fixedDeltaTime * 5);
         }
     }
 }

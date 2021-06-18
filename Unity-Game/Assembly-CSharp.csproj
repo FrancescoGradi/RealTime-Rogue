@@ -166,6 +166,7 @@
      <Compile Include="Assets\OtherAssets\KY_effects\Script\ConGUI.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\Lighting.cs" />
      <Compile Include="Assets\OtherAssets\Mixamo\Magic Pack\Demo\CameraScroll.cs" />
+     <Compile Include="Assets\Scripts\Effects\ElectricBall.cs" />
      <Compile Include="Assets\Scripts\Effects\Explosion.cs" />
      <Compile Include="Assets\Scripts\Effects\FireBall.cs" />
      <Compile Include="Assets\Scripts\Effects\HealthPotionCircleEffect.cs" />

@@ -72,11 +72,13 @@ public class Enemy : MonoBehaviour {
 
         weaponName = "Long Sword";
         actualWeaponDamage = 6;
-        sword.material = initialSwordMaterial;
+        if (sword != null)
+            sword.material = initialSwordMaterial;
 
         shieldName = "Wood Shield";
         actualShieldDef = 2;
-        shield.material = initialShieldMaterial;
+        if (shield != null)
+            shield.material = initialShieldMaterial;
 
         actualPotion = null;
         healthPotionSprite.SetActive(false);
@@ -101,14 +103,16 @@ public class Enemy : MonoBehaviour {
         this.weaponName = weaponName;
         this.actualWeaponDamage = bonusATK;
 
-        sword.material = material;
+        if (sword != null)
+            sword.material = material;
     }
 
     public void SetShield(string shieldName, int bonusDEF, Material material) {
         this.shieldName = shieldName;
         this.actualShieldDef = bonusDEF;
 
-        shield.material = material;
+        if (shield != null)
+            shield.material = material;
     }
 
     public void SetActualPotion(Item actualPotion) {
@@ -176,7 +180,7 @@ public class Enemy : MonoBehaviour {
         healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0) {
-            FindObjectOfType<EnemyAgent>().PlayerDown();
+            GetComponent<EnemyAgent>().PlayerDown();
             // Die();
         }
     }
