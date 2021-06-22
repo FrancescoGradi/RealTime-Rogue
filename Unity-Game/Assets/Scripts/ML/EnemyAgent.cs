@@ -74,13 +74,13 @@ public class EnemyAgent : Agent {
         obs.Add((target.transform.position.z / 15f) - (enemy.gameObject.transform.position.z / 15f));
         if (target.GetComponent<Enemy>() != null) {
             obs.Add((float) target.GetComponent<Enemy>().currentHealth / (float) target.GetComponent<Enemy>().HP);
-            obs.Add((float) target.GetComponent<Enemy>().ATK / 10f);
-            obs.Add((float) target.GetComponent<Enemy>().DEF / 10f);
+            obs.Add((float) target.GetComponent<Enemy>().ATK / 15f);
+            obs.Add((float) target.GetComponent<Enemy>().DEF / 15f);
         }
         else if (target.GetComponent<Player>() != null) {
             obs.Add((float) target.GetComponent<Player>().currentHealth / (float) target.GetComponent<Player>().HP);
-            obs.Add((float) target.GetComponent<Player>().ATK / 10f);
-            obs.Add((float) target.GetComponent<Player>().DEF / 10f);
+            obs.Add((float) target.GetComponent<Player>().ATK / 15f);
+            obs.Add((float) target.GetComponent<Player>().DEF / 15f);
         }
 
         List<float> itemsVectors = GetItemsVectors();
@@ -147,18 +147,15 @@ public class EnemyAgent : Agent {
 
         obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
 
-
         // Booleano: se il target si trova nel range dell'agente, allora restituisce 1. Serve per aiutare l'agente
         // ad attaccare
 
         obs.Add(enemyMovement.IsInRange(enemyClass));
 
-        // 1 se l'agente ha una pozione o 0 se non ce l'ha
-        if (enemy.HasActualPotion()) {
-            obs.Add(1);
-        } else {
-            obs.Add(0);
-        }
+        // Restituisce un float a seconda della pozione posseduta
+
+        obs.Add(enemy.HasActualPotion());
+
         /*
         // STATS
 
@@ -265,16 +262,10 @@ public class EnemyAgent : Agent {
         if (realTimeAcademy.IsTargetDown()) {
 
             // La reward finale dipende anche dagli HP rimasti dell'agente
-            if (enemy.currentHealth > 0) {
-                AddReward(5f * (float) enemy.currentHealth);
-                // Debug.Log("AGENT WIN! With " + ((float) enemy.currentHealth) + " HP");
-            } else {
-                AddReward(5f);
-            }            
+            realTimeAcademy.AddSpecificReward(5f);
+            // Debug.Log("AGENT WIN! With " + ((float) enemy.currentHealth) + " HP");
 
         }
-
-
 
         // Done();
         realTimeAcademy.EndEpisode();
@@ -301,6 +292,8 @@ public class EnemyAgent : Agent {
                 type = 2f;
             } else if (item.GetComponent<GoldenShield>() != null) {
                 type = 3f;
+            } else if (item.GetComponent<BonusPotion>() != null) {
+                type = 4f;
             } else {
                 type = maskValue;
             }

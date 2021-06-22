@@ -30,14 +30,17 @@ public class LocalCellView : MonoBehaviour {
                 if (hit != null) {
                     if (hit.transform.gameObject.layer == itemsLayer) {
                         // Qua dobbiamo adesso distinguere tra Health Potion, 
-                        if (hit.gameObject.GetComponent<BastardSword>() != null) {
+                        if (hit.gameObject.GetComponent<HealthPotion>() != null) {
                             DrawX(cellSpawnPoint.transform.position, Color.magenta);
-                            localCellView.Add(6);
+                            localCellView.Add(7);
                         } else if (hit.gameObject.GetComponent<GoldenShield>() != null) {
                             DrawX(cellSpawnPoint.transform.position, Color.green);
-                            localCellView.Add(5);
-                        } else if (hit.gameObject.GetComponent<HealthPotion>() != null) {
+                            localCellView.Add(6);
+                        } else if (hit.gameObject.GetComponent<BastardSword>() != null) {
                             DrawX(cellSpawnPoint.transform.position, Color.blue);
+                            localCellView.Add(5);
+                        } else if (hit.gameObject.GetComponent<BonusPotion>() != null) {
+                            DrawX(cellSpawnPoint.transform.position, Color.cyan);
                             localCellView.Add(4);
                         }
                     } else if (hit.transform.gameObject.layer == enemyLayer) {

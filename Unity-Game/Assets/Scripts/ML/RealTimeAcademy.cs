@@ -22,7 +22,8 @@ public class RealTimeAcademy : Academy {
 		List<float> itemsWeights = new List<float> {};
 		itemsWeights.Add(this.resetParameters["health_potion_frequency"]);
 		itemsWeights.Add(this.resetParameters["shield_frequency"]);
-		itemsWeights.Add(this.resetParameters["sword_frequency"]);		
+		itemsWeights.Add(this.resetParameters["sword_frequency"]);
+		itemsWeights.Add(this.resetParameters["bonus_potion_frequency"]);
 
 		objectsGenerator.SetMaxItems((int) this.resetParameters["max_items"]);
 		objectsGenerator.ResetPositions();
@@ -53,10 +54,16 @@ public class RealTimeAcademy : Academy {
 		}
 	}
 
+	public void AddSpecificReward(float reward) {
+
+		float finalReward = ((float) (agent.GetComponent<Enemy>().currentHealth)) * reward;
+		agent.GetComponent<Agent>().AddReward(finalReward);
+	}
+
 	public void EndEpisode() {
 
 		agent.GetComponent<Agent>().Done();
-		target.GetComponent<Agent>().Done();
+		// target.GetComponent<Agent>().Done();
 	}
 
 	private void AgentReset() {

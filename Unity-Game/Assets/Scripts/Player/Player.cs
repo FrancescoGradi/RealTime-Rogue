@@ -44,10 +44,12 @@ public class Player : MonoBehaviour {
     public HealthPotionCircleEffect healthPotionCircleEffect;
 
     private Item actualPotion;
+    private bool actualPotionActive;
 
     private void Start() {
 
-        currentHealth = HP - 15;
+        currentHealth = HP;
+        actualPotionActive = false;
 
         if (playerHealthBar != null) {
             playerHealthBar.SetMaxHealth(HP);
@@ -57,7 +59,7 @@ public class Player : MonoBehaviour {
 
     private void Update() {
 
-        if (actualPotion != null && Input.GetAxis("Drink") > 0) {
+        if (actualPotion != null && Input.GetAxis("Drink") > 0 && !actualPotionActive) {
             DrinkPotion();
         }
     }
@@ -97,9 +99,11 @@ public class Player : MonoBehaviour {
 
                 itemsHub.DrinkPotionCanvasFeedback("+5 All Stats");
 
-                ATK += 5;
-                MANA += 5;
-                DEF += 5;
+                actualPotionActive = true;
+
+                ATK += actualPotion.bonusATK;
+                MANA += actualPotion.bonusMANA;
+                DEF += actualPotion.bonusDEF;
                 speed += 2f;
 
                 Spikes tmp = Instantiate(spikes, this.gameObject.transform.position, Quaternion.identity);
@@ -144,13 +148,14 @@ public class Player : MonoBehaviour {
 
         yield return new WaitForSeconds(seconds);
 
-        ATK -= 5;
-        MANA -= 5;
-        DEF -= 5;
+        ATK -= actualPotion.bonusATK;
+        MANA -= actualPotion.bonusMANA;
+        DEF -= actualPotion.bonusDEF;;
         speed -= 2f;
 
+        Destroy(actualPotion.gameObject);
+        actualPotionActive = false;
         itemsHub.DrinkPotionCanvasFeedback("Bonus Potion Over!");
-
     }
     
     private IEnumerator DamageWaiter(int damage, float seconds) {
@@ -163,7 +168,7 @@ public class Player : MonoBehaviour {
 
         if (currentHealth <= 0) {
             // TO-DO Gestire la morte del player con schermata di GAME-OVER
-            Debug.Log("Player died!");
+            Debug.Log("Player ko!");
         }
     }
 }

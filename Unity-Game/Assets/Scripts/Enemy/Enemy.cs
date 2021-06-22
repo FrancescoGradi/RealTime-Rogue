@@ -31,15 +31,20 @@ public class Enemy : MonoBehaviour {
 
 
     private Item actualPotion;
+    private bool actualPotionActive;
 
     public GameObject healthPotionSprite;
+    public GameObject bonusPotionSprite;
     public HealthPotionCircleEffect healthPotionCircleEffect;
+    public Spikes spikes;
+
 
     private List<int> initialRandomHP = new List<int>{5, 10, 15, 20};
 
     void Start() {
         currentHealth = HP;
         healthBar.SetMaxHealth(HP);
+        actualPotionActive = false;
     }
 
     public void TakeDamage(int damage, float delay) {
@@ -64,6 +69,8 @@ public class Enemy : MonoBehaviour {
         if (healthBar.isActiveAndEnabled)
             healthBar.SetHealth(currentHealth);
 
+        actualPotionActive = false;
+
         ATK = 4;
         MANA = 3;
         DEF = 3;
@@ -82,6 +89,7 @@ public class Enemy : MonoBehaviour {
 
         actualPotion = null;
         healthPotionSprite.SetActive(false);
+        bonusPotionSprite.SetActive(false);
 
         animator.SetBool("attacking", false);
     }
@@ -124,20 +132,28 @@ public class Enemy : MonoBehaviour {
 
         if (this.actualPotion.GetComponent<HealthPotion>() != null) {
             healthPotionSprite.SetActive(true);
+        } else if (this.actualPotion.GetComponent<BonusPotion>() != null) {
+            bonusPotionSprite.SetActive(true);
         }
     }
 
-    public bool HasActualPotion() {
-        if (actualPotion != null) {
-            return true;
+    public float HasActualPotion() {
+
+        if (actualPotion == null)
+            return 0f;
+
+        if (actualPotion.GetComponent<HealthPotion>() != null && !actualPotionActive) {
+            return 1f;
+        } else if (actualPotion.GetComponent<BonusPotion>() != null && !actualPotionActive) {
+            return 2f;
         } else {
-            return false;
+            return 0f;
         }
     }
 
     public void DrinkPotion() {
 
-        if (actualPotion != null) {
+        if (actualPotion != null && !actualPotionActive) {
 
             if (actualPotion.GetComponent<HealthPotion>() != null) {
             
@@ -154,11 +170,36 @@ public class Enemy : MonoBehaviour {
                 
                 healthPotionSprite.SetActive(false);
                 HealthPotionAnimation();
+
+            } else if (actualPotion.GetComponent<BonusPotion>() != null) {
+
+                actualPotionActive = true;
+
+                int prevATK = ATK;
+                int prevMANA = MANA;
+                int prevDEF = DEF;
+
+                ATK += actualPotion.bonusATK;
+                MANA += actualPotion.bonusMANA;
+                DEF += actualPotion.bonusDEF;
+                speed += 2f;
+
+                Destroy(actualPotion.gameObject);
+
+                bonusPotionSprite.SetActive(false);
+                BonusPotionAnimation();
+
+                StartCoroutine(WaitBonusPotion(5f, prevATK, prevMANA, prevDEF));
             }
 
-        }
-        
-        actualPotion = null;
+
+        }        
+    }
+
+    private void BonusPotionAnimation() {
+
+        Spikes tmp = Instantiate(spikes, this.gameObject.transform.position, Quaternion.identity);
+        tmp.gameObject.transform.SetParent(this.gameObject.transform);
     }
 
     private void HealthPotionAnimation() {
@@ -170,6 +211,17 @@ public class Enemy : MonoBehaviour {
         tmp.gameObject.transform.SetParent(this.gameObject.transform);
     }
 
+    private IEnumerator WaitBonusPotion(float seconds, int prevATK, int prevMANA, int prevDEF) {
+
+        yield return new WaitForSeconds(seconds);
+
+        ATK = prevATK;
+        MANA = prevMANA;
+        DEF = prevDEF;
+        speed -= 2f;
+
+        actualPotionActive = false;
+    }
     
     private IEnumerator DamageWaiter(int damage, float seconds) {
         
