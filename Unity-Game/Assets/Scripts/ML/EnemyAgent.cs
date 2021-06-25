@@ -235,8 +235,8 @@ public class EnemyAgent : Agent {
         if (enemyMovement.playerLayer == 9 && Utility.GetRandomInt(0, 99) < randomActionPerc) {
             horizontal = Utility.GetRandomFloat(-1f, 1f);
             vertical = Utility.GetRandomFloat(-1f, 1f);
-            attack = Utility.GetRandomFloat(-1f, 1f);
-            drink = Utility.GetRandomFloat(-1f, 1f);
+            attack = -0.1f;
+            drink = -0.1f;
         }
         
         if (attack > 0) {
