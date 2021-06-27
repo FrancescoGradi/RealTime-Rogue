@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BonusPotion : Item
-{
-    public int statsBonus = 5;
+public class BonusPotion : Item {
 
     private void Start() {
         itemName = "Bonus Potion";

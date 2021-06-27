@@ -21924,12 +21924,6 @@ Transform:
   m_Father: {fileID: 1067332344}
   m_RootOrder: 253
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1553319231 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3950487509768505964, guid: 0c78014563475df4aba5353cfc7c2b92,
-    type: 3}
-  m_PrefabInstance: {fileID: 1766056844}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1555886321
 GameObject:
   m_ObjectHideFlags: 0
@@ -24499,12 +24493,12 @@ PrefabInstance:
     - target: {fileID: 3690188770420170103, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.672
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3690188770420170103, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3690188770456035536, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -24689,7 +24683,7 @@ PrefabInstance:
     - target: {fileID: 3690188771363026163, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3690188771363026172, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -24874,7 +24868,7 @@ PrefabInstance:
     - target: {fileID: 3950487509768505964, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3950913408580270075, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
@@ -25486,7 +25480,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1553319231}
+      objectReference: {fileID: 1766056860}
     - target: {fileID: 4761456093507030906, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: globalCellView
@@ -25531,7 +25525,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1553319231}
+      objectReference: {fileID: 1766056860}
     - target: {fileID: 4864752178589568663, guid: 0c78014563475df4aba5353cfc7c2b92,
         type: 3}
       propertyPath: fieldOfViewTargetAngle
@@ -25824,7 +25818,7 @@ MonoBehaviour:
     height: 0
     qualityLevel: 0
     timeScale: 1
-    targetFrameRate: 60
+    targetFrameRate: -1
   inferenceConfiguration:
     width: 1280
     height: 720
@@ -25931,7 +25925,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1766056844}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553319231}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1353ced0798b3911d8062c2e0a3edcd2, type: 3}

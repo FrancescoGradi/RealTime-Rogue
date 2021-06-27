@@ -80,8 +80,8 @@ public class PlayerMovement : MonoBehaviour {
 
         if (actualItem.GetComponent<BastardSword>() != null) {
 
-            itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetSword(actualItem.itemName);
+            itemsHub.CollectedItem(actualItem);
+            itemsHub.SetSword(actualItem);
 
             BastardSword weapon = actualItem.GetComponent<BastardSword>();
             player.SetWeapon(actualItem.name, weapon.bonusATK, weapon.material);
@@ -90,8 +90,8 @@ public class PlayerMovement : MonoBehaviour {
 
         } else if (actualItem.GetComponent<GoldenShield>() != null) {
 
-            itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetShield(actualItem.itemName);
+            itemsHub.CollectedItem(actualItem);
+            itemsHub.SetShield(actualItem);
 
             GoldenShield shield = actualItem.GetComponent<GoldenShield>();
             player.SetShield(actualItem.name, shield.bonusDEF, shield.material);
@@ -100,8 +100,8 @@ public class PlayerMovement : MonoBehaviour {
 
         } else if (actualItem.GetComponent<HealthPotion>() != null || actualItem.GetComponent<BonusPotion>() != null) {
             
-            itemsHub.CollectedItem(actualItem.itemName);
-            itemsHub.SetPotion(actualItem.itemName);
+            itemsHub.CollectedItem(actualItem);
+            itemsHub.SetPotion(actualItem);
 
             player.SetActualPotion(actualItem);
             actualItem.gameObject.SetActive(false);

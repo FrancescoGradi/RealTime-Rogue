@@ -46,16 +46,29 @@ public class ItemsHub : MonoBehaviour {
         
         actualPotionSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
 
+        Vector3 posSprite = actualSwordSprite.transform.position;
+        Destroy(actualSwordSprite);
 
-        SetSword("Long Sword");
-        SetShield("Wood Shield");
+        actualSwordSprite = Instantiate(longSwordSprite, posSprite, Quaternion.identity);
+        longSwordSprite.GetComponent<Sprite>().SetSpriteValue(6, "ATK");
+
+        actualSwordSprite.transform.SetParent(this.gameObject.transform);
+
+
+        posSprite = actualShieldSprite.transform.position;
+        Destroy(actualShieldSprite);
+
+        actualShieldSprite = Instantiate(woodShieldSprite, posSprite, Quaternion.identity);
+        woodShieldSprite.GetComponent<Sprite>().SetSpriteValue(2, "DEF");
+
+        actualShieldSprite.transform.SetParent(this.gameObject.transform);
     }
 
-    public void CollectedItem(string name) {
+    public void CollectedItem(Item item) {
 
         itemCanvas.gameObject.SetActive(true);
 
-        itemCollected.text = name + " collected!";
+        itemCollected.text = item.name + " collected!";
 
         StartCoroutine(Wait(3f));
     }
@@ -68,15 +81,17 @@ public class ItemsHub : MonoBehaviour {
         StartCoroutine(Wait(2f));
     }
 
-    public void SetSword(string name) {
+    public void SetSword(Item item) {
 
         Vector3 posSprite = actualSwordSprite.transform.position;
         Destroy(actualSwordSprite);
 
-        if (name == "Long Sword") {
+        if (item.name == "Long Sword") {
             actualSwordSprite = Instantiate(longSwordSprite, posSprite, Quaternion.identity);
-        } else if (name == "Bastard Sword") {
+            longSwordSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK, "ATK");
+        } else if (item.GetComponent<BastardSword>() != null) {
             actualSwordSprite = Instantiate(bastardSwordSprite, posSprite, Quaternion.identity);
+            bastardSwordSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK, "ATK");
         } else {
             actualSwordSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
         }
@@ -84,15 +99,17 @@ public class ItemsHub : MonoBehaviour {
         actualSwordSprite.transform.SetParent(this.gameObject.transform);
     }
 
-    public void SetShield(string name) {
+    public void SetShield(Item item) {
 
         Vector3 posSprite = actualShieldSprite.transform.position;
         Destroy(actualShieldSprite);
 
-        if (name == "Wood Shield") {
+        if (item.name == "Wood Shield") {
             actualShieldSprite = Instantiate(woodShieldSprite, posSprite, Quaternion.identity);
-        } else if (name == "Golden Shield") {
+            woodShieldSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusDEF, "DEF");
+        } else if (item.GetComponent<GoldenShield>() != null) {
             actualShieldSprite = Instantiate(goldenShieldSprite, posSprite, Quaternion.identity);
+            goldenShieldSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusDEF, "DEF");
         } else {
             actualShieldSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
         }
@@ -100,15 +117,17 @@ public class ItemsHub : MonoBehaviour {
         actualShieldSprite.transform.SetParent(this.gameObject.transform);
     }
 
-    public void SetPotion(string name) {
+    public void SetPotion(Item item) {
 
         Vector3 posSprite = actualPotionSprite.transform.position;
         Destroy(actualPotionSprite);
 
-        if (name == "Health Potion") {
+        if (item.GetComponent<HealthPotion>() != null) {
             actualPotionSprite = Instantiate(healthPotionSprite, posSprite, Quaternion.identity);
-        } else if (name == "Bonus Potion") {
+            healthPotionSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusHP, "HP");
+        } else if (item.GetComponent<BonusPotion>() != null) {
             actualPotionSprite = Instantiate(bonusPotionSprite, posSprite, Quaternion.identity);
+            bonusPotionSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK, "ALL");
         } else {
             actualPotionSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
         }

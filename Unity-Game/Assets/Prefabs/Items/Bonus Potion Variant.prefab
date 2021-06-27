@@ -27,10 +27,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bonus Potion
   bonusHP: 0
-  bonusATK: 0
-  bonusMANA: 0
-  bonusDEF: 0
-  statsBonus: 5
+  bonusATK: 5
+  bonusMANA: 5
+  bonusDEF: 5
 --- !u!1001 &7096820267612162359
 PrefabInstance:
   m_ObjectHideFlags: 0

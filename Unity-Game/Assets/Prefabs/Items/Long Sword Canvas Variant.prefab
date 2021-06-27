@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5277710780711984290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502563800674346293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdba89d3d84c6330acc88a7d737b06b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteValue: {fileID: 502563801814818440}
 --- !u!1001 &8628009082141076947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 8162122937990039782, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_Name
-      value: Long Sword Canvas
+      value: Long Sword Canvas Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8162122938305303879, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
@@ -136,37 +149,55 @@ PrefabInstance:
     - target: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_text
-      value: +6 ATK
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_fontSize
-      value: 22.05
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1c783f0cc635890aa93b0ce0871d2c, type: 3}
+--- !u!1 &502563800674346293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8162122937990039782, guid: ac1c783f0cc635890aa93b0ce0871d2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8628009082141076947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &502563801814818440 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8162122939131016027, guid: ac1c783f0cc635890aa93b0ce0871d2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8628009082141076947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
