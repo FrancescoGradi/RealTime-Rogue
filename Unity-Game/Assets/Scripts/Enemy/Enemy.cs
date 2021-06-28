@@ -150,6 +150,38 @@ public class Enemy : MonoBehaviour {
             return 0f;
         }
     }
+    public float HasActualHealthPotion() {
+
+        if (actualPotion == null)
+            return 0f;
+
+        if (actualPotion.GetComponent<HealthPotion>() != null && !actualPotionActive) {
+            return 1f;
+        } else {
+            return 0f;
+        }
+    }
+
+    public float HasActualBonusPotion() {
+
+        if (actualPotion == null)
+            return 0f;
+
+        if (actualPotion.GetComponent<BonusPotion>() != null && !actualPotionActive) {
+            return 1f;
+        } else {
+            return 0f;
+        }
+    }
+
+    public float HasPotionActive() {
+        
+        if (actualPotionActive) {
+            return 1f;
+        } else {
+            return 0f;
+        }
+    }
 
     public void DrinkPotion() {
 

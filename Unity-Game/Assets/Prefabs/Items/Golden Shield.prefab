@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2161362798396853350
+--- !u!1 &743041622132703717
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2158954759446586652}
-  - component: {fileID: 2129732952912497150}
-  - component: {fileID: 2138565703433628508}
-  - component: {fileID: 408477250025863132}
-  - component: {fileID: 8786397394935493027}
+  - component: {fileID: 740576327794876979}
+  - component: {fileID: 738101116695226089}
+  - component: {fileID: 728828024239921599}
+  - component: {fileID: 7317330999011703573}
+  - component: {fileID: 5548030960698655193}
   m_Layer: 10
-  m_Name: Bastard Sword
+  m_Name: Golden Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2158954759446586652
+--- !u!4 &740576327794876979
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2161362798396853350}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_GameObject: {fileID: 743041622132703717}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
-  - {fileID: 426819491273674475}
+  - {fileID: 6366127571820128440}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!33 &2129732952912497150
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!33 &738101116695226089
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2161362798396853350}
-  m_Mesh: {fileID: 4300000, guid: 8e748ab8b2b891145b67425cad73aebf, type: 3}
---- !u!23 &2138565703433628508
+  m_GameObject: {fileID: 743041622132703717}
+  m_Mesh: {fileID: 4300000, guid: 82d123ce4a1a7824bae34da0dd9e13f5, type: 3}
+--- !u!23 &728828024239921599
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2161362798396853350}
+  m_GameObject: {fileID: 743041622132703717}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -80,43 +80,43 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &408477250025863132
+--- !u!114 &7317330999011703573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2161362798396853350}
+  m_GameObject: {fileID: 743041622132703717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da7c3e78634a3a0592e8d28d1d21c33, type: 3}
+  m_Script: {fileID: 11500000, guid: 0527c0f0daa67ec32a7925234e37980a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Bastard Sword
+  itemName: Golden Shield
   bonusHP: 0
-  bonusATK: 10
+  bonusATK: 0
   bonusMANA: 0
-  bonusDEF: 0
+  bonusDEF: 6
   material: {fileID: 2100000, guid: 6acc71550c566ce42a8bedab0c3b42af, type: 2}
---- !u!65 &8786397394935493027
+--- !u!65 &5548030960698655193
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2161362798396853350}
+  m_GameObject: {fileID: 743041622132703717}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: -0.000000074505806, y: -0.51638997, z: -0.000000035390258}
---- !u!1001 &47513927714437814
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.1895183, y: 0, z: 0.05858835}
+--- !u!1001 &6709682806801390821
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2158954759446586652}
+    m_TransformParent: {fileID: 740576327794876979}
     m_Modifications:
     - target: {fileID: 379590698897896541, guid: 501446fbf21958ef98a395cb824062af,
         type: 3}
@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 379590698897896541, guid: 501446fbf21958ef98a395cb824062af,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.6
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 379590698897896541, guid: 501446fbf21958ef98a395cb824062af,
         type: 3}
@@ -228,11 +228,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bonus Item Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8303218183020154735, guid: 501446fbf21958ef98a395cb824062af,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303218183020154735, guid: 501446fbf21958ef98a395cb824062af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303218183020154735, guid: 501446fbf21958ef98a395cb824062af,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 501446fbf21958ef98a395cb824062af, type: 3}
---- !u!224 &426819491273674475 stripped
+--- !u!224 &6366127571820128440 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 379590698897896541, guid: 501446fbf21958ef98a395cb824062af,
     type: 3}
-  m_PrefabInstance: {fileID: 47513927714437814}
+  m_PrefabInstance: {fileID: 6709682806801390821}
   m_PrefabAsset: {fileID: 0}

@@ -25,6 +25,8 @@ public class RealTimeAcademy : Academy {
 		itemsWeights.Add(this.resetParameters["sword_frequency"]);
 		itemsWeights.Add(this.resetParameters["bonus_potion_frequency"]);
 
+		objectsGenerator.itemsWeights = itemsWeights;
+
 		objectsGenerator.SetMaxItems((int) this.resetParameters["max_items"]);
 		objectsGenerator.ResetPositions();
 		

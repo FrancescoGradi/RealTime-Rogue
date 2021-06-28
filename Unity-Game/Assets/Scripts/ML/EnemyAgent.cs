@@ -152,9 +152,11 @@ public class EnemyAgent : Agent {
 
         obs.Add(enemyMovement.IsInRange(enemyClass));
 
-        // Restituisce un float a seconda della pozione posseduta
+        // Restituisce un float booleano a seconda della pozione posseduta
 
-        obs.Add(enemy.HasActualPotion());
+        obs.Add(enemy.HasActualHealthPotion());
+        obs.Add(enemy.HasActualBonusPotion());
+        obs.Add(enemy.HasPotionActive());
 
         /*
         // STATS

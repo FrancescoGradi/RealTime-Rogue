@@ -61,9 +61,9 @@ public class ObjectsGenerator : MonoBehaviour {
 
         for (int i = 0; i < weights.Count; i++) {
             float weight = weights[i];
-            while (weight >= 0.045f) {
+            while (weight >= 0.025f) {
                 full_items.Add(itms[i]);
-                weight -= 0.05f;
+                weight -= 0.03f;
             }
         }
 

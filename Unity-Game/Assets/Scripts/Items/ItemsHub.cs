@@ -50,7 +50,7 @@ public class ItemsHub : MonoBehaviour {
         Destroy(actualSwordSprite);
 
         actualSwordSprite = Instantiate(longSwordSprite, posSprite, Quaternion.identity);
-        longSwordSprite.GetComponent<Sprite>().SetSpriteValue(6, "ATK");
+        longSwordSprite.GetComponent<Sprite>().SetSpriteValue(Player.instance.ATK + 6, "DMG");
 
         actualSwordSprite.transform.SetParent(this.gameObject.transform);
 
@@ -59,7 +59,7 @@ public class ItemsHub : MonoBehaviour {
         Destroy(actualShieldSprite);
 
         actualShieldSprite = Instantiate(woodShieldSprite, posSprite, Quaternion.identity);
-        woodShieldSprite.GetComponent<Sprite>().SetSpriteValue(2, "DEF");
+        woodShieldSprite.GetComponent<Sprite>().SetSpriteValue(Player.instance.DEF + 2, "AC");
 
         actualShieldSprite.transform.SetParent(this.gameObject.transform);
     }
@@ -87,11 +87,11 @@ public class ItemsHub : MonoBehaviour {
         Destroy(actualSwordSprite);
 
         if (item.name == "Long Sword") {
+            longSwordSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK + Player.instance.ATK, "DMG");
             actualSwordSprite = Instantiate(longSwordSprite, posSprite, Quaternion.identity);
-            longSwordSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK, "ATK");
         } else if (item.GetComponent<BastardSword>() != null) {
+            bastardSwordSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK + + Player.instance.ATK, "DMG");
             actualSwordSprite = Instantiate(bastardSwordSprite, posSprite, Quaternion.identity);
-            bastardSwordSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK, "ATK");
         } else {
             actualSwordSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
         }
@@ -106,10 +106,10 @@ public class ItemsHub : MonoBehaviour {
 
         if (item.name == "Wood Shield") {
             actualShieldSprite = Instantiate(woodShieldSprite, posSprite, Quaternion.identity);
-            woodShieldSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusDEF, "DEF");
+            woodShieldSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusDEF + Player.instance.DEF, "AC");
         } else if (item.GetComponent<GoldenShield>() != null) {
+            goldenShieldSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusDEF + Player.instance.DEF, "AC");
             actualShieldSprite = Instantiate(goldenShieldSprite, posSprite, Quaternion.identity);
-            goldenShieldSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusDEF, "DEF");
         } else {
             actualShieldSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
         }
@@ -123,11 +123,11 @@ public class ItemsHub : MonoBehaviour {
         Destroy(actualPotionSprite);
 
         if (item.GetComponent<HealthPotion>() != null) {
-            actualPotionSprite = Instantiate(healthPotionSprite, posSprite, Quaternion.identity);
             healthPotionSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusHP, "HP");
+            actualPotionSprite = Instantiate(healthPotionSprite, posSprite, Quaternion.identity);
         } else if (item.GetComponent<BonusPotion>() != null) {
-            actualPotionSprite = Instantiate(bonusPotionSprite, posSprite, Quaternion.identity);
             bonusPotionSprite.GetComponent<Sprite>().SetSpriteValue(item.bonusATK, "ALL");
+            actualPotionSprite = Instantiate(bonusPotionSprite, posSprite, Quaternion.identity);
         } else {
             actualPotionSprite = Instantiate(emptySprite, posSprite, Quaternion.identity);
         }
