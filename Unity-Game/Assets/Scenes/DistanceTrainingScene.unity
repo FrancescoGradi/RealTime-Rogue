@@ -195,6 +195,8 @@ MonoBehaviour:
     type: 3}
   bonusPotionSprite: {fileID: 8347977211556953819, guid: 07dc5fc8187cd50a2895116157263570,
     type: 3}
+  fireBallSprite: {fileID: 8162122937990039782, guid: ee6f3e9ee4bd62d42ad44644e818c53c,
+    type: 3}
   emptySprite: {fileID: 8162122937990039782, guid: ac1c783f0cc635890aa93b0ce0871d2c,
     type: 3}
   itemCollected: {fileID: 1204137168}
@@ -338,7 +340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &691888002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +498,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1260599101}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1601747363}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1353ced0798b3911d8062c2e0a3edcd2, type: 3}
@@ -726,7 +728,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1260599105}
+      objectReference: {fileID: 1601747363}
     - target: {fileID: 2494475743145393583, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
       propertyPath: animator
@@ -771,7 +773,7 @@ PrefabInstance:
     - target: {fileID: 3950487509768505964, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3950913408580270075, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
@@ -817,7 +819,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1260599105}
+      objectReference: {fileID: 1601747363}
     - target: {fileID: 4761456091764843500, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -941,7 +943,7 @@ PrefabInstance:
     - target: {fileID: 6314137156004547551, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
       propertyPath: trainingConfiguration.targetFrameRate
-      value: -1
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7405466827517357117, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
@@ -997,12 +999,12 @@ PrefabInstance:
     - target: {fileID: 8785244165057629214, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.672
       objectReference: {fileID: 0}
     - target: {fileID: 8785244165057629214, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785244165154412545, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
@@ -1053,7 +1055,7 @@ PrefabInstance:
     - target: {fileID: 8785244165998421402, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8800546106296385417, guid: d32cc35de9f21f5eba4acb948acfdd69,
         type: 3}
@@ -1378,6 +1380,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab7594ea4e37f4e2486e1a1310196764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1601747363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3950487509768505964, guid: d32cc35de9f21f5eba4acb948acfdd69,
+    type: 3}
+  m_PrefabInstance: {fileID: 1260599101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1738050602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1439,12 +1447,12 @@ PrefabInstance:
     - target: {fileID: 5603306239417453728, guid: 989f7cf934d342523865e8347ca8249c,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.672
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5603306239417453728, guid: 989f7cf934d342523865e8347ca8249c,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5603306239907017482, guid: 989f7cf934d342523865e8347ca8249c,
         type: 3}

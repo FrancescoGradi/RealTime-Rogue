@@ -33,6 +33,11 @@ public class Enemy : MonoBehaviour {
     private Item actualPotion;
     private bool actualPotionActive;
 
+    public Sprite swordSprite;
+    public Sprite bastardSwordSprite;
+    public Sprite woodShieldSprite;
+    public Sprite goldenShieldSprite;
+
     public GameObject healthPotionSprite;
     public GameObject bonusPotionSprite;
     public HealthPotionCircleEffect healthPotionCircleEffect;
@@ -45,6 +50,7 @@ public class Enemy : MonoBehaviour {
         currentHealth = HP;
         healthBar.SetMaxHealth(HP);
         actualPotionActive = false;
+        ResetStatsAndItems(false, 20, 6f);
     }
 
     public void TakeDamage(int damage, float delay) {
@@ -81,11 +87,21 @@ public class Enemy : MonoBehaviour {
         actualWeaponDamage = 6;
         if (sword != null)
             sword.material = initialSwordMaterial;
+        
+        if (swordSprite != null && bastardSwordSprite != null) {
+            bastardSwordSprite.gameObject.SetActive(false);
+            swordSprite.gameObject.SetActive(true);
+            swordSprite.SetSpriteValue(actualWeaponDamage + ATK, "");
+        }
 
         shieldName = "Wood Shield";
         actualShieldDef = 2;
         if (shield != null)
             shield.material = initialShieldMaterial;
+
+        goldenShieldSprite.gameObject.SetActive(false);
+        woodShieldSprite.gameObject.SetActive(true);
+        woodShieldSprite.SetSpriteValue(actualShieldDef + DEF, "");
 
         actualPotion = null;
         healthPotionSprite.SetActive(false);
@@ -111,6 +127,12 @@ public class Enemy : MonoBehaviour {
         this.weaponName = weaponName;
         this.actualWeaponDamage = bonusATK;
 
+        if (swordSprite != null && bastardSwordSprite != null) {
+            swordSprite.gameObject.SetActive(false);
+            bastardSwordSprite.gameObject.SetActive(true);
+            bastardSwordSprite.SetSpriteValue(actualWeaponDamage + ATK, "");
+        }
+
         if (sword != null)
             sword.material = material;
     }
@@ -118,6 +140,10 @@ public class Enemy : MonoBehaviour {
     public void SetShield(string shieldName, int bonusDEF, Material material) {
         this.shieldName = shieldName;
         this.actualShieldDef = bonusDEF;
+
+        woodShieldSprite.gameObject.SetActive(false);
+        goldenShieldSprite.gameObject.SetActive(true);
+        goldenShieldSprite.SetSpriteValue(actualShieldDef + DEF, "");
 
         if (shield != null)
             shield.material = material;

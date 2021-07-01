@@ -10,6 +10,7 @@ public class ItemsHub : MonoBehaviour {
     public GameObject goldenShieldSprite;
     public GameObject healthPotionSprite;
     public GameObject bonusPotionSprite;
+    public GameObject fireBallSprite;
     public GameObject emptySprite;
 
     public TMP_Text itemCollected;
@@ -18,6 +19,7 @@ public class ItemsHub : MonoBehaviour {
     private GameObject actualSwordSprite;
     private GameObject actualShieldSprite;
     private GameObject actualPotionSprite;
+    private GameObject actualfireBallSprite;
 
     void Start() {
 
@@ -29,11 +31,20 @@ public class ItemsHub : MonoBehaviour {
         actualShieldSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
 
 
+        actualfireBallSprite = Instantiate(emptySprite);
+        actualfireBallSprite.transform.SetParent(this.gameObject.transform);
+
+        pos = this.gameObject.transform.position;
+        pos.x -= 175;
+        
+        actualfireBallSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
+
+
         actualSwordSprite = Instantiate(emptySprite);
         actualSwordSprite.transform.SetParent(this.gameObject.transform);
 
         pos = this.gameObject.transform.position;
-        pos.x -= 175;
+        pos.x -= 350;
         
         actualSwordSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
 
@@ -42,9 +53,10 @@ public class ItemsHub : MonoBehaviour {
         actualPotionSprite.transform.SetParent(this.gameObject.transform);
 
         pos = this.gameObject.transform.position;
-        pos.x -= 350;
+        pos.x -= 525;
         
         actualPotionSprite.transform.SetPositionAndRotation(pos, Quaternion.identity);
+
 
         Vector3 posSprite = actualSwordSprite.transform.position;
         Destroy(actualSwordSprite);
@@ -55,11 +67,20 @@ public class ItemsHub : MonoBehaviour {
         actualSwordSprite.transform.SetParent(this.gameObject.transform);
 
 
+        posSprite = actualfireBallSprite.transform.position;
+        Destroy(actualfireBallSprite);
+
+        fireBallSprite.GetComponent<Sprite>().SetSpriteValue(Player.instance.MANA, "MAG");
+        actualfireBallSprite = Instantiate(fireBallSprite, posSprite, Quaternion.identity);
+
+        actualfireBallSprite.transform.SetParent(this.gameObject.transform);
+
+
         posSprite = actualShieldSprite.transform.position;
         Destroy(actualShieldSprite);
 
-        actualShieldSprite = Instantiate(woodShieldSprite, posSprite, Quaternion.identity);
         woodShieldSprite.GetComponent<Sprite>().SetSpriteValue(Player.instance.DEF + 2, "AC");
+        actualShieldSprite = Instantiate(woodShieldSprite, posSprite, Quaternion.identity);
 
         actualShieldSprite.transform.SetParent(this.gameObject.transform);
     }

@@ -159,13 +159,13 @@
      <Compile Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
      <Compile Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
      <Compile Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
-     <Compile Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
      <Compile Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
      <Compile Include="Assets\OtherAssets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\ConGUI.cs" />
      <Compile Include="Assets\OtherAssets\KY_effects\Script\Lighting.cs" />
      <Compile Include="Assets\OtherAssets\Mixamo\Magic Pack\Demo\CameraScroll.cs" />
+     <Compile Include="Assets\Scripts\Effects\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\Scripts\Effects\ElectricBall.cs" />
      <Compile Include="Assets\Scripts\Effects\Explosion.cs" />
      <Compile Include="Assets\Scripts\Effects\FireBall.cs" />
