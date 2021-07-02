@@ -22,7 +22,7 @@ public class Player : MonoBehaviour {
     public ItemsHub itemsHub;
 
     public int HP = 50;
-    public int ATK = 3;
+    public int ATK = 4;
     public int MANA = 3;
     public int DEF = 3;
     

@@ -58,7 +58,7 @@ public class Target : MonoBehaviour {
         HP = maxHP;
         currentHealth = HP;
         healthBar.SetMaxHealth(currentHealth);
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth, currentHealth);
 
         direction = new Vector3(0, 0, 0);
         isDown = false;
@@ -173,7 +173,7 @@ public class Target : MonoBehaviour {
 
         currentHealth -= damage;
 
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth, -damage);
 
         if (!isDown && currentHealth <= 0) {
             isDown = true;

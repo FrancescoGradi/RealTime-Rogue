@@ -336,6 +336,21 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/home/fra/Unity/Hub/Editor/2018.4.31f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="System.IO.Abstractions">
+ <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/ML-Agents/Plugins/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Abstractions.TestingHelpers">
+ <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="TensorFlowSharp">
+ <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/ML-Agents/Plugins/Computer/TensorFlowSharp.dll</HintPath>
+ </Reference>
  <Reference Include="System.Interactive.Async">
  <HintPath>/home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
  </Reference>

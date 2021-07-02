@@ -50,18 +50,20 @@ public class Enemy : MonoBehaviour {
         currentHealth = HP;
         healthBar.SetMaxHealth(HP);
         actualPotionActive = false;
-        ResetStatsAndItems(false, 20, 6f);
+        // ResetStatsAndItems(false, 20, 6f);
     }
 
     public void TakeDamage(int damage, float delay) {
-        
-        // Riduzione del danno per lo scudo
-        damage -= (DEF + actualShieldDef);
 
-        if (damage < 0)
-            damage = 0;
+        if (!animator.GetBool("dead")) {
+            // Riduzione del danno per lo scudo
+            damage -= (DEF + actualShieldDef);
 
-        StartCoroutine(DamageWaiter(damage, delay));
+            if (damage < 0)
+                damage = 0;
+
+            StartCoroutine(DamageWaiter(damage, delay));
+        }
     }
 
     public void ResetStatsAndItems(bool randomHealth, int health, float speed) {
@@ -73,7 +75,7 @@ public class Enemy : MonoBehaviour {
             currentHealth = health;
 
         if (healthBar.isActiveAndEnabled)
-            healthBar.SetHealth(currentHealth);
+            healthBar.SetHealth(currentHealth, currentHealth);
 
         actualPotionActive = false;
 
@@ -113,14 +115,13 @@ public class Enemy : MonoBehaviour {
     private void Die() {
 
         animator.SetBool("dead", true);
-        healthBar.gameObject.SetActive(false);
 
         GetComponent<Collider>().enabled = false;
         this.enabled = false;
 
         FindObjectOfType<EnemyGenerator>().EnemyDown();
 
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 2f);
     }
 
     public void SetWeapon(string weaponName, int bonusATK, Material material) {
@@ -221,7 +222,7 @@ public class Enemy : MonoBehaviour {
                     currentHealth += actualPotion.bonusHP;
                     if (currentHealth > HP)
                         currentHealth = HP;
-                    healthBar.SetHealth(currentHealth);
+                    healthBar.SetHealth(currentHealth, actualPotion.bonusHP);
                 }
 
                 Destroy(actualPotion.gameObject);
@@ -249,7 +250,6 @@ public class Enemy : MonoBehaviour {
 
                 StartCoroutine(WaitBonusPotion(5f, prevATK, prevMANA, prevDEF));
             }
-
 
         }        
     }
@@ -287,11 +287,13 @@ public class Enemy : MonoBehaviour {
 
         currentHealth -= damage;
 
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth, -damage);
 
         if (currentHealth <= 0) {
-            GetComponent<EnemyAgent>().PlayerDown();
-            // Die();
+            if (!this.GetComponent<EnemyMovement>().evaluate)
+                GetComponent<EnemyAgent>().PlayerDown();
+            else
+                Die();
         }
     }
 }

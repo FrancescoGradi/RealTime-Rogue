@@ -14,10 +14,11 @@ public class EnemyHealthBar : MonoBehaviour {
         slider.value = maxValue;
     }
 
-    public void SetHealth(int health) {
+    public void SetHealth(int health, int damage) {
         
         damages.gameObject.SetActive(true);
-        damages.text = (- (slider.value - health)).ToString();
+        // damages.text = (- (slider.value - health)).ToString();
+        damages.text = (damage).ToString();
         StartCoroutine(RemoveAfterSeconds(0.5f, damages.gameObject));
 
         slider.value = health;
@@ -28,4 +29,5 @@ public class EnemyHealthBar : MonoBehaviour {
         yield return new WaitForSeconds(seconds);
         gameObject.SetActive(false);
     }
+
 }

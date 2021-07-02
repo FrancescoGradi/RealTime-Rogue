@@ -21,10 +21,14 @@ public class EnemyAgent : Agent {
     public float raycastMaxDistance = 8f;
     public float rayMinDistance = 1f;
 
+    public CustomBrain customBrain;
+
     private Enemy enemy;
     private EnemyMovement enemyMovement;
     private EnemyCombat enemyCombat;
     public GameObject actualRoom;
+
+    public List<float> obs;
 
     void Start() {
         enemy = GetComponent<Enemy>();
@@ -42,7 +46,7 @@ public class EnemyAgent : Agent {
 
     public override void CollectObservations() {
         
-        List<float> obs = new List<float>();
+        obs = new List<float>();
 
         /*
 
@@ -213,7 +217,8 @@ public class EnemyAgent : Agent {
         obs.Add((Vector3.SignedAngle(enemy.gameObject.transform.forward, new Vector3(0, 0, 1), Vector3.up)) / 180f);
         */
 
-        AddVectorObs(obs);
+        if (!enemyMovement.evaluate)
+            AddVectorObs(obs);
     }
 
     // Caso vettore delle azioni CONTINUO
@@ -324,6 +329,14 @@ public class EnemyAgent : Agent {
         }
 
         return itemsVectors;
+    }
+
+    public void Evaluate() {
+
+        CollectObservations();
+        float[] actions = customBrain.getDecision(obs);
+
+        AgentAction(actions, "");
     }
 
     /*

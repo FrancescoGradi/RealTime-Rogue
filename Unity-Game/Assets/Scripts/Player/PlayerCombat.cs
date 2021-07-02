@@ -59,9 +59,11 @@ public class PlayerCombat : MonoBehaviour {
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
                 this.gameObject.transform.Rotate(0, -angle, 0);
                 firstEnemy = false;
+
+                enemy.GetComponent<Enemy>().TakeDamage(player.actualWeaponDamage + player.ATK, 0.3f);
+                StartCoroutine(HitEffect(enemy.gameObject.transform.position, 0.3f));
             }
-            enemy.GetComponent<Enemy>().TakeDamage(player.actualWeaponDamage + player.ATK, 0.3f);
-            StartCoroutine(HitEffect(enemy.gameObject.transform.position, 0.3f));
+            
         }
     }
     private void SpecialAttack() {

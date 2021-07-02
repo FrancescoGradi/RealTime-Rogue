@@ -10,30 +10,35 @@ public class RealTimeAcademy : Academy {
 	public ObjectsGenerator objectsGenerator;
 
 	public float range = 10;
+
+	public bool evaluation;
+
 	private float epsilon = 4f;
 
 	private void Start() {
 				
-		AcademyReset();
+		// AcademyReset();
 	}
 
   	public override void AcademyReset() {
-		
-		List<float> itemsWeights = new List<float> {};
-		itemsWeights.Add(this.resetParameters["health_potion_frequency"]);
-		itemsWeights.Add(this.resetParameters["shield_frequency"]);
-		itemsWeights.Add(this.resetParameters["sword_frequency"]);
-		itemsWeights.Add(this.resetParameters["bonus_potion_frequency"]);
 
-		objectsGenerator.itemsWeights = itemsWeights;
+		if (!evaluation) {
+			List<float> itemsWeights = new List<float> {};
+			itemsWeights.Add(this.resetParameters["health_potion_frequency"]);
+			itemsWeights.Add(this.resetParameters["shield_frequency"]);
+			itemsWeights.Add(this.resetParameters["sword_frequency"]);
+			itemsWeights.Add(this.resetParameters["bonus_potion_frequency"]);
 
-		objectsGenerator.SetMaxItems((int) this.resetParameters["max_items"]);
-		objectsGenerator.ResetPositions();
-		
-		range = this.resetParameters["spawn_range"];
+			objectsGenerator.itemsWeights = itemsWeights;
 
-		AgentReset();
-		TargetReset();
+			objectsGenerator.SetMaxItems((int) this.resetParameters["max_items"]);
+			objectsGenerator.ResetPositions();
+			
+			range = this.resetParameters["spawn_range"];
+
+			AgentReset();
+			TargetReset();
+		}
 	}
 
 	public Vector3 GetRandomPosInRange(GameObject otherObject, float posY) {

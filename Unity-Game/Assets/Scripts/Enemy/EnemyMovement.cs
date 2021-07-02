@@ -28,11 +28,14 @@ public class EnemyMovement : MonoBehaviour {
 
     public float fieldOfViewTargetAngle = 60f;
 
+    public bool evaluate = true;
+
     private Vector3 direction = new Vector3(0, 0, 0);
     private int count = 0;
     public int updateRate = 20;
     private float turnSmoothVelocity;
     private float maxDistance = 10;
+    private bool started = true;
 
 
     void Start() {
@@ -41,15 +44,25 @@ public class EnemyMovement : MonoBehaviour {
         animator = GetComponent<Animator>();
         agent = GetComponent<EnemyAgent>();
         enemy = GetComponent<Enemy>();
+
+
+        if (evaluate) {
+            started = false;
+            StartCoroutine(StartWaiter(1.5f));
+        }
     }
 
     private void FixedUpdate() {
         
-        if (!animator.GetBool("attacking")) {
+        if (!animator.GetBool("attacking") && !animator.GetBool("dead") && started) {
 
             count += 1;
             if (count == updateRate || count > 1000) {
-                agent.RequestDecision();
+                if (evaluate) {
+                    agent.Evaluate();
+                } else {
+                    agent.RequestDecision();
+                }
                 count = 0;
             }
             
@@ -188,6 +201,12 @@ public class EnemyMovement : MonoBehaviour {
         }
 
         return 0f;
+    }
+
+    private IEnumerator StartWaiter(float seconds) {
+        
+        yield return new WaitForSecondsRealtime(seconds);
+        started = true;
     }
 
     private void DrawRayColor(Vector3 pos, Vector3 direction, Color color) {

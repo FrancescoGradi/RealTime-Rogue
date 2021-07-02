@@ -72,8 +72,8 @@ public class LocalCellView : MonoBehaviour {
 
     private void DrawX(Vector3 pos, Color color) {
         if (playerLayer == 11) {
-            Debug.DrawLine(new Vector3(pos.x + 0.5f, pos.y, pos.z), new Vector3(pos.x - 0.5f, pos.y, pos.z), color, Time.fixedDeltaTime * 5);
-            Debug.DrawLine(new Vector3(pos.x, pos.y, pos.z + 0.5f), new Vector3(pos.x, pos.y, pos.z - 0.5f), color, Time.fixedDeltaTime * 5);
+            Debug.DrawLine(new Vector3(pos.x + 0.5f, pos.y, pos.z), new Vector3(pos.x - 0.5f, pos.y, pos.z), color, Time.fixedDeltaTime * 10);
+            Debug.DrawLine(new Vector3(pos.x, pos.y, pos.z + 0.5f), new Vector3(pos.x, pos.y, pos.z - 0.5f), color, Time.fixedDeltaTime * 10);
         }
     }   
 }
