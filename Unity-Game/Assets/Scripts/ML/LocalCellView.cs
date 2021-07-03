@@ -45,7 +45,7 @@ public class LocalCellView : MonoBehaviour {
                         }
                     } else if (hit.transform.gameObject.layer == enemyLayer) {
                         DrawX(cellSpawnPoint.transform.position, Color.gray);
-                        localCellView.Add(3);
+                        localCellView.Add(1);
                     } else if (hit.transform.gameObject.layer == playerLayer) {
                         DrawX(cellSpawnPoint.transform.position, Color.red);
                         localCellView.Add(2);

@@ -48,7 +48,7 @@ public class EnemyMovement : MonoBehaviour {
 
         if (evaluate) {
             started = false;
-            StartCoroutine(StartWaiter(1.5f));
+            StartCoroutine(StartWaiter(0.5f));
         }
     }
 

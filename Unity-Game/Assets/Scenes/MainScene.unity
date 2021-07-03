@@ -2428,7 +2428,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748237166}
-  m_LocalRotation: {x: 0.17736194, y: 0.006072253, z: -0.0039954334, w: 0.9841189}
+  m_LocalRotation: {x: 0.1773619, y: 0.006072253, z: -0.0039954036, w: 0.9841189}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3939,7 +3939,7 @@ MonoBehaviour:
     type: 3}
   bonusPotionSprite: {fileID: 8347977211556953819, guid: 07dc5fc8187cd50a2895116157263570,
     type: 3}
-  fireBallSprite: {fileID: 8162122937990039782, guid: ee6f3e9ee4bd62d42ad44644e818c53c,
+  fireBallSprite: {fileID: 8162122937990039782, guid: 2a7cae51330054b44a1c3f4d81de42f8,
     type: 3}
   emptySprite: {fileID: 8162122937990039782, guid: ac1c783f0cc635890aa93b0ce0871d2c,
     type: 3}
@@ -6613,7 +6613,7 @@ PrefabInstance:
     - target: {fileID: 8812534323780265853, guid: 72fc4217cc56fb458b516d13a88e3a1d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3586105
+      value: -0.35861048
       objectReference: {fileID: 0}
     - target: {fileID: 8812534323780265853, guid: 72fc4217cc56fb458b516d13a88e3a1d,
         type: 3}

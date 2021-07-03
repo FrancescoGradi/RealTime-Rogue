@@ -37,6 +37,7 @@ public class Enemy : MonoBehaviour {
     public Sprite bastardSwordSprite;
     public Sprite woodShieldSprite;
     public Sprite goldenShieldSprite;
+    public Sprite electricBallSprite;
 
     public GameObject healthPotionSprite;
     public GameObject bonusPotionSprite;
@@ -50,6 +51,22 @@ public class Enemy : MonoBehaviour {
         currentHealth = HP;
         healthBar.SetMaxHealth(HP);
         actualPotionActive = false;
+
+        if (swordSprite != null && bastardSwordSprite != null) {
+            bastardSwordSprite.gameObject.SetActive(false);
+            swordSprite.gameObject.SetActive(true);
+            swordSprite.SetSpriteValue(actualWeaponDamage + ATK, "");
+        }
+
+        if (electricBallSprite != null) {
+            electricBallSprite.gameObject.SetActive(true);
+            electricBallSprite.SetSpriteValue(MANA + 5, "");
+        }
+
+        goldenShieldSprite.gameObject.SetActive(false);
+        woodShieldSprite.gameObject.SetActive(true);
+        woodShieldSprite.SetSpriteValue(actualShieldDef + DEF, "");
+
         // ResetStatsAndItems(false, 20, 6f);
     }
 

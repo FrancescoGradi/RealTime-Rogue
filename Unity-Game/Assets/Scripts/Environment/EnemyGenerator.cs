@@ -9,7 +9,8 @@ public class EnemyGenerator : MonoBehaviour {
 
     public GameObject room;
     public LocalCellView localCellView;
-    public CustomBrain agentBrain;
+    public CustomBrain warriorBrain;
+    public CustomBrain wizardBrain;
 
     public int n_enemies = 2;
 
@@ -22,10 +23,17 @@ public class EnemyGenerator : MonoBehaviour {
 
         for (int i = 0; i < n_enemies; i++) {
             GameObject enemy = Utility.GetRandomObject(enemies);
-            enemy.GetComponent<EnemyAgent>().actualRoom = room;
-            enemy.GetComponent<EnemyAgent>().localCellView = localCellView;
-            enemy.GetComponent<EnemyAgent>().customBrain = agentBrain;
-            enemy.GetComponent<EnemyAgent>().target = Player.instance.gameObject;
+            EnemyAgent agent = enemy.GetComponent<EnemyAgent>();
+
+            agent.actualRoom = room;
+            agent.localCellView = localCellView;
+            agent.target = Player.instance.gameObject;
+
+            if (agent.enemyClass == 0) {
+                agent.customBrain = warriorBrain;
+            } else {
+                agent.customBrain = wizardBrain;
+            }
 
             enemy.GetComponent<EnemyMovement>().target = Player.instance.gameObject;
 

@@ -67,7 +67,10 @@ public class EnemyCombat : MonoBehaviour {
         animator.SetTrigger("magic");
         animator.SetBool("attacking", true);
 
-        StartCoroutine(MagicWaiter(0.5f));
+        if (enemyMovement.evaluate)
+            StartCoroutine(MagicWaiter(0.8f));
+        else
+            StartCoroutine(MagicWaiter(0.5f));
     }
 
     private IEnumerator AttackWaiter(float seconds) {

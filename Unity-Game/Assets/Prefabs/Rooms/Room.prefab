@@ -197,6 +197,61 @@ Transform:
   m_Father: {fileID: 570442602045777137}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &338783528273524905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5527214261295465609}
+  - component: {fileID: 691357986570500487}
+  m_Layer: 0
+  m_Name: WizardBrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5527214261295465609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338783528273524905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1292775656335414610}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &691357986570500487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338783528273524905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c6f0274912519f11ae0da183c9f621c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelName: {fileID: 4900000, guid: 8c22a4469c252e4de9d3142921e25dbb, type: 3}
+  actionMinValues:
+  - -1
+  - -1
+  - -1
+  - -1
+  actionMaxValues:
+  - 1
+  - 1
+  - 1
+  - 1
+  actionSize: 4
 --- !u!1 &449534859040318992
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6640071019865832741}
+  - {fileID: 5527214261295465609}
   m_Father: {fileID: 5733514176771392663}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3916,7 +3972,7 @@ GameObject:
   - component: {fileID: 6640071019865832741}
   - component: {fileID: 5952346977875613598}
   m_Layer: 0
-  m_Name: CustomBrain
+  m_Name: WarriorBrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4281,6 +4337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 8954920629681498401, guid: e4ea050649bcd36b8a9fdbb2cef5628d, type: 3}
+  - {fileID: 8954920629681498401, guid: 49c018aeda9d56f2ca1216d97cc2e99e, type: 3}
   spawnPoints:
   - {fileID: 8996426538580148219}
   - {fileID: 6856003534875909723}
@@ -4297,7 +4354,8 @@ MonoBehaviour:
   - {fileID: 5883458014946729981}
   room: {fileID: 6615235485902057171}
   localCellView: {fileID: 6904081603609488655}
-  agentBrain: {fileID: 5952346977875613598}
+  warriorBrain: {fileID: 5952346977875613598}
+  wizardBrain: {fileID: 691357986570500487}
   n_enemies: 2
 --- !u!1 &7415670560979459292
 GameObject:
@@ -6246,15 +6304,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e28b34a491d1b964a8f7abc908c7db72, type: 3}
---- !u!4 &1878244541425695584 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3261374397563599542, guid: e28b34a491d1b964a8f7abc908c7db72,
-    type: 3}
-  m_PrefabInstance: {fileID: 3986362736025682390}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1878244541425329984 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3261374397563496086, guid: e28b34a491d1b964a8f7abc908c7db72,
+    type: 3}
+  m_PrefabInstance: {fileID: 3986362736025682390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1878244541425695584 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3261374397563599542, guid: e28b34a491d1b964a8f7abc908c7db72,
     type: 3}
   m_PrefabInstance: {fileID: 3986362736025682390}
   m_PrefabAsset: {fileID: 0}
