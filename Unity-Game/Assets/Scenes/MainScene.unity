@@ -820,12 +820,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186612102}
   m_CullTransparentMesh: 0
---- !u!4 &231811083 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2357733556035204903, guid: c6756015f0021a3229125b72767f5e69,
-    type: 3}
-  m_PrefabInstance: {fileID: 3533752937965622635}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &304850804
 GameObject:
   m_ObjectHideFlags: 3
@@ -2428,7 +2422,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748237166}
-  m_LocalRotation: {x: 0.1773619, y: 0.006072253, z: -0.0039954036, w: 0.9841189}
+  m_LocalRotation: {x: 0.17736194, y: 0.006072253, z: -0.0039954334, w: 0.9841189}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3357,7 +3351,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 3533752937965622635}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275339076}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1353ced0798b3911d8062c2e0a3edcd2, type: 3}
@@ -4292,41 +4286,6 @@ MonoBehaviour:
   MANA: {fileID: 1169394443}
   DEF: {fileID: 25476734}
   SPEED: {fileID: 931225882}
---- !u!1 &1275339076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3534459470265572019, guid: c6756015f0021a3229125b72767f5e69,
-    type: 3}
-  m_PrefabInstance: {fileID: 3533752937965622635}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1275339077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275339076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8e373f70441bbdd680a2e9eba14ed3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1275339082}
-  attackPoint: {fileID: 231811083}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 512
-  player: {fileID: 885092943}
-  fireball: {fileID: 1000010823978654, guid: 3228a22491941734bb83ad691d17fcb9, type: 3}
-  hitEffect: {fileID: 100004, guid: d6adffd19900fee1babd6149e8e13d5f, type: 3}
-  assistedFireBallAngle: 45
-  assistedRange: 15
-  assistedDistance: 3
---- !u!95 &1275339082 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3485452824646687543, guid: c6756015f0021a3229125b72767f5e69,
-    type: 3}
-  m_PrefabInstance: {fileID: 3533752937965622635}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1340022623
 GameObject:
   m_ObjectHideFlags: 0
@@ -6245,8 +6204,7 @@ PrefabInstance:
       propertyPath: m_Height
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3533752938707969827, guid: c6756015f0021a3229125b72767f5e69, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6756015f0021a3229125b72767f5e69, type: 3}
 --- !u!1001 &5174817882152655219
 PrefabInstance:
@@ -6613,7 +6571,7 @@ PrefabInstance:
     - target: {fileID: 8812534323780265853, guid: 72fc4217cc56fb458b516d13a88e3a1d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.35861048
+      value: -0.3586105
       objectReference: {fileID: 0}
     - target: {fileID: 8812534323780265853, guid: 72fc4217cc56fb458b516d13a88e3a1d,
         type: 3}

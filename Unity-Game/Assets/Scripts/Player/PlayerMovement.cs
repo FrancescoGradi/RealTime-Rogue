@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float turnSmoothTime = 0.2f;
     public float gravity = 20.0f;
+    public float sprintDelay = 2f;
 
     private float turnSmoothVelocity;
     private float horizontal = 0f;
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
                 if (smokeEffect != null)
                     Instantiate(smokeEffect, this.gameObject.transform.position, Quaternion.identity);
 
-                nextSprintTime = Time.time + 1f;
+                nextSprintTime = Time.time + sprintDelay;
             }
 
             animator.SetInteger("running", 1);
@@ -66,6 +67,7 @@ public class PlayerMovement : MonoBehaviour {
 
         Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
         characterController.Move(moveDir.normalized * player.speed * Time.fixedDeltaTime);
+        player.gameObject.transform.position = new Vector3(player.gameObject.transform.position.x, 0f, player.gameObject.transform.position.z);
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {

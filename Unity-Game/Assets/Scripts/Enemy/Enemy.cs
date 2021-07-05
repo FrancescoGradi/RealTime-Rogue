@@ -307,10 +307,11 @@ public class Enemy : MonoBehaviour {
         healthBar.SetHealth(currentHealth, -damage);
 
         if (currentHealth <= 0) {
-            if (!this.GetComponent<EnemyMovement>().evaluate)
+            if (!this.GetComponent<EnemyMovement>().evaluate){
                 GetComponent<EnemyAgent>().PlayerDown();
-            else
+            } else {
                 Die();
+            }
         }
     }
 }

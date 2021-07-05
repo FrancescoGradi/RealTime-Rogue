@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 8162122937990039780}
   - component: {fileID: 1574844216716503968}
   m_Layer: 5
-  m_Name: FireBall Canvas
+  m_Name: Electric Ball Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: '+8 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b6f5c46a0570fbbf9f1182540fa240f, type: 2}
   m_sharedMaterial: {fileID: 21612451701066576, guid: 4b6f5c46a0570fbbf9f1182540fa240f,

@@ -19,21 +19,23 @@ public class PlayerCombat : MonoBehaviour {
 
     private void FixedUpdate() {
 
-        if (Time.time >= nextAttackTime) {
+        if (Time.time > nextAttackTime) {
 
             if (Input.GetButton("Fire1")) {
+
                 Attack();
                 nextAttackTime = Time.time + 1f / player.attackRate;
-            }
 
-            if (Input.GetButton("Fire2")) {
+            } else if (Input.GetButton("Fire2")) {
+
                 SpecialAttack();
                 nextAttackTime = Time.time + 4f / player.attackRate;
-            }
 
-            if (Input.GetButton("Fire3")) {
+            } else if (Input.GetButton("Fire3")) {
+
                 MagicAttack();
                 nextAttackTime = Time.time + 4f / player.attackRate;
+                
             }
         }
     }
@@ -49,23 +51,21 @@ public class PlayerCombat : MonoBehaviour {
 
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, player.attackRange, enemyLayers);
 
-        bool firstEnemy = true;
-
         foreach(Collider enemy in hitEnemies) {
-            if (firstEnemy && Vector3.Distance(enemy.gameObject.transform.position, player.gameObject.transform.position) < assistedDistance) {
+            if (Vector3.Distance(enemy.gameObject.transform.position, player.gameObject.transform.position) < assistedDistance) {
                 Vector3 targetDir = enemy.gameObject.transform.position - this.gameObject.transform.position;
                 Vector3 forward = this.gameObject.transform.forward;
 
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
                 this.gameObject.transform.Rotate(0, -angle, 0);
-                firstEnemy = false;
 
                 enemy.GetComponent<Enemy>().TakeDamage(player.actualWeaponDamage + player.ATK, 0.3f);
                 StartCoroutine(HitEffect(enemy.gameObject.transform.position, 0.3f));
+                break;
             }
-            
         }
     }
+
     private void SpecialAttack() {
         animator.SetTrigger("greatAttack");
         animator.SetBool("attacking", true);

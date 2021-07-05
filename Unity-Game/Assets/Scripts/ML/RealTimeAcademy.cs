@@ -17,7 +17,7 @@ public class RealTimeAcademy : Academy {
 
 	private void Start() {
 				
-		// AcademyReset();
+		AcademyReset();
 	}
 
   	public override void AcademyReset() {
@@ -31,7 +31,7 @@ public class RealTimeAcademy : Academy {
 
 			objectsGenerator.itemsWeights = itemsWeights;
 
-			objectsGenerator.SetMaxItems((int) this.resetParameters["max_items"]);
+			objectsGenerator.SetMinItems((int) this.resetParameters["min_items"]);
 			objectsGenerator.ResetPositions();
 			
 			range = this.resetParameters["spawn_range"];

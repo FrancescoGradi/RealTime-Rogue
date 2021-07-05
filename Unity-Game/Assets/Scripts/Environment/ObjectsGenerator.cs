@@ -8,8 +8,9 @@ public class ObjectsGenerator : MonoBehaviour {
     public List<GameObject> envObjects;
     public List<GameObject> spawnPoints;
 
-    public int max_items = 4;
-    public int max_objects = 4;
+    public int min_items = 4;
+    public int max_items = 9;
+    public int max_objects = 5;
 
     private List<GameObject> items;
     private List<GameObject> activeItems = new List<GameObject> {};
@@ -88,6 +89,14 @@ public class ObjectsGenerator : MonoBehaviour {
         return activeEnvObjects;
     }
 
+    public void SetMinItems(int min_items) {
+        
+        if (min_items < 0)
+            throw new System.Exception("Min items can not be negative!");
+        else
+            this.min_items = min_items;
+    }
+
     public void SetMaxItems(int max_items) {
         if (max_items + max_objects > spawnPoints.Count) {
             throw new System.Exception("Too many instantiated items and env objects!");
@@ -114,7 +123,7 @@ public class ObjectsGenerator : MonoBehaviour {
 
         // Implementazione con spawn points
 
-        for (int i = 0; i < max_items; i++) {
+        for (int i = 0; i < UnityEngine.Random.Range(min_items, max_items); i++) {
             pos = spawnPoints[i].gameObject.transform.position;
             pos.y += 1;
             GameObject selectedItem = Utility.GetRandomObject(items);

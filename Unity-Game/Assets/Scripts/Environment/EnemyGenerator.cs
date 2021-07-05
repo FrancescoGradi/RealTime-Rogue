@@ -15,11 +15,26 @@ public class EnemyGenerator : MonoBehaviour {
     public int n_enemies = 2;
 
     private List<GameObject> actualEnemies = new List<GameObject> {};
+    private int roomNumber;
 
     private void Start() {
         
         enemies = Utility.Shuffle(enemies);
         spawnPoints = Utility.Shuffle(spawnPoints);
+
+        roomNumber = GameManager.instance.GetRoomNumber();
+
+        if (roomNumber < 3)
+            n_enemies = 1;
+        
+        if (roomNumber < 6 && roomNumber >= 3)
+            n_enemies = Utility.GetRandomInt(1, 2);
+        
+        if (roomNumber < 10 && roomNumber >= 6)
+            n_enemies = Utility.GetRandomInt(2, 3);
+        
+        if (roomNumber >= 10)
+            n_enemies = Utility.GetRandomInt(2, 4);
 
         for (int i = 0; i < n_enemies; i++) {
             GameObject enemy = Utility.GetRandomObject(enemies);
@@ -42,7 +57,6 @@ public class EnemyGenerator : MonoBehaviour {
 
     }
     public void EnemyDown() {
-
         n_enemies -= 1;
         GameManager.instance.AddEnemyKill();
         if (n_enemies <= 0) {

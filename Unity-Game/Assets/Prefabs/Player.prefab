@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 3912461115284026936}
   - component: {fileID: 3533752938707969826}
   - component: {fileID: 3533752938707969828}
-  - component: {fileID: 8180299175313433553}
+  - component: {fileID: 7632263479115258685}
   m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
@@ -959,7 +959,7 @@ MonoBehaviour:
   spikes: {fileID: 5434128566314953014, guid: 031c55d76042df8b19858825e8602c2d, type: 3}
   healthPotionCircleEffect: {fileID: 2211798128389284414, guid: 7891ee7076cc728bebd50946ce4a980f,
     type: 3}
---- !u!114 &8180299175313433553
+--- !u!114 &7632263479115258685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
