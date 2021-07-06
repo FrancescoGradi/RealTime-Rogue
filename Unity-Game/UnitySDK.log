@@ -1,27 +1,8 @@
-02/07/2021 10:39:46
+05/07/2021 14:09:03
  
 Log
 System.NullReferenceException: Object reference not set to an instance of an object
   at Room.Start () [0x0005b] in /home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/Scripts/Environment/Room.cs:42 
 UnityEngine.Debug:Log(Object)
 Room:Start() (at Assets/Scripts/Environment/Room.cs:44)
-
-Warning
-Animator is not playing an AnimatorController
-UnityEngine.Animator:SetBool(String, Boolean)
-Enemy:ResetStatsAndItems(Boolean, Int32, Single) (at Assets/Scripts/Enemy/Enemy.cs:110)
-RealTimeAcademy:TargetReset() (at Assets/Scripts/ML/RealTimeAcademy.cs:94)
-RealTimeAcademy:AcademyReset() (at Assets/Scripts/ML/RealTimeAcademy.cs:36)
-RealTimeAcademy:Start() (at Assets/Scripts/ML/RealTimeAcademy.cs:17)
-
-Warning
-Animator is not playing an AnimatorController
-UnityEngine.Animator:SetBool(String, Boolean)
-Enemy:ResetStatsAndItems(Boolean, Int32, Single) (at Assets/Scripts/Enemy/Enemy.cs:110)
-RealTimeAcademy:TargetReset() (at Assets/Scripts/ML/RealTimeAcademy.cs:94)
-RealTimeAcademy:AcademyReset() (at Assets/Scripts/ML/RealTimeAcademy.cs:36)
-MLAgents.Academy:EnvironmentReset() (at Assets/ML-Agents/Scripts/Academy.cs:602)
-MLAgents.Academy:ForcedFullReset() (at Assets/ML-Agents/Scripts/Academy.cs:518)
-MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:562)
-MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 

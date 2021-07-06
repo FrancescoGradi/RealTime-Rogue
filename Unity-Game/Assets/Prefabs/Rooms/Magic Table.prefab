@@ -363,7 +363,7 @@ MonoBehaviour:
     m_Bits: 2048
   statModMenu: {fileID: 5174817882757338482, guid: aad40e2d9d5f2932e9311feee141c561,
     type: 3}
-  statPoints: 0
+  statPoints: 2
 --- !u!1 &6191475265707516773
 GameObject:
   m_ObjectHideFlags: 0

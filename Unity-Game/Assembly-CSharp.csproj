@@ -198,6 +198,7 @@
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\RoomClearedScreen.cs" />
      <Compile Include="Assets\Scripts\Menu\StatModMenu.cs" />
+     <Compile Include="Assets\Scripts\Menu\WelcomeMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\WinScreen.cs" />
      <Compile Include="Assets\Scripts\ML\CustomBrain.cs" />
      <Compile Include="Assets\Scripts\ML\EnemyAgent.cs" />
