@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour {
     public GameObject optionsMenuUI;
     public GameObject commandListMenuUI;
 
+    public GameObject welcomeMenu;
+
     public GameObject pauseFirstButton;
     public GameObject optionsMenuFirstButton;
     public GameObject commandListMenuFirstButton;
@@ -19,19 +21,21 @@ public class PauseMenu : MonoBehaviour {
     private bool isInCommandListMenu = false;
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause")) {
-            if (gamePaused && !isInCommandListMenu && !isInOptionsMenu) {
-                Resume();
-            } else if (!isInCommandListMenu && !isInOptionsMenu) {
-                Pause();
-            }
-        } else if (gamePaused && Input.GetButtonDown("Fire3")) {
-            if (!isInCommandListMenu && !isInOptionsMenu) {
-                Resume();
-            } else if (isInCommandListMenu) {
-                CloseCommandList();
-            } else if (isInOptionsMenu) {
-                CloseOptions();
+        if (!welcomeMenu.gameObject.activeSelf) {
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause")) {
+                if (gamePaused && !isInCommandListMenu && !isInOptionsMenu) {
+                    Resume();
+                } else if (!isInCommandListMenu && !isInOptionsMenu) {
+                    Pause();
+                }
+            } else if (gamePaused && Input.GetButtonDown("Fire3")) {
+                if (!isInCommandListMenu && !isInOptionsMenu) {
+                    Resume();
+                } else if (isInCommandListMenu) {
+                    CloseCommandList();
+                } else if (isInOptionsMenu) {
+                    CloseOptions();
+                }
             }
         }
     }

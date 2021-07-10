@@ -194,22 +194,37 @@ public class EnemyAgent : Agent {
 
         if (target.GetComponent<Enemy>() != null)
             obs.Add((float) target.GetComponent<Enemy>().currentHealth);
-        else if (target.GetComponent<Player>() != null)
-            obs.Add((float) target.GetComponent<Player>().currentHealth);
+        else if (target.GetComponent<Player>() != null) {
+            obs.Add((float) ((target.GetComponent<Player>().currentHealth / target.GetComponent<Player>().HP) * 20));
+        }
 
-        obs.Add((float) (enemy.ATK + enemy.actualWeaponDamage));
+        int enemyDamage = enemy.ATK + enemy.actualWeaponDamage;
+        if (enemyDamage > 19)
+            enemyDamage = 19;
+        obs.Add((float) enemyDamage);
         
         if (target.GetComponent<Enemy>() != null)
             obs.Add((float) target.GetComponent<Enemy>().ATK + target.GetComponent<Enemy>().actualWeaponDamage);
-        else if (target.GetComponent<Player>() != null)
-            obs.Add((float) target.GetComponent<Player>().ATK + target.GetComponent<Player>().actualWeaponDamage);
+        else if (target.GetComponent<Player>() != null) {
+            int playerDamage = target.GetComponent<Player>().ATK + target.GetComponent<Player>().actualWeaponDamage;
+            if (playerDamage > 19)
+                playerDamage = 19;
+            obs.Add((float) playerDamage);
+        }
 
-        obs.Add((float) (enemy.DEF + enemy.actualShieldDef));
+        int enemyDef = enemy.DEF + enemy.actualShieldDef;
+        if (enemyDef > 14)
+            enemyDef = 14;
+        obs.Add((float) enemyDef);
 
         if (target.GetComponent<Enemy>() != null)
             obs.Add(((float) target.GetComponent<Enemy>().DEF + target.GetComponent<Enemy>().actualShieldDef));
-        else if (target.GetComponent<Player>() != null)
-            obs.Add(((float) target.GetComponent<Player>().DEF + target.GetComponent<Player>().actualShieldDef));
+        else if (target.GetComponent<Player>() != null) {
+            int playerDef = target.GetComponent<Player>().DEF + target.GetComponent<Player>().actualShieldDef;
+            if (playerDef > 14)
+                playerDef = 14;
+            obs.Add((float) playerDef);
+        }
 
         /*
         // Valore compreso tra [-1, 1] che indica la direzione verso cui l'agente è rivolto (GLOBAL)

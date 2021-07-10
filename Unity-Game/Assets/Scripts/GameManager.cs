@@ -44,16 +44,21 @@ public class GameManager : MonoBehaviour {
     }
 
     public void CreateNewRoom(string portalType) {
-        StartCoroutine(InstantiationWaiter(portalType));
+
+        roomNumber += 1;
+
+        if (roomNumber % 5 == 0)
+            StartCoroutine(InstatiationInitialRoomWaiter());
+        else
+            StartCoroutine(InstantiationWaiter(portalType));
     }
 
     private IEnumerator InstantiationWaiter(string portalType) {
 
-        roomNumber += 1;
         roomNumberText.text = "Room " + roomNumber.ToString();
         FindObjectOfType<RoomTransition>().Transition(roomNumberText.text);
 
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSeconds(1f);
 
         SetInitialPortalNum(portalType);
         Destroy(actualRoom);
@@ -70,6 +75,18 @@ public class GameManager : MonoBehaviour {
         } else {
             player.transform.SetPositionAndRotation(new Vector3(0, 0, 0), Quaternion.identity);
         }
+    }
+
+    private IEnumerator InstatiationInitialRoomWaiter() {
+        roomNumberText.text = "Room " + roomNumber.ToString();
+        FindObjectOfType<RoomTransition>().Transition(roomNumberText.text);
+
+        yield return new WaitForSeconds(1f);
+
+        Destroy(actualRoom);
+        actualRoom = Instantiate(initialRoom, new Vector3(0, initialRoom.gameObject.transform.position.y, 0), Quaternion.identity);
+
+        player.transform.SetPositionAndRotation(new Vector3(0, 0, -5), Quaternion.identity);
     }
 
     public int GetInitialPortalNum() {

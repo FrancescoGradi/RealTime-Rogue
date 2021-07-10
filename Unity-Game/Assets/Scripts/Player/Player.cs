@@ -45,6 +45,11 @@ public class Player : MonoBehaviour {
 
     private Item actualPotion;
     private bool actualPotionActive;
+    private Animator animator;
+
+    private int bonusATKMemory;
+    private int bonusMANAMemory;
+    private int bonusDEFMemory;
 
     private void Start() {
 
@@ -83,7 +88,9 @@ public class Player : MonoBehaviour {
         if (this.actualPotion != null)
             Destroy(this.actualPotion.gameObject);
         
-        this.actualPotion = actualPotion;  
+        this.actualPotion = Instantiate(actualPotion);
+        this.actualPotion.gameObject.SetActive(false);
+        Destroy(actualPotion);  
     }
 
     private void DrinkPotion() {
@@ -101,9 +108,13 @@ public class Player : MonoBehaviour {
 
                 actualPotionActive = true;
 
-                ATK += actualPotion.bonusATK;
-                MANA += actualPotion.bonusMANA;
-                DEF += actualPotion.bonusDEF;
+                bonusATKMemory = actualPotion.bonusATK;
+                bonusMANAMemory = actualPotion.bonusMANA;
+                bonusDEFMemory = actualPotion.bonusDEF;
+
+                ATK += bonusATKMemory;
+                MANA += bonusMANAMemory;
+                DEF += bonusDEFMemory;
                 speed += 2f;
 
                 Spikes tmp = Instantiate(spikes, this.gameObject.transform.position, Quaternion.identity);
@@ -148,9 +159,9 @@ public class Player : MonoBehaviour {
 
         yield return new WaitForSeconds(seconds);
 
-        ATK -= actualPotion.bonusATK;
-        MANA -= actualPotion.bonusMANA;
-        DEF -= actualPotion.bonusDEF;;
+        ATK -= bonusATKMemory;
+        MANA -= bonusMANAMemory;
+        DEF -= bonusDEFMemory;
         speed -= 2f;
 
         Destroy(actualPotion.gameObject);
@@ -167,8 +178,8 @@ public class Player : MonoBehaviour {
         playerHealthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0) {
-            // TO-DO Gestire la morte del player con schermata di GAME-OVER
-            Debug.Log("Player ko!");
+            GetComponent<Animator>().SetBool("dead", true);
+            GameManager.instance.GameOver();
         }
     }
 }

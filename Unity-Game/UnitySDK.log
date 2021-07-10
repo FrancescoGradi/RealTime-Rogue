@@ -1,5 +1,9 @@
-05/07/2021 14:09:03
+07/07/2021 23:52:09
  
+Exception
+NullReferenceException: Object reference not set to an instance of an object
+EnemyGenerator.Start () (at Assets/Scripts/Environment/EnemyGenerator.cs:25)
+
 Log
 System.NullReferenceException: Object reference not set to an instance of an object
   at Room.Start () [0x0005b] in /home/fra/UnityProjects/MyThirdGame/Unity-Game/Assets/Scripts/Environment/Room.cs:42 

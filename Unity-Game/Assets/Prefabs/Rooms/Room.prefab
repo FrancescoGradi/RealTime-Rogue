@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6f0274912519f11ae0da183c9f621c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelName: {fileID: 4900000, guid: 8c22a4469c252e4de9d3142921e25dbb, type: 3}
+  modelName: {fileID: 4900000, guid: 25620eaf94dc0ee6283314a7d1f3dbbf, type: 3}
   actionMinValues:
   - -1
   - -1
@@ -3295,9 +3295,9 @@ MonoBehaviour:
   - {fileID: 743041622132703717, guid: 721af7e81c8930b979c741d7b47d3f8d, type: 3}
   - {fileID: 7095549145993165415, guid: 91e964e2d493a80b28c1fc3200a991e6, type: 3}
   itemsWeights:
-  - 0.55
-  - 0.15
-  - 0.15
+  - 0.65
+  - 0.1
+  - 0.1
   - 0.15
   envObjects:
   - {fileID: 1463083207406666, guid: 3e11d8992c7896044a5461e7cf12c996, type: 3}

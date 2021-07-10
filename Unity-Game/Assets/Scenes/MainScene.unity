@@ -2326,7 +2326,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 813919001}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 980619351}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab7594ea4e37f4e2486e1a1310196764, type: 3}
@@ -2356,7 +2356,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748237166}
-  m_LocalRotation: {x: 0.1773619, y: 0.006072253, z: -0.0039954036, w: 0.9841189}
+  m_LocalRotation: {x: 0.17736194, y: 0.006072253, z: -0.0039954334, w: 0.9841189}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3453,7 +3453,6 @@ GameObject:
   - component: {fileID: 973641449}
   - component: {fileID: 973641448}
   - component: {fileID: 973641447}
-  - component: {fileID: 973641450}
   m_Layer: 5
   m_Name: GameOverScreen
   m_TagString: Untagged
@@ -3518,21 +3517,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &973641450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!1 &980619351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5603306239907017484, guid: 989f7cf934d342523865e8347ca8249c,
+    type: 3}
+  m_PrefabInstance: {fileID: 813919001}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973641446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f47091cb1bc8e5759e475838f6cf81d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverScreenUI: {fileID: 0}
-  enemiesKilled: {fileID: 0}
-  roomOverpassed: {fileID: 0}
 --- !u!1 &986336886
 GameObject:
   m_ObjectHideFlags: 0
@@ -4597,6 +4587,9 @@ MonoBehaviour:
   gameOverScreenUI: {fileID: 973641446}
   enemiesKilled: {fileID: 1401559681}
   roomOverpassed: {fileID: 986336887}
+  itemsHub: {fileID: 1203982502}
+  playerHealthBar: {fileID: 980619351}
+  fps: {fileID: 115385136}
 --- !u!114 &1262340179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7483,7 +7476,7 @@ PrefabInstance:
     - target: {fileID: 8812534323780265853, guid: 72fc4217cc56fb458b516d13a88e3a1d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.35861048
+      value: -0.3586105
       objectReference: {fileID: 0}
     - target: {fileID: 8812534323780265853, guid: 72fc4217cc56fb458b516d13a88e3a1d,
         type: 3}

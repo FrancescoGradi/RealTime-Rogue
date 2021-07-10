@@ -70,7 +70,7 @@ public class ItemsHub : MonoBehaviour {
         posSprite = actualfireBallSprite.transform.position;
         Destroy(actualfireBallSprite);
 
-        fireBallSprite.GetComponent<Sprite>().SetSpriteValue(Player.instance.MANA, "MAG");
+        fireBallSprite.GetComponent<Sprite>().SetSpriteValue(Player.instance.MANA + 5, "MAG");
         actualfireBallSprite = Instantiate(fireBallSprite, posSprite, Quaternion.identity);
 
         actualfireBallSprite.transform.SetParent(this.gameObject.transform);

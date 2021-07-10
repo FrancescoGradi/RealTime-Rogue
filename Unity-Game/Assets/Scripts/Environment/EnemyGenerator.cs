@@ -22,19 +22,9 @@ public class EnemyGenerator : MonoBehaviour {
         enemies = Utility.Shuffle(enemies);
         spawnPoints = Utility.Shuffle(spawnPoints);
 
-        roomNumber = GameManager.instance.GetRoomNumber();
+        int roomNumber = GameManager.instance.GetRoomNumber();
 
-        if (roomNumber < 3)
-            n_enemies = 1;
-        
-        if (roomNumber < 6 && roomNumber >= 3)
-            n_enemies = Utility.GetRandomInt(1, 2);
-        
-        if (roomNumber < 10 && roomNumber >= 6)
-            n_enemies = Utility.GetRandomInt(2, 3);
-        
-        if (roomNumber >= 10)
-            n_enemies = Utility.GetRandomInt(2, 4);
+        BalanceN_Enemies(roomNumber);
 
         for (int i = 0; i < n_enemies; i++) {
             GameObject enemy = Utility.GetRandomObject(enemies);
@@ -43,6 +33,8 @@ public class EnemyGenerator : MonoBehaviour {
             agent.actualRoom = room;
             agent.localCellView = localCellView;
             agent.target = Player.instance.gameObject;
+
+            BalanceEnemy(enemy, roomNumber);
 
             if (agent.enemyClass == 0) {
                 agent.customBrain = warriorBrain;
@@ -63,6 +55,45 @@ public class EnemyGenerator : MonoBehaviour {
             FindObjectOfType<Room>().RoomClear();
         }
     }
+
+    private void BalanceN_Enemies(int roomNumber) {
+
+        if (roomNumber < 3)
+            n_enemies = 1;
+        
+        else if (roomNumber < 6 && roomNumber >= 3)
+            n_enemies = Utility.GetRandomInt(1, 2);
+        
+        else if (roomNumber < 10 && roomNumber >= 6)
+            n_enemies = Utility.GetRandomInt(2, 3);
+        
+        else if (roomNumber >= 10)
+            n_enemies = Utility.GetRandomInt(2, 4);
+    }
+
+    private void BalanceEnemy(GameObject enemy, int roomNumber) {
+
+        if (roomNumber < 3)
+            EditStatsEnemy(enemy.GetComponent<Enemy>(), 20, 4, 3, 3);
+
+        if (roomNumber < 6 && roomNumber >= 3)
+            EditStatsEnemy(enemy.GetComponent<Enemy>(), 20, Utility.GetRandomInt(4, 6), Utility.GetRandomInt(3, 5), Utility.GetRandomInt(4, 6));
+
+        if (roomNumber < 10 && roomNumber >= 6)
+            EditStatsEnemy(enemy.GetComponent<Enemy>(), 20, Utility.GetRandomInt(6, 8), Utility.GetRandomInt(5, 7), Utility.GetRandomInt(6, 8));
+        
+        if (roomNumber >= 10)
+            EditStatsEnemy(enemy.GetComponent<Enemy>(), 20, Utility.GetRandomInt(8, 10), Utility.GetRandomInt(7, 9), Utility.GetRandomInt(8, 10));
+
+    }
+
+    private void EditStatsEnemy(Enemy enemy, int HP, int ATK, int DEF, int MANA) {
+        enemy.HP = HP;
+        enemy.currentHealth = HP;
+        enemy.ATK = ATK;
+        enemy.DEF = DEF;
+        enemy.MANA = MANA;
+    } 
 
     private void OnDestroy() {
         foreach (GameObject actualEnemy in actualEnemies) {

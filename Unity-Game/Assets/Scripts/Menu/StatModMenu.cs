@@ -28,8 +28,10 @@ public class StatModMenu : MonoBehaviour {
     public StatMod defStatMod;
     public StatMod speedStatMod;
 
+    public int maxValue = 10;
+
     private int availablePoints;
-    private int maxPoints = 4;
+    private int maxPoints = 2;
     private int updateRate = 15;
     private int count = 0;
     private static bool gamePaused = true;
@@ -82,7 +84,7 @@ public class StatModMenu : MonoBehaviour {
         }
     }
 
-    private void SubtractPoint(StatMod selectedStat) {
+    public void SubtractPoint(StatMod selectedStat) {
         if (availablePoints > 0) {
 
             availablePoints -= 1;
@@ -98,7 +100,7 @@ public class StatModMenu : MonoBehaviour {
         }
     }
 
-    private void AddPoint(StatMod selectedStat) {
+    public void AddPoint(StatMod selectedStat) {
         if (availablePoints < maxPoints && (selectedStat.actualValue > selectedStat.baseValue)) {
 
             availablePoints += 1;
